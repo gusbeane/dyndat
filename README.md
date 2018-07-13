@@ -1,6 +1,7 @@
 # dyndat
 
-Dynamically dating stars
+Actions are weak stellar age indicators in the Milky Way Disk
+
 Empirically determining the relation between stellar actions and ages
 
 Main conclusions:
@@ -10,4 +11,5 @@ Main conclusions:
 Please contact the author (abeane@sas.upenn.edu) if you plan to use any of the data
 
 ApJ submitted
+
 preprint available here:  
