@@ -1,0 +1,1 @@
+KIC	2MASS	Teff	S_Teff	FeH	S_FeH	Afe	S_Afe	Nmax	S_Nmax	Dnu	S_Dnu	ES	Fdnu	S_Fdnu	M_cor 	S_Mran	S_Msys	R_cor 	S_Rran	S_Rsys	Logg_seis 	S_Gran	S_Gsys	aveRho	S_Rrhoran	S_Rhosys	Log_Age	S_LogageP	S_LogageM	Av	S_Av	Note
