@@ -12,4 +12,4 @@ Please contact the author (abeane@sas.upenn.edu) if you plan to use any of the d
 
 ApJ submitted
 
-preprint available here:  
+preprint available here: https://arxiv.org/abs/1807.05986 
