@@ -204,7 +204,6 @@ axarr[0][2].axis('auto')
 
 axarr[1][0].set(xlabel=r'$\text{age}\,[\,\text{Gyr}\,]$')
 axarr[1][0].set(ylabel=r'$\sqrt{J_r} [\,\text{kpc}\,\text{km}/\text{s}\,]^{1/2}$')
-axarr[1][0].set(xlim=[0, 14])
 axarr[1][0].xaxis.set_ticks(range(15), minor=True)
 axarr[1][0].yaxis.set_ticks([0,5,10,15,20])
 axarr[1][0].yaxis.set_ticks(range(20), minor=True)
@@ -217,7 +216,6 @@ axarr[1][0].plot(ageline, Jrline-Jrlinerr, lw=1, linestyle='dotted', color='gray
 
 axarr[1][1].set(xlabel=r'$\text{age}\,[\,\text{Gyr}\,]$')
 axarr[1][1].set(ylabel=r'$L_z [\,\text{kpc}\,\text{km}/\text{s}\,]$')
-axarr[1][1].set(xlim=[0, 14])
 axarr[1][1].xaxis.set_ticks(range(15), minor=True)
 axarr[1][1].yaxis.set_ticks([1000,1500,2000])
 axarr[1][1].yaxis.set_ticks(np.arange(800,2000,100), minor=True)
@@ -231,7 +229,6 @@ axarr[1][1].plot(ageline, Lzline-Lzlinerr, lw=1, linestyle='dotted', color='gray
 myrange=[[0,14],[0,10]]
 axarr[1][2].set(xlabel=r'$\text{age}\,[\,\text{Gyr}\,]$')
 axarr[1][2].set(ylabel=r'$\sqrt{J_z} [\,\text{kpc}\,\text{km}/\text{s}\,]^{1/2}$')
-axarr[1][2].set(xlim=myrange[0])
 axarr[1][2].xaxis.set_ticks(range(15), minor=True)
 axarr[1][2].yaxis.set_ticks([0,5,10])
 axarr[1][2].yaxis.set_ticks(range(10), minor=True)
@@ -239,6 +236,7 @@ axarr[1][2].plot(ageline, Jzline, lw=1, color='black', zorder=5)
 axarr[1][2].plot(ageline, Jzline+Jzlinsterr, lw=1, linestyle='dashed', color='gray', zorder=4)
 axarr[1][2].plot(ageline, Jzline-Jzlinsterr, lw=1, linestyle='dashed', color='gray', zorder=3)
 axarr[1][2].plot(ageline, Jzline+Jzlinerr, lw=1, linestyle='dotted', color='gray', zorder=2)
+axarr[1][2].set_adjustable("box")
 #axarr[1][2].plot(ageline, Jzline-Jzlinerr, lw=1, linestyle='dotted', color='gray', zorder=1)
 #axarr[1][2].axis('auto')
 
@@ -250,6 +248,9 @@ for ax in axarr:
 axarr[1][0].set(ylim=[0, 20])
 axarr[1][1].set(ylim=[800,2000])
 axarr[1][2].set(ylim=myrange[1])
+axarr[1][0].set_xlim(myrange[0][0], myrange[0][1])
+axarr[1][1].set_xlim(myrange[0][0], myrange[0][1])
+axarr[1][2].set_xlim(myrange[0][0], myrange[0][1])
 
 
 plt.tight_layout()
