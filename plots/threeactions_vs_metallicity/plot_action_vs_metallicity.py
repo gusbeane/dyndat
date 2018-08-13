@@ -106,7 +106,7 @@ axarr[0][0].set(ylim=myrange[1])
 """
 Lz vs. age
 """
-myrange=[[-0.8,0.8],[800,2000]]
+myrange=[[-0.8,0.8],[800,2200]]
 heatmap, xedges, yedges = np.histogram2d(Fe[np.where(np.logical_not(np.isnan(Lz)))], Lz[np.where(np.logical_not(np.isnan(Lz)))], bins=30, range=myrange)
 heatmap.T[heatmap.T == 0] = np.nan
 extent = [xedges[0], xedges[len(xedges)-1], yedges[0], yedges[len(yedges)-1]]
@@ -155,7 +155,7 @@ axarr[1][0].set(ylim=myrange[1])
 """
 Lz vs. age
 """
-myrange=[[-0.1,0.3],[800,2000]]
+myrange=[[-0.1,0.3],[800,2200]]
 heatmap, xedges, yedges = np.histogram2d(MgFe[np.where(np.logical_not(np.isnan(Lz)))], Lz[np.where(np.logical_not(np.isnan(Lz)))], bins=30, range=myrange)
 heatmap.T[heatmap.T == 0] = np.nan
 extent = [xedges[0], xedges[len(xedges)-1], yedges[0], yedges[len(yedges)-1]]
