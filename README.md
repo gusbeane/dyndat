@@ -10,6 +10,6 @@ Main conclusions:
 
 Please contact the author (abeane@sas.upenn.edu) if you plan to use any of the data
 
-ApJ submitted
+ApJ accepted
 
 preprint available here: https://arxiv.org/abs/1807.05986 
