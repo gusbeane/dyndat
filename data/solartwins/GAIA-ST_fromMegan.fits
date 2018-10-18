@@ -1,1984 +1,3 @@
-SIMPLE  =                    T / Standard FITS format                           BITPIX  =                    8 / Character data                                 NAXIS   =                    1 / Text string                                    NAXIS1  =                19601 / Number of characters                           VOTMETA =                    T / Table metadata in VOTable format               EXTEND  =                    T / There are standard extensions                  COMMENT                                                                         COMMENT The data in this primary HDU consists of bytes which                    COMMENT comprise a VOTABLE document.                                            COMMENT The VOTable describes the metadata of the table contained               COMMENT in the following BINTABLE extension.                                    COMMENT Such a BINTABLE extension can be used on its own as a perfectly         COMMENT good table, but the information from this HDU may provide some          COMMENT useful additional metadata.                                             COMMENT There is one following BINTABLE.                                        NTABLE  =                    1 / Number of following BINTABLE HDUs              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <?xml version='1.0'?>
-<VOTABLE version="1.3"
- xmlns="http://www.ivoa.net/xml/VOTable/v1.3">
-<!--
- !  VOTable written by STIL version 3.2-2 (uk.ac.starlink.votable.VOTableWriter)
- !  at 2018-05-04T02:00:30
- !-->
-<RESOURCE>
-<!-- Describes BINTABLE extensions in the following HDU.-->
-<TABLE name="Joined" nrows="78">
-<PARAM arraysize="33" datatype="char" name="Match type" value="Pair match; Best match, symmetric">
-<DESCRIPTION>Type of match which created this table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="11" datatype="char" name="Match algorithm" value="Exact Value">
-<DESCRIPTION>Matching algorithm which created this table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="82" datatype="char" name="Join Type" value="1 and 2 (An output row for each row represented in both input tables (INNER JOIN))">
-<DESCRIPTION>Determines which rows appear in output table</DESCRIPTION>
-</PARAM>
-<PARAM arraysize="22" datatype="char" name="First input table" value="4: Gaia_SolarTwins.csv"/>
-<PARAM arraysize="42" datatype="char" name="Second input table" value="3: abundances_workstation_all_elements.csv"/>
-<FIELD datatype="long" name="solution_id">
-<VALUES null='-9223372036854775808'/>
-</FIELD>
-<FIELD arraysize="28" datatype="char" name="designation"/>
-<FIELD datatype="long" name="source_id">
-<VALUES null='-9223372036854775808'/>
-</FIELD>
-<FIELD datatype="int" name="random_index">
-<VALUES null='-2147483648'/>
-</FIELD>
-<FIELD datatype="float" name="ref_epoch"/>
-<FIELD datatype="double" name="ra"/>
-<FIELD datatype="double" name="ra_error"/>
-<FIELD datatype="double" name="dec"/>
-<FIELD datatype="double" name="dec_error"/>
-<FIELD datatype="double" name="parallax"/>
-<FIELD datatype="double" name="parallax_error"/>
-<FIELD datatype="double" name="parallax_over_error"/>
-<FIELD datatype="double" name="pmra"/>
-<FIELD datatype="double" name="pmra_error"/>
-<FIELD datatype="double" name="pmdec"/>
-<FIELD datatype="double" name="pmdec_error"/>
-<FIELD datatype="double" name="ra_dec_corr"/>
-<FIELD datatype="double" name="ra_parallax_corr"/>
-<FIELD datatype="double" name="ra_pmra_corr"/>
-<FIELD datatype="double" name="ra_pmdec_corr"/>
-<FIELD datatype="double" name="dec_parallax_corr"/>
-<FIELD datatype="double" name="dec_pmra_corr"/>
-<FIELD datatype="double" name="dec_pmdec_corr"/>
-<FIELD datatype="double" name="parallax_pmra_corr"/>
-<FIELD datatype="double" name="parallax_pmdec_corr"/>
-<FIELD datatype="double" name="pmra_pmdec_corr"/>
-<FIELD datatype="short" name="astrometric_n_obs_al">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="short" name="astrometric_n_obs_ac">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="short" name="astrometric_n_good_obs_al">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="short" name="astrometric_n_bad_obs_al">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="double" name="astrometric_gof_al"/>
-<FIELD datatype="double" name="astrometric_chi2_al"/>
-<FIELD datatype="double" name="astrometric_excess_noise"/>
-<FIELD datatype="double" name="astrometric_excess_noise_sig"/>
-<FIELD datatype="short" name="astrometric_params_solved">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="boolean" name="astrometric_primary_flag"/>
-<FIELD datatype="double" name="astrometric_weight_al"/>
-<FIELD datatype="double" name="astrometric_pseudo_colour"/>
-<FIELD datatype="double" name="astrometric_pseudo_colour_error"/>
-<FIELD datatype="double" name="mean_varpi_factor_al"/>
-<FIELD datatype="short" name="astrometric_matched_observations">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="short" name="visibility_periods_used">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="double" name="astrometric_sigma5d_max"/>
-<FIELD datatype="short" name="frame_rotator_object_type">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="short" name="matched_observations">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="boolean" name="duplicated_source"/>
-<FIELD datatype="short" name="phot_g_n_obs">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="double" name="phot_g_mean_flux"/>
-<FIELD datatype="double" name="phot_g_mean_flux_error"/>
-<FIELD datatype="double" name="phot_g_mean_flux_over_error"/>
-<FIELD datatype="double" name="phot_g_mean_mag"/>
-<FIELD datatype="short" name="phot_bp_n_obs">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="double" name="phot_bp_mean_flux"/>
-<FIELD datatype="double" name="phot_bp_mean_flux_error"/>
-<FIELD datatype="double" name="phot_bp_mean_flux_over_error"/>
-<FIELD datatype="double" name="phot_bp_mean_mag"/>
-<FIELD datatype="short" name="phot_rp_n_obs">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="double" name="phot_rp_mean_flux"/>
-<FIELD datatype="double" name="phot_rp_mean_flux_error"/>
-<FIELD datatype="double" name="phot_rp_mean_flux_over_error"/>
-<FIELD datatype="double" name="phot_rp_mean_mag"/>
-<FIELD datatype="double" name="phot_bp_rp_excess_factor"/>
-<FIELD datatype="short" name="phot_proc_mode">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="double" name="bp_rp"/>
-<FIELD datatype="double" name="bp_g"/>
-<FIELD datatype="double" name="g_rp"/>
-<FIELD datatype="double" name="radial_velocity"/>
-<FIELD datatype="double" name="radial_velocity_error"/>
-<FIELD datatype="short" name="rv_nb_transits">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="rv_template_teff"/>
-<FIELD datatype="float" name="rv_template_logg"/>
-<FIELD datatype="float" name="rv_template_fe_h"/>
-<FIELD arraysize="13" datatype="char" name="phot_variable_flag"/>
-<FIELD datatype="double" name="l"/>
-<FIELD datatype="double" name="b"/>
-<FIELD datatype="double" name="ecl_lon"/>
-<FIELD datatype="double" name="ecl_lat"/>
-<FIELD datatype="int" name="priam_flags">
-<VALUES null='-2147483648'/>
-</FIELD>
-<FIELD datatype="double" name="teff_val"/>
-<FIELD datatype="double" name="teff_percentile_lower"/>
-<FIELD datatype="double" name="teff_percentile_upper"/>
-<FIELD datatype="double" name="a_g_val"/>
-<FIELD datatype="double" name="a_g_percentile_lower"/>
-<FIELD datatype="double" name="a_g_percentile_upper"/>
-<FIELD datatype="double" name="e_bp_min_rp_val"/>
-<FIELD datatype="double" name="e_bp_min_rp_percentile_lower"/>
-<FIELD datatype="double" name="e_bp_min_rp_percentile_upper"/>
-<FIELD datatype="int" name="flame_flags">
-<VALUES null='-2147483648'/>
-</FIELD>
-<FIELD datatype="double" name="radius_val"/>
-<FIELD datatype="double" name="radius_percentile_lower"/>
-<FIELD datatype="double" name="radius_percentile_upper"/>
-<FIELD datatype="double" name="lum_val"/>
-<FIELD datatype="double" name="lum_percentile_lower"/>
-<FIELD datatype="double" name="lum_percentile_upper"/>
-<FIELD arraysize="77" datatype="char" name="datalink_url"/>
-<FIELD datatype="boolean" name="epoch_photometry_url"/>
-<FIELD datatype="long" name="source_id_2">
-<VALUES null='-9223372036854775808'/>
-</FIELD>
-<FIELD datatype="int" name="original_ext_source_id">
-<VALUES null='-2147483648'/>
-</FIELD>
-<FIELD datatype="double" name="angular_distance"/>
-<FIELD datatype="short" name="number_of_neighbours">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="short" name="gaia_astrometric_params">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD arraysize="9" datatype="char" name="HIP"/>
-<FIELD datatype="double" name="dist"/>
-<FIELD arraysize="9" datatype="char" name="id"/>
-<FIELD datatype="short" name="teff">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="logg"/>
-<FIELD datatype="float" name="feh"/>
-<FIELD datatype="float" name="vt"/>
-<FIELD datatype="short" name="err_teff">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_logg"/>
-<FIELD datatype="float" name="err_feh"/>
-<FIELD datatype="float" name="err_vt"/>
-<FIELD datatype="float" name="age_mean"/>
-<FIELD datatype="float" name="age_std"/>
-<FIELD datatype="float" name="SrI"/>
-<FIELD datatype="float" name="e_SrI"/>
-<FIELD datatype="short" name="n_SrI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[SrI]"/>
-<FIELD datatype="float" name="e_[SrI]"/>
-<FIELD datatype="short" name="n_[SrI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_SrI"/>
-<FIELD datatype="float" name="YII"/>
-<FIELD datatype="float" name="e_YII"/>
-<FIELD datatype="short" name="n_YII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[YII]"/>
-<FIELD datatype="float" name="e_[YII]"/>
-<FIELD datatype="short" name="n_[YII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_YII"/>
-<FIELD datatype="float" name="ZrII"/>
-<FIELD datatype="float" name="e_ZrII"/>
-<FIELD datatype="short" name="n_ZrII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[ZrII]"/>
-<FIELD datatype="float" name="e_[ZrII]"/>
-<FIELD datatype="short" name="n_[ZrII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_ZrII"/>
-<FIELD datatype="float" name="BaII"/>
-<FIELD datatype="float" name="e_BaII"/>
-<FIELD datatype="short" name="n_BaII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[BaII]"/>
-<FIELD datatype="float" name="e_[BaII]"/>
-<FIELD datatype="short" name="n_[BaII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_BaII"/>
-<FIELD datatype="float" name="LaII"/>
-<FIELD datatype="float" name="e_LaII"/>
-<FIELD datatype="short" name="n_LaII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[LaII]"/>
-<FIELD datatype="float" name="e_[LaII]"/>
-<FIELD datatype="short" name="n_[LaII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_LaII"/>
-<FIELD datatype="float" name="CeII"/>
-<FIELD datatype="float" name="e_CeII"/>
-<FIELD datatype="short" name="n_CeII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CeII]"/>
-<FIELD datatype="float" name="e_[CeII]"/>
-<FIELD datatype="short" name="n_[CeII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CeII"/>
-<FIELD datatype="float" name="PrII"/>
-<FIELD datatype="float" name="e_PrII"/>
-<FIELD datatype="short" name="n_PrII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[PrII]"/>
-<FIELD datatype="float" name="e_[PrII]"/>
-<FIELD datatype="short" name="n_[PrII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_PrII"/>
-<FIELD datatype="float" name="NdII"/>
-<FIELD datatype="float" name="e_NdII"/>
-<FIELD datatype="short" name="n_NdII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[NdII]"/>
-<FIELD datatype="float" name="e_[NdII]"/>
-<FIELD datatype="short" name="n_[NdII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_NdII"/>
-<FIELD datatype="float" name="SmII"/>
-<FIELD datatype="float" name="e_SmII"/>
-<FIELD datatype="short" name="n_SmII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[SmII]"/>
-<FIELD datatype="float" name="e_[SmII]"/>
-<FIELD datatype="short" name="n_[SmII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_SmII"/>
-<FIELD datatype="float" name="EuII"/>
-<FIELD datatype="float" name="e_EuII"/>
-<FIELD datatype="short" name="n_EuII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[EuII]"/>
-<FIELD datatype="float" name="e_[EuII]"/>
-<FIELD datatype="short" name="n_[EuII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_EuII"/>
-<FIELD datatype="float" name="GdII"/>
-<FIELD datatype="float" name="e_GdII"/>
-<FIELD datatype="short" name="n_GdII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[GdII]"/>
-<FIELD datatype="float" name="e_[GdII]"/>
-<FIELD datatype="short" name="n_[GdII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_GdII"/>
-<FIELD datatype="float" name="DyII"/>
-<FIELD datatype="float" name="e_DyII"/>
-<FIELD datatype="short" name="n_DyII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[DyII]"/>
-<FIELD datatype="float" name="e_[DyII]"/>
-<FIELD datatype="short" name="n_[DyII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_DyII"/>
-<FIELD datatype="float" name="CI"/>
-<FIELD datatype="float" name="e_CI"/>
-<FIELD datatype="short" name="n_CI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CI]"/>
-<FIELD datatype="float" name="e_[CI]"/>
-<FIELD datatype="short" name="n_[CI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CI"/>
-<FIELD datatype="float" name="CI2"/>
-<FIELD datatype="float" name="e_CI2"/>
-<FIELD datatype="short" name="n_CI2">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CI2]"/>
-<FIELD datatype="float" name="e_[CI2]"/>
-<FIELD datatype="short" name="n_[CI2]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CI2"/>
-<FIELD datatype="float" name="OI"/>
-<FIELD datatype="float" name="e_OI"/>
-<FIELD datatype="short" name="n_OI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[OI]"/>
-<FIELD datatype="float" name="e_[OI]"/>
-<FIELD datatype="short" name="n_[OI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_OI"/>
-<FIELD datatype="float" name="NaI"/>
-<FIELD datatype="float" name="e_NaI"/>
-<FIELD datatype="short" name="n_NaI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[NaI]"/>
-<FIELD datatype="float" name="e_[NaI]"/>
-<FIELD datatype="short" name="n_[NaI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_NaI"/>
-<FIELD datatype="float" name="MgI"/>
-<FIELD datatype="float" name="e_MgI"/>
-<FIELD datatype="short" name="n_MgI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[MgI]"/>
-<FIELD datatype="float" name="e_[MgI]"/>
-<FIELD datatype="short" name="n_[MgI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_MgI"/>
-<FIELD datatype="float" name="AlI"/>
-<FIELD datatype="float" name="e_AlI"/>
-<FIELD datatype="float" name="n_AlI"/>
-<FIELD datatype="float" name="[AlI]"/>
-<FIELD datatype="float" name="e_[AlI]"/>
-<FIELD datatype="float" name="n_[AlI]"/>
-<FIELD datatype="float" name="err_AlI"/>
-<FIELD datatype="float" name="SiI"/>
-<FIELD datatype="float" name="e_SiI"/>
-<FIELD datatype="short" name="n_SiI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[SiI]"/>
-<FIELD datatype="float" name="e_[SiI]"/>
-<FIELD datatype="short" name="n_[SiI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_SiI"/>
-<FIELD datatype="float" name="SI"/>
-<FIELD datatype="float" name="e_SI"/>
-<FIELD datatype="short" name="n_SI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[SI]"/>
-<FIELD datatype="float" name="e_[SI]"/>
-<FIELD datatype="short" name="n_[SI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_SI"/>
-<FIELD datatype="float" name="CaI"/>
-<FIELD datatype="float" name="e_CaI"/>
-<FIELD datatype="short" name="n_CaI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CaI]"/>
-<FIELD datatype="float" name="e_[CaI]"/>
-<FIELD datatype="short" name="n_[CaI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CaI"/>
-<FIELD datatype="float" name="ScI"/>
-<FIELD datatype="float" name="e_ScI"/>
-<FIELD datatype="short" name="n_ScI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[ScI]"/>
-<FIELD datatype="float" name="e_[ScI]"/>
-<FIELD datatype="short" name="n_[ScI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_ScI"/>
-<FIELD datatype="float" name="ScII"/>
-<FIELD datatype="float" name="e_ScII"/>
-<FIELD datatype="short" name="n_ScII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[ScII]"/>
-<FIELD datatype="float" name="e_[ScII]"/>
-<FIELD datatype="short" name="n_[ScII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_ScII"/>
-<FIELD datatype="float" name="TiI"/>
-<FIELD datatype="float" name="e_TiI"/>
-<FIELD datatype="short" name="n_TiI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[TiI]"/>
-<FIELD datatype="float" name="e_[TiI]"/>
-<FIELD datatype="short" name="n_[TiI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_TiI"/>
-<FIELD datatype="float" name="TiII"/>
-<FIELD datatype="float" name="e_TiII"/>
-<FIELD datatype="short" name="n_TiII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[TiII]"/>
-<FIELD datatype="float" name="e_[TiII]"/>
-<FIELD datatype="short" name="n_[TiII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_TiII"/>
-<FIELD datatype="float" name="VI"/>
-<FIELD datatype="float" name="e_VI"/>
-<FIELD datatype="short" name="n_VI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[VI]"/>
-<FIELD datatype="float" name="e_[VI]"/>
-<FIELD datatype="short" name="n_[VI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_VI"/>
-<FIELD datatype="float" name="CrI"/>
-<FIELD datatype="float" name="e_CrI"/>
-<FIELD datatype="short" name="n_CrI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CrI]"/>
-<FIELD datatype="float" name="e_[CrI]"/>
-<FIELD datatype="short" name="n_[CrI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CrI"/>
-<FIELD datatype="float" name="CrII"/>
-<FIELD datatype="float" name="e_CrII"/>
-<FIELD datatype="short" name="n_CrII">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CrII]"/>
-<FIELD datatype="float" name="e_[CrII]"/>
-<FIELD datatype="short" name="n_[CrII]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CrII"/>
-<FIELD datatype="float" name="MnI"/>
-<FIELD datatype="float" name="e_MnI"/>
-<FIELD datatype="short" name="n_MnI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[MnI]"/>
-<FIELD datatype="float" name="e_[MnI]"/>
-<FIELD datatype="short" name="n_[MnI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_MnI"/>
-<FIELD datatype="float" name="CoI"/>
-<FIELD datatype="float" name="e_CoI"/>
-<FIELD datatype="short" name="n_CoI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CoI]"/>
-<FIELD datatype="float" name="e_[CoI]"/>
-<FIELD datatype="short" name="n_[CoI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CoI"/>
-<FIELD datatype="float" name="NiI"/>
-<FIELD datatype="float" name="e_NiI"/>
-<FIELD datatype="short" name="n_NiI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[NiI]"/>
-<FIELD datatype="float" name="e_[NiI]"/>
-<FIELD datatype="short" name="n_[NiI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_NiI"/>
-<FIELD datatype="float" name="CuI"/>
-<FIELD datatype="float" name="e_CuI"/>
-<FIELD datatype="short" name="n_CuI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CuI]"/>
-<FIELD datatype="float" name="e_[CuI]"/>
-<FIELD datatype="short" name="n_[CuI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CuI"/>
-<FIELD datatype="float" name="ZnI"/>
-<FIELD datatype="float" name="e_ZnI"/>
-<FIELD datatype="short" name="n_ZnI">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[ZnI]"/>
-<FIELD datatype="float" name="e_[ZnI]"/>
-<FIELD datatype="short" name="n_[ZnI]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_ZnI"/>
-<FIELD datatype="float" name="CH"/>
-<FIELD datatype="float" name="e_CH"/>
-<FIELD datatype="short" name="n_CH">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="[CH]"/>
-<FIELD datatype="float" name="e_[CH]"/>
-<FIELD datatype="short" name="n_[CH]">
-<VALUES null='-32768'/>
-</FIELD>
-<FIELD datatype="float" name="err_CH"/>
-<FIELD datatype="float" name="CH2"/>
-<FIELD datatype="float" name="e_CH2"/>
-<FIELD datatype="float" name="[CH2]"/>
-<FIELD datatype="float" name="e_[CH2]"/>
-<FIELD datatype="float" name="err_CH2"/>
-<FIELD datatype="short" name="binarity">
-<VALUES null='-32768'/>
-</FIELD>
-<!-- Dummy VOTable - no DATA element -->
-</TABLE>
-</RESOURCE>
-</VOTABLE>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional table                            NAXIS1  =                 1657 / width of table in bytes                        NAXIS2  =                   78 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group                                 TFIELDS =                  358 / number of columns                              EXTNAME = 'Joined  '           / table name                                     TTYPE1  = 'solution_id'        / label for column 1                             TFORM1  = 'K       '           / format for column 1                            TTYPE2  = 'designation'        / label for column 2                             TFORM2  = '28A     '           / format for column 2                            TTYPE3  = 'source_id'          / label for column 3                             TFORM3  = 'K       '           / format for column 3                            TTYPE4  = 'random_index'       / label for column 4                             TFORM4  = 'J       '           / format for column 4                            TTYPE5  = 'ref_epoch'          / label for column 5                             TFORM5  = 'E       '           / format for column 5                            TTYPE6  = 'ra      '           / label for column 6                             TFORM6  = 'D       '           / format for column 6                            TTYPE7  = 'ra_error'           / label for column 7                             TFORM7  = 'D       '           / format for column 7                            TTYPE8  = 'dec     '           / label for column 8                             TFORM8  = 'D       '           / format for column 8                            TTYPE9  = 'dec_error'          / label for column 9                             TFORM9  = 'D       '           / format for column 9                            TTYPE10 = 'parallax'           / label for column 10                            TFORM10 = 'D       '           / format for column 10                           TTYPE11 = 'parallax_error'     / label for column 11                            TFORM11 = 'D       '           / format for column 11                           TTYPE12 = 'parallax_over_error' / label for column 12                           TFORM12 = 'D       '           / format for column 12                           TTYPE13 = 'pmra    '           / label for column 13                            TFORM13 = 'D       '           / format for column 13                           TTYPE14 = 'pmra_error'         / label for column 14                            TFORM14 = 'D       '           / format for column 14                           TTYPE15 = 'pmdec   '           / label for column 15                            TFORM15 = 'D       '           / format for column 15                           TTYPE16 = 'pmdec_error'        / label for column 16                            TFORM16 = 'D       '           / format for column 16                           TTYPE17 = 'ra_dec_corr'        / label for column 17                            TFORM17 = 'D       '           / format for column 17                           TTYPE18 = 'ra_parallax_corr'   / label for column 18                            TFORM18 = 'D       '           / format for column 18                           TTYPE19 = 'ra_pmra_corr'       / label for column 19                            TFORM19 = 'D       '           / format for column 19                           TTYPE20 = 'ra_pmdec_corr'      / label for column 20                            TFORM20 = 'D       '           / format for column 20                           TTYPE21 = 'dec_parallax_corr'  / label for column 21                            TFORM21 = 'D       '           / format for column 21                           TTYPE22 = 'dec_pmra_corr'      / label for column 22                            TFORM22 = 'D       '           / format for column 22                           TTYPE23 = 'dec_pmdec_corr'     / label for column 23                            TFORM23 = 'D       '           / format for column 23                           TTYPE24 = 'parallax_pmra_corr' / label for column 24                            TFORM24 = 'D       '           / format for column 24                           TTYPE25 = 'parallax_pmdec_corr' / label for column 25                           TFORM25 = 'D       '           / format for column 25                           TTYPE26 = 'pmra_pmdec_corr'    / label for column 26                            TFORM26 = 'D       '           / format for column 26                           TTYPE27 = 'astrometric_n_obs_al' / label for column 27                          TFORM27 = 'I       '           / format for column 27                           TTYPE28 = 'astrometric_n_obs_ac' / label for column 28                          TFORM28 = 'I       '           / format for column 28                           TTYPE29 = 'astrometric_n_good_obs_al' / label for column 29                     TFORM29 = 'I       '           / format for column 29                           TTYPE30 = 'astrometric_n_bad_obs_al' / label for column 30                      TFORM30 = 'I       '           / format for column 30                           TTYPE31 = 'astrometric_gof_al' / label for column 31                            TFORM31 = 'D       '           / format for column 31                           TTYPE32 = 'astrometric_chi2_al' / label for column 32                           TFORM32 = 'D       '           / format for column 32                           TTYPE33 = 'astrometric_excess_noise' / label for column 33                      TFORM33 = 'D       '           / format for column 33                           TTYPE34 = 'astrometric_excess_noise_sig' / label for column 34                  TFORM34 = 'D       '           / format for column 34                           TTYPE35 = 'astrometric_params_solved' / label for column 35                     TFORM35 = 'I       '           / format for column 35                           TTYPE36 = 'astrometric_primary_flag' / label for column 36                      TFORM36 = 'L       '           / format for column 36                           TTYPE37 = 'astrometric_weight_al' / label for column 37                         TFORM37 = 'D       '           / format for column 37                           TTYPE38 = 'astrometric_pseudo_colour' / label for column 38                     TFORM38 = 'D       '           / format for column 38                           TTYPE39 = 'astrometric_pseudo_colour_error' / label for column 39               TFORM39 = 'D       '           / format for column 39                           TTYPE40 = 'mean_varpi_factor_al' / label for column 40                          TFORM40 = 'D       '           / format for column 40                           TTYPE41 = 'astrometric_matched_observations' / label for column 41              TFORM41 = 'I       '           / format for column 41                           TTYPE42 = 'visibility_periods_used' / label for column 42                       TFORM42 = 'I       '           / format for column 42                           TTYPE43 = 'astrometric_sigma5d_max' / label for column 43                       TFORM43 = 'D       '           / format for column 43                           TTYPE44 = 'frame_rotator_object_type' / label for column 44                     TFORM44 = 'I       '           / format for column 44                           TTYPE45 = 'matched_observations' / label for column 45                          TFORM45 = 'I       '           / format for column 45                           TTYPE46 = 'duplicated_source'  / label for column 46                            TFORM46 = 'L       '           / format for column 46                           TTYPE47 = 'phot_g_n_obs'       / label for column 47                            TFORM47 = 'I       '           / format for column 47                           TTYPE48 = 'phot_g_mean_flux'   / label for column 48                            TFORM48 = 'D       '           / format for column 48                           TTYPE49 = 'phot_g_mean_flux_error' / label for column 49                        TFORM49 = 'D       '           / format for column 49                           TTYPE50 = 'phot_g_mean_flux_over_error' / label for column 50                   TFORM50 = 'D       '           / format for column 50                           TTYPE51 = 'phot_g_mean_mag'    / label for column 51                            TFORM51 = 'D       '           / format for column 51                           TTYPE52 = 'phot_bp_n_obs'      / label for column 52                            TFORM52 = 'I       '           / format for column 52                           TTYPE53 = 'phot_bp_mean_flux'  / label for column 53                            TFORM53 = 'D       '           / format for column 53                           TTYPE54 = 'phot_bp_mean_flux_error' / label for column 54                       TFORM54 = 'D       '           / format for column 54                           TTYPE55 = 'phot_bp_mean_flux_over_error' / label for column 55                  TFORM55 = 'D       '           / format for column 55                           TTYPE56 = 'phot_bp_mean_mag'   / label for column 56                            TFORM56 = 'D       '           / format for column 56                           TTYPE57 = 'phot_rp_n_obs'      / label for column 57                            TFORM57 = 'I       '           / format for column 57                           TTYPE58 = 'phot_rp_mean_flux'  / label for column 58                            TFORM58 = 'D       '           / format for column 58                           TTYPE59 = 'phot_rp_mean_flux_error' / label for column 59                       TFORM59 = 'D       '           / format for column 59                           TTYPE60 = 'phot_rp_mean_flux_over_error' / label for column 60                  TFORM60 = 'D       '           / format for column 60                           TTYPE61 = 'phot_rp_mean_mag'   / label for column 61                            TFORM61 = 'D       '           / format for column 61                           TTYPE62 = 'phot_bp_rp_excess_factor' / label for column 62                      TFORM62 = 'D       '           / format for column 62                           TTYPE63 = 'phot_proc_mode'     / label for column 63                            TFORM63 = 'I       '           / format for column 63                           TTYPE64 = 'bp_rp   '           / label for column 64                            TFORM64 = 'D       '           / format for column 64                           TTYPE65 = 'bp_g    '           / label for column 65                            TFORM65 = 'D       '           / format for column 65                           TTYPE66 = 'g_rp    '           / label for column 66                            TFORM66 = 'D       '           / format for column 66                           TTYPE67 = 'radial_velocity'    / label for column 67                            TFORM67 = 'D       '           / format for column 67                           TTYPE68 = 'radial_velocity_error' / label for column 68                         TFORM68 = 'D       '           / format for column 68                           TTYPE69 = 'rv_nb_transits'     / label for column 69                            TFORM69 = 'I       '           / format for column 69                           TTYPE70 = 'rv_template_teff'   / label for column 70                            TFORM70 = 'E       '           / format for column 70                           TTYPE71 = 'rv_template_logg'   / label for column 71                            TFORM71 = 'E       '           / format for column 71                           TTYPE72 = 'rv_template_fe_h'   / label for column 72                            TFORM72 = 'E       '           / format for column 72                           TTYPE73 = 'phot_variable_flag' / label for column 73                            TFORM73 = '13A     '           / format for column 73                           TTYPE74 = 'l       '           / label for column 74                            TFORM74 = 'D       '           / format for column 74                           TTYPE75 = 'b       '           / label for column 75                            TFORM75 = 'D       '           / format for column 75                           TTYPE76 = 'ecl_lon '           / label for column 76                            TFORM76 = 'D       '           / format for column 76                           TTYPE77 = 'ecl_lat '           / label for column 77                            TFORM77 = 'D       '           / format for column 77                           TTYPE78 = 'priam_flags'        / label for column 78                            TFORM78 = 'J       '           / format for column 78                           TTYPE79 = 'teff_val'           / label for column 79                            TFORM79 = 'D       '           / format for column 79                           TTYPE80 = 'teff_percentile_lower' / label for column 80                         TFORM80 = 'D       '           / format for column 80                           TTYPE81 = 'teff_percentile_upper' / label for column 81                         TFORM81 = 'D       '           / format for column 81                           TTYPE82 = 'a_g_val '           / label for column 82                            TFORM82 = 'D       '           / format for column 82                           TTYPE83 = 'a_g_percentile_lower' / label for column 83                          TFORM83 = 'D       '           / format for column 83                           TTYPE84 = 'a_g_percentile_upper' / label for column 84                          TFORM84 = 'D       '           / format for column 84                           TTYPE85 = 'e_bp_min_rp_val'    / label for column 85                            TFORM85 = 'D       '           / format for column 85                           TTYPE86 = 'e_bp_min_rp_percentile_lower' / label for column 86                  TFORM86 = 'D       '           / format for column 86                           TTYPE87 = 'e_bp_min_rp_percentile_upper' / label for column 87                  TFORM87 = 'D       '           / format for column 87                           TTYPE88 = 'flame_flags'        / label for column 88                            TFORM88 = 'J       '           / format for column 88                           TTYPE89 = 'radius_val'         / label for column 89                            TFORM89 = 'D       '           / format for column 89                           TTYPE90 = 'radius_percentile_lower' / label for column 90                       TFORM90 = 'D       '           / format for column 90                           TTYPE91 = 'radius_percentile_upper' / label for column 91                       TFORM91 = 'D       '           / format for column 91                           TTYPE92 = 'lum_val '           / label for column 92                            TFORM92 = 'D       '           / format for column 92                           TTYPE93 = 'lum_percentile_lower' / label for column 93                          TFORM93 = 'D       '           / format for column 93                           TTYPE94 = 'lum_percentile_upper' / label for column 94                          TFORM94 = 'D       '           / format for column 94                           TTYPE95 = 'datalink_url'       / label for column 95                            TFORM95 = '77A     '           / format for column 95                           TTYPE96 = 'epoch_photometry_url' / label for column 96                          TFORM96 = 'L       '           / format for column 96                           TTYPE97 = 'source_id_2'        / label for column 97                            TFORM97 = 'K       '           / format for column 97                           TNULL97 = -9223372036854775808 / blank value for column 97                      TTYPE98 = 'original_ext_source_id' / label for column 98                        TFORM98 = 'J       '           / format for column 98                           TNULL98 =          -2147483648 / blank value for column 98                      TTYPE99 = 'angular_distance'   / label for column 99                            TFORM99 = 'D       '           / format for column 99                           TTYPE100= 'number_of_neighbours' / label for column 100                         TFORM100= 'I       '           / format for column 100                          TNULL100=               -32768 / blank value for column 100                     TTYPE101= 'gaia_astrometric_params' / label for column 101                      TFORM101= 'I       '           / format for column 101                          TNULL101=               -32768 / blank value for column 101                     TTYPE102= 'HIP     '           / label for column 102                           TFORM102= '9A      '           / format for column 102                          TTYPE103= 'dist    '           / label for column 103                           TFORM103= 'D       '           / format for column 103                          TTYPE104= 'id      '           / label for column 104                           TFORM104= '9A      '           / format for column 104                          TTYPE105= 'teff    '           / label for column 105                           TFORM105= 'I       '           / format for column 105                          TTYPE106= 'logg    '           / label for column 106                           TFORM106= 'E       '           / format for column 106                          TTYPE107= 'feh     '           / label for column 107                           TFORM107= 'E       '           / format for column 107                          TTYPE108= 'vt      '           / label for column 108                           TFORM108= 'E       '           / format for column 108                          TTYPE109= 'err_teff'           / label for column 109                           TFORM109= 'I       '           / format for column 109                          TTYPE110= 'err_logg'           / label for column 110                           TFORM110= 'E       '           / format for column 110                          TTYPE111= 'err_feh '           / label for column 111                           TFORM111= 'E       '           / format for column 111                          TTYPE112= 'err_vt  '           / label for column 112                           TFORM112= 'E       '           / format for column 112                          TTYPE113= 'age_mean'           / label for column 113                           TFORM113= 'E       '           / format for column 113                          TTYPE114= 'age_std '           / label for column 114                           TFORM114= 'E       '           / format for column 114                          TTYPE115= 'SrI     '           / label for column 115                           TFORM115= 'E       '           / format for column 115                          TTYPE116= 'e_SrI   '           / label for column 116                           TFORM116= 'E       '           / format for column 116                          TTYPE117= 'n_SrI   '           / label for column 117                           TFORM117= 'I       '           / format for column 117                          TTYPE118= '[SrI]   '           / label for column 118                           TFORM118= 'E       '           / format for column 118                          TTYPE119= 'e_[SrI] '           / label for column 119                           TFORM119= 'E       '           / format for column 119                          TTYPE120= 'n_[SrI] '           / label for column 120                           TFORM120= 'I       '           / format for column 120                          TTYPE121= 'err_SrI '           / label for column 121                           TFORM121= 'E       '           / format for column 121                          TTYPE122= 'YII     '           / label for column 122                           TFORM122= 'E       '           / format for column 122                          TTYPE123= 'e_YII   '           / label for column 123                           TFORM123= 'E       '           / format for column 123                          TTYPE124= 'n_YII   '           / label for column 124                           TFORM124= 'I       '           / format for column 124                          TTYPE125= '[YII]   '           / label for column 125                           TFORM125= 'E       '           / format for column 125                          TTYPE126= 'e_[YII] '           / label for column 126                           TFORM126= 'E       '           / format for column 126                          TTYPE127= 'n_[YII] '           / label for column 127                           TFORM127= 'I       '           / format for column 127                          TTYPE128= 'err_YII '           / label for column 128                           TFORM128= 'E       '           / format for column 128                          TTYPE129= 'ZrII    '           / label for column 129                           TFORM129= 'E       '           / format for column 129                          TTYPE130= 'e_ZrII  '           / label for column 130                           TFORM130= 'E       '           / format for column 130                          TTYPE131= 'n_ZrII  '           / label for column 131                           TFORM131= 'I       '           / format for column 131                          TTYPE132= '[ZrII]  '           / label for column 132                           TFORM132= 'E       '           / format for column 132                          TTYPE133= 'e_[ZrII]'           / label for column 133                           TFORM133= 'E       '           / format for column 133                          TTYPE134= 'n_[ZrII]'           / label for column 134                           TFORM134= 'I       '           / format for column 134                          TTYPE135= 'err_ZrII'           / label for column 135                           TFORM135= 'E       '           / format for column 135                          TTYPE136= 'BaII    '           / label for column 136                           TFORM136= 'E       '           / format for column 136                          TTYPE137= 'e_BaII  '           / label for column 137                           TFORM137= 'E       '           / format for column 137                          TTYPE138= 'n_BaII  '           / label for column 138                           TFORM138= 'I       '           / format for column 138                          TTYPE139= '[BaII]  '           / label for column 139                           TFORM139= 'E       '           / format for column 139                          TTYPE140= 'e_[BaII]'           / label for column 140                           TFORM140= 'E       '           / format for column 140                          TTYPE141= 'n_[BaII]'           / label for column 141                           TFORM141= 'I       '           / format for column 141                          TTYPE142= 'err_BaII'           / label for column 142                           TFORM142= 'E       '           / format for column 142                          TTYPE143= 'LaII    '           / label for column 143                           TFORM143= 'E       '           / format for column 143                          TTYPE144= 'e_LaII  '           / label for column 144                           TFORM144= 'E       '           / format for column 144                          TTYPE145= 'n_LaII  '           / label for column 145                           TFORM145= 'I       '           / format for column 145                          TTYPE146= '[LaII]  '           / label for column 146                           TFORM146= 'E       '           / format for column 146                          TTYPE147= 'e_[LaII]'           / label for column 147                           TFORM147= 'E       '           / format for column 147                          TTYPE148= 'n_[LaII]'           / label for column 148                           TFORM148= 'I       '           / format for column 148                          TTYPE149= 'err_LaII'           / label for column 149                           TFORM149= 'E       '           / format for column 149                          TTYPE150= 'CeII    '           / label for column 150                           TFORM150= 'E       '           / format for column 150                          TTYPE151= 'e_CeII  '           / label for column 151                           TFORM151= 'E       '           / format for column 151                          TTYPE152= 'n_CeII  '           / label for column 152                           TFORM152= 'I       '           / format for column 152                          TTYPE153= '[CeII]  '           / label for column 153                           TFORM153= 'E       '           / format for column 153                          TTYPE154= 'e_[CeII]'           / label for column 154                           TFORM154= 'E       '           / format for column 154                          TTYPE155= 'n_[CeII]'           / label for column 155                           TFORM155= 'I       '           / format for column 155                          TTYPE156= 'err_CeII'           / label for column 156                           TFORM156= 'E       '           / format for column 156                          TTYPE157= 'PrII    '           / label for column 157                           TFORM157= 'E       '           / format for column 157                          TTYPE158= 'e_PrII  '           / label for column 158                           TFORM158= 'E       '           / format for column 158                          TTYPE159= 'n_PrII  '           / label for column 159                           TFORM159= 'I       '           / format for column 159                          TTYPE160= '[PrII]  '           / label for column 160                           TFORM160= 'E       '           / format for column 160                          TTYPE161= 'e_[PrII]'           / label for column 161                           TFORM161= 'E       '           / format for column 161                          TTYPE162= 'n_[PrII]'           / label for column 162                           TFORM162= 'I       '           / format for column 162                          TTYPE163= 'err_PrII'           / label for column 163                           TFORM163= 'E       '           / format for column 163                          TTYPE164= 'NdII    '           / label for column 164                           TFORM164= 'E       '           / format for column 164                          TTYPE165= 'e_NdII  '           / label for column 165                           TFORM165= 'E       '           / format for column 165                          TTYPE166= 'n_NdII  '           / label for column 166                           TFORM166= 'I       '           / format for column 166                          TTYPE167= '[NdII]  '           / label for column 167                           TFORM167= 'E       '           / format for column 167                          TTYPE168= 'e_[NdII]'           / label for column 168                           TFORM168= 'E       '           / format for column 168                          TTYPE169= 'n_[NdII]'           / label for column 169                           TFORM169= 'I       '           / format for column 169                          TTYPE170= 'err_NdII'           / label for column 170                           TFORM170= 'E       '           / format for column 170                          TTYPE171= 'SmII    '           / label for column 171                           TFORM171= 'E       '           / format for column 171                          TTYPE172= 'e_SmII  '           / label for column 172                           TFORM172= 'E       '           / format for column 172                          TTYPE173= 'n_SmII  '           / label for column 173                           TFORM173= 'I       '           / format for column 173                          TTYPE174= '[SmII]  '           / label for column 174                           TFORM174= 'E       '           / format for column 174                          TTYPE175= 'e_[SmII]'           / label for column 175                           TFORM175= 'E       '           / format for column 175                          TTYPE176= 'n_[SmII]'           / label for column 176                           TFORM176= 'I       '           / format for column 176                          TTYPE177= 'err_SmII'           / label for column 177                           TFORM177= 'E       '           / format for column 177                          TTYPE178= 'EuII    '           / label for column 178                           TFORM178= 'E       '           / format for column 178                          TTYPE179= 'e_EuII  '           / label for column 179                           TFORM179= 'E       '           / format for column 179                          TTYPE180= 'n_EuII  '           / label for column 180                           TFORM180= 'I       '           / format for column 180                          TTYPE181= '[EuII]  '           / label for column 181                           TFORM181= 'E       '           / format for column 181                          TTYPE182= 'e_[EuII]'           / label for column 182                           TFORM182= 'E       '           / format for column 182                          TTYPE183= 'n_[EuII]'           / label for column 183                           TFORM183= 'I       '           / format for column 183                          TTYPE184= 'err_EuII'           / label for column 184                           TFORM184= 'E       '           / format for column 184                          TTYPE185= 'GdII    '           / label for column 185                           TFORM185= 'E       '           / format for column 185                          TTYPE186= 'e_GdII  '           / label for column 186                           TFORM186= 'E       '           / format for column 186                          TTYPE187= 'n_GdII  '           / label for column 187                           TFORM187= 'I       '           / format for column 187                          TTYPE188= '[GdII]  '           / label for column 188                           TFORM188= 'E       '           / format for column 188                          TTYPE189= 'e_[GdII]'           / label for column 189                           TFORM189= 'E       '           / format for column 189                          TTYPE190= 'n_[GdII]'           / label for column 190                           TFORM190= 'I       '           / format for column 190                          TTYPE191= 'err_GdII'           / label for column 191                           TFORM191= 'E       '           / format for column 191                          TTYPE192= 'DyII    '           / label for column 192                           TFORM192= 'E       '           / format for column 192                          TTYPE193= 'e_DyII  '           / label for column 193                           TFORM193= 'E       '           / format for column 193                          TTYPE194= 'n_DyII  '           / label for column 194                           TFORM194= 'I       '           / format for column 194                          TTYPE195= '[DyII]  '           / label for column 195                           TFORM195= 'E       '           / format for column 195                          TTYPE196= 'e_[DyII]'           / label for column 196                           TFORM196= 'E       '           / format for column 196                          TTYPE197= 'n_[DyII]'           / label for column 197                           TFORM197= 'I       '           / format for column 197                          TTYPE198= 'err_DyII'           / label for column 198                           TFORM198= 'E       '           / format for column 198                          TTYPE199= 'CI      '           / label for column 199                           TFORM199= 'E       '           / format for column 199                          TTYPE200= 'e_CI    '           / label for column 200                           TFORM200= 'E       '           / format for column 200                          TTYPE201= 'n_CI    '           / label for column 201                           TFORM201= 'I       '           / format for column 201                          TTYPE202= '[CI]    '           / label for column 202                           TFORM202= 'E       '           / format for column 202                          TTYPE203= 'e_[CI]  '           / label for column 203                           TFORM203= 'E       '           / format for column 203                          TTYPE204= 'n_[CI]  '           / label for column 204                           TFORM204= 'I       '           / format for column 204                          TTYPE205= 'err_CI  '           / label for column 205                           TFORM205= 'E       '           / format for column 205                          TTYPE206= 'CI2     '           / label for column 206                           TFORM206= 'E       '           / format for column 206                          TTYPE207= 'e_CI2   '           / label for column 207                           TFORM207= 'E       '           / format for column 207                          TTYPE208= 'n_CI2   '           / label for column 208                           TFORM208= 'I       '           / format for column 208                          TTYPE209= '[CI2]   '           / label for column 209                           TFORM209= 'E       '           / format for column 209                          TTYPE210= 'e_[CI2] '           / label for column 210                           TFORM210= 'E       '           / format for column 210                          TTYPE211= 'n_[CI2] '           / label for column 211                           TFORM211= 'I       '           / format for column 211                          TTYPE212= 'err_CI2 '           / label for column 212                           TFORM212= 'E       '           / format for column 212                          TTYPE213= 'OI      '           / label for column 213                           TFORM213= 'E       '           / format for column 213                          TTYPE214= 'e_OI    '           / label for column 214                           TFORM214= 'E       '           / format for column 214                          TTYPE215= 'n_OI    '           / label for column 215                           TFORM215= 'I       '           / format for column 215                          TTYPE216= '[OI]    '           / label for column 216                           TFORM216= 'E       '           / format for column 216                          TTYPE217= 'e_[OI]  '           / label for column 217                           TFORM217= 'E       '           / format for column 217                          TTYPE218= 'n_[OI]  '           / label for column 218                           TFORM218= 'I       '           / format for column 218                          TTYPE219= 'err_OI  '           / label for column 219                           TFORM219= 'E       '           / format for column 219                          TTYPE220= 'NaI     '           / label for column 220                           TFORM220= 'E       '           / format for column 220                          TTYPE221= 'e_NaI   '           / label for column 221                           TFORM221= 'E       '           / format for column 221                          TTYPE222= 'n_NaI   '           / label for column 222                           TFORM222= 'I       '           / format for column 222                          TTYPE223= '[NaI]   '           / label for column 223                           TFORM223= 'E       '           / format for column 223                          TTYPE224= 'e_[NaI] '           / label for column 224                           TFORM224= 'E       '           / format for column 224                          TTYPE225= 'n_[NaI] '           / label for column 225                           TFORM225= 'I       '           / format for column 225                          TTYPE226= 'err_NaI '           / label for column 226                           TFORM226= 'E       '           / format for column 226                          TTYPE227= 'MgI     '           / label for column 227                           TFORM227= 'E       '           / format for column 227                          TTYPE228= 'e_MgI   '           / label for column 228                           TFORM228= 'E       '           / format for column 228                          TTYPE229= 'n_MgI   '           / label for column 229                           TFORM229= 'I       '           / format for column 229                          TTYPE230= '[MgI]   '           / label for column 230                           TFORM230= 'E       '           / format for column 230                          TTYPE231= 'e_[MgI] '           / label for column 231                           TFORM231= 'E       '           / format for column 231                          TTYPE232= 'n_[MgI] '           / label for column 232                           TFORM232= 'I       '           / format for column 232                          TTYPE233= 'err_MgI '           / label for column 233                           TFORM233= 'E       '           / format for column 233                          TTYPE234= 'AlI     '           / label for column 234                           TFORM234= 'E       '           / format for column 234                          TTYPE235= 'e_AlI   '           / label for column 235                           TFORM235= 'E       '           / format for column 235                          TTYPE236= 'n_AlI   '           / label for column 236                           TFORM236= 'E       '           / format for column 236                          TTYPE237= '[AlI]   '           / label for column 237                           TFORM237= 'E       '           / format for column 237                          TTYPE238= 'e_[AlI] '           / label for column 238                           TFORM238= 'E       '           / format for column 238                          TTYPE239= 'n_[AlI] '           / label for column 239                           TFORM239= 'E       '           / format for column 239                          TTYPE240= 'err_AlI '           / label for column 240                           TFORM240= 'E       '           / format for column 240                          TTYPE241= 'SiI     '           / label for column 241                           TFORM241= 'E       '           / format for column 241                          TTYPE242= 'e_SiI   '           / label for column 242                           TFORM242= 'E       '           / format for column 242                          TTYPE243= 'n_SiI   '           / label for column 243                           TFORM243= 'I       '           / format for column 243                          TTYPE244= '[SiI]   '           / label for column 244                           TFORM244= 'E       '           / format for column 244                          TTYPE245= 'e_[SiI] '           / label for column 245                           TFORM245= 'E       '           / format for column 245                          TTYPE246= 'n_[SiI] '           / label for column 246                           TFORM246= 'I       '           / format for column 246                          TTYPE247= 'err_SiI '           / label for column 247                           TFORM247= 'E       '           / format for column 247                          TTYPE248= 'SI      '           / label for column 248                           TFORM248= 'E       '           / format for column 248                          TTYPE249= 'e_SI    '           / label for column 249                           TFORM249= 'E       '           / format for column 249                          TTYPE250= 'n_SI    '           / label for column 250                           TFORM250= 'I       '           / format for column 250                          TTYPE251= '[SI]    '           / label for column 251                           TFORM251= 'E       '           / format for column 251                          TTYPE252= 'e_[SI]  '           / label for column 252                           TFORM252= 'E       '           / format for column 252                          TTYPE253= 'n_[SI]  '           / label for column 253                           TFORM253= 'I       '           / format for column 253                          TTYPE254= 'err_SI  '           / label for column 254                           TFORM254= 'E       '           / format for column 254                          TTYPE255= 'CaI     '           / label for column 255                           TFORM255= 'E       '           / format for column 255                          TTYPE256= 'e_CaI   '           / label for column 256                           TFORM256= 'E       '           / format for column 256                          TTYPE257= 'n_CaI   '           / label for column 257                           TFORM257= 'I       '           / format for column 257                          TTYPE258= '[CaI]   '           / label for column 258                           TFORM258= 'E       '           / format for column 258                          TTYPE259= 'e_[CaI] '           / label for column 259                           TFORM259= 'E       '           / format for column 259                          TTYPE260= 'n_[CaI] '           / label for column 260                           TFORM260= 'I       '           / format for column 260                          TTYPE261= 'err_CaI '           / label for column 261                           TFORM261= 'E       '           / format for column 261                          TTYPE262= 'ScI     '           / label for column 262                           TFORM262= 'E       '           / format for column 262                          TTYPE263= 'e_ScI   '           / label for column 263                           TFORM263= 'E       '           / format for column 263                          TTYPE264= 'n_ScI   '           / label for column 264                           TFORM264= 'I       '           / format for column 264                          TTYPE265= '[ScI]   '           / label for column 265                           TFORM265= 'E       '           / format for column 265                          TTYPE266= 'e_[ScI] '           / label for column 266                           TFORM266= 'E       '           / format for column 266                          TTYPE267= 'n_[ScI] '           / label for column 267                           TFORM267= 'I       '           / format for column 267                          TTYPE268= 'err_ScI '           / label for column 268                           TFORM268= 'E       '           / format for column 268                          TTYPE269= 'ScII    '           / label for column 269                           TFORM269= 'E       '           / format for column 269                          TTYPE270= 'e_ScII  '           / label for column 270                           TFORM270= 'E       '           / format for column 270                          TTYPE271= 'n_ScII  '           / label for column 271                           TFORM271= 'I       '           / format for column 271                          TTYPE272= '[ScII]  '           / label for column 272                           TFORM272= 'E       '           / format for column 272                          TTYPE273= 'e_[ScII]'           / label for column 273                           TFORM273= 'E       '           / format for column 273                          TTYPE274= 'n_[ScII]'           / label for column 274                           TFORM274= 'I       '           / format for column 274                          TTYPE275= 'err_ScII'           / label for column 275                           TFORM275= 'E       '           / format for column 275                          TTYPE276= 'TiI     '           / label for column 276                           TFORM276= 'E       '           / format for column 276                          TTYPE277= 'e_TiI   '           / label for column 277                           TFORM277= 'E       '           / format for column 277                          TTYPE278= 'n_TiI   '           / label for column 278                           TFORM278= 'I       '           / format for column 278                          TTYPE279= '[TiI]   '           / label for column 279                           TFORM279= 'E       '           / format for column 279                          TTYPE280= 'e_[TiI] '           / label for column 280                           TFORM280= 'E       '           / format for column 280                          TTYPE281= 'n_[TiI] '           / label for column 281                           TFORM281= 'I       '           / format for column 281                          TTYPE282= 'err_TiI '           / label for column 282                           TFORM282= 'E       '           / format for column 282                          TTYPE283= 'TiII    '           / label for column 283                           TFORM283= 'E       '           / format for column 283                          TTYPE284= 'e_TiII  '           / label for column 284                           TFORM284= 'E       '           / format for column 284                          TTYPE285= 'n_TiII  '           / label for column 285                           TFORM285= 'I       '           / format for column 285                          TTYPE286= '[TiII]  '           / label for column 286                           TFORM286= 'E       '           / format for column 286                          TTYPE287= 'e_[TiII]'           / label for column 287                           TFORM287= 'E       '           / format for column 287                          TTYPE288= 'n_[TiII]'           / label for column 288                           TFORM288= 'I       '           / format for column 288                          TTYPE289= 'err_TiII'           / label for column 289                           TFORM289= 'E       '           / format for column 289                          TTYPE290= 'VI      '           / label for column 290                           TFORM290= 'E       '           / format for column 290                          TTYPE291= 'e_VI    '           / label for column 291                           TFORM291= 'E       '           / format for column 291                          TTYPE292= 'n_VI    '           / label for column 292                           TFORM292= 'I       '           / format for column 292                          TTYPE293= '[VI]    '           / label for column 293                           TFORM293= 'E       '           / format for column 293                          TTYPE294= 'e_[VI]  '           / label for column 294                           TFORM294= 'E       '           / format for column 294                          TTYPE295= 'n_[VI]  '           / label for column 295                           TFORM295= 'I       '           / format for column 295                          TTYPE296= 'err_VI  '           / label for column 296                           TFORM296= 'E       '           / format for column 296                          TTYPE297= 'CrI     '           / label for column 297                           TFORM297= 'E       '           / format for column 297                          TTYPE298= 'e_CrI   '           / label for column 298                           TFORM298= 'E       '           / format for column 298                          TTYPE299= 'n_CrI   '           / label for column 299                           TFORM299= 'I       '           / format for column 299                          TTYPE300= '[CrI]   '           / label for column 300                           TFORM300= 'E       '           / format for column 300                          TTYPE301= 'e_[CrI] '           / label for column 301                           TFORM301= 'E       '           / format for column 301                          TTYPE302= 'n_[CrI] '           / label for column 302                           TFORM302= 'I       '           / format for column 302                          TTYPE303= 'err_CrI '           / label for column 303                           TFORM303= 'E       '           / format for column 303                          TTYPE304= 'CrII    '           / label for column 304                           TFORM304= 'E       '           / format for column 304                          TTYPE305= 'e_CrII  '           / label for column 305                           TFORM305= 'E       '           / format for column 305                          TTYPE306= 'n_CrII  '           / label for column 306                           TFORM306= 'I       '           / format for column 306                          TTYPE307= '[CrII]  '           / label for column 307                           TFORM307= 'E       '           / format for column 307                          TTYPE308= 'e_[CrII]'           / label for column 308                           TFORM308= 'E       '           / format for column 308                          TTYPE309= 'n_[CrII]'           / label for column 309                           TFORM309= 'I       '           / format for column 309                          TTYPE310= 'err_CrII'           / label for column 310                           TFORM310= 'E       '           / format for column 310                          TTYPE311= 'MnI     '           / label for column 311                           TFORM311= 'E       '           / format for column 311                          TTYPE312= 'e_MnI   '           / label for column 312                           TFORM312= 'E       '           / format for column 312                          TTYPE313= 'n_MnI   '           / label for column 313                           TFORM313= 'I       '           / format for column 313                          TTYPE314= '[MnI]   '           / label for column 314                           TFORM314= 'E       '           / format for column 314                          TTYPE315= 'e_[MnI] '           / label for column 315                           TFORM315= 'E       '           / format for column 315                          TTYPE316= 'n_[MnI] '           / label for column 316                           TFORM316= 'I       '           / format for column 316                          TTYPE317= 'err_MnI '           / label for column 317                           TFORM317= 'E       '           / format for column 317                          TTYPE318= 'CoI     '           / label for column 318                           TFORM318= 'E       '           / format for column 318                          TTYPE319= 'e_CoI   '           / label for column 319                           TFORM319= 'E       '           / format for column 319                          TTYPE320= 'n_CoI   '           / label for column 320                           TFORM320= 'I       '           / format for column 320                          TTYPE321= '[CoI]   '           / label for column 321                           TFORM321= 'E       '           / format for column 321                          TTYPE322= 'e_[CoI] '           / label for column 322                           TFORM322= 'E       '           / format for column 322                          TTYPE323= 'n_[CoI] '           / label for column 323                           TFORM323= 'I       '           / format for column 323                          TTYPE324= 'err_CoI '           / label for column 324                           TFORM324= 'E       '           / format for column 324                          TTYPE325= 'NiI     '           / label for column 325                           TFORM325= 'E       '           / format for column 325                          TTYPE326= 'e_NiI   '           / label for column 326                           TFORM326= 'E       '           / format for column 326                          TTYPE327= 'n_NiI   '           / label for column 327                           TFORM327= 'I       '           / format for column 327                          TTYPE328= '[NiI]   '           / label for column 328                           TFORM328= 'E       '           / format for column 328                          TTYPE329= 'e_[NiI] '           / label for column 329                           TFORM329= 'E       '           / format for column 329                          TTYPE330= 'n_[NiI] '           / label for column 330                           TFORM330= 'I       '           / format for column 330                          TTYPE331= 'err_NiI '           / label for column 331                           TFORM331= 'E       '           / format for column 331                          TTYPE332= 'CuI     '           / label for column 332                           TFORM332= 'E       '           / format for column 332                          TTYPE333= 'e_CuI   '           / label for column 333                           TFORM333= 'E       '           / format for column 333                          TTYPE334= 'n_CuI   '           / label for column 334                           TFORM334= 'I       '           / format for column 334                          TTYPE335= '[CuI]   '           / label for column 335                           TFORM335= 'E       '           / format for column 335                          TTYPE336= 'e_[CuI] '           / label for column 336                           TFORM336= 'E       '           / format for column 336                          TTYPE337= 'n_[CuI] '           / label for column 337                           TFORM337= 'I       '           / format for column 337                          TTYPE338= 'err_CuI '           / label for column 338                           TFORM338= 'E       '           / format for column 338                          TTYPE339= 'ZnI     '           / label for column 339                           TFORM339= 'E       '           / format for column 339                          TTYPE340= 'e_ZnI   '           / label for column 340                           TFORM340= 'E       '           / format for column 340                          TTYPE341= 'n_ZnI   '           / label for column 341                           TFORM341= 'I       '           / format for column 341                          TTYPE342= '[ZnI]   '           / label for column 342                           TFORM342= 'E       '           / format for column 342                          TTYPE343= 'e_[ZnI] '           / label for column 343                           TFORM343= 'E       '           / format for column 343                          TTYPE344= 'n_[ZnI] '           / label for column 344                           TFORM344= 'I       '           / format for column 344                          TTYPE345= 'err_ZnI '           / label for column 345                           TFORM345= 'E       '           / format for column 345                          TTYPE346= 'CH      '           / label for column 346                           TFORM346= 'E       '           / format for column 346                          TTYPE347= 'e_CH    '           / label for column 347                           TFORM347= 'E       '           / format for column 347                          TTYPE348= 'n_CH    '           / label for column 348                           TFORM348= 'I       '           / format for column 348                          TTYPE349= '[CH]    '           / label for column 349                           TFORM349= 'E       '           / format for column 349                          TTYPE350= 'e_[CH]  '           / label for column 350                           TFORM350= 'E       '           / format for column 350                          TTYPE351= 'n_[CH]  '           / label for column 351                           TFORM351= 'I       '           / format for column 351                          TTYPE352= 'err_CH  '           / label for column 352                           TFORM352= 'E       '           / format for column 352                          TTYPE353= 'CH2     '           / label for column 353                           TFORM353= 'E       '           / format for column 353                          TTYPE354= 'e_CH2   '           / label for column 354                           TFORM354= 'E       '           / format for column 354                          TTYPE355= '[CH2]   '           / label for column 355                           TFORM355= 'E       '           / format for column 355                          TTYPE356= 'e_[CH2] '           / label for column 356                           TFORM356= 'E       '           / format for column 356                          TTYPE357= 'err_CH2 '           / label for column 357                           TFORM357= 'E       '           / format for column 357                          TTYPE358= 'binarity'           / label for column 358                           TFORM358= 'I       '           / format for column 358                          DATE-HDU= '2018-05-04T02:00:30' / Date of HDU creation (UTC)                    STILVERS= '3.2-2   '           / Version of STIL software                       STILCLAS= 'uk.ac.starlink.votable.FitsPlusTableWriter' / Author class in STIL soEND                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             ≥@     Gaia DR2 77161217776670208  !∏ ÷ 1[o<D˚ @@[◊J∑ñ⁄?´ñZˇG@+]Æ µŒ›?ß—¨ u@7P∂ÏÂ#¢?Ø,>Âªe@wÔ1    @\{∑Ûñ≤?ªE qÄ(¿RÇ?UHv?∫AS«‡˜?®œ:‡   ?‹i¿   ø√V[    ?™ôÜ@   ø Rn‡   øÉÃì@   øº4z@   ?∏úÃ    ?æß@   ?—[&¿    j j g @òO    @lìâ`                    T@S=ƒ    ?˘Ú˘R≤õ¡?äjñ÷'q‚?ñ¡{¿     
-?±d       T gAf[	(;‹n@¡.öõè¿@î—Q    @ -‡    AW¢”a¡™æ@–πú?„@vù5Ä   @ æ     A]ò ≈~I@⁄gÓ⁄ä‹@qÓç    @&t    ?Ûn‡     ?Í¨p    ?÷∫d    ?ﬁû|    @9ÜÕ¯\? º?-L,E E≥∞ @ê      NOT_AVAILABLE@b’jK„ﬂ¿Fn–Ç±∫@Aï%©¶ˆ?›”ΩŸ˛R Ü°@∂M     @∂7™†   @∂â™†   ?∂ff`   ?ëhr¿   ?«ök`   ?°A `   ?Ä-‡    ?≤ZÓ`    Ø?Ó@c¿   ?Ìûb†   ?Ózò    ?Î^À    ?ÎF<    ?ÎwZ    http://geadata.esac.esa.int/data-server/datalink/links?ID=77161217776670208   !∏ ÷   'ø?ÅÛ9ˆB≤¿  HIP10175 ¯      HIP10175 W@èÖºÂ`B?xQÏ <#◊
-;o<#◊
-@K∆®>·GÆ@-°À;o =Yá;o ;£◊
-@Oﬂ=â7L =•„<o ;Â`B@+Cñ=}Û∂ =q©¸<u¬è <Dõ¶@Ÿ<ÃÃÕ =¥9X;Dõ¶ ;£◊
-?£∂F=á+ =∏QÏ<Ìëh <Ìëh?‘˝Ù>o =õ•„=æw <Éo?6á+<Dõ¶ >hs<Dõ¶ <o?∫¨=Cñ = ¿É<u¬è <#◊
-?álã=8QÏ <Ìëh<ãCñ <T˝Ù?0 ≈<¨1 =y€#;ƒõ¶ ;£◊
-?•`B;Â`B =T˝Ù;£◊
- ;£◊
-?î›/=è\) =çP;Dõ¶ ;£◊
-AM”=•„ Ω©˚Á<tº ;Â`BAK«>ì ΩCñ<ìtº <e`BA
-·H<ìtº ªÉo<Dõ¶ <tº@∆∏R=Å% Ω° ¡=•„ <¥9X@ÒX=q©¸ ΩCñ<e`B ;Â`B@…°À<o@   ΩYá;Â`B@   ;Â`B@ÓJ=@É Ω•„<Dõ¶ ;Dõ¶@·p§=<j º‘˝Ù<£◊
- <Dõ¶@»˝Ù=tº ª£◊
-<T˝Ù ;£◊
-@D1<Â`B Ω@É<¨1 <T˝Ù@@¥9<£◊
- Ω@É<u¬è <o@ùá=T˝Ù ª£◊
-<ãCñ ;£◊
-@ûß=0 ≈ º›/<#◊
- ;£◊
-@u/=<j 	ºı¬è;Â`B 	;Éo@≤»¥=<j ºu¬è<e`B ;£◊
-@≥Cñ=ßÔû ºƒõ¶<T˝Ù ;Â`B@¶M”=·GÆ Ωix’<49X ;£◊
-@õù≤=æv… 	Ωe`B<tº 	;Éo@≈V=0 ≈ ΩçOﬂ<tº ;Dõ¶@Åëh=â7L Ω¨1<ìtº <T˝Ù@ê›/=»¥9 Ωõ•„<o ;ƒõ¶Ao<ºj Ωõ•„<tº ;ƒõ¶A∏=+Ω}Û∂<ºj<T˝Ù  ≥@     Gaia DR2 6481828582855724544YÙ¡ Œ X€¶D˚ @s\'|u?©Ùﬂdiï{¿H™jx$à?ü¶L)c#@=¨{¨'â?±∏ñ4e∞@z π@   ¿b;Ú'ÿ:≤?∏b¯$)ïq@-•[.∏B?ØøX≠-π?π¯¸‡   ?‡j˜@   ø’©.`   øœ[∞¿   ø∂r¯`   ø¬°:¿   ø’‡   ø‚{`   ø≥GH¿   ?Œy#¿    • • § @Ü/¿   @l“á`                    T@^‘
-Ä   ?˘å®≠êÔ?Ö[T<∏?¬/†     ?Æ•Ø@      F ¡Ax'e∏}@µÕ‚˜êlè@±πc¿   @∑¥     Ai’Äú{ã÷@Ÿ¸∏˛k/@œ¥Ä   @É     AoF§¬p{@Ÿ™Eaæ8é@ÉtÄ   @Ê^@   ?ÚÍT‡     ?ÈÅ'    ?’Ï    ?›^    @;•ø°Ñ–?√@) º E≥∞ @ê      NOT_AVAILABLE@u‡¶b¿BªpÄ‡l@r´,îÊ®o¿=∆Ôuîg Ü°@∂Û     @∂∆@    @∑     ?∂á+    ?á$t`   ?»1&‡   ?Æv»¿   ?Ä-‡    ?∏öÄ    Ø?jW@   ?SãÄ   ?´@   ?ÚÜÄ   ?Ú¥‡   ?Ú!X    http://geadata.esac.esa.int/data-server/datalink/links?ID=6481828582855724544 YÙ¡ Œ  é?t¢k9Å2  HIP101905¯      HIP101905@ê  =¥9X?ä=q <49X;Éo<#◊
-?ùp§>êbN@6{;o >=p§:Éo ;ƒõ¶@≤-=y€# >-V<u¬è <49X@2è\=çP >1&È<49X <#◊
-@ŒŸ=o >ix’<Dõ¶ <#◊
-?∞É=Ö∏ >Bè\<ı¬è <˝Û∂?Â¬è=€"— >S˜œ<ÃÃÕ <Dõ¶?@ƒú<ÃÃÕ >:^5<ÃÃÕ <e`B?…ôö=\) >`Aâ<T˝Ù <#◊
-?ï„T<o >hs<Â`B <¨1?J~˙<ãCñ >'Ôû<ƒõ¶ <e`B?∞Aâ;Â`B >I∫;Éo ;ƒõ¶?£◊
->1' >≤-=á+ =á+A»¥<›/ ΩT˝Ù;£◊
- <tºA;d=ãCñ æ%„T=49X =tºACñ<#◊
- <õ•„<Éo <e`B@…á= ¿É ª£◊
-<¨1 <Dõ¶@Ùj=e`B =}Û∂<e`B <o@Ã›/<ãCñ@   =@É:Éo@   ;Dõ¶@ÒGÆ=@É =Å%<Dõ¶ ;Éo@·¬è=}Û∂ ºÉo=<j <›/@Ã¥9<˝Û∂ =Â`B<#◊
- ;£◊
-@LI∫=+ =ßÔû<u¬è <#◊
-@H£◊<#◊
- =ù≤-;ƒõ¶ ;Â`B@†ãD=aGÆ =“Ò™<u¬è ;ƒõ¶@¢v…=8QÏ =ºj<tº ;Â`B@}V=•„ 	=æv…<ºj 	<tº@∂=0 ≈ =∞ ≈<tº ;£◊
-@∂üæ=ù≤- =ßÔû<ãCñ <49X@©p§=›/ =,1<Dõ¶ ;ƒõ¶@û˘€=∆ß 	=LÃÕ<tº 	;£◊
-@»›/=8QÏ =LÃÕ<T˝Ù ;£◊
-@ÑZ=@É ;Dõ¶=49X <˝Û∂@ì
-==Â`B ºtº<¥9X <ÉoAb=â7L ºu¬è=çP <¥9XAá+=49X<‘˝Ù<õ•„<Dõ¶  ≥@     Gaia DR2 1814241194252808704-z¡ Q≤ dÈúD˚ @sc†ÒÏ?öRZÙY@3Ô◊f|‰.?úÿF¬ª»@GÏÀ˚S_?¢{y3c«ƒ@î∂0Ä   @]©Ô¬Î d?®iŒ¥@sÖs/)Ø|?®D≤¥£Á?ÀfÄ   ?⁄ ˝@   øÿ,@   ø¬.≥@   ?Ã4`   ø≈Ì»‡   øÂ~À@   ø 
-Ã¿   øò0s†   ?µcÑ`    @, @   @á!@                    T@q@   ?˙3.à˙?yöG/":v?∫Ï@       ?¢⁄9Ä      #F!AãÚ.œ»ÿ@À7Ûœ4˙@∞mo@   @Ò‡    A}ÛLú¨=o@·ºèf*A@å9`   @o~‡    AÇ¬÷~ë/@˜ÀcNˆ|@xGí¿   @D@   ?ÚÈ	‡     ?È[Õ    ?’»–    ?‹Ó     ¿A•o|∫‡0?ƒçuslAº E≥∞ @ê      NOT_AVAILABLE@OÌ_¯¶|”¿*n†PP¿√@sÛà£,(Ω@Ba¨YÒÁS Ü°@∂˚Û@   @∂º     @∑     ?ßˆ+`   ?ëhr¿   ?ƒ‡v    ?°hr¿   ?Ä-‡    ?¥¬¯@    Ø?Óﬁ¶†   ?ÓÜù†   ?ÔçF    ?2¿   ?i¿   ?˚¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=1814241194252808704 -z¡ Q≤  éò?mñ,ö Ó»  HIP102040¯      HIP102040›@è\)Ω£◊
-?Üff <Dõ¶;Dõ¶<#◊
-@M”>ƒõ¶@)á;o ºìtº;Dõ¶ ;£◊
-@	7L=mëh º‘˝Ù;Â`B ;Â`B@'çP=æw :Éo<e`B <49X@I∫<›/ =Dõ¶<Éo <Dõ¶?ù/=üæw =•„<ãCñ <ìtº?‘ì=¿É =çOﬂ=çP <Éo?&$›<ìtº =üæw<ìtº <#◊
-?∏r∞=0 ≈ =Æ{<u¬è <49X?áŒŸ=+ =+<˝Û∂ <ºj?1hs<u¬è =á+=o <ãCñ?†É;£◊
- <e`B;o ;ƒõ¶?ì◊
-=¬è\ <Â`B<›/ <Â`BA(ˆ=¿É Ωºj=ìtº =PÂ`A(ˆ>$› æ;dZ<u¬è <Dõ¶A
-<#◊
- Ωmëh;£◊
- ;ƒõ¶@ƒj=¨1 æüæ<e`B <o@ÔÔû=]/ Ωüæw;Éo ;Dõ¶@«Ám<ºj@   Ω›/;Â`B@   <o@Ïìu=T˝Ù Ω¨1<Éo ;£◊
-@›°À=ïÅ æz·<ƒõ¶ <e`B@«•„<ÃÃÕ Ω<j<#◊
- ;£◊
-@A∫^=\) Ω©˚Á<e`B <tº@@1'=}Û∂ ΩaGÆ=mëh <‘˝Ù@õ◊
-=@É Ω8QÏ<49X ;£◊
-@ù¬è=@É ΩaGÆ<e`B ;ƒõ¶@q˚Á=tº 	Ω£◊
-<e`B 	;ƒõ¶@∞j=æw Ω¥9X<#◊
- ;Éo@±?}=óçP Ω≤-<¥9X <Dõ¶@£çP=ﬂ;d ænò<o ;£◊
-@öff=∞ ≈ 	Ωæv…<ìtº 	;Â`B@√|Ó=,1 ΩÒ©¸<e`B ;Éo@+='Ôû æÅ=Dõ¶ =Cñ@éE¢=Èx’ æ ƒú<Â`B <£◊
-A•„=•„ æ)˚Á<tº ;ƒõ¶A©¸<›/æ¨<u¬è<tº ≥@     Gaia DR2 6799090223510802176^[8â 1O 36òÌD˚ @sgßÂf"?†‰lòV6¿;7Lœ˘B~?ìÚœu©û"@)Å‹Ø≥@3?£gÌsZ}@uÃ    @eÔñí2Ø7?∞ŒeC°R¿/(vÀ!ÿ¨?•ËL`∫Íà?ﬂp±‡   ?»œ3‡   øƒı;`   øﬂGÎÄ   ?Ãõü    ø€Á[@   øÂÊÃ`   ø∆˚¸@   øÆ5÷Ä   ?ÿä‡   ““ƒ @$¬C`   @äé@                    T@oz”‡   ?˘∏J3∆ø?uÙéÅ9øóF◊Ä    5 ?ß¨k‡      :T„AQœèˇﬂ‹	@Ñæh◊'√@ªÕ∂†   @"÷`    8ABÊ`pë3@ñßêZñæ@ö≤M¿   @"ª°     9AG¨Óç;‹@ù)â”Ñê@ô˙∂Ä   @!ñ@   ?Ûô      ?Í∞Æ    ?÷yX    ?ﬁË    ¿E‹¶Ÿ#≥?’0‡•√¥, E≥∞ @ê      NOT_AVAILABLE@1esß,ÿi¿Aê“_\.V@s®ô0ój¿!PÂß˜¶d Ü°@µ”o    @µv     @∂Å     ¯      ¯      ¯      ¯      ¯      ¯       Ø?ÚNÆ@   ?Ò8â    ?ÚÔq¿   ?Úd⁄    ?ÚP@   ?Úyß¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=6799090223510802176 ^[8â 1O  è?vSùüˇ+Ä  HIP102152¯      HIP102152V@äffºÉo?}p§ <49X;Dõ¶<#◊
-A	Cñ>ßlã@"-;Dõ¶ æ%;Éo ;£◊
-@33=çOﬂ Ωı¬è<#◊
- ;Â`B@ r∞=Yá Ω·GÆ<Éo <Dõ¶@V=•„ ΩÖ∏<49X <tº?é5?=ù≤- Ωüæw<ìtº <õ•„?∆E¢=˘€# Ωæw<Ìëh <T˝Ù?{=Cñ ºÉo=Cñ <ãCñ?´•„=o ºu¬è<e`B <tº?ÉïÅ=o ∫Éo<T˝Ù <#◊
-?"M”<ãCñ ;Â`B=tº <õ•„?†Aâ;Â`B <Dõ¶;£◊
- ;£◊
-?ä¨='Ôû Ω@É<‘˝Ù <›/Aù≤=•„ ∫Éo<#◊
- <oA {=Èx’ <u¬è=,1 <˝Û∂AÖ<u¬è =\)<Dõ¶ <#◊
-@«◊
-=è\) Ω49X<ºj <e`B@ÚÈy=ix’ <u¬è<£◊
- <#◊
-@À•„<ìtº@   <tº;o@   ;Dõ¶@Ó·H=LÃÕ ºT˝Ù<#◊
- ;Dõ¶@·hs=∂E¢ ºÂ`B=•„ <¥9X@»ÃÕ<Ìëh º#◊
-<Dõ¶ ;£◊
-@EV=49X Ωo<ìtº <49X@C<Dõ¶ ºDõ¶<o ;£◊
-@ù%=8QÏ ªÂ`B<Dõ¶ ;£◊
-@û˘€=@É ºãCñ<e`B ;ƒõ¶@uÅ=0 ≈ 	ºÃÃÕ<Dõ¶ 	;ƒõ¶@≤óç=@É º¨1<tº ;Éo@≥|Ó=ìtº ºãCñ<u¬è <tº@¶¿É=“Ò™ Ω0 ≈<tº ;£◊
-@úI∫=Æ{ 	ΩCñ<£◊
- 	<o@∆5?=æw Ω+<49X ;Éo@ÉŒŸ=Æ{ ºe`B;o ;Éo@íÒ™=›/ ºDõ¶<e`B <49XA¬è=+ Ω+<tº ;ƒõ¶AV<oΩ0 ≈;ƒõ¶;Â`B  ≥@     Gaia DR2 2494066897240089984"ú¥° eÄ-L'ID˚ @@ôÃÍ?¨DÚÎÎÄ≥¿,Ha”è?≠X∆ RÙ˘@:?€ùóß?≥M~s@u†lÄ   @v„∑c8]î?æ'´5$Á¿P‹∑˘¯í?øõ1˝e?®Õ˚Ä   ?÷J4†   ø¬å9‡   ?§*9‡   ø◊π‡   øÃ÷¶    ø”«`   ?“ÿ"    ?Ÿ¯KÄ   ?ÃZ+`    Y Y Y  @
-…Œ‡   @`Ãç¿                    T@U    ?˙K:7©–ı?ë_ÂÄ€?±§Ä    
- ?≥sâ@      F `Ap‚kMÎéÕ@∑ƒÍØ-v@¶ª/`   @E»¿    Aa®3o1WÓ@ﬂ~CI¶⁄¯@qÄ   @Ωú‡    
-AfdÛîﬁ¸<@‹ãËy ™¿@yÇ`   @Y¿¿   ?Ú˙Ä     ?Î·    ?◊}B    ?ﬁ¿Ä    ¿Y9Lä? .h^Ìœ¢ E≥∞ @ê      NOT_AVAILABLE@dì¢Øxë5¿MBˆ¬Y[;@>!t7v G¿-©4óUı Ü°@∂o     @∂=     @∂úÄ    ?ƒ›/    ?´quÄ   ?œØ¿   ?≥33@   ?ö¨    ?øÑ@    Ø?e¬    ?$Ä   ?Ø—@   ?x<`   ?h€‡   ?áú‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=2494066897240089984 "ú¥° eÄ  (??îjpQ≈6  HIP10303 ¯      HIP10303 P@å£◊=‘˝Ù?p£◊ <#◊
-;Dõ¶<#◊
-@∫˘€>ÃI∫@2Ò™:Éo >Cñ     ;£◊
-@¿É=ãCñ =˚Ám;ƒõ¶ ;ƒõ¶@.ff=Ö∏ =›/<õ•„ <e`B@ß<ı¬è =¨1<tº <o?°â7= ¿É =ïÅ;Éo ;ƒõ¶?‘˝Ù>Oﬂ =õ•„=\) <u¬è?.Ÿ<¥9X =Â`B<¥9X <Dõ¶?∏ı√=•„ =∏QÏ<o ;Â`B?èù≤=e`B =æv…<¥9X <Éo?=Û∂<T˝Ù =ÎÖ<ƒõ¶ <T˝Ù?∞  ;ƒõ¶ >	7L;Dõ¶ ;£◊
-?úÃÕ=@É = ¿É<£◊
- <¨1A‘˛<Â`B =õ•„;Dõ¶ ;ÉoA"Z>%„T >! ¡=]/ =æwA=q<49X =•„T<tº ;Â`B@ÃÉ=}Û∂ =–Â`<£◊
- <Dõ¶@ˆM”=Å% =˜ŒŸ<o ;£◊
-@œ◊
-<ìtº@   >\);o@   ;Dõ¶@Ú¿É=8QÏ =›/<o ;o@‰‘˛=óçP =£◊
-<ƒõ¶ <e`B@Ãõ¶=o =ﬂ;d;£◊
- ;Dõ¶@MOﬂ=o =»¥9<Éo <#◊
-@K˜œ<Dõ¶ >o<49X ;ƒõ¶@°%=LÃÕ =Ôù≤<e`B ;£◊
-@£o=0 ≈ =„S¯<Éo ;ƒõ¶@~∏R=T˝Ù 	=Û∂F<e`B 	;ƒõ¶@∂»¥=]/ =„S¯<Éo ;£◊
-@∑ù≤=ôôö =Â`B<Dõ¶ ;Â`B@¨b=ÃÃÕ =˚Ám<tº ;Éo@†¥9=Æ{ 	=‘˝Ù<e`B 	;£◊
-@ÀCñ=<j =˝Û∂<T˝Ù ;Éo@à1=Èx’ =Ò©¸<ı¬è <¨1@ñ¿É=ı¬è =›/<Â`B <£◊
-AOﬂ<›/ =Å%;£◊
- ;Dõ¶A†=@É=y€#<õ•„<49X ≥@     Gaia DR2 6912226598456403456_Ì)x  & `ôÁD˚ @s¬Ó˚¶Ø_?∞˜…zΩÑ,¿Q•oQ£?®Dƒ A–0@2ûf*BŒ?≥yeËƒôø@nò$    ¿ajûEÚ??πÆª2ï¸¿hCπú?∑
-dÄè?“¢ä@   ?‰IÆ‡   ø≈´¿   øŒÒE    ?™	◊    øƒä–`   ø÷ˆ(@   ø–WG    ø≈2ˇ    ?“¨I‡    l l j @.(‡   @l¡†                    T@a¢…†   ?˘∫s˝± ?êzƒ]æf?£D      ?∞iI@      F tAc?uâO°¬@≤
-˝"“¡@°x@   @ [b     ATë‡X≥’˜@ª®#˜|∆@áÃ”@   @!>Ä    AY#yG”l¢@ Ón…™ú@}ﬁ©†   @€ﬂ@   ?Úˇn¿     ?È‘Ó    ?’˚å    ?›ÆP    @F‚ë®·f?…Äåe¯≤Ã EªÄ @ê  >Ä  NOT_AVAILABLE@FcÔqF6Ù¿?µ9Kﬁ¯@s“ø£qí@&ækM∂) Ü°@∂¢s@   @∂nÛ@   @∂¸å¿   ?¿y=‡   ?ëhr¿   ?…X`   ?Æv»¿   ?Ä-‡    ?∫ê†    Ø?ÒéÄ   ?3    ?ÒR    ?Ú`
-@   ?ÚG’†   ?Úx>‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=6912226598456403456 _Ì)x  &  ñm?Ä"?Õm3√  HIP104045¯      HIP104045¬@ç∏=PÂ`?Ö∏ <#◊
-;Dõ¶<#◊
-@èæw?ãD@.∏R:Éo =çOﬂ:Éo ;£◊
-@†=u¬è =á+<#◊
- <o@,ì=@É =ìtº;ƒõ¶ ;ƒõ¶@∏<¨1 =y€#<o <o?ö¨=è\) <e`B<ÃÃÕ <‘˝Ù?”ïÅ=˜ŒŸ =Ö∏<õ•„ <tº?(ı√=\) =∂E¢=\) <ìtº?∑Ôû=LÃÕ =ßÔû<¨1 <T˝Ù?áçP<ı¬è <˝Û∂<ìtº <T˝Ù?Aâ7<ƒõ¶ >ì<T˝Ù <o?∞Â`=49X >hs=49X <ºj?ôá=}Û∂ =è\);£◊
- ;Â`BA∆®=•„ <tº<49X <oA∫^=∆ß ªÂ`B<ƒõ¶ <ìtºAÅ;o =\)<tº <o@ {=çOﬂ <‘˝Ù<Éo <tº@Û∂F=q©¸ =#◊
-;ƒõ¶ ;Éo@Ã¨<õ•„@   ='Ôû;Éo@   ;Éo@¥9=@É =8QÏ<o ;o@„Æ=≤- =49X=H¥9 <Â`B@À
-=<˝Û∂ =q©¸<49X ;£◊
-@Hƒú=\) <‘˝Ù<£◊
- <Dõ¶@F˘€<õ•„ =PÂ`<T˝Ù ;Â`B@û»¥=@É =Dõ¶<Éo ;£◊
-@†ÃÕ=#◊
- =#◊
-<Dõ¶ ;ƒõ¶@y ¡=0 ≈ 	=,1<Dõ¶ 	;£◊
-@¥ÃÕ=@É =Dõ¶<tº ;Éo@µ„T=õ•„ =mëh<#◊
- ;ƒõ¶@©ëh=“Ò™ =8QÏ;ƒõ¶ ;Éo@ûè\=∆ß 	=çP<#◊
- 	;Éo@»ÃÕ=0 ≈ =Dõ¶<o ;Dõ¶@Ö?}=ù≤- <˝Û∂<o ;ƒõ¶@î  =◊
-= <¥9X<e`B <#◊
-Aj=æw <o<49X ;Â`BAJ;Dõ¶<£◊
-:Éo;Dõ¶  ≥@     Gaia DR2 6577318075351824512[GSÒ ¯Ä∞yuD˚ @s˘◊D∆}@?°w_ï“ò)¿E™“–®ÜÙ?ù
-”˘@D˚(´&¡\?ßEFaπı˛@å⁄`   @nF‹ÏB ?±ÉßyeM@5¢úØ◊÷?ÆÏrlêt”?ﬁ¥`   ?‘∫`   ø∂€¿    ø’dÅ¿   ?√öê†   ø≈8e    øﬂ√JÄ   øÀπ    øÀT…Ä   ?»JŸ¿    ˇ ˇ ˛ @'L‡   @Ç‡n†                    T@id}‡   ?˘òeäj.?Å*-wÎóTøßı’      ?ßé‹@      *FSAÑÌX£ÀS’@≈0¡˘D¬@Øõ1`   @T@    !Av4Å/?û@„*∏/πip@ÇâF@   @º*¿    "A{Gõ@{L@O¥—¿.@z¬‹Ä   @{Õ¿   ?ÚÍç      ?ÍË    ?÷z∏    ?›ã    @'È 7°∆?ƒÑÎ6ˇÜ E≥∞ @ê      NOT_AVAILABLE@vZrÊˇzö¿F9©X22ß@sB_¯¨´5¿:>WàB Ü°@∂Ã¿    @∂≤Ä    @∑     ?ôôô†   ?{quÄ   ?øæv¿   ?ï2aÄ   ?oÚ‰Ä   ?¥õ•‡    Ø?Ó˛Å`   ?ÓJ«    ?ÔF[¿   ?ÔcÀÄ   ?ÔW^    ?Ôp9    http://geadata.esac.esa.int/data-server/datalink/links?ID=6577318075351824512 Ä       Ä   ¯      Ä Ä HIP105184?Q Ú≠Z<ÒHIP105184”@êQÏ;Dõ¶?Üff <49X;Éo<#◊
-?>v…>ﬁ5?@1©¸:Éo =Ìëh:Éo ;Â`B@GÆ=Éo =ÃÃÕ<#◊
- <o@.»¥=H¥9 =Èx’<#◊
- <#◊
-@Û∂<ÃÃÕ >J¿É;Â`B ;Â`B?´dZ=ïÅ >ôö<¥9X <ºj?„33=Álã >?|Ó<ÃÃÕ <Dõ¶?:^5<£◊
- > ƒú<£◊
- <Dõ¶?≈¬è=æw >Bè\<u¬è <#◊
-?ê ≈<£◊
- =»¥9=,1 <˝Û∂?8‘˛<¥9X =¬è\;Â`B ;Â`B?ßŒŸ;ƒõ¶ =ëhs;Dõ¶ ;ƒõ¶?ü;d>o =Ò©¸=u¬è =u¬èA(ˆ<Ìëh Ω∫^5     <#◊
-AÉ<¥9X æ1'<¨1 <ı¬èA
-Èy<#◊
- ªo<#◊
- <T˝Ù@«\)=Æ{ Ωu¬è<¨1 <T˝Ù@Ú=q=e`B ªƒõ¶<u¬è <tº@ J<›/@   Ω#◊
-<Dõ¶@   <T˝Ù@ÓÈy=H¥9 º49X<Dõ¶ ;Éo@‡›/=â7L Ω49X<¥9X <Éo@ v…<˝Û∂ =,1<#◊
- ;£◊
-@G|Ó=#◊
- ;ƒõ¶<Éo <#◊
-@Bnò<o º£◊
-;Â`B ;Â`B@ûV=T˝Ù =Cñ<Dõ¶ ;ƒõ¶@ü◊
-=@É <#◊
-;Â`B ;Â`B@wù≤=0 ≈ 	<o<e`B 	<o@≥Æ='Ôû <e`B<T˝Ù ;ƒõ¶@¥j=ßÔû <Dõ¶<õ•„ <Dõ¶@¶~˙=◊
-= ΩLÃÕ;£◊
- ;£◊
-@ú9X=–Â` 	Ωtº<o 	;£◊
-@≈°À=49X ΩPÂ`<e`B ;£◊
-@Å≤-=H¥9 Ω•„T=#◊
- <Â`B@ê›/=–Â` Ωõ•„<ãCñ <T˝ÙAV=@É Ωüæw<ãCñ <49XA˘€;Â`BΩDõ¶;Éo;Â`B  ≥@     Gaia DR2 6358928609077405568X?s·  ßÄL ÜD˚ @tä˜QrAñ?ôàå-<¿R\.˛á -?ú∂ÚÍ€Ï @:<8>?ú…πÙ(”˚@åÌí    ¿höróú?´◊é6™·¿{VÓƒ˘£∑?´©Ë:{uø‹ûb`   ø™àu    ø‡Q@   ?÷‘µÄ   øÕÆœÄ   ?’î    ø›˜í†   ?óí@   ø¡Ø¿   ø‡»†    ˘ ˘ Û @&.Ä@   @Å–_‡                    T@[iA    ?˘É&Ñl;∂?~:2â+Sø¢Öˇ      ?©sÁÄ      $FAváKX @í@≤¬›ˇ@≥ÛÁÄ   @(     Agbø=mü@À‘qF]t@ä„”†   @Ö5@     Anó©ÍΩ@‚,E¬Â≤6@zk†   @r@   ?Úıµ      ?ÎÜ    ?ÿ ‘    ?ﬂ\    @Ìà‚72 ?¿ñ¶yx7 E´‡ @Ä  >Ä  NOT_AVAILABLE@sŸG-éˆ¿C"⁄ÃH4@rsas£-˛¿KëS°˚ﬂ· Ü°@∂!     @∂     @∂ã¿    ?Ÿµs‡   ?Õ*†   ?‡ƒõ†   ?»¥9`   ?∫«¿   ?–µ‹¿    Ø?Ûë÷`   ?Ú⁄<    ?Û…‡   ?ˆ5´†   ?ˆ+ä@   ?ˆ?Õ    http://geadata.esac.esa.int/data-server/datalink/links?ID=6358928609077405568 Ä       Ä   ¯      Ä Ä HIP108158?`ÙM&ï¶IHIP108158+@â∏=aGÆ?ÅGÆ <49X;Dõ¶<#◊
-A5?>ä=q@(¥9:Éo ºƒõ¶:Éo ;ƒõ¶@	&È=° ¡ º›/<ìtº <49X@&óç=óçP ºe`B<›/ <£◊
-@	hs=+ ;Dõ¶;ƒõ¶ ;Â`B?ôx’= ¿É <#◊
-;Éo ;ƒõ¶?œ|Ó> ƒú =+=0 ≈ <ìtº?;Ám<ƒõ¶ >&Èy<ƒõ¶ <T˝Ù?∑+=<j =ôôö<ãCñ <49X?íè\<˝Û∂ =Ìëh<õ•„ <e`B?Glã<ìtº >•„<#◊
- ;Â`B?Øæw;Dõ¶ >+;£◊
- ;ƒõ¶?§›/=u¬è >%„T;Â`B <tºA¨<›/ >æw;o ;£◊
-A%>"–Â >•„T=H¥9 =tºA¨<õ•„ >J¿É<T˝Ù <49X@Ãb=çOﬂ =¥9X<T˝Ù <o@¯õ¶=Éo >E°À<¨1 <49X@“5?<‘˝Ù@   >["—<49X@   <Dõ¶@Ûo=@É =Ò©¸<o ;o@Á"—=ßÔû >üæ=çP <¥9X@ÃbN=tº =–Â`<o ;£◊
-@OÔû<˝Û∂ >Oﬂ<ãCñ <#◊
-@N{<Dõ¶ >$›/<e`B <o@¢^5=]/ >#◊
-<e`B ;ƒõ¶@§õ¶=LÃÕ >"–Â<e`B ;ƒõ¶@ù≤=mëh 	>1'<ìtº 	<o@µÅ=LÃÕ =è\)<49X ;£◊
-@∂ff=£◊
- =óçP<˝Û∂ <Éo@©/=·GÆ =+;Â`B ;Éo@°x’=¿É 	>o<tº 	;Éo@…„T=Dõ¶ =ßÔû<Éo ;£◊
-@âÅ=Álã >'Ôû=tº <‘˝Ù@ôhs=„S¯ >CïÅ<ºj <ãCñAﬂ;=o =»¥9<T˝Ù <oAÒ™<ãCñ=ôôö<e`B<u¬è  ≥@     Gaia DR2 6840872971033892608^Ô©π ◊ #Ãô~D˚ @tôü¬∆	í?º”¶dûÉÜ¿)T+=¶÷À?√»3◊,dÎ@=F|@%Q?≤Bÿë¥a@yta†   @@ûdîò‰A?∆k∂ΩØD¢@OØ£Ï™ˆ?—^R"ç¥?ÏFh    ?‰Ç2    øË¸    øÎŒOÄ   ?‡ûG@   øÍCƒ`   øÓ@#@   ø€w'    ø‡ë<    ?ÍÄ    O O O  @gè‡   @e”›                     T@aÆ‹†   ?˘À¢µ ú§?êg3¬?√p[     	 ? êy‡      F {A|ã∑U⁄##@ª2˜µÁL∂@∞ Ã¿   @˝ˆ¿    AnqâléT@ŸY¬†`å‡@É6‡    @_˙     Arádü.Æ@ﬁ~JÀ5'-@Éq¬‡   @)∆‡   ?ÚÍ÷¿     ?È±ô    ?÷ 4    ?›B˛    @Ÿ†Û0¸†?¿â∆ºÙ E≥∞ @ê      NOT_AVAILABLE@EÎ’Ú?¢¿GäÕM>M@ttﬁÃ`u1ø—z%pñ¡ Ü°@∂È     @∂ô     @∑5     ?ŒÛM`   ?π«y†   ?⁄lÙ    ?øÏV‡   ?¶_ÿ†   ?∆_`    Ø?ÚK[    ?Ò‘L`   ?ÚÕ»@   ?ˆL|‡   ?ˆ:•¿   ?ˆ^T    http://geadata.esac.esa.int/data-server/datalink/links?ID=6840872971033892608 ^Ô©π ◊  ß¥?àÔÜ»f|  HIP108468¯      HIP108468—@ã33Ωƒõ¶?ê£◊ <49X;Éo<#◊
-@‡ı√>ö¨@¨;Dõ¶ æYá;o ;Éo?˘˚Á=Ö∏ æ^5?;£◊
- ;ƒõ¶@õ¶=49X æ.{<£◊
- <u¬è@x’=o Ω˜ŒŸ<T˝Ù <49X?äüæ=£◊
- ΩŸá<u¬è <Éo?¿Â`=ºj Ω•„T=æw <ãCñ?∂F<ãCñ ;ƒõ¶<ãCñ <#◊
-?®QÏ=çP Ω'Ôû;ƒõ¶ ;ƒõ¶?xQÏ<õ•„ Ωmëh<ƒõ¶ <ìtº?·H<#◊
- º¥9X<¥9X <Dõ¶?òı√;Éo Ω8QÏ;£◊
- ;ƒõ¶?çÛ∂=©˚Á ºãCñ<u¬è <ÉoAAâ<¥9X Ω∞ ≈<u¬è <49XA`B=·GÆ æ¨=æw <ÌëhA
-I∫;ƒõ¶ Ω'Ôû<tº <o@ƒºj=ôôö æbN<e`B <o@ãD=LÃÕ Ωq©¸<õ•„ <#◊
-@…/<ìtº@   ΩãCñ;Dõ¶@   ;Éo@Ïj=8QÏ Ω∂E¢;ƒõ¶ ;o@ﬁ–Â=ëhs Ω›/<¨1 <Dõ¶@∆üæ<ÃÃÕ Ωüæw<#◊
- ;£◊
-@@£◊=•„ ΩŒŸ<#◊
- ;Â`B@>∏R<u¬è Ω° ¡<Dõ¶ ;Â`B@öß=<j Ω•„T<49X ;£◊
-@ù∏=<j Ωôôö<e`B ;ƒõ¶@pbN=•„ 	Ω◊
-=<e`B 	;ƒõ¶@Ø∂F=49X Ω„S¯<tº ;Éo@±∏=ù≤- Ω∫^5<Éo <tº@£S¯=◊
-= æìu<#◊
- ;£◊
-@ôÎÖ=¬è\ 	Ω›/<o 	;Éo@√Cñ='Ôû æ   <Dõ¶ ;Éo@ÄÉ=PÂ` ΩÒ©¸=Cñ <ƒõ¶@è+=¿É æ∏<Dõ¶ <tºAnò=o ΩÌëh;ƒõ¶ ;£◊
-A€#;Dõ¶ΩÒ©¸;ƒõ¶;Â`B  ≥@     Gaia DR2 6542545981467134592ZÀ Ë 
-Ä.ùÎÿD˚ @uµRﬁ‡˛?°[öxw¿D~ﬂm¸Y?©àR–Ò⁄@.íGo≤)n?¨™≠ ∫ÿ@q&`   @\wa^Ûx†?∞Äº_⁄?´8Ho~?≥—†Æì{e?Œ∑    ?¬çß†   øŸÆ˝Ä   øªtÅ†   ø‡π    ?ƒ¿DÄ   ø…†⁄`   ø‹√h`   ø–lÊ`   ?‹˙™¿    Ω Ω ∏ @$m£    @|Ã                     T@gÂÙ`   ?˘™n/∫ZU?ÇX%6≤ó?√æ `     ?™û¡†      T æAZ∆s5_*@°r©·ª
-@®éÅ‡   @!%6‡    ALgc›,@ªmFyÈ„Ï@ÄüÎ    @!◊WÄ    AQç8·•5r@√–ôí€C1@|XU`   @ 5•    ?Û ¡Ä     ?Í&    ?÷D    ?›Ú8    ¿2–…¡I&"?›ròn• E≥∞ @ê      NOT_AVAILABLE@v¢phÇ¿P6Ø68Î@t´…√_Ü¿@3Îﬁ¡tV Ü°@∂ô     @∂vU`   @∂≥U`   ?∏1&‡   ?û∏Q‡   ?–QÎÄ   ?ßçO‡   ?á¡Ω†   ?æ;Õ@    Ø?ÒXD`   ?Ò0‡   ?Òç˜    ?Ú¯˚    ?Ú·'‡   ?ÛŒ    http://geadata.esac.esa.int/data-server/datalink/links?ID=6542545981467134592 ZÀ Ë 
-Ä æò?e7Ã˚ÿp"  HIP114328¯      HIP114328è@ãÖºãCñ?Ö∏ <Dõ¶;Éo<#◊
-@⁄5?>¨1@%≤-:Éo Ωëhs:Éo ;£◊
-@„T=y€# Ωüæw<e`B <tº@"^5=}Û∂ Ω£◊
-<Éo <Dõ¶@`B<¥9X Ωu¬è;ƒõ¶ ;ƒõ¶?ï„T=Ÿá ºõ•„<49X <Dõ¶?»r∞>    º¥9X=Cñ <u¬è?·H<¥9X =Cñ<¥9X <Dõ¶?¨ãD=+ ºo<ÃÃÕ <u¬è?Ä£◊<¥9X ºƒõ¶<e`B <49X?.Ÿ<tº =e`B<Ìëh <u¬è?ö¿É;Dõ¶ º˝Û∂;o ;ƒõ¶?ï¬è=° ¡ =49X<Dõ¶ <T˝ÙAv…<›/ =T˝Ù<49X <tºA b=õ•„ <e`B=H¥9 =tºAlã<T˝Ù <ı¬è;ƒõ¶ ;ƒõ¶@…„T=â7L <£◊
-<£◊
- <Dõ¶@ı&È=Cñ <£◊
-;Dõ¶ ;ƒõ¶ƒy¿         ƒy¿             @b<Ìëh ;ƒõ¶<tº ;Dõ¶@„Æ=ix’ =49X<ìtº <49X@»ƒú<˝Û∂ º49X<tº ;£◊
-@H  =q©¸ <u¬è<‘˝Ù <Éo@D(ˆ<Dõ¶ ;Â`B<Dõ¶ ;Â`B@úÌë=H¥9 º#◊
-<ãCñ ;ƒõ¶@ü\)=@É ª£◊
-<#◊
- ;ƒõ¶@vá+=49X 	º#◊
-<#◊
- 	;£◊
-@≥=<j ºo<Éo ;ƒõ¶@≥◊
-=óçP ªƒõ¶<ãCñ <#◊
-@ß◊
-=Ÿá ºo<49X ;ƒõ¶@û=‘˝Ù 	<õ•„=@É 	<ãCñ@≈X=æw º49X<tº ;Â`B@Ö7L=Æ{ <ı¬è;o ;Dõ¶@î ≈=ºj <‘˝Ù<o ;ƒõ¶Aè\=•„ <ãCñ<tº ;ƒõ¶AÁm;ƒõ¶<#◊
-;Éo;£◊
-  ≥@     Gaia DR2 6605242028564099584[™à° 2 Q;ì6D˚ @uƒß≤øA?™û‚“iS¿>s*.^˘X?•d Ω@'isdn?´⁄≤÷„!Æ@j{¿    @!áÉ›?∑™ﬁ√a¯¿*«o¿¡Lû?∫hJâÌÕ?∂∂†   ?›˜(    ?”XŸ    ø•Å‚†   ?ªú¿   ø¡ÒQ    øùèÄ   ?¥ı9¿   ?√]Ä   ?…¶¿    b b b  @Û`   @c»Ö@                    T@m∏+`   ?˘Á\øº+?é˛Öø]?ñîP`     	?∞u9†      F jAH é¢B [@ê˘†ÀàE@¶üó†   @"„O@    A9©kZI@∞BÉòﬂv@y@qÄ   @#íÌ‡    A?v“⁄N;í@∏4kÎ§"@tÃt    @!ÛÕ‡   ?Û
-N     ?ÈÚ     ?’Û‘    ?›,    ?ÙH…eÀ¿?·œ‹@Ñç E≥∞ @Ä      NOT_AVAILABLE@2N≠í;.¿Q{øg…@uÖ/~€q¿7J©y0 Ü¢@∂®Ü`   @∂T¿    @∂Ÿ     ?±|‡   ?ëhr¿   ?≈Êö‡   ?†bM‡   ?!-Ä   ?≥a@    Ø?Óû‚    ?Ó|¿   ?ÔÜP    ?Ì‚^    ?Ì±µ@   ?Ó¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=6605242028564099584 [™à° 2  ø∑?b€F•
-c±  HIP114615¯      HIP114615ª@êQÏΩÅ%?É◊
- <tº;Éo<#◊
-?ãCñ?(¥9@)˚Á:Éo ª£◊
-:Éo ;ƒõ¶@	€#=]/ ºÉo<Dõ¶ <o@( ≈=,1 <#◊
-<49X <tº@/<ãCñ =y€#<Dõ¶ <#◊
-?•°À=æv… =◊
-=;o ;Éo?‘ì=ÎÖ =çOﬂ<˝Û∂ <T˝Ù?%°À=<j =õ•„=<j <ºj?∏QÏ=Dõ¶ =Æ{<ãCñ <49X?ÉïÅ=æw ∫Éo=+ <ƒõ¶?*=q<›/ =•„<Éo <tº?úÃÕ<ºj ºu¬è<£◊
- <49X?ï`B=¿É =#◊
-<‘˝Ù <‘˝ÙA$›<£◊
- Ωºj<Éo <Dõ¶Aff=}Û∂ Ω∏QÏ=PÂ` =•„A
-ãD<#◊
- ºÃÃÕ<o <tº@∆=çOﬂ Ω–Â`<‘˝Ù <u¬è@bN=PÂ` ΩÉo<ºj <Dõ¶@»ãD<›/@   Ω¥9X<49X@   <Dõ¶@Ìá=Dõ¶ ΩãCñ<tº ;Dõ¶@‡›/=ßÔû Ω49X=Dõ¶ <Â`B@«∂F=o Ω49X<Dõ¶ ;ƒõ¶@B¿É=0 ≈ ΩãCñ<£◊
- <T˝Ù@>˘€<¨1 Ωôôö<Éo <tº@õ∂F=#◊
- ΩDõ¶<õ•„ ;Â`B@ù©¸=49X Ωmëh<u¬è ;ƒõ¶@rÒ™=#◊
- 	Ωá+<T˝Ù 	;Â`B@±Oﬂ=æw Ωy€#<ìtº ;Â`B@≤è\=óçP Ω<j<#◊
- ;Â`B@§ı√=‘˝Ù Ω ¿É<o ;£◊
-@öüæ=¬è\ 	Ω∞ ≈<u¬è 	;Â`B@√Ôû=@É Ω◊
-=<ãCñ ;£◊
-@Är∞=0 ≈ Ωı¬è=<j =+@êj=Álã Ω∏QÏ<£◊
- <e`BAÈy=Cñ Ω≤-;ƒõ¶ ;ƒõ¶Az·;oΩ° ¡:Éo;£◊
-  ≥@     Gaia DR2 6501182220888038784Z8÷… ›Ä	‚‚D˚ @uÚŒDª±p?ëÔ;Ç„Z‚¿JYÌ[È3 ?ï‚:Bk  @7πV??@?°˜Wn$»@Ñçz`   ¿10Á∑fΩ?§ú3í‘V¿cØ¸ãﬁz?§_Á|Üãø—:o¿   ?“È™‡   ø‘≥@   ø∂U…    ø≥ë¸†   ø¡TË†   ø÷=Ï@   ø∆œ†   øµx¿   ø÷;à¿   ==5 @*¬í@   @ë¬©¿                    T@YÔ†   ?˘ºx!úV√?t£à˙∆Tø¥≠@    A ?üÓ       JTEAsf‘fw@/@§œÆ$Rh@Ω’%@   @´H@    =AdU˚Ê‡Ÿ@∫].=‘@òΩ`   @ ≈‡    ;Ai„#0[ß@¡‚=hX√@ó)¿   @∏õ`   ?Û“†     ?ÎAT    ?◊W⁄    ?ﬂ*Œ    @74˘*a‘»?¿On°f±—  E≥∞ @Ä      NOT_AVAILABLE@tï%9≈ÇÒ¿M‡gâ?äË@tbGEÿ¿EÌ‰Ÿi+˘ Ü°@∂.¶`   @µﬂ]‡   @∂^U`   ¯      ¯      ¯      ¯      ¯      ¯       Ø?Ù_‡   ?Ù†    ?ÙÛŸ    ?¯L¡¿   ?¯>V`   ?¯[-    http://geadata.esac.esa.int/data-server/datalink/links?ID=6501182220888038784 Z8÷… ›Ä √y?e®1ã≈Ÿ  HIP115577¯      HIP115577>@àQÏ<T˝Ù?Ö∏ <#◊
-;Dõ¶<#◊
-Anò>ÄÉ@&v…:Éo Ωq©¸;Dõ¶ ;£◊
-@E¢=ëhs Ωìtº<Dõ¶ <o@$z·=u¬è Ω@É<e`B <49X@»¥<Â`B Ωæw:Éo ;Éo?ó+=ÎÖ ºo<£◊
- <£◊
-?ÃÃÕ>V <Dõ¶=Cñ <e`B?3tº<e`B >∏<e`B <o?≤∞!=+ =#◊
-;Â`B ;ƒõ¶?å1=tº =á+;Â`B ;ƒõ¶?:üæ<T˝Ù =–Â`<Dõ¶ ;Â`B?¨(ˆ;£◊
- =◊
-=;Dõ¶ ;£◊
-?õ=e`B =Æ{<Dõ¶ <Dõ¶A¬è=tº >1'<49X <tºA%∏>CïÅ >¡%=¨1 =u¬èA7L<ãCñ >bN<#◊
- <tº@À"—=á+ =q©¸<Éo <#◊
-@˜∂F=}Û∂ >(ı√<ºj <Dõ¶@—?}<ƒõ¶@   ><j<tº@   <tº@ÒÛ∂=8QÏ =¨1<o ;o@Â“Ú=Éo =„S¯<‘˝Ù <u¬è@ÀK«<˝Û∂ =ãCñ<o ;Éo@Lõ¶<Â`B =≤-<¨1 <T˝Ù@KïÅ<e`B =˚Ám<u¬è <o@°7L=LÃÕ =˝Û∂<49X ;£◊
-@£|Ó=,1 >   <e`B ;ƒõ¶@|j=LÃÕ 	=©˚Á<#◊
- 	;£◊
-@¥  =LÃÕ <ºj<#◊
- ;£◊
-@¥Ìë=ëhs <Ìëh<49X ;Â`B@ß;d=◊
-= º›/;Â`B ;£◊
-@üÆ=ºj 	=ëhs;Â`B 	;Éo@»9X=49X <ı¬è<T˝Ù ;Éo@áÔû=€"— =ÎÖ<ı¬è <¨1@ó∂F=·GÆ >Oﬂ<¨1 <u¬èA†=o =PÂ`;ƒõ¶ ;ÉoA°À=ù≤-=¬è\=ìtº='Ôû  ≥@     Gaia DR2 2440578577126302336!ﬁ≠I 
-¢Äôê{D˚ @v7l›ÒÒ?©@∆ñP¿ÒË\˘?°§ƒ˙xÃ_@7∞˜˚é?Ø
-‹Îﬁ^´@xl    ¿b,÷Ê=a?∏Ÿpe…Õ¿[“ÌÛ´D°?∞6à7Y¸¿?™˘Ê†   ?’	B@   øª?«@   ø–åˇ‡   øŸ    ø∆G8`   ?≥¶,†   ?∞_ç    ø⁄-@   ?º?˚@    ° ° † @"Y Ä   @wû≈†                    T@UE∂    ?˘ƒ;˝ÄÇ?ΩQ(Éø¡ïÖ‡     
-?¨ﬁê@      F ¬Aq´¨8¥ç@≥›~\Ö4Í@¨uÄ   @Y     AbπÇfÀEÊ@“ÿA‡π∏@À…†   @|X     Ag'ÛêŸïé@’él(ÀX@Åä-Ä   @4ê¿   ?Úˆû†     ?Í>:    ?÷è    ?›ÏÑ    @(,†øŸÒ‡?ƒ†3Ëì E≥∞ @ê      NOT_AVAILABLE@TpoΩ7[y¿OìqŒ⁄ı@v_~óù6¿â√Î·ÎÜ Ü°@∂°     @∂x     @∂∆     ?¬–Â`   ?≥Ø∑‡   ?“u    ?∞˘	`   ?°hr¿   ?ΩÊö‡    Ø?Ú r    ?ÒÂª@   ?Úb’‡   ?Ù÷0    ?Ùƒ6†   ?ÙË)`   http://geadata.esac.esa.int/data-server/datalink/links?ID=2440578577126302336 !ﬁ≠I 
-¢Ä »™?p dœÍÅ  HIP116906¯      HIP116906û@ã◊
-ª£◊
-?ä=q <tº;Dõ¶<#◊
-@’p§>üæw@&Èy:Éo ΩT˝Ù;Dõ¶ ;Éo@$›=á+ ΩóçP<tº ;Â`B@$I∫=Dõ¶ ΩLÃÕ<tº <o@˘€<˝Û∂ Ωtº;Éo ;ƒõ¶?õ•„=ïÅ <›/<¥9X <¥9X?ŒŸ=€"— <Â`B=çP <u¬è?,1<Éo =ŒŸ<Éo <tº?µ∏=e`B =u¬è<Ìëh <ãCñ?åÃÕ<Dõ¶ =ëhs<ı¬è <¨1?-“Ú<T˝Ù =T˝Ù<#◊
- ;ƒõ¶?§õ¶;Dõ¶ =<j;Éo ;£◊
-?†Aâ=Æ{ >%<ãCñ <ìtºAﬂ;=+ <u¬è<49X <oA!dZ>Å =»¥9=LÃÕ =tºA∂F<¥9X =Dõ¶<Éo <Dõ¶@ =â7L <ºj<ìtº <#◊
-@ÙAâ=y€# =ix’<e`B ;Â`B@Õ%<›/@   =Yá<Dõ¶@   <Dõ¶@1=0 ≈ <ƒõ¶<o ;o@‚=]/ ºo<Éo <#◊
-@…°À=+ <u¬è;Â`B ;Éo@IX=#◊
- =\)<e`B <tº@Fá+<Dõ¶ =49X<Dõ¶ ;Â`B@û$›=<j <Â`B;Â`B ;Éo@†ìu=@É =+<#◊
- ;£◊
-@xQÏ=49X 	<õ•„;ƒõ¶ 	;Éo@≥K«=@É :Éo<49X ;Éo@¥j=©˚Á <T˝Ù<u¬è <tº@ßïÅ=◊
-= ºãCñ<o ;Éo@ûv…=ºj 	=Cñ<Dõ¶ 	;£◊
-@«lã='Ôû ;£◊
-;ƒõ¶ ;Dõ¶@ÖÛ∂=©˚Á =Yá;o ;Dõ¶@ìﬂ;=æv… <ãCñ;ƒõ¶ ;£◊
-A$›=#◊
- º#◊
-<ìtº <49XAçP;oºDõ¶:Éo;Dõ¶ ≥@     Gaia DR2 2743198605549406464&Ãô â VÏêD˚ @vOÑ†/∑Ì?¨∞¬&zO@≥åø`◊û?òR√Oá@6P§_GË›?¨§+<U@xÓò`   @v≥–çÚ?¿R-{^¿?h£óÜ/?©K„ÜF7=?¥6cÄ   ?Ã¥¨‡   ?€¥Œ‡   øŸ1†   ?“â¿   ø€ÑÆ¿   ?÷0©¿   øÕŸ†    ø÷“Ô†   ø©¯g†   °°ñ @ @   @Ñ∞.¿                    T@UÔô    ?˙6•JÒö}?yL£√(|§øæ<g     . 
-?≥»Ø       9F«Aqyï≈¬nj@®j9/SﬂÇ@∂Áh`   @ë     0Ab«ëÄn≠ë@¿–πu„?Ã@ëﬁv`   @y`    ,Afº ü8í‡@À˙◊æ˛∏Œ@ä 8`   @HˇÄ   ?ÛH‡     ?ÈÄ∑    ?’òV    ?›i    ¿/$SVØXŒ?√?øŸ‡˝ E√P @Ä      NOT_AVAILABLE@Wôuïÿù¿Këg¥W¸@vn#C‹47@$I·Û,ˆ Ü°@∂      @∂çÄ    @∂˘     ?ÀdZ    ?ì˜Œ‡   ?‘åÁ    ?º]cÄ   ?•ˆ˝    ? @    Ø?ÚŸ_    ?Úåç`   ?Û?¿   ?˜,‘Ä   ?˜Ï¿   ?˜@º@   http://geadata.esac.esa.int/data-server/datalink/links?ID=2743198605549406464 &Ãô â   w?L˘Íx˘T  HIP117367¯      HIP117367Î@ã33<ƒõ¶?è\) <#◊
-;Dõ¶<#◊
-@∑Æ>â7L@(Â`;o º¨1;Dõ¶ ;Éo@	%=u¬è ºÌëh<49X ;Â`B@&{=Yá º¥9X<o ;Â`B@ƒú<Â`B ªÂ`B<#◊
- <o?ôôö=Ÿá <49X<49X <Dõ¶?ÃI∫=›/ <tº<‘˝Ù <49X?+∆®<ãCñ =ÃÃÕ<ãCñ <#◊
-?±GÆ=Cñ <Ìëh;ƒõ¶ ;ƒõ¶?Üß<ƒõ¶ <ºj<T˝Ù <49X?9X<#◊
- =∆ß<¨1 <49X?¢J;Dõ¶ <ÃÃÕ;Éo ;£◊
-?ólã=y€# =ix’;ƒõ¶ <oAff<˝Û∂ =H¥9;Dõ¶ ;ÉoA!â7=∞ ≈ =€"—<Â`B <¨1AÛ∂<Éo =Å%<Éo <Dõ¶@ÀdZ=Éo =á+<õ•„ <49X@Ù9X=mëh =e`B<e`B ;Â`B@ÃÌë<Ìëh@   =H¥9<T˝Ù@   <T˝Ù@ºj=PÂ` =<j<T˝Ù ;Éo@„|Ó=Æ{ =•„<˝Û∂ <ìtº@…ÎÖ<›/ <ÃÃÕ;Â`B ;Éo@Ix’=@É =•„<#◊
- ;ƒõ¶@Glã<Éo =mëh<u¬è <o@û¨=Yá <‘˝Ù<u¬è ;£◊
-@†£◊=49X =tº<tº ;£◊
-@x‘˛=æw 	<›/<49X 	;£◊
-@≥◊
-=#◊
- <ìtº<#◊
- ;Éo@¥Ìë=ïÅ <Â`B<T˝Ù ;Â`B@®ı√=Ÿá <›/;£◊
- ;Dõ¶@ü=Æ{ 	=LÃÕ<49X 	;£◊
-@»r∞=,1 =çP<tº ;Dõ¶@ÜV=ëhs =Ö∏<T˝Ù <#◊
-@îºj=∆ß =49X;Éo ;ÉoA¿É=,1 <Ìëh<Dõ¶ <oA·H;Éo=ëhs;o;Dõ¶ ≥@     Gaia DR2 2434956499296915200! ¥	  8%àfD˚ @vvD7°£u?¶∂h¿¥€Ì¿#K⁄Ha*‰?úgT0∆7@3wãê≈E¸?∞q°í	g@rÒ¿   @|àèÃ2C?πÌ¨j◊Ì5¿bK	 •n	?∞˜ÿØ∞€?»ª°Ä   ?¡‡]@   ?®6¨¿   øµî@   ø◊ı+    øPMÄ¿   ?‰=Œ‡   ø≥¢@   ø„f%Ä   ?Œ•q¿   vvq @ ª†   @Ñ÷                     T@RbÄÄ   ?˘ÿ°k™’T?~â–açÖø∏∂`Ä    * 
-?Æ0{       2FØAm(má÷ıﬂ@§•Î3~xµ@∂ò@   @È¿    1A_Ú}íE@¿⁄d«ß!@çv∆    @ &ú@    -AcAW≈‡õ@Ω∆Èô‘›@îåµ¿   @	``   ?Û
-Ä     ?Í¡    ?÷C\    ?›˙&    ¿?#ÌMÙ»ñ?√≈¶≤›4 E≥∞ @Ä      NOT_AVAILABLE@U¨óÛç¿Q∆I&ÇÛ@v97ºŸ°¿!5<ù8íi Ü°@∂£     @∂o     @∂È’`   ?∂E°¿   ?å¨@   ?Ÿ»@   ?™üæÄ   ?Ä-‡    ? –Â`    Ø?Ù+@   ?Ûã    ?Ùck@   ?˘vL‡   ?˘Zf†   ?˘í3    http://geadata.esac.esa.int/data-server/datalink/links?ID=2434956499296915200 ! ¥	   Õc?ÑVÄõØK  HIP118115¯      HIP118115¶@àÃÕΩtº?åÃÕ <49X;Dõ¶<#◊
-@ˇ∂F>óçP@ ¥9:Éo æìu;o ;£◊
-@x’=u¬è æá+;ƒõ¶ ;ƒõ¶@ r∞=T˝Ù Ω·GÆ;ƒõ¶ ;ƒõ¶@?}<ı¬è Ω}Û∂;£◊
- ;ƒõ¶?í–Â=ŒŸ Ω,1;ƒõ¶ ;Â`B?»1'=–Â` ººj<˝Û∂ <e`B?v…<õ•„ =Dõ¶<õ•„ <49X?∞bN<Â`B <ºj;ƒõ¶ ;ƒõ¶?ÑZ<e`B ;£◊
-<˝Û∂ <¥9X?2-<õ•„ =çOﬂ<Dõ¶ ;Â`B?û{;Dõ¶ ª£◊
-;Dõ¶ ;£◊
-?íM”=}Û∂ <ãCñ;£◊
- ;Â`BAX=tº ºìtº;Â`B ;ƒõ¶Aj=u¬è Ω¥9X=aGÆ =æwAïÅ<49X =æw;ƒõ¶ ;ƒõ¶@∆nò=∞ ≈ Ω¥9X<ãCñ <#◊
-@Ú–Â=Å% <Dõ¶<49X ;ƒõ¶@Ã1<ºj@   <¨1<o@   <tº@Óá+=@É ººj<#◊
- ;Dõ¶@·`B=ìtº ºÌëh<¨1 <Dõ¶@»ı√<‘˝Ù ª£◊
-<#◊
- ;£◊
-@E„T=8QÏ ºìtº<¨1 <Dõ¶@D¨=Cñ <e`B<ı¬è <e`B@ùGÆ=H¥9 :Éo<49X ;£◊
-@ü•„=49X ;Éo<49X ;ƒõ¶@t¨=æw 	Ω•„<#◊
- 	;ƒõ¶@± ¡=49X Ω<j<o ;Éo@≤·H=õ•„ Ω\)<49X ;Â`B@§›/=›/ Ω–Â`<tº ;£◊
-@õ∆®=ºj 	ΩLÃÕ<49X 	;£◊
-@≈V=#◊
- ΩçOﬂ<tº ;Éo@É33=ôôö ΩCñ<#◊
- ;Â`B@ëÎÖ=–Â` Ω49X<T˝Ù <#◊
-Ax’=•„ ΩPÂ`<#◊
- ;Â`BA%<#◊
-Ω49X;Â`B<o  ≥@     Gaia DR2 5130377231512290816G2¬È 
-∆ >Ω1D˚ @C:F√`eº?¶Ô€;Vd≠¿3úïNÄJ?¶_›åÀú@2ÖìˆTk?¨ÛoÒo√â@txÛ‡   @kí‚–”L?¥‡∏ä¬ÈC@A≥(}
-)q?∑v¡≥˜ø¿{@   ?ﬁ=n    øõ•ë`   ?¡†Ã@   ø÷á[    ?µòa‡   ø¬É÷†   ?±’††   ?¶^Œ†   ?√9'     ì ì ç @ ·l    @tnV‡                    T@fA¿   ?˘¥Ê¿ç∫?å9~o∆?õÍ†      
-?¨	Õ@      F ïA^ ˇƒrY@Ø™≥Ø~n@ûQ“    @ ÂÏ¿    AOÍπca/@πg$ jT@Ñj|    @!òZ     AS∏§+?r@∆<î¨ÂFÍ@|`ÖÄ   @È’¿   ?Ûâ      ?Í6Ú    ?÷M®    ?ﬁ <    @+›IdXL?«h8°ˆ E≥∞ @ê      NOT_AVAILABLE@iÜÌ›Ï¿PX≥?0É\@<¥Ú≤¢Ç}¿@`2„ü$ Ü°@∂à¿    @∂a™†   @∂ﬁ     ?§ºjÄ   ?Åhr¿   ?«È    ?ÇnóÄ   ?oÚ‰Ä   ?≤è\     Ø?Ó}Î‡   ?Ìú9‡   ?ÓË∆‡   ?Ï˝L¿   ?Ïﬁ⁄    ?ÌøÄ   http://geadata.esac.esa.int/data-server/datalink/links?ID=5130377231512290816 G2¬È 
-∆   .ã?i_fŸ“%  HIP11915 ¯      HIP11915 â@è\)Ωâ7L?}p§ <49X;Éo<#◊
-@\j?Oﬂ@)â7;o º49X;Dõ¶ ;£◊
-@	%=H¥9 ºÌëh<ãCñ <#◊
-@'ù≤=H¥9 ;o<49X <tº@
-¨<Ìëh <e`B;£◊
- ;ƒõ¶?ú¨=óçP =\)<¨1 <¥9X?–Aâ=◊
-= =æw<›/ <Dõ¶?%`B<ìtº =ôôö<ìtº <49X?¥ì<ºj =T˝Ù<o ;Â`B?Üff<Â`B <¨1=•„ <›/?0Â`<¥9X =Éo<Éo <tº?õÁm;£◊
- º¥9X<o ;Â`B?ê£◊=Ö∏ ;Éo;o ;ƒõ¶Ab<Ìëh Ω»¥9;ƒõ¶ ;£◊
-AãD>∏R Ω£◊
-=49X <˝Û∂A
- ≈<ãCñ ΩT˝Ù<Dõ¶ <tº@≈ ¡=çOﬂ Ω›/<£◊
- <Dõ¶@ ≈=T˝Ù Ωìtº<u¬è <o@» ≈<ìtº@   ΩŒŸ;Dõ¶@   ;Dõ¶@Ïƒú=<j Ω° ¡<#◊
- ;Dõ¶@‡É=≤- Ωe`B=0 ≈ <ÃÃÕ@«|Ó=o ΩPÂ`<o ;Éo@A˚Á=Dõ¶ Ω£◊
-<#◊
- ;Â`B@=∏<T˝Ù Ω“Ò™<o ;ƒõ¶@õdZ=@É Ωq©¸<T˝Ù ;£◊
-@ùV=49X Ωù≤-<Dõ¶ ;ƒõ¶@r=q=,1 	Ωõ•„;Â`B 	;£◊
-@±Oﬂ=8QÏ Ωy€#<T˝Ù ;£◊
-@≤J=£◊
- Ωy€#<#◊
- ;ƒõ¶@•∏=€"— Ω¿É<#◊
- ;£◊
-@ö$›=¥9X 	ΩŒŸ<T˝Ù 	;ƒõ¶@√Ôû='Ôû Ω‘˝Ù<49X ;Éo@Äj=]/ Ωı¬è<ı¬è <¥9X@èÖ=◊
-= ΩÒ©¸<ºj <ÉoAìu=Cñ Ω€"—;Dõ¶ ;ÉoAM”<Â`BΩÈx’<tº;ƒõ¶  ≥@     Gaia DR2 5155981730587168384Gç∫ NÄ?2ÿ,D˚ @GiÊŸ†3_?¢L‘‘ph¿+Üõ{ßå?¢€*imüZ@?9∫∏]?§˙÷~»#F@á–O‡   ¿!^{)L+?±˘∑*	ı•¿pIó—ë•?≥¿bÄ‚6?≈†   ?◊w√¿   ø≠°i    ø¢íÕ¿   ?áô≤    øµNÄ   øÿå=‡   ?≈+˙@   ?π£®    ?À«†    y y w @.†   @mÑh                     T@d†î    ?˘®™˜*a·?É¢h¨7!?µ´Ä     
-?´:Ú†      F vAÅ'wh•ø@ ≈‘◊ˇB@§Äﬂ†   @1á     Aq˛VÁéK@Áço´Ã$@xr‡   @¶     Avi≈∆qx@˚⁄ï∆ys’@iø‹†   @V.Ä   ?Ú◊Î`     ?Í    ?◊H†    ?›µä    @‘ÏÎ#°ú?–EªÇæs 	E≥∞ @Ä      NOT_AVAILABLE@hùÏ39¿K–á¸.‘Ú@C∑@û7¿> ≤~ßUã Ü°@∂V     @∂;     @∂Ñ     ?–ƒõ†   ?∞-‡    ?‡Ω<@   ?√S˜¿   ?Øó$Ä   ?–r∞     Ø?Û∑Ÿ`   ?Ûgô‡   ?ÛÁ‹    ?˜gWÄ   ?˜[¥    ?˜r˚    http://geadata.esac.esa.int/data-server/datalink/links?ID=5155981730587168384 Gç∫ NÄ  8•?wêŒ≥§  HIP14501 ¯      HIP14501 j@â¬èæ¨?àı√ <Dõ¶;Dõ¶<#◊
-Aı√>ßÔû@ÃÕ:Éo æW
-=;Dõ¶ ;£◊
-?¯ìu=aGÆ æix’<#◊
- ;Â`B@∂F=ix’ æ<j<T˝Ù <49X?˘X<Ìëh æH¥9;ƒõ¶ ;Â`B?âá=¥9X ΩÒ©¸;Â`B <o?ª"—=Álã æ   =çP <Éo?Oﬂ<›/ ºõ•„<›/ <e`B?£ïÅ=\) Ωüæw<tº ;Â`B?z·H=tº ΩH¥9<õ•„ <e`B?∏R<u¬è ªÂ`B<T˝Ù <o?öüæ;o Ωo;Éo ;ƒõ¶?çÛ∂=ïÅ ºãCñ;£◊
- <oA∫^<£◊
- ;Â`B<T˝Ù <49XA z·>z· =ßÔû<Â`B <£◊
-A•„<Â`B =49X<ºj <ãCñ@∆M”=â7L Ωºj<ìtº <49X@Û
-==]/ <õ•„<ìtº <#◊
-@Ãj<ƒõ¶@   =+<tº@   <#◊
-@Ìp§=<j Ωix’<#◊
- ;Dõ¶@·&È=â7L Ω\)<õ•„ <Dõ¶@∆ß<ı¬è Ωù≤-;Â`B ;Éo@CïÅ<˝Û∂ Ω]/=Cñ <£◊
-@Bnò<£◊
- º¨1<ìtº <tº@ú‘˛=@É ºT˝Ù<49X ;£◊
-@üo=,1 ºT˝Ù<#◊
- ;ƒõ¶@rè\=LÃÕ 	Ωëhs<#◊
- 	;£◊
-@ÆV=0 ≈ æ≤-<o ;Éo@Øtº=ìtº æhs<Dõ¶ <o@†ºj=€"— ælãD<49X ;£◊
-@õ
-==∂E¢ 	ΩïÅ<o 	;Éo@¬Ÿ=,1 æV<o ;Dõ¶@Ç=q=° ¡ ΩÅ%<Éo <Dõ¶@í=¬è\ Ω'Ôû;Éo ;ÉoA9X<›/ æ∏;Éo ;ÉoA ≈<ìtºΩ˝Û∂<Dõ¶;Â`B ≥@     Gaia DR2 31251045334952960   o© ¨ ıiŒD˚ @Gó´¡Ù3å?ßˇÇ}	Q—@.´ ¯.eÑ?¢%™h¸c@9§ä6Ω0?´I÷∫¢w@}Y˙    @Q™Ä¢àS?π¬˙éªß·¿hQ/Éx?≥[‚‹Ay<?¥†b@   ?∑Ø«¿   ø‘¿@   ?¡3Ä   ø«A¯    ?≠ıæ`   øï1`   ?◊T√‡   ?øKX    ?»u     å å ã @XC`   @i©h†                    T@SW≥¿   ?˙\¯œ7?äw A{≤zø†≤˛      	?Ø˜Ø@      F ïAnQ÷Áñ@≥ˇ÷›R#@®A™    @Ωí†    A`)∞õD¢ç@…¨cMΩËË@Ñ%S¿   @ ı@    Ac≥ß(ò@‡sä-v@rõq    @ËM@   ?ÚÏ»      ?ÈºÍ    ?÷%~    ?›TV    ¿:Ú8EU)?«ø˝"æå E≥∞ @ê      NOT_AVAILABLE@d¶gì5¿B/<Œ\@HÅ9ôŸAm¿«{fRûœ Ü°@∂°Ä    @∂ò     @∂‹Ä    ?•‹∆@   ?ëhr¿   ?ƒ‡v    ?†ç¿   ?Ä-‡    ?¥¬¯@    Ø?Ô«°@   ?Ô$l`   ?Ô‚`Ä   ?Z@   ?ÔÒÄ   ?;¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=31251045334952960    o© ¨   9?~w•º|ˇK  HIP14614 ¯      HIP14614 ´@éffΩﬂ;d?É◊
- <T˝Ù;Éo<#◊
-@ë©¸?ff@$z·     Ω∏QÏ:Éo ;£◊
-@V=aGÆ Ω∫^5<Dõ¶ <o@#33=T˝Ù Ωâ7L;Â`B <o@“Ú<ı¬è Ω]/;ƒõ¶ ;Â`B?îõ¶=° ¡ ºÂ`B<Éo <ìtº?»‘˛=ŒŸ ºõ•„<Â`B <T˝Ù?#o<¨1 =á+<¨1 <Dõ¶?Æ∏R=+ <#◊
-<49X <tº?~˘€<ãCñ Ωo<ƒõ¶ <ìtº?*¿É<Ìëh =#◊
-='Ôû <¨1?õ"—;£◊
- ºÂ`B;£◊
- ;Â`B?ë©¸=á+ <Dõ¶;o ;ƒõ¶A`B<Ìëh æbN<Â`B <£◊
-A‘˛>2- æhs=\) <ÃÃÕA	©¸;Dõ¶ Ω•„T;£◊
- ;£◊
-@≈á=Ö∏ æ$›<ÃÃÕ <e`B@Ô\)=LÃÕ Ωƒõ¶<ãCñ <tº@«\)<õ•„@   æ   ;Dõ¶@   ;ƒõ¶@Î˜œ=@É Ω“Ò™<Dõ¶ ;Éo@ﬁ·H=£◊
- ΩŸá<ºj <e`B@∆M”<Â`B Ω¥9X<tº ;£◊
-@@ƒú=49X Ω ¿É<o ;ƒõ¶@=/<¨1 Ω–Â`<ãCñ <tº@öv…=<j Ω≤-<tº ;£◊
-@új=8QÏ Ωƒõ¶<T˝Ù ;ƒõ¶@oæw=0 ≈ 	ΩÎÖ<tº 	;£◊
-@Ø\)=49X Ω˘€#<tº ;Éo@∞£◊=üæw ΩŸá<T˝Ù <o@£ïÅ=›/ æbN<T˝Ù ;ƒõ¶@ôp§=Æ{ 	Ω˝Û∂<49X 	;£◊
-@√='Ôû æ	7L<49X ;Éo@çP=ix’ æbN<Â`B <£◊
-@éüæ=ƒõ¶ æÅ<T˝Ù <tºA∂F<‘˝Ù æ%„T;Â`B ;£◊
-A„T<ÃÃÕæ\)<#◊
-;Â`B  ≥@     Gaia DR2 5060104351007433472F9 4„ Á`D˚ @I µ4∆Z?å}ùêëi¿<⁄∂È.≠?ïG÷Nd÷'@;¬cnmÔ?†;ã‹eı@ã\ê@   @u–ÁΩÏÀﬁ?¢9’h—l¿PS°ªkÊ?§¡Û6X=†øﬁÀ≠†   ?¨˜P†   ø·â¿   ?–©    ø≈ÈD`   ?¬åj@   ø¥ë\@   ?ƒF†   ø óü†   ø„00    ˙ 	@1B@   @ôÉl`                    T@]–˙Ä   ?˘π‹>g?o´Ü_Ø´?ìDı`    W ?°fõ@      dT
-Aw€`§Sï†@•ı«hŒéº@¡aŒ    @≈u     UAi\†°ƒÙ@∏°)K¶@†y€@   @+@    SAoNÕ∆∫≠û@≈wˇßÂŸ@óU0‡   @Â<@   ?Û Œ‡     ?Í.H    ?÷Y    ?ﬁå    @CÒ¶ö÷˜j?¿ÃUÖ^ *E≥∞ @ê      NOT_AVAILABLE@l±õôÍ¿L£wL·\˝@B}Cƒõõ¿Fõë ãû Ü°@∂£     @∂k@    @∂⁄     ?∆†   ?±hr¿   ?Ãï    ?µ¬è`   ?¢£`   ?¬T`†    Ø?Òˆú    ?Ò†ã¿   ?ÚPb    ?Ù}≠@   ?Ùt;†   ?Ùá‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=5060104351007433472 F9 4„   <ß?Hm∂≠~˜  HIP15527 ¯      HIP15527 ì@ä∏RΩÉo?àı√ <49X;Dõ¶<#◊
-@ˆM”>¨1@$›:Éo æAâ7:Éo ;£◊
-?˛{=á+ æ=p§;Éo ;ƒõ¶@=T˝Ù æçP;Â`B ;Â`B@=tº Ω»¥9<tº <o?åÃÕ=£◊
- Ω∂E¢<u¬è <Éo?¡â7=ﬂ;d Ωõ•„<Â`B <Dõ¶?I∫<e`B ººj<e`B <o?®b=o Ω0 ≈<ìtº <49X?yá<ìtº Ωe`B<ìtº <T˝Ù?ôö<tº º›/<¥9X <Dõ¶?ôôö;Dõ¶ Ω#◊
-;Éo ;ƒõ¶?âôö=Æ{ ΩT˝Ù<ìtº <õ•„A»¥=\) ΩYá<T˝Ù <#◊
-A∞!=óçP Ωëhs=#◊
- <ÌëhA
-£◊<ìtº ºõ•„<Dõ¶ <#◊
-@ƒ˝Ù=•„T æ1'<Éo <#◊
-@Ò/=e`B Ωæw<T˝Ù ;Â`B@ V<õ•„@   Ωo;Dõ¶@   ;Éo@Ìá=49X ΩãCñ;Â`B ;o@‡QÏ=õ•„ Ω}Û∂<ÃÃÕ <u¬è@«∂F<‘˝Ù Ω49X<tº ;£◊
-@A€#=0 ≈ ΩßÔû<ãCñ <#◊
-@?lã<49X ΩãCñ<49X ;Â`B@õﬂ;=Dõ¶ Ω49X<o ;Éo@û$›=49X Ω0 ≈<o ;£◊
-@r~˙=49X 	ΩïÅ<o 	;£◊
-@∞Ìë=8QÏ ΩïÅ<49X ;£◊
-@≤{=ù≤- Ωu¬è<u¬è <tº@§z·=›/ ΩÁlã<o ;£◊
-@ö5?=¿É 	Ω ¿É;£◊
- 	;Éo@√ﬂ;='Ôû ΩŸá<tº ;Éo@ÄÂ`=ãCñ Ω◊
-=<ãCñ <Dõ¶@ê ≈=ŒŸ Ω ¿É<ãCñ <Dõ¶A»¥<Â`B Ω¿É;ƒõ¶ ;£◊
-A¨<ƒõ¶Ω∏QÏ<o;ƒõ¶  ≥@     Gaia DR2 4679878730311238656@ÚDÈ Ñ F¶"ñD˚ @NN«d¡öJ?öπÑÇ–¿N≠¢MŸA5?úÂì˜1©ò@CAä"åIµ?ööÇ©Áª6@ó){    @u ›êMp?´[–Íoµ@[¨)µL¶?∞∆•ÅŒ"Á?‘˚n¿   ?¡€\@   ø√∆ö`   ø∞4`   ?±ó’†   ø´.v    ø¿àÛ    ?ΩØ|@   øñOW`   ?◊ß–Ä    æ æ π @+∆)¿   @Ç{Ì            ?ÆÚò:t‡ã T@h„h    ?˘QIîﬁ”?Ä—a`å!ï?ëIä      ?™ˆî¿      8F¬AÖY6áÕ∆@¡JƒÑ¯C@≥¿≠†   @>_`    1Av[®ò≥I@Ÿ6±"∑&n@å`4†   @¥â     1A|~±„	ø@Òi∂|¸@y√`   @]m¿   ?Ú‚J@     ?Í∏⁄    ?◊bö    ?ﬁ    @A¸)è¨x‹?Àˆa˜√Â√ E≥∞ @ê      NOT_AVAILABLE@q3=‡¿E≤BéïL@ Çxæπn›¿S{} Ü°@∂N@    @∂     @∂o     ?√ÁlÄ   ?¢Ω<@   ?—º†   ?∑
-=Ä   ?ì‡‡   ?¬0U@    Ø?Ò„]†   ?ÒØI@   ?Ú9˚¿   ?Û(,†   ?Û"É    ?Û-÷    http://geadata.esac.esa.int/data-server/datalink/links?ID=4679878730311238656 Ä       Ä   ¯      Ä Ä HIP18844 ?Y5ﬂ4û¨ÄHIP18844 f@ãÆ<e`B?ÅGÆ <#◊
-;Dõ¶<#◊
-@›˚Á>≤-@%≤-;Dõ¶ Ωëhs;Dõ¶ ;Éo@Ÿ=ëhs ΩÅ%<Dõ¶ <o@$1=aGÆ Ω]/<#◊
- <o@˘€=o Ω\);ƒõ¶ ;Â`B?ñ=ı¬è ºãCñ<ÃÃÕ <ÃÃÕ?…á>∏ ºãCñ<Â`B <Dõ¶?0£◊<u¬è =Û∂F<u¬è <tº?¨I∫=,1 º#◊
-<ãCñ <49X?Ö∏=mëh <49X<›/ <£◊
-?$õ¶<ƒõ¶ <Éo;£◊
- ;£◊
-?°hs;Dõ¶ <¨1;Éo ;£◊
-?ç“Ú=ßÔû ºìtº<e`B <u¬èAÌë=]/ =ßÔû<Ìëh <¨1A!o>•„ =ı¬è=æw <ƒõ¶A˜œ<ãCñ =Éo<#◊
- <o@ ¿É=ãCñ =<j<e`B <o@ı7L=Yá =≤-<ı¬è <u¬è@Œ=q<ìtº@   =∏QÏ;Dõ¶@   ;Dõ¶@õ¶=@É =,1;ƒõ¶ ;o@„Ôû=è\) =PÂ`<‘˝Ù <u¬è@ $›=•„ <˝Û∂<ÃÃÕ <o@JJ=#◊
- =<j<e`B <tº@Glã<T˝Ù =ix’<ãCñ <o@û¿É=<j =@É<49X ;Éo@°V=#◊
- =Dõ¶<T˝Ù ;ƒõ¶@y∫^=<j 	='Ôû<T˝Ù 	;£◊
-@≥◊
-=<j <ìtº<#◊
- ;Éo@¥ãD=è\) <Éo;ƒõ¶ ;£◊
-@®j=“Ò™ <tº<tº ;Éo@û·H=¿É 	=@É<#◊
- 	;Éo@» ≈=,1 <›/<Dõ¶ ;Éo@Üüæ= ¿É =ïÅ<Éo <Dõ¶@ïGÆ=“Ò™ =y€#<Dõ¶ <tºAõ¶=\) <£◊
-<Dõ¶ ;Â`BAff<ƒõ¶<ìtº<o;£◊
- ≥@     Gaia DR2 4923433303326992384DSåÅ "(  Ã‘ÀD˚ @∑Eî™?îÖ∞…Wq¿J˝˜†`ıÉ?ïnûtà£@A¢¶∫që?ûâ#Ãs∑Å@í{%    @jN&Eç|?¢~>ÃÄEr¿;Ùÿ≠ıõ‚?§≥zhõNcø”©ß    ?“ÛW‡   ø¿H†   øµË¢¿   ø¬ü§Ä   ?ï%Ä   ø∏4É    ø∞‚£¿   ø’ù`   ø…àM¿   ááÑ @"ªPÄ   @Ü º`                    T@_©¡Ä   ?˘≥≈Ky]·?x2ÒâW,?´$Î‡    , ?ü∆@      3F§AyÀN	ôG@ÆÎ≤uM£l@∫±Ã@   @nß‡    /Ak#É´_¶¬@Ãˇ=¸@çÛ`   @ﬂª¿    +Ap˙T≠Ôn@›.Ë⁄¯DF@Çùå†   @ã	†   ?ÚÚö      ?Í•ë    ?◊>    ?ﬁ9‰    @îEsK0?¿")`‰⁄ E≥∞ @ê      NOT_AVAILABLE@sx"ËÄ∫Ì¿OY3·6—ˆ@t˚èéX-ù¿I(èÃø= Ü°@∂k™†   @∂U     @∂»U`   ?∏$Ä   ?ïÅ    ?∆}V`   ?°ÎÖ    ?ÑFsÄ   ?≥9¿‡    Ø?Ó—@   ?ÌÜ†   ?ÓB‚    ?Îä∞`   ?ÎÅ    ?ÎîQ¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=4923433303326992384 Ä       Ä   ¯      Ä Ä HIP1954  ?N¢§80HIP1954  X@é∏RΩ∏QÏ?u¬è <o;Dõ¶<#◊
-@éM”>Ò&È@'†:Éo ΩH¥9;o ;Éo@K«=Éo Ωe`B<o ;Â`B@$›/=y€# Ω'Ôû<ìtº <T˝Ù@»¥<‘˝Ù Ω•„<tº ;Â`B?ö~˙=y€# <ìtº=Cñ =Cñ?…∫^=Ôù≤ ºDõ¶<‘˝Ù <49X?*=q<£◊
- =¿É<£◊
- <49X?≠Oﬂ=@É ∫Éo<£◊
- <Dõ¶?yá<ºj Ωe`B<Éo <Dõ¶? ≈<T˝Ù ΩÉo<#◊
- ;ƒõ¶?ôx’;Dõ¶ Ω'Ôû;£◊
- ;£◊
-?ã"—=çOﬂ Ω#◊
-:Éo ;ÉoAâ7<õ•„ æ∏<ãCñ <T˝ÙA•„>(ı√ ºDõ¶=Å% =8QÏA	Ám<tº ΩÖ∏<49X <o@≈˚Á=ßÔû Ω–Â`<ãCñ <#◊
-@  =H¥9 Ωõ•„<ìtº <tº@»9X<ºj@   Ω»¥9<o@   <o@ÏÉ=Dõ¶ Ω∞ ≈<49X ;Dõ¶@ﬂçP=q©¸ Ω∞ ≈;Dõ¶ ;Dõ¶@«o<˝Û∂ ΩÉo;£◊
- ;Dõ¶@@ı√=Cñ Ωƒõ¶<e`B <o@=`B<ãCñ Ω ¿É<Dõ¶ ;ƒõ¶@õCñ=LÃÕ Ω}Û∂<#◊
- ;Dõ¶@úƒú=H¥9 Ω∞ ≈<e`B ;£◊
-@qôö=@É 	Ω∞ ≈;£◊
- 	;Dõ¶@∞£◊=LÃÕ ΩßÔû<Éo ;£◊
-@±Oﬂ=õ•„ ΩÆ{<e`B <o@§¨=–Â` Ω€"—;£◊
- ;Dõ¶@ôÎÖ=æv… 	Ω›/<tº 	;Dõ¶@√|Ó=#◊
- ΩÒ©¸<o ;Dõ¶@Äƒú=ìtº Ωﬂ;d<T˝Ù <#◊
-@èdZ=∆ß Ω˘€#;Â`B ;ƒõ¶Aì<ºj æI∫<o ;£◊
-A¬è;ƒõ¶Ω˝Û∂<tº<tº  ≥@     Gaia DR2 2980492387558410112)\÷	 ,«ÄPΩ¿‡D˚ @Q˘∑¢∂ä?©Çˇ(UUÏ¿0ÔµC&ﬂ?´ª 
- Èú@R·]¸ÉÎ?¥\â“V∑@ç¨‡   @`FÔfo‚?∫U¨sÄX&@e-ñ˝⁄t	?ΩÛÀ2√g?≥tù    ?ÆSˇ    ?«m`   ø≈˛K¿   øz’C    øƒ÷]    ?êÆÖ‡   ?≈0¡@   ?∏:Ì    ?≠MöÄ   ÉÉa "@LÁ„¿   @¥>H@   ?◊Ö51o≈1@Sè<”Z\G T@ÜÈ†   ?˙oi2Bı
-?ëf·_à≥øê°‡    . ?∞Ä‘‡      2FïA°(FrDDAhØ√4"@Ü~·@   @,†    'Aë¯/ •@•A¨8á[Ù@~Àw@   @¢3†    'AïÎ•∑ A	nÅ…êw@{˙H    @iû†   ?ÚôÄ¿     ?Èƒ®    ?◊bp    ?‹&‡    @5∏0≤ËF?¡pRF“ E≥∞ @ê      NOT_AVAILABLE@jÎü{∑ãQ¿Afˆù˘¸y@P·¿@Ã◊¿C|\7» Ü°@∂Î     @∂è     @∑^U`   ?§Sè    ?Ç:)¿   ?ƒ‡v    ?ú(ı¿   ?t¿   ?¥¬¯@    Ø?Ó◊\    ?Ì©›`   ?Ô‘Î‡   ?Ô∫Ô`   ?Ô´kÄ   ?Ô s@   http://geadata.esac.esa.int/data-server/datalink/links?ID=2980492387558410112 )\÷	 ,«Ä  V˜?iI˙©=4p  HIP22263 ¯      HIP22263 Ó@ë∏=çP?åÃÕ <T˝Ù;ƒõ¶<#◊
-?=/>ù≤-@4õ¶     >%„T:Éo <o@z·=mëh >ôö<£◊
- <Dõ¶@0Â`=0 ≈ >á+;Â`B <o@7L=o >Ä  <o <o?≠Oﬂ=e`B >(ı√=æw =æw?„ïÅ=Â`B >Bè\<Ìëh <T˝Ù?=p§<Éo >-V<Éo <#◊
-?∆ß=0 ≈ >H¥9<ìtº <Dõ¶?ëhs<õ•„ =€"—=•„ <Â`B?;dZ<tº =◊
-=<£◊
- <Dõ¶?§˝Ù<ºj =H¥9<£◊
- <Dõ¶?û∏R>üæ =Èx’=¨1 =¨1AŒŸ<˝Û∂ ΩÁlã;o <oAìu>∏ æ%„T<£◊
- <£◊
-A
-Ÿ;Éo ªÂ`B<o <49X@«◊
-=ƒõ¶ Ω49X<¥9X <T˝Ù@ÚM”=LÃÕ ªÉo<Â`B <u¬è@…˚Á<Â`B@   Ω0 ≈<T˝Ù@   <e`B@ÔK«=<j :Éo<tº ;Dõ¶@ﬂçP=H¥9 Ω∞ ≈<ìtº <T˝Ù@À33=o =Éo<£◊
- <o@GÔû=0 ≈ <T˝Ù<õ•„ <T˝Ù@C33<49X ºo<#◊
- <o@ûß=]/ =49X<Éo <o@†QÏ=<j <ÃÃÕ<o ;ƒõ¶@y%=8QÏ 	<Ìëh<ìtº 	<#◊
-@¥ºj='Ôû =<j<Dõ¶ ;Â`B@µëh=üæw =Dõ¶<õ•„ <49X@ßÔû=“Ò™ ªƒõ¶;ƒõ¶ ;ƒõ¶@úÉ= ¿É 	ºÂ`B<#◊
- 	;ƒõ¶@∆ff=@É º›/<Éo ;ƒõ¶@Ç¨=49X Ωâ7L=@É =Cñ@ëôö=Â`B Ω]/<ºj <ÉoA%=ix’ Ω° ¡<›/ <ãCñAá=H¥9ΩÖ∏<Â`B<ìtº  ≥@     Gaia DR2 2971536418673198976)=° 'ÄMˆ·ÓD˚ @Tèæ<†˚y?†Ö]ñeÿG¿1m˜Ó˚≠o?§†30Õ-5@4=]a{JŸ?£˚¸∂=Ã(@Ä4W‡   ¿U¯®Sz?±Ô∂^i¿RŒ©yó÷?≥
-V·!Ó˘ø«njÄ   ø¶¶†   ø‰òV@   ?—F•†   ø≤‘é@   ?—Ì¿   øÊÚõ¿   ? u@   ?ª$∑@   ø«<Ä    ˝ ˝ ˘ @Êı@   @|àÄ‡                    T@^˘ı@   ?˘ÙÕ∆?ÅæZß"àøóHœ      ?¨–Ÿ¿       F ˚Adk\ \$%@¶ óWîùŒ@≠áØ†   @ :ä     AU±ÛÎíl@≤ÏUµåo^@íW4¿   @ Ì∫‡    AZÔ'Ä≤ƒÉ@æÒWŒ–@å∏    @è*`   ?Û ‡     ?Íb[    ?÷f    ?ﬁ^û    ¿"Ëõv¥›?¡ÙFPê E≥∞ @ê      NOT_AVAILABLE@kÖqÉ§7°¿9—üa{á@T<ﬂÂ*¿DM†Æ75 Ü°@∂@    @∂>     @∂ï™†   ?¬M”    ?ôôô†   ?Ààe†   ?≤@∑Ä   ?äüæÄ   ?ªjÁ‡    Ø?U˘‡   ?5ú`   ?∂_    ?à'¿   ?|Ä   ?î:    http://geadata.esac.esa.int/data-server/datalink/links?ID=2971536418673198976 )=° 'Ä  dF?bcr§,„®  HIP25670 ¯      HIP25670 Ä@çp§=]/?z·H <#◊
-;Dõ¶<#◊
-@õ33>˜ŒŸ@1%:Éo =Ÿá;o ;£◊
-@ŒŸ=y€# =ù≤-<o ;Â`B@,õ¶=T˝Ù =£◊
-;Â`B ;Â`B@Ìë<Ìëh =mëh<e`B <#◊
-?ù“Ú=‘˝Ù =49X<tº <#◊
-?“∞!>    =mëh=tº <u¬è?/\)<u¬è =Èx’<u¬è <tº?∂Èy=8QÏ =óçP<Éo <49X?ã"—=+ =mëh;o ;£◊
-?9á<u¬è =ƒõ¶<ãCñ <#◊
-?®ìu;Dõ¶ =ù≤-;Dõ¶ ;£◊
-?ò¥9=q©¸ =â7L<o <tºA7L<¥9X º‘˝Ù=o <ºjAïÅ=∆ß ºÉo<Éo <Dõ¶A ¡<u¬è =Yá<o ;ƒõ¶@ è\=â7L =#◊
-<ìtº <49X@ÙãD=q©¸ =á+<¨1 <49X@Õ/<Ìëh@   =ix’<e`B@   <e`B@›/=@É =H¥9<e`B ;Éo@‚˘€=çOﬂ <¥9X<e`B <tº@À†=o =y€#;Â`B ;Éo@Iôö<ÃÃÕ =æw<¥9X <T˝Ù@G†;Â`B =Yá<tº ;ƒõ¶@ü;d=Dõ¶ =}Û∂<tº ;Éo@°GÆ=8QÏ =aGÆ<tº ;£◊
-@z·H=Dõ¶ 	=mëh<tº 	;Éo@µ/=LÃÕ =u¬è<tº ;Éo@µÛ∂=õ•„ =y€#<tº ;ƒõ¶@©€#=ŒŸ =aGÆ<o ;Éo@û·H=∞ ≈ 	=@É<49X 	;£◊
-@»˝Ù=49X =]/<o ;Dõ¶@Ö≤-=≤- =8QÏ;Dõ¶ ;Dõ¶@îì=“Ò™ <ÃÃÕ<#◊
- <oA9X<Ìëh ª£◊
-;o ;Dõ¶A∆®<¨1;o<ìtº<ìtº ≥@     Gaia DR2 3346787986201584896.r-Ò % 4Üv¶D˚ @VAw≈À?ºà+≥ot¥@+ÿ}ı7R–?πXe“»¶π@B,›™Ñ ?´rFüƒ@Ö/Ï¿   @wP±T€?«åŸæPÆ¿~/÷¿{‡ ?√J˝Ë·±øÎñº¿   ø“æêÄ   øÏY©Ä   ?Í[    ?…≈‘¿   ?È6Å@   øÌUè@   ?›€N    ø—B    øÈJ     u u t @*¢Ä   @fZ∂Ä                    T@n0ˆ    ?˘†BÁ≈4U?ä©#*(´´ø—{”`     ?ƒ”Ä      F rAáÀI2ŒoN@«Rzf˙é@∞{E@   @≈¿‡    Aya1 U≥@È’á¢Ù´ª@ÒÄ   @3ıÄ    ABmRÁ≤Ω@ÌﬁW@u @Äæ·@   @‰Q    ?ÚÚ„`     ?Í}#    ?÷„J    ?ﬁ¸    ?”≤≥#. ?¬Ãµ±Í3X E´‡ @`      NOT_AVAILABLE@hEó`ÃÜ¿BôÖÁ@VB3®Ò>¿#π‚A§˝ Ü°@∂d     @∂"     @∂áÄ    ?Œ_ÿ†   ?±∑`   ?ﬂ]Ã`   ?ƒ9X    ?•¬è`   ?œæv¿    Ø?Ûÿ`¿   ?ÛöÄ   ?ÙOl†   ?˜vÄ   ?˜‰+†   ?˜¸¡`   http://geadata.esac.esa.int/data-server/datalink/links?ID=3346787986201584896 .r-Ò %   m¢?vV°’Ö\Å  HIP28066 ¯      HIP28066 n@âôöæá+?àı√ <49X;Dõ¶<#◊
-AÎÖ>ã∆®@`B;Dõ¶ æM“Ú;o ;£◊
-?˘7L=e`B ædZ<#◊
- ;Â`B@ºj=LÃÕ æ,1<o ;Â`B?˚<Â`B æ;dZ<u¬è <49X?â€#>    ΩÁlã<ı¬è <ı¬è?ºãD=Ôù≤ ΩÎÖ=•„ <Éo?•„<u¬è =çP<u¬è <tº?§õ¶<Â`B ΩçOﬂ;ƒõ¶ ;ƒõ¶?}Û∂=çP ΩçP;Dõ¶ ;ƒõ¶?&ff<tº <ºj<e`B <o?üæw;o ;Â`B:Éo ;£◊
-?è\)=Éo ªƒõ¶;Éo ;ƒõ¶A∂F<‘˝Ù ;£◊
-;Â`B ;Â`BA =q=€"— =ãCñ<Â`B <õ•„Aæw<tº =LÃÕ;ƒõ¶ ;Â`B@∆–Â=â7L Ωõ•„<õ•„ <49X@ÛÁm=aGÆ =<j=Cñ <ãCñ@Õp§<ìtº@   =Ö∏;o@   ;Dõ¶@ÓJ=Dõ¶ Ω•„;Â`B ;o@‡ìu=q©¸ ΩYá<Â`B <ãCñ@«S¯=o Ωe`B;ƒõ¶ ;Éo@E“Ú=Cñ º£◊
-=çP <¨1@D1<¥9X ;£◊
-<£◊
- <#◊
-@ù¬è=@É <Éo<Dõ¶ ;£◊
-@üæw=0 ≈ <o<e`B ;ƒõ¶@t9X=@É 	Ω<j;ƒõ¶ 	;£◊
-@Æüæ=49X æz·<49X ;£◊
-@Ø\)=ù≤- æÅ<#◊
- ;Â`B@†¥9=Ÿá ælãD<49X ;£◊
-@õŒŸ=∫^5 	ΩH¥9;Â`B 	;Éo@√S¯=,1 Ω˝Û∂<#◊
- ;Dõ¶@Çß=≤- ΩPÂ`<u¬è <49X@íá+=ŒŸ ºƒõ¶;Â`B ;ƒõ¶A9X<›/ æ∏;Éo ;ÉoAÛ∂<ÃÃÕæ
-=q;£◊
-;Éo ≥@     Gaia DR2 3319126988068404096.Ëi :ªÄ*Ÿ6êD˚ @W@4∂-ú?°òëπz'\@ ΩŸ7U?¢ÇÅ´„RZ@Dà≠∫s?•Ié>4	"@é›Ä   @h©æq`ä{?∞Û˚+/Ú¿o€$Äq?ÆÀGWﬁPø≈D9    ?´´ì    ø–Yø‡   ?“Í…`   ø€≤d    ?√ê@   øŸù9†   ?Œ?‡   ?æd	¿   ø¥Yl     ≤ ≤ ≠ @[X    @taÑ`                    F@gF»@   ?˘¥Ò Àå<?Ñ¡ãøë~ä‡     ?¶‚÷       F πAÉ®4πä∑@∆ÈÄéXj@™§∑    @ªk†    AtÛÕb]’@Ô3‹a´ÁÓ@tõiÄ   @+BÄ    Ax‘¯=xÊ@Ûh∫Ù®@tŒÅ‡   @‰>Ä   ?Ú◊ Ä     ?Í8     ?÷˝n    ?›r“    ¿J√Ø“7÷?¡o|ΩœÜO E≥∞ @ê      NOT_AVAILABLE@iK¿ü[«¿]|ÑXèQ@WG1ÒLJ¿0ü˜-≤∂ Ü°@∂∆     @∂o@    @∂Ó     ?¥9X    ?ëhr¿   ?…7K¿   ?£tº`   ?Ä-‡    ?∑À     Ø?ÓPÎ    ?ÌÁÇ    ?Ô=$    ?Ì‰à@   ?ÌŸ@   ?ÌÔÙ@   http://geadata.esac.esa.int/data-server/datalink/links?ID=3319126988068404096 .Ëi :ªÄ  r¯?eÎˇ»∑∂  HIP29432 ¯      HIP29432 Ç@éffΩÂ`B?ÅGÆ <#◊
-;Dõ¶<#◊
-@ß33>∆ß@"¿É;o ΩÒ©¸;Dõ¶ ;£◊
-@üæ=u¬è æì;ƒõ¶ ;ƒõ¶@Ÿ<#◊
- Ω‘˝Ù<#◊
- <Dõ¶@Ö<ÃÃÕ Ω∂E¢;£◊
- ;£◊
-?éV=ßÔû Ωù≤-<T˝Ù <e`B?¬∞!=“Ò™ Ωâ7L<ı¬è <T˝Ù?"—<Dõ¶ =\)<Dõ¶ <o?®b=+ Ω0 ≈;Â`B ;ƒõ¶?tz·<ı¬è ΩóçP<o ;Â`B?˝Ù<T˝Ù Ω8QÏ<ºj <Dõ¶?ï¬è;o Ωè\);o ;£◊
-?âá=]/ Ωe`B<T˝Ù <e`BAAâ=PÂ` ΩÆ{<›/ <õ•„A!?}>tºj =∂E¢>+ =Ò©¸A	∂F<õ•„ Ωù≤-<u¬è <49X@≈ôö=óçP ΩÈx’<ãCñ <#◊
-@Ó˘€=e`B Ω›/<tº ;£◊
-@«Ám<õ•„@   Ω›/;Éo@   ;£◊
-@ÎÁm=8QÏ ΩŸá<o ;o@ﬂ=Ö∏ Ω–Â`<T˝Ù <o@≈Û∂<Â`B Ω ¿É;Â`B ;Éo@>Èy=tº æo<Dõ¶ <o@<ãD<˝Û∂ ΩÂ`B<‘˝Ù <Dõ¶@ö{=H¥9 ΩÃÃÕ<tº ;Éo@õŒŸ=0 ≈ ΩÎÖ<Éo ;ƒõ¶@oÔû='Ôû 	ΩÁlã<tº 	;£◊
-@ØïÅ=@É ΩÎÖ<u¬è ;£◊
-@∞I∫=õ•„ ΩÌëh<tº ;ƒõ¶@§1=◊
-= æo<tº ;£◊
-@ôp§=ÃÃÕ 	Ω˚Ám<Éo 	;ƒõ¶@√"—=,1 æì<#◊
- ;Dõ¶@Ä(ˆ=ãCñ æo<ãCñ <Dõ¶@è33=›/ æo<ìtº <T˝ÙA¨<‘˝Ù æI∫;£◊
- ;ÉoAÛ∂=0 ≈æ
-=q<#◊
-<o  ≥@     Gaia DR2 3330062833797919744.6¬Å At £íOD˚ @WS[%Æå?Æ#6Œ ê3@%@p·Ì6?ØƒqÏ7Ó@J—4÷Ñ&?≤WåÍMnN@ádÖ‡   @SñôπtÉ±?æ%´yq	Æ¿rô·€ﬁb?∑d¬nI?ºß)†   ø§US¿   ø·>ß    øµh˝    ø‚]    ø◊O√@   øÊŒŒ    ?·å)@   ?⁄ÿ)†   ?—^‡@    { { o @k7¿   @l^_‡           <◊Ïó£˛ø T@pWË    ?˙ÍJπ˚?éø·Ã™˜?∏ •`     	?≥·‡      F ÇAå!¨˝0@È	tìõOÉ@ë˙E‡   @î     A}G…(˙=@ÙBu‰/Ô@wg§‡   @à•‡    AÇöë«‹MA{@qc∏´@`‡   @"ß`   ?ÚËaÄ     ?Î/Ù    ?◊—    ?ﬁé     @AO¨nx§?∆¿äfÊÇã 	E≥∞ @ê      NOT_AVAILABLE@h„hàç5¿◊î°Y@WUÓ®"∂¿)åÆ∞ñ6 Ü°@∂T     @∂@     @∂i     ?ôË>@   ?ÄbM‡   ?¡	k¿   ?äüæÄ   ?oÚ‰Ä   ?±Ú‡    Ø?Ìl«@   ?Ì5ªÄ   ?Ì°≈    ?ÍØ    ?È¯ˇ‡   ?Í^`   http://geadata.esac.esa.int/data-server/datalink/links?ID=3330062833797919744 .6¬Å At   sU?nM4≠AÈ÷  HIP29525 ¯      HIP29525 m@ê£◊ºDõ¶?ãÖ 	<Éo;Â`B<£◊
-?ûŸ?˜œ@/;d;o =üæw;Dõ¶ <Dõ¶@ù≤=Yá =óçP<õ•„ <T˝Ù@)â7=#◊
- =Å%<£◊
- <¥9X@°À<ı¬è >Fß<T˝Ù <Dõ¶?©X=©˚Á >	7L<Dõ¶ <e`B?‹Ìë=Ò©¸ >V<˝Û∂ <u¬è?/\)=@É =Èx’=@É <ƒõ¶?∫=q<ÃÃÕ =€"—<o <tº?àQÏ='Ôû =tº=Ö∏ =<j?%∏=Dõ¶ <ìtº=mëh <ı¬è?©á<ı¬è =•„T=o <ìtº?©á>\) >GÆ=ïÅ =ïÅAAâ=æw ΩÆ{<ƒõ¶ <£◊
-AGÆ>+ Ω\)=–Â` =ù≤-A
-ƒú;£◊
- º49X;Éo <e`B@«†= ¿É Ωâ7L=tº <¨1@Aâ=Yá ΩãCñ<›/ <u¬è@»ìu=49X@   Ω∞ ≈<Â`B@   <Â`B@Ìëh=49X Ω]/<Dõ¶ ;Éo@·„T=üæw ºT˝Ù=PÂ` <˝Û∂@…?}=+ ;Dõ¶<ìtº <tº@FŸ=ix’ ªDõ¶=Cñ <¨1@>Ÿ<Â`B Ωõ•„<ƒõ¶ <T˝Ù@úÉ=LÃÕ ººj<ºj <#◊
-@û$›=@É Ω,1<ºj <49X@u?}=T˝Ù 	ºı¬è<ı¬è 	<e`B@≥S¯=@É ;o<‘˝Ù <49X@¥I∫=óçP <o<õ•„ <T˝Ù@¶~˙=ºj ΩLÃÕ<£◊
- <#◊
-@õK«=◊
-= 	ΩÖ∏<‘˝Ù 	<49X@ƒÃÕ=Yá Ωüæw<ƒõ¶ ;Â`B@Äì=aGÆ æ∏=tº <‘˝Ù@ëp§=Ÿá Ωmëh<T˝Ù <49XAŸ=T˝Ù Ω∫^5<¨1 <e`BAz·<#◊
-Ω–Â`=,1<ı¬è  ≥@     Gaia DR2 5279819789650108800IE∞  ,!Ä0\£D˚ @W≥Ûk¿€k?óÇXèt'Ü¿Q5/˛—;À?úaÿö≤Ì@-N◊–îÃ?ò>[Êõ¸P@É6Ú`   ¿E1≥µ#?®ZÒÉ'´Z@SudD_Iì?™∑¢+bq?±_L¿   øÕ4ﬁ@   ø÷‹≤Ä   øéΩÿ¿   ?ø∑„    øúﬂ‡   ø‡‚‘`   ?—Q·Ä   øƒÕÑ@   ?∫B¿     Õ Õ Ã @"A‹‡   @{íı¿                    T@hªÈ    ?˘ÓT{Ò√∫?Å‚≤¬@—?∑3Û†     ?¶Î@      F ÃARIl≠%r@òé	≤èGÍ@ß‘€    @!˘-     AC7ë„≥@≤.z#Çﬂ@ÄÃ–`   @"∂‡    AHZ√:Îà<@¿LÛØª@wÁÀ    @! ﬁ@   ?ÛìÄ     ?ÎR⁄    ?◊õ‹    ?ﬂ	ÿ    @Hd±‡ì£L?‡rç”õb  E≥∞ @ê      NOT_AVAILABLE@qpÅÍæ◊¿<=)à‹œ@m,ØY D—¿U≈¢∂Wπ÷ Ü°@∂     @µ⁄     @∂Ø     ?∏‘˛    ?Å—N@   ? ïÈ‡   ?£tº`   ?oÚ‰Ä   ?∏öÄ    Ø?ÔõI`   ?Óc‡   ?*æ`   ?Ï“Ê¿   ?ÏΩ”@   ?ÏÁ˙@   http://geadata.esac.esa.int/data-server/datalink/links?ID=5279819789650108800 Ä       Ä   ¯      Ä Ä HIP30037 ?9KwŒÿÌHIP30037 "@çp§;Â`B?hı√ <49X;Dõ¶<#◊
-@ÿr∞>˘X@)€#;Dõ¶ ªƒõ¶;Éo ;£◊
-@
-=q=¨1 º#◊
-<ÃÃÕ <e`B@'lã=£◊
- ∫Éo=\) <ÃÃÕ@Â`<›/ ª£◊
-<e`B <49X?îZ=ﬂ;d ºı¬è<e`B <u¬è?Õ≤-=ÎÖ <õ•„=@É <£◊
-?2-<e`B >   <e`B <o?Ø\)=\) <u¬è<‘˝Ù <Éo?Éo=Å% ª£◊
-<›/ <£◊
-?-Oﬂ<Éo =LÃÕ<tº ;ƒõ¶?ûv…;o ªo;o ;£◊
-?ì∂F=∞ ≈ <Â`B<ìtº <õ•„A{=}Û∂ <Â`B=\) <ÃÃÕA!∏>49X =˚Ám=¬è\ =aGÆAá<ãCñ <tº<#◊
- <o@…V=ãCñ ªƒõ¶<e`B <o@Ú∏R=Å% <tº<›/ <e`B@Ã(ˆ;ƒõ¶@   <ÃÃÕ<tº@   <#◊
-@Ô;d=LÃÕ ∫Éo<Dõ¶ ;Dõ¶@„Ám=“Ò™ =LÃÕ=<j <‘˝Ù@…`B=#◊
- ;Â`B<¥9X <o@F˘€=@É ªo<Dõ¶ ;Â`B@C◊
-<£◊
- ;o<ºj <49X@ùâ7=LÃÕ <tº<49X ;Éo@ütº=#◊
- ∫Éo<¨1 <o@wŒŸ=Dõ¶ 	<49X<u¬è 	;ƒõ¶@≥•„=H¥9 <Dõ¶<Éo ;£◊
-@¥r∞=üæw <e`B<u¬è <o@®ÃÕ=Ÿá <¥9X<õ•„ <o@ùX=∞ ≈ 	∫Éo<õ•„ 	;Â`B@«ù≤=Dõ¶ <#◊
-<u¬è ;Éo@ÑbN= ¿É ;Éo<u¬è <49X@ìù≤=Ôù≤ <#◊
-<ºj <ãCñAj<ı¬è ;Â`B<õ•„ <49XA(ˆ='Ôû;Dõ¶<ãCñ<#◊
- ≥@     Gaia DR2 5567252543129605888MB⁄± !W ,itD˚ @WÃèœid?öùƒZ’ªÂ¿Fd˜Ô}Î[?ùZ ¡π˜≤@2†{»8?ûâMh(@ÉÖ
-‡   @gxÎ=∏J?¨^Ÿú|·@Tg]åóò?¨å;/1≤?ªÙ¿   ?–è-`   ø∆¶ôÄ   øúzbÄ   ?–πó¿   ?àk†   ø–ƒl@   ?¡îÈ@   øu     ø´c«Ä    ﬂ ﬂ € @    @yó˚`                    T@[yX†   ?˘úù[‹c?Ä2ÙŒ≠9ìøìXn†     ?§À`‡       FA`†ëGA§@§Ò¸ "ˆ[@©g&    @ ¨æ†    AQiÜS§b@º|ßeÕ¶@Éÿ©Ä   @!gÚ`    AVÊË/ô‰@√n<j.@Ç,_†   @lù    ?Ú˛ÿ@     ?Î>    ?◊fx    ?ﬁŒ    @F~JVöyG? '÷Ö' 
-E≥∞ @ê      NOT_AVAILABLE@oî,,¿7Îú¬S2°@X˘±"‚Îà¿Q,5∞ Ü°@∂^     @∂'     @∂Ü     ?∑ŒŸ    ?°Ç©†   ?—ƒ2¿   ?Øæv¿   ?öu    ?¬£`    Ø?8ƒ@   ?Ô˛≤¿   ?âµ@   ?Ô€f    ?Ô∆G    ?ÔÑ‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=5567252543129605888 MB⁄± !W   uŒ?r!Rt  HIP30158 ¯      HIP30158 .@ãÆªÉo?s33 <49X;Dõ¶<#◊
-@¸˝Ù>û5?@'Æ;£◊
- Ω#◊
-;ƒõ¶ ;ƒõ¶@ŒŸ=ìtº ΩDõ¶<¨1 <Dõ¶@$j=q©¸ ΩDõ¶<Dõ¶ <#◊
-@∏R<¥9X Ω#◊
-<49X <tº?îõ¶=›/ ºÂ`B<T˝Ù <e`B?«+>hs Ωo=0 ≈ <ìtº?+Ö<e`B = ¿É<e`B <o?´=#◊
- º£◊
-<u¬è <#◊
-?Ñ˝Ù=e`B <#◊
-<¨1 <Éo?.{<ÃÃÕ =Yá<õ•„ <49X?ûV;o ªDõ¶;Dõ¶ ;£◊
-?è;d=49X ªÂ`B<ºj <ƒõ¶A˜œ<˝Û∂ <¨1<tº ;Â`BA Ÿ>V =◊
-=<ºj <ÉoA“Ú<õ•„ =aGÆ<T˝Ù <49X@…©¸=ëhs <Dõ¶<T˝Ù <o@ÛdZ=mëh <ı¬è<u¬è <o@ÕGÆ<u¬è@   =u¬è:Éo@   ;Dõ¶@ÔçP=8QÏ <tº;Â`B ;o@„lã=Æ{ =\)=\) <¨1@…hs=Cñ <tº<Dõ¶ ;£◊
-@F$›=#◊
- ºu¬è<T˝Ù <o@DÃÕ<tº <ãCñ<#◊
- ;Â`B@ù¬è=@É <Éo<49X ;£◊
-@üïÅ=#◊
- ;Dõ¶<u¬è ;ƒõ¶@wçP=LÃÕ 	;Â`B<Dõ¶ 	;ƒõ¶@≥+=T˝Ù ªDõ¶<e`B ;£◊
-@¥(ˆ=ãCñ ;Éo<49X ;Â`B@®b=◊
-= ∫Éo<o ;£◊
-@ù°À=∫^5 	<o<o 	;Éo@«\)=0 ≈ ;Dõ¶<#◊
- ;Dõ¶@Öp§=“Ò™ =çP<õ•„ <e`B@î(ˆ=·GÆ <‘˝Ù<ãCñ <T˝ÙA$›=o º#◊
-<Éo <tºA¨<›/    ;ƒõ¶;Éo ≥@     Gaia DR2 5569858798004394624ML "⁄Ä+€\˘D˚ @XvÁ⁄√?ñ4ŒFãpí¿ElœÛÔ-?ö59€„E@AÔ˜;AÃ?ò#–¢j4@ó«#@   ¿SG˛^Yµ⁄?®ïµúè"@àI‰£lïX?¶¶T¨"&Î?π≠    ?»® ¿   ø⁄*íÄ   ø≤ê    ?”◊¿   ø§ÁhÄ   øﬁ≥]`   ?≤ã∫@   ø¿ﬁO    øΩŒ@    “ “ Œ @˜D¿   @v˚Æ†                    T@l;aÄ   ?˘©˝«h‚ ?xâ~‡ü˚?®9ãÄ     ?£√Y`      $F
-AÜ∑1“Ünd@ƒÇ†ylb‹@±∏k    @˘R‡    AwŒÊOµ¨E@·]⁄©Ëﬂf@ÖÔG@   @n™`    A}„l—Ω`@ÓiS(l@s`   @/@   ?ÚÈ0‡     ?Í√Ÿ    ?◊Ux    ?ﬁ2:    @L∏d£∏`?√´ká#Ö˛ E≥∞ @Ä      NOT_AVAILABLE@oY˝eùœ¿6¬xV~+5@YDL∆©ü¿PÉ&Ä25 Ü°@∂f     @µ8Ä    @∂ŒU`   ?”∂E†   ?ß¥¢@   ?‡Â`@   ?∆;Õ@   ?§z·@   ?–£◊     Ø?Û°¿   ?ÚÔ    ?ıﬁQ†   ?˜t`   ?˜m@   ?˜{"Ä   http://geadata.esac.esa.int/data-server/datalink/links?ID=5569858798004394624 ML "⁄Ä  w?rsÍÍÎzÁ  HIP30476 ¯      HIP30476 M@àı√Ω+?Üff <49X;Dõ¶<#◊
-AM”>Üß@!X;o æ\);Dõ¶ ;£◊
-@^5=ãCñ æ1';Â`B ;Â`B@!hs=]/ Ω¬è\<o <o@1<‘˝Ù ΩßÔû;Dõ¶ ;ƒõ¶?ì◊
->    ΩCñ<ı¬è <˝Û∂?«+>$› Ωo=\) <u¬è?!%<e`B =mëh<e`B <o?≠“Ú=0 ≈ ;Dõ¶<ƒõ¶ <u¬è?Üß=•„ <ºj;o ;£◊
-?5¬è<ìtº =©˚Á<‘˝Ù <e`B?§Z;Dõ¶ =49X;Dõ¶ ;£◊
-?ólã=á+ =ix’;o ;£◊
-A£◊=çP =Å%<49X <tºA!tº=ŒŸ =–Â`<T˝Ù <e`BAÌë<Â`B =˚Ám<¨1 <Éo@»r∞=ïÅ º‘˝Ù<T˝Ù <o@ı%=Å% =•„T<Éo <tº@Œá+<ƒõ¶@   = ¿É<tº@   <tº@Aâ=LÃÕ <ı¬è<49X ;Dõ¶@„çP=ix’ =#◊
-<‘˝Ù <Éo@… ¡=tº <¨1<u¬è ;ƒõ¶@GÆ=o <#◊
-<£◊
- <Dõ¶@GŒŸ<õ•„ =Éo<ìtº <tº@ü;d=H¥9 =}Û∂<Dõ¶ ;£◊
-@°°À='Ôû =á+<tº ;ƒõ¶@x1'=Dõ¶ 	<ãCñ;Â`B 	;£◊
-@≤E¢=Dõ¶ º˝Û∂;ƒõ¶ ;Éo@≥dZ=á+ º£◊
-;£◊
- ;£◊
-@•x’=›/ Ω©˚Á<o ;£◊
-@ù©¸=¥9X 	<tº<tº 	;Éo@∆^5=,1 ºÌëh;Â`B ;Dõ¶@ÖV=∏QÏ <ƒõ¶<#◊
- <o@ï%=Ÿá =]/<T˝Ù <#◊
-A∫^=+ Ω\)<Dõ¶ ;Â`BAïÅ<õ•„ΩCñ<49X;Â`B  ≥@     Gaia DR2 5569067420213055104MIMP  Ä#Â¬¡D˚ @X´Øæy?óEMÓ¶*E¿E≥·]üuC?úî∏O∏Oƒ@1'ñm{Ú?ú~õÎs@ÉCŸ    @«“BÚnx?©†‡?*ÖK@T÷µÜû§l?™‚ã\sbø¶èØ`   ?ÆEÜ`   ø‘©@   ?ÖãΩ†   ?◊µ÷    ?¿8›¿   ø‹¢@   ?—lÄ   ø‘0§`   ø∂s^‡    Â Â ‚ @!Û‘Ä   @}6”¿                    T@g»^Ä   ?˘ø-!89?{ ∏ﬂ#ñø∫+÷@     ?§¥.¿      F ÂA\…1…,Ω‹@†'»ì 2Û@¨ÇN¿   @ ¸ˆ@    ANsãìpÁ`@Ω!Û
-2uæ@ÄπiÄ   @!≤{@    AR¸$ˆQ	i@¿⁄ê<k@ÇÒ©`   @ 
-    ?Û„‡     ?Íáí    ?÷∞†    ?ﬁ^Ñ    @F1Æ˛êB"?÷a(ﬁ*9p E≥∞ @ê      NOT_AVAILABLE@ol^íÃÓ™¿6‹´á'°·@YW0∑„9“¿P¶ubö¢ Ü°@∂ï     @∂R™†   @∂°     ?∫=p†   ?ôôô†   ? √…‡   ?´~ë    ?äüæÄ   ?∑†˘     Ø?ê`   ?Ô˜†   ?l†   ?2Ó    ?'Õ‡   ?>`   http://geadata.esac.esa.int/data-server/datalink/links?ID=5569067420213055104 MIMP  Ä  w&?h5¢Në=Â  HIP30502 ¯      HIP30502 c@åÃÕΩix’?z·H <T˝Ù;Éo<#◊
-@ﬂçP>”˜œ@%`B:Éo Ωõ•„;o ;£◊
-@`B=Å% Ω∞ ≈;Éo ;ƒõ¶@#tº=ix’ ΩÅ%<49X <tº@<Éo ΩLÃÕ<Éo <Dõ¶?ë&È=è\) ΩaGÆ<ÃÃÕ <‘˝Ù?»r∞=Ò©¸ º¥9X<›/ <T˝Ù?X=8QÏ <Â`B=8QÏ <ºj?´Ö=<j ºu¬è<õ•„ <Dõ¶?Åhs<¨1 ºìtº=\) <‘˝Ù?¬è<Dõ¶ Ω,1<ƒõ¶ <T˝Ù?ö^5;Dõ¶ ΩCñ;£◊
- ;ƒõ¶?å(ˆ=©˚Á Ωo<u¬è <ÉoA¬è=o ΩÔù≤;Â`B ;Â`BAV>
-=q æ$›=+ <¥9XA
-¨<49X ΩYá<u¬è <Dõ¶@∆v…=Ö∏ Ω≤-<ƒõ¶ <e`B@ÒOﬂ=u¬è Ω\)<ìtº <tº@ üæ<ƒõ¶@   ººj<o@   <o@Ìôö=æw ΩT˝Ù<49X ;Dõ¶@ﬁá+=üæw ΩÔù≤<ı¬è <ìtº@»b=tº ΩCñ<u¬è ;ƒõ¶@CCñ<Â`B Ωq©¸<¥9X <T˝Ù@@Â`<o Ω49X<tº ;ƒõ¶@úZ=8QÏ ºÂ`B<#◊
- ;£◊
-@ûE¢=æw Ωæw<u¬è ;Â`B@sS¯=8QÏ 	Ωq©¸;Â`B 	;£◊
-@±Oﬂ=@É Ωy€#<tº ;Éo@±˚Á=ëhs ΩÅ%<tº ;Â`B@•`B=ﬂ;d ΩÆ{<tº ;£◊
-@õK«=ºj 	Ωá+<u¬è 	;ƒõ¶@ƒÌë=,1 ΩóçP<tº ;Dõ¶@Ç=q=¨1 ΩÉo:Éo ;o@êQÏ=ƒõ¶ Ωæv…;ƒõ¶ ;£◊
-Ab<ÃÃÕ æV<tº ;ƒõ¶A„T<ÌëhæV<e`B<tº  ≥@     Gaia DR2 2523361151179609344#«ô ’ 7 ÑaD˚ @$eLÚ≈Z?§6´ò3ö¿Óô⁄¯ôÇ?†›ñ’[‰@BﬁÛ0Î ⁄?ß‡òcÁ¸@âJ\    ?Ú	≠Ì∞j?¥—ÅS4Ê§¿W5“i0t?Æ3Î°]@B?Â0    ?Ÿ¢’Ä   ø±v—Ä   øŸW‡   ?”‹    ø≈@Ä   øÊy@   øŒ2,¿   ø«§9    ?÷ƒ±Ä   YYS @'N.¿   @ÜÌ                     T@c∆]@   ?˘–˙4Vá?züÓu,|O?≤g`    ' ?´«sÄ      1FòA∫Õí¥D@  (•l@£ÅMÄ   @àe‡    )ApÎàD—@Ÿ;r._·Ó@ÖtΩ    @Í†    +At≤£ÂõÄ@‹-√ÆS@áïø‡   @Æ¥    ?Ú˜ﬁ     ?Èﬁ\    ?÷!ú    ?›õ    @(ΩdßG¥?√I◊Ωîßû E≥∞ @ê      NOT_AVAILABLE@\Õâ/‰üƒ¿Q|zˇÅ£h@ıYÈ»%,¿%]‹¬k§ Ü¢@∂Ω     @∂°     @∂Â     ?®∫«    ?çIQÄ   ?∆∏Q‡   ?ïœ™¿   ?|C,†   ?µîØ@    Ø?Ó-˛‡   ?ÌƒÊ@   ?Óx‹¿   ?Ìq¿   ?Ìc∑Ä   ?Ì~z    http://geadata.esac.esa.int/data-server/datalink/links?ID=2523361151179609344 #«ô ’   É?yéƒµÃ  HIP3203  ¯      HIP3203  Ï@ëGÆΩLÃÕ?îz· 	<Éo;Â`B<£◊
-?â7>´@.$›:Éo =u¬è:Éo <49X@{=]/ =LÃÕ<ìtº <T˝Ù@+Cñ=8QÏ =q©¸;o <o@v…<›/ >S˜œ;Â`B <#◊
-?´Ám=“Ò™ >¨<o <49X?ﬁ5?=Ìëh >çP<Ìëh <e`B?<(ˆ<Éo >'Ôû<Éo <49X?¡%=<j >#◊
-<¥9X <ãCñ?äüæ<‘˝Ù =]/=LÃÕ =tº?/†<49X =ix’<ƒõ¶ <e`B?ö~˙<¥9X Ω+<õ•„ <Dõ¶?üæw>
-=q =˜ŒŸ=ãCñ =ãCñAÌë<Ìëh æ-V<ƒõ¶ <£◊
-Ap§=y€# æmëh=ôôö =Dõ¶A
-^5<#◊
- Ωtº<u¬è <Éo@ƒÃÕ=ÎÖ æV=\) <¨1@Ô|Ó=@É Ωºj=,1 <¥9X@«•„<¨1@   ΩÌëh;£◊
-@   ;Â`B@Ïz·=@É Ω≤-<Dõ¶ ;Éo@ﬁ∏R=Å% ΩÂ`B;Dõ¶ <tº@»ãD<ı¬è ºìtº<Dõ¶ <o@C=æw ΩÉo<Â`B <ìtº@=p§<ºj Ω ¿É<ìtº <49X@ú1=]/ Ω•„<ìtº <#◊
-@ùp§=8QÏ ΩÖ∏<#◊
- <o@sdZ=•„ 	Ωmëh<ÃÃÕ 	<T˝Ù@±≤-=0 ≈ ΩH¥9<¨1 <#◊
-@≤∞!=ù≤- Ω,1<õ•„ <Dõ¶@§(ˆ=ŒŸ Ω˝Û∂<o <o@ô∫^=Ÿá 	ΩÎÖ<ºj 	<49X@√=LÃÕ æ	7L<¨1 <o@}¬è<Â`B æ,1=ù≤- =aGÆ@é–Â=Èx’ æ\)<ƒõ¶ <ìtºAæw=aGÆ æ"–Â<‘˝Ù <ãCñAì<ı¬èæ%;Éo<tº ≥@     Gaia DR2 5609058277323483392M◊`… T© w„/D˚ @YŸ#ÕÛ|«?óxyOi∆–¿<ä¨ù:πÈ?ü?<≥∞Q%@C\ı…a?°ö/ƒ{T@ëò˝†   @q¢MµDü?ßîâO\z¥¿{†⁄	v?Æ5ZFÇ–?î‹Ä   ?ñL`   ø–r‡   ørRÅ`   ?ÕZ    ?°6x    øŒûù‡   ?∆9H    ?®©[Ä   ø°q¿    ˆ @2Ê¸`   @çP„†   ?∫Ûâ£õKÄ@πü0m6 T@Póµ@   ?˘≤/¡n'à?ÄÕãAàq’øÑ˝Ü      ?§ìoÄ      'F'Aî{	£?¸@ÔóÊ(*˙@îæõ@   @i“@    AÖ"ñ7∫Ç@Ù;`lS·ˆ@Ä∂Ÿ    @p      AãÓÅµ∑>A¡ 	@i`f@   @Ää    ?Ú◊      ?Î0    ?ÿi‹    ?ﬁîÑ    @Rúàv“ ?¬´≥‰S! E≥∞ @Ä      NOT_AVAILABLE@mﬁ¥:≥2Â¿(P_(mÅ‰@[:+«Å–‰¿IçÄ„ıî% Ü°@µÚ     @µ‡     @∂FU`   ?ﬂK∆†   ?∑ˆ+`   ?ÓnóÄ   ?œù≤    ?•sÍ¿   ?„/Ï`    Ø?˘çXÄ   ?¯ÕJ‡   ?˘∑w    @Oƒ    @Hz    @W    http://geadata.esac.esa.int/data-server/datalink/links?ID=5609058277323483392 M◊`… T©   ÅF?rAEPÚ  HIP33094 ¯      HIP33094 ˝@ÉÖ<ºj?åÃÕ <Éo;£◊
-<#◊
-Aè\>ã∆®@'†:Éo ΩLÃÕ:Éo <o@Æ=ìtº ΩLÃÕ<tº <tº@%¬è=Éo º›/<ìtº <u¬è@çP<ºj º‘˝Ù;£◊
- <o?õ=Èx’ <¥9X<õ•„ <£◊
-?œ\)>üæ =o=H¥9 <¨1?;"—<T˝Ù >#◊
-<T˝Ù <#◊
-?¥ì='Ôû =PÂ`<›/ <ãCñ?íM”=#◊
- =Èx’;ƒõ¶ <tº?:¨<o =ÃÃÕ<‘˝Ù <u¬è?Ø;d;Dõ¶ >ì;o ;Â`B?§›/=LÃÕ >%„T<ãCñ <õ•„A~˙=PÂ` >8QÏ<Ìëh <ºjA%â7>çP >∂»¥=çP =+A ¡<¨1 >6E¢<T˝Ù <u¬è@Ã(ˆ=õ•„ =∫^5<o ;ƒõ¶@¯bN=óçP >>v…<£◊
- <Dõ¶@“~˙<Â`B@   >dZ<T˝Ù@   <T˝Ù@Û"—=@É =˜ŒŸ<Éo ;£◊
-@Ê∞!=£◊
- >Oﬂ=â7L =#◊
-@ÀÆ=tº =£◊
-<#◊
- ;Â`B@N<ºj =›/<‘˝Ù <Éo@N<‘˝Ù >$›/<›/ <e`B@°„T=mëh >z·<£◊
- <tº@§ìu=#◊
- >"–Â<£◊
- <#◊
-@~=PÂ` 	=›/<Éo 	<tº@¥Z=PÂ` =Cñ<e`B <o@µp§=y€# =8QÏ<¨1 <T˝Ù@ßŒŸ=ﬂ;d º#◊
-<Dõ¶ <o@°/=¬è\ 	=Ò©¸<49X 	;Â`B@…/=@É =q©¸<Éo ;ƒõ¶@â¬è=Ìëh >/†=0 ≈ <˝Û∂@ôX=˜ŒŸ >@É=Cñ <ƒõ¶A©¸=8QÏ =Æ{<õ•„ <Dõ¶A;£◊
-=° ¡;Dõ¶;ƒõ¶  ≥@     Gaia DR2 3359849565865802112.†ïa .yÄóƒRD˚ @Z—F‘Ω∆≈?©ÔÕaüS@.◊9ü$?ß;}S¯ @7;èQ¥‰?Ø¡¸6<@wÒê    ¿cº∫$≥¸?∏M6$°\¿qÊ¶:#
-?¥TXUÃøÃ–{    ?«–†   øœ™!Ä   ?–øû†   ø‘È.`   ?≤Ãë    øÿ¨—Ä   ?Ÿ4ø@   ?ƒ◊î¿   ø≈∞     Ö Ö É @
-Qô@   @g                     T@P	    ?˘§	L¬çÓ?âû»õœœø¥Nd¿     ?≠£î¿      F ãAjm≈^Ø@≤Dx!a≥£@ß%˜    @VE     A\/X¶t-@◊t«Bÿ˘@sÇb¿   @ \(`    Aa-ô=∂ÄM@Ÿ¶KFß™ @un_    @Äë¿   ?ÚÓe      ?ÈΩ¯    ?÷ ∫    ?›[6    @EòC]…µ]?≈Õ∏Z£ı 
-EªÄ @ê  >Ä  NOT_AVAILABLE@i z-µ∏@%î›¥»¢@Z∞ïYnâÊ¿J@lj Ü°@∂úÄ    @∂å     @∂”@    ?µú‡   ?íT`†   ?»1&‡   ?¶†   ?äüæÄ   ?µo`    Ø?Q‡   ?Ôm∏`   ? @   ?5¡@   ?'x¿   ?D	¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=3359849565865802112 .†ïa .yÄ  Üœ?_ªàÎîˇ  HIP34511 ¯      HIP34511 ¥@é=qΩ∫^5?Ö∏ <Dõ¶;Dõ¶<#◊
-@É+>Î@&ff:Éo Ωy€#;o ;£◊
-@
-==Yá Ωu¬è<ãCñ <#◊
-@%?}=#◊
- Ω\)<#◊
- <tº@∏R<ìtº Ω#◊
-<49X <tº?ï¬è<ÃÃÕ ºõ•„=è\) =è\)?ÀdZ=¬è\ :Éo=o <e`B?'lã<‘˝Ù =©˚Á<‘˝Ù <e`B?¨Ìë=tº ª£◊
-<T˝Ù <tº?{Ám=æw Ω8QÏ=#◊
- <Ìëh?'+<T˝Ù <‘˝Ù<›/ <u¬è?ò¥9;Éo Ω@É     ;£◊
-?çÛ∂=â7L ºãCñ:Éo ;ƒõ¶Aæw<õ•„ ΩÔù≤<¥9X <ÉoA¥9=Ò©¸ æ≤-<ìtº <Dõ¶A
-M”<tº Ω'Ôû;Â`B ;ƒõ¶@≈°À=ïÅ ΩÁlã<£◊
- <Dõ¶@Ô∆®=]/ Ω©˚Á<¨1 <49X@«çP<ìtº@   ΩÒ©¸;Dõ¶@   ;Éo@Ïõ¶=T˝Ù Ω¨1<e`B ;Éo@ﬂtº=è\) Ω¥9X<T˝Ù <o@«;d='Ôû Ωq©¸<‘˝Ù <tº@@  =49X Ω„S¯=+ <£◊
-@<˝Ù<õ•„ Ω◊
-=<T˝Ù ;Â`B@öüæ=@É ΩßÔû<u¬è ;£◊
-@úºj='Ôû Ω∞ ≈<u¬è ;ƒõ¶@pbN=#◊
- 	Ω◊
-=<u¬è 	;Â`B@∞QÏ=,1 Ωºj<ìtº ;ƒõ¶@±GÆ=ïÅ ΩÆ{<Éo <tº@§(ˆ=–Â` Ω˝Û∂;ƒõ¶ ;Éo@ô ¡=€"— 	ΩÂ`B<ìtº 	;Â`B@√dZ=0 ≈ Ω˜ŒŸ<Dõ¶ ;Éo@Äì=mëh æ∏<Â`B <£◊
-@è;d=∂E¢ æo<T˝Ù <#◊
-A1'<ı¬è æ$›<o ;ƒõ¶A$›<£◊
-Ω˚Ám<e`B<tº  ≥@     Gaia DR2 3028228853115437312*n à¡ 	Ëo*D˚ @\*Ø4Jk?†øáÁ¬π¿¿/˝wèæ?§â*ßÉ◊^@;òØ*Á?©3J∞≤é@ÅÖ    @G±ÆüÕ…œ?± )§uå-¿[+x-vXÚ?≤ŸÃïçRø∆Ë;†   ?±˙e¿   ø±4I†   ?”w@   ø¥ÿg‡   ?œW.    ø›É¿   ?ÿ¬:Ä   ?∑˛Ä   ø¡<Ä    ª ª ª  ?Ù®è    @i·†           <“ÿ”µıè¡ T@Ubõ†   ?˙Ò>°•5?É+—∂Ì∑øøﬂ˜@     ?©^¿      F ÏApÙ-Ωâ»›@≤V⁄ì;Cí@≠ï!†   @A9¿    AaÚﬁp`ù@≈?π ˆW@ãÆ†   @´e‡    Af?•V€-∆@÷…8Èπı@> ¿   @a‡   ?Ú˜»¿     ?ÍS    ?÷¢¬    ?ﬁn    @ k¢5[z?…–0¶¢ﬂÁ 
-EªÄ @ê  >Ä  NOT_AVAILABLE@lÚ˘áïÒ?Úià»M@]o¡‰∫£Ç¿B£\∞ÔM{ Ü°@∂f     @∂X@    @∂õ¿    ?•õ=    ?çIQÄ   ?»eî†   ?í:)¿   ?|C,†   ?∑ª/‡    Ø?Ô-„¿   ?ÓöS    ?ÔTO    ?Ìñ`†   ?ÌÉ°    ?Ì© @   http://geadata.esac.esa.int/data-server/datalink/links?ID=3028228853115437312 *n à¡   é†?iü*¬'H  HIP36512 ¯      HIP36512 p@é=qæ%?}p§ <o;o<#◊
-@ªÔû>œ\)@!ôö:Éo æCñ:Éo ;Éo@¨=y€# æI∫;Â`B ;£◊
-@ ƒú=Yá Ω◊
-=<Dõ¶ <tº@nò<¨1 ΩŸá<tº <o?è†>z· Ωëhs=LÃÕ =LÃÕ?¡ÎÖ=ÃÃÕ Ωìtº=\) <u¬è?ÎÖ<¥9X ∫Éo<¥9X <Dõ¶?¶á+=\) ΩaGÆ<49X <o?p ≈<›/ Ω∫^5<Dõ¶ <tº?Â`<tº Ωy€#<ÃÃÕ <T˝Ù?ìïÅ;o Ω≤-;o ;Éo?ã"—=õ•„ Ωæw<tº <tºAX<ƒõ¶ ænò<ºj <ÉoAZ=ºj Ωºj<£◊
- <u¬èA	?};Â`B ΩŸá;o ;Dõ¶@ƒìu=õ•„ æÅ<o ;£◊
-@Ôo=LÃÕ Ω◊
-=<ãCñ <tº@«Æ<õ•„@   ΩÎÖ;Éo@   ;Éo@ÎïÅ=@É ΩÌëh<tº ;Dõ¶@ﬁÈy=}Û∂ Ω◊
-=<Dõ¶ ;Â`B@≈≤-<˝Û∂ Ω€"—;£◊
- ;Dõ¶@>Ÿ=çP æì<Dõ¶ ;Â`B@;∂F<Dõ¶ æ   <#◊
- ;£◊
-@ô˚Á=@É Ω–Â`<tº ;Dõ¶@õ∆®=0 ≈ ΩÌëh<u¬è ;ƒõ¶@oK«=@É 	Ω˚Ám;ƒõ¶ 	;Dõ¶@Æ˘€=8QÏ æ	7L<tº ;Dõ¶@ØÁm=üæw æì<Dõ¶ ;Â`B@£
-==◊
-= æ"–Â;Â`B ;Dõ¶@ôOﬂ=∏QÏ 	æo<tº 	;Éo@¬ß=#◊
- ætº<o ;o@lã=á+ æhs<ìtº <T˝Ù@éE¢=–Â` æ! ¡<T˝Ù <#◊
-AÆ<¥9X æ&Èy<o ;£◊
-AX<Ìëhæ1&È;£◊
-;Dõ¶  ≥@     Gaia DR2 5586381090520538880MÜ– oü Rèæ9D˚ @\+Ngœß[?ïí±%Ç◊¿B´h»”?õ\u7ÁÊ@F˜äÚ∏∫Ω?õÿl˛fk
-@öd»    ¿U∆∏&ÄYz?ßz;Ä)é@J_≠%§ﬂ?´&ç7ÿÚ´øÉ„£†   øqÄ‡   ø—9M¿   ?∫ÿµ‡   ?–ôÂ    ?¡TîÄ   ø”·∞‡   ?¿/†   øZÈ©†   ?≥—     ÿ ÿ ÷ @"hé‡   @|¢Ó¿                    T@k‚‹‡   ?˘¢ºfg¸ª?z5⁄l∆ÖC?Ö≠à†     ?§;·`      F ˆAÜ∂Ãô„m”@€ôºRøiï@öU™¿   @˘f@    AxP"Ô?∆@Òÿa˙+∫˝@uá™    @e%@    A}«Ü}Œ±A˝Z˚u˙}@iM†   @>‡   ?ÚÚ'†     ?ÍW3    ?÷ª    ?›Úv    @"æµî;Í:?∆hàõÛ( 
-E≥∞ @ê      NOT_AVAILABLE@oNà;ïØ¿!ªP,0π@_W©bDé¿MYùœ∫∞ Ü°@∂Æ     @∂zÄ    @∂∆     ?´•„`   ?uµs‡   ?¬è\    ?ñRΩ@   ?c©*@   ?≤nóÄ    Ø?Ì÷Z†   ?Ìóò@   ?Ó_Ø`   ?Ï{m    ?Ïs`   ?ÏÉ †   http://geadata.esac.esa.int/data-server/datalink/links?ID=5586381090520538880 MÜ– oü   é£?p_p¿‘ﬂÊ  HIP36515 ¯      HIP36515 ﬂ@ë¬èºÌëh?ùp§ <ºj<tº<£◊
-?ı√>Ü$›@/
-=:Éo =ôôö;o <T˝Ù@
-==aGÆ =Ö∏<õ•„ <Éo@+∂F=@É =á+<49X <T˝Ù@Ôû=o >j~˙;£◊
- <#◊
-?§õ¶<Â`B =∆ß=â7L =â7L?‹I∫=–Â` >1'=<j <¥9X?-“Ú<£◊
- =›/<£◊
- <e`B?ª∆®=ix’ =Û∂F<›/ <¥9X?âôö<ı¬è =@É=8QÏ =+?-V<›/ =H¥9<˝Û∂ <õ•„?®b=çP =ïÅ=Cñ <£◊
-?ö¨>	7L =üæw=â7L =â7LA¬è<‘˝Ù ΩÔù≤;£◊
- <T˝ÙA?}=Éo æ%„T=T˝Ù =@ÉA
-£◊;Éo ºõ•„<#◊
- <ãCñ@≈Oﬂ=·GÆ Ω˚Ám<Ìëh <ìtº@ÔS¯=@É Ω∆ß=o <ìtº@»r∞<£◊
-@   Ω∫^5;Éo@   ;Â`B@Ïı√=8QÏ Ωìtº<e`B ;Éo@‡QÏ=â7L Ω}Û∂=]/ =+@…X=Cñ ;ƒõ¶<ãCñ <49X@D›/=T˝Ù Ω\)=\) <ºj@<›/<¥9X Ω€"—<õ•„ <e`B@úz·=mëh ºƒõ¶<‘˝Ù <T˝Ù@ù¬è=LÃÕ ΩaGÆ<e`B <49X@vóç=•„ 	ºo=#◊
- 	<õ•„@≥"—='Ôû ªÉo<ƒõ¶ <Dõ¶@≥•„=ßÔû ºDõ¶<£◊
- <u¬è@•€#=∆ß Ωè\)<u¬è <49X@öM”=‘˝Ù 	Ωƒõ¶<¥9X 	<Dõ¶@ƒ  =aGÆ Ω–Â`<˝Û∂ <#◊
-@}Û∂=49X æ(ı√=Yá =•„@êì=“Ò™ ΩÃÃÕ<¨1 <ÉoAM”=H¥9 Ω˝Û∂<£◊
- <ÉoAv…;Dõ¶Ω£◊
-:Éo<49X  ≥@     Gaia DR2 5601564658913429248Mº¡a Í« 5IÓ*D˚ @]Aíè\_£?î0∆![µä¿;Ñ˝5¢
-v?ö°ømoI@)¿—s–…i?†V,
-¢µ@y8˘¿   ¿Q\¸ U\?ßi™ıin@@ë©—íÏ?™ó'•È_ï?ë∞p‡   øƒ¨¿   øÀaÂ‡   øå¿¬    ?—a†   ?rø¿   ø∏ù‡`   ?∞}˘`   ?º˚ZÄ   ø¿À†   %% @ÁﬁÄ   @|Ñ”†                    T@q€¯@   ?˘πmk?P5?{X¬uø∫-™Ä    ! ?¢º∞@      %F>AQÜºLﬂPØ@ôy5B[Á@¶G@   @"…¿    "AB∫›fŒD@•`gu_@åu≈Ä   @"¿æ@    "AG
-zªùË+@´O3◊›a@äˇó¿   @!∞¿   ?ÛØ¿     ?Íÿ    ?’˛ê    ?ﬁ#     @MÜ∞HV≈¡?–Iﬂ∫8| E≥∞ @ê      NOT_AVAILABLE@nsù¨	®ìøo#»9r@_´n˛oj∫¿G…ø!È Ü°@∂œ     @∂xo    @∂˘     ?∑+    ?ëhr¿   ?Ààe†   ?´=¿   ?züæÄ   ?ª"–‡    Ø?Sê    ?    ?“MÄ   ?ÒrS`   ?Ò`·    ?ÒÉ≈¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=5601564658913429248 Mº¡a Í«   î∏?x˜øI‹´  HIP38072 ¯      HIP38072 ‰@ê(ˆ=Æ{?ì33 	<ìtº;Â`B<£◊
-?†Â`?9X@3∂F;o >çP;o <49X@nò=]/ =Ò©¸<õ•„ <Éo@.ß=LÃÕ =Â`B;Éo <49X@ff=8QÏ >RÒ™<ìtº <Éo?ßlã=ëhs =Û∂F<ƒõ¶ <ÃÃÕ?‹1>1' >$›=+ <Éo?C◊
-<‘˝Ù >Fß<‘˝Ù <Éo?ø|Ó=0 ≈ >bN<¥9X <Éo?îZ<ƒõ¶ >$›<Ìëh <ºj?Hr∞<¥9X >æw<Â`B <ãCñ?¶Èy;Â`B =Å%<o <#◊
-?ü;d=∫^5 =Ò©¸<ºj <ÃÃÕA“Ú=çP <Dõ¶<Éo <ÉoAá=Èx’ Ω@É;Dõ¶ <‘˝ÙA5?;Â`B =° ¡<Dõ¶ <Éo@ÀS¯=ºj =Ö∏<e`B <tº@ÙbN=@É =y€#<ìtº <49X@Œ{<u¬è@   =Æ{    @   ;Éo@Ò7L=49X =y€#<Dõ¶ ;Éo@„S¯=•„T =+<›/ <õ•„@Ã¥9=,1 =Â`B<ÃÃÕ <49X@Où≤=#◊
- >1'=49X <‘˝Ù@I˚Á<£◊
- =»¥9<Éo <Dõ¶@†¥9=PÂ` =›/<‘˝Ù <49X@¢$›=<j =ßÔû<ìtº <Dõ¶@~Èy=çP 	=˘€#<ÃÃÕ 	<T˝Ù@∂á+=<j =–Â`<õ•„ <#◊
-@∂Ÿ=ãCñ =¥9X<Éo <T˝Ù@™~˙=›/ =ôôö<49X <o@üﬂ;=∫^5 	=ù≤-<Dõ¶ 	<o@…GÆ=Dõ¶ =Å%<ãCñ ;Â`B@Öâ7=Éo =æw<¥9X <ãCñ@î¨=Ò©¸ =0 ≈<›/ <£◊
-Aõ¶=q©¸ <£◊
-<Ìëh <ìtºAÈy=H¥9=LÃÕ=+<£◊
-  ≥@     Gaia DR2 656546537868692480 	Öô - Ä{ºD˚ @^ΩÁ0Í≥?™òvÖz@0Ö“‚ÔÕ?ùŸè}ﬂ6@=@¨&\?≤}ÙscÒ@yÓ¿   ¿Dò‚£Px?∫•rƒ,oà¿p+1˝Ã÷ê?≠
-ZuªÉƒøŸv‡   ø”Î,`   ø’û¥Ä   ?›\ô    ?∫2¸@   ?÷rXÄ   øÃø@   ?„u·¿   ø›ƒ$‡   ø€¶€@    ﬁ ﬁ ‹ @ãT@   @w ñ`                    T@]àU¿   ?˘ù#Àè!Ó?Å€SÃl‰ø≥g‡     ?∞‹Â¿      ,FdAx?Ò¢ú@@≤.ç¿9a@µV¸    @≥LÄ    &Aiã(K-ùs@ΩÒ'µÒáß@õLú    @#¿    %Ap˘–∏ç“@’∏prUT@áïg`   @Ãc    ?Ú˝`    ?Íµé    ?÷¸Ñ    ?ﬁnò    @!™LVà¯?ƒØ·È~≥∆ EªÄ @Ä  ?   NOT_AVAILABLE@iÕ(ﬂﬂO»@9åC8ïF@^_∞¥¸Î¿±éÃ≈q Ü¢@∂n™†   @∂S™†   @∂õ¿    ?æ˘€    ?•œ™¿   ?—QÇ†   ?±hr¿   ?ì‡‡   ?√¢úÄ    Ø?Òáﬂ¿   ?ÒB:‡   ?Ò≤_‡   ?Ú“
-Ä   ?Ú√=‡   ?Ú‡◊    http://geadata.esac.esa.int/data-server/datalink/links?ID=656546537868692480  Ä       Ä   ¯      Ä Ä HIP40133 ?R`ûAÆHIP40133 q@ãÆ=Ìëh?}p§ <tº;o<#◊
-@´•„>à1'@2¨:Éo =˘€#:Éo ;£◊
-@x’=ìtº =“Ò™<49X ;Â`B@-Û∂=Ö∏ =ŒŸ<£◊
- <u¬è@ﬂ;=+ =“Ò™;Â`B ;ƒõ¶?£o=©˚Á =Æ{<Dõ¶ <T˝Ù?’„T>J =¨1<ı¬è <T˝Ù?+Cñ<ìtº =»¥9<ìtº <#◊
-?π7L=49X =ºj<Éo <#◊
-?è\)=çP =∫^5<ƒõ¶ <ãCñ?Fff<ãCñ >çP<ºj <Dõ¶?≠≤-;Dõ¶ =Ôù≤;Éo ;£◊
-?ú(ˆ=£◊
- =æv…<Dõ¶ <T˝ÙAAâ=•„ =#◊
-<49X <oA á+>"–Â =0 ≈=Yá =•„Aff<ìtº =∏QÏ<T˝Ù <#◊
-@Ã‘˛=ù≤- =Â`B<o ;£◊
-@˜+=y€# >çP<T˝Ù ;Â`B@–ãD<ìtº@   >%„T;Dõ¶@   ;Éo@Û=@É =Ôù≤<#◊
- ;Dõ¶@‰õ¶=Ö∏ =ïÅ=+ <õ•„@Õ%=+ =˘€#;Â`B ;Éo@NŸ<ı¬è =˘€#<õ•„ <49X@M≤-<49X >∏R<49X ;ƒõ¶@°°À=]/ >Cñ<Éo ;£◊
-@£∂F=Dõ¶ >+<e`B ;ƒõ¶@æw=PÂ` 	>	7L<49X 	;£◊
-@∑33=H¥9 =˚Ám<#◊
- ;Éo@∑•„=ïÅ =Èx’<Dõ¶ ;Â`B@´Ôû=–Â` =ı¬è;Â`B ;Éo@°Oﬂ=≤- 	=˘€#<49X 	;Éo@ÀïÅ=8QÏ >
-=q<T˝Ù ;Éo@à£◊=Ÿá >I∫<¥9X <u¬è@ñ·H=˜ŒŸ =Â`B<›/ <õ•„A∏=#◊
- =PÂ`<49X ;ƒõ¶AÒ™=0 ≈=T˝Ù<ãCñ<#◊
-  ≥@     Gaia DR2 5644325284591298688NT´Ò —ËÄœé®D˚ @_ù?òÍ‘?ñµ.ËÆ]ô¿=Óç⁄≥’ﬁ?õkbwrz@9v{ù©L¡?¢Iõ••7@ÜG    @ad5Ès≥0?™od+ﬁU¿rK(=y?´ÛÚ@òqı?–5@‡   øêÕ`   ø’Í˘    ø¡°    ?–)ú`   øπjTÄ   ø“–~    ?πW@   øπÖe`   ?”B Ä   AA> @‘†   @˙û                     T@[g¿   ?˘Œö&í!?z¨/ç\øãï‡    $ ?• ™       -FiAo’u<˝ﬂ~@¨@cÕ\-$@≤_†   @ád`    )A`¿%p|û@¬¥‹à»C@åßb    @¯7‡    &AekÆˆ@««=∑D@å\À@   @ùH@   ?Û‡Ä    ?Í◊}    ?◊8    ?ﬁ°¬    @1V\<ä¢®?¬4˜ú‹( E≥∞ @ê      NOT_AVAILABLE@oCq˝£@£	~DG}@amÉJ¸ë—¿GßÌÂ˛‚6 Ü¢@∂j     @∂4¿    @∂û     ?¿l"`   ?§FsÄ   ?Œ“à¿   ?Æû    ?ëŒ    ?º1     Ø?X3†   ?a‡   ?¶ı    ?Nz`   ?Eë¿   ?Wc    http://geadata.esac.esa.int/data-server/datalink/links?ID=5644325284591298688 Ä       Ä   ¯      Ä Ä HIP41317 ?V∏ô9œ˝FHIP41317 J@åQÏΩ•„T?}p§ <#◊
-;Dõ¶<#◊
-@ı„T>â∫^@  ≈:Éo æ! ¡;o ;Éo@ ¥9=á+ æ"–Â<o ;Â`B@çP=á+ Ω˝Û∂<õ•„ <u¬è@€#<ı¬è ΩÎÖ;Éo ;ƒõ¶?åÌë=◊
-= Ω∂E¢<49X <49X?¿É=ı¬è Ω©˚Á<ƒõ¶ <49X?V<ãCñ º£◊
-<ãCñ <#◊
-?•°À=,1 Ω}Û∂<T˝Ù <tº?wçP=+ Ω}Û∂;Éo ;£◊
-?á<¨1 ºÌëh;Dõ¶ ;£◊
-?ö=q;£◊
- Ω\);o ;£◊
-?ä¿É=u¬è Ω,1<o <tºA(ˆ<ÃÃÕ Ωºj;Éo ;£◊
-A ≈>Cñ ΩÖ∏<ºj <u¬èA
-É:Éo ºÂ`B<o ;Â`B@≈„T=è\) Ω◊
-=<ãCñ <#◊
-@Ò©¸=Yá ºƒõ¶<#◊
- ;ƒõ¶@ Ò™=o@   ºT˝Ù<ãCñ@   <ãCñ@Ìhs=Dõ¶ Ωq©¸<#◊
- ;Dõ¶@ﬂ∆®=â7L Ω° ¡<u¬è <tº@«æw<˝Û∂ Ω0 ≈;Éo ;Dõ¶@C∂F=+ ΩT˝Ù<ãCñ <#◊
-@Aá<o Ω,1<49X ;ƒõ¶@úQÏ=<j ºı¬è<o ;Éo@û-=49X Ω,1<49X ;£◊
-@sS¯=Dõ¶ 	Ωq©¸;Â`B 	;Éo@∞£◊=H¥9 ΩßÔû<#◊
- ;Éo@±p§=ù≤- Ω£◊
-<#◊
- ;Â`B@§É=Ÿá ΩÂ`B<o ;Éo@õ
-==∫^5 	ΩóçP;Â`B 	;Dõ¶@ƒQÏ=,1 Ωæv…<o ;Dõ¶@Å“Ú=£◊
- Ωõ•„;Éo ;Éo@êr∞=ÃÃÕ Ω∂E¢<49X <oA{<‘˝Ù æV;£◊
- ;Dõ¶AÔû<ºjæI∫;ƒõ¶;Éo  ≥@     Gaia DR2 5755064487956174720Oﬁ© ◊Ä  V¿D˚ @`.™!◊z&?°“tu€∞‰¿:ˇnÉQ?ûpX^‡ @Dät)∫D\?¶X…kX@çjÊ‡   ¿rïâáÿÓ?≤(ç%æ@	@EÍ»£Í•?©∂ùa*œø≈X)    øœRì    ø‡mZ    ?ø°ú¿   ?ŒT∫@   ?πo&    øÁ‹o‡   ?◊è¬@   øœÊ¸    ø≥ßÖ     ˇ ˇ ¸ @!ŒÄ   @UV¿                    T@j_©¿   ?˘ö]Ã{X	?~[» Z(ß?Æ”      ?®ÑSÄ      &FAÖŸO'O~@ÀÉù+Ác@®ÔF‡   @N/@    AvBù§btE@ﬂ√›ubÖˆ@Ül¡¿   @πi     A{ÖJrì0@ÁÏkfë@Çh¿   @qÒÄ   ?ÚÏ%      ?Í;Ω    ?÷≥û    ?›√‹    @Aƒ·Îs3{?¬=}“Ì°≤ E≥∞ @ê      NOT_AVAILABLE@mi—ÍAÑ@3˘Ô~4º@`ºÒ∫Ë°¿8oÂeCP Ü°@∂∞     @∂|Ä    @∂√     ?¿bM‡   ?ôôô†   ?Ààe†   ?Æ∏Q‡   ?äüæÄ   ?ªjÁ‡    Ø?q    ?Ô·e‡   ?UCÄ   ?~£Ä   ?x‡   ?Ö+    http://geadata.esac.esa.int/data-server/datalink/links?ID=5755064487956174720 Oﬁ© ◊Ä  •]?f˛≤Ë†Ü  HIP42333 ¯      HIP42333 ÷@ê  >+?é{ <Éo;ƒõ¶<#◊
-?ó
-=>˚Ám@:·H:Éo >Ñõ¶;o <tº@á=Éo >cS¯<u¬è <49X@5?}=@É >\(ˆ;£◊
- <#◊
-@•„=æw >ìtº<T˝Ù <49X?≥tº=¥9X >Z¨;Â`B <49X?‰ºj>
-=q >K∆®=Cñ <Éo?N{<e`B >où≤<e`B <49X?≈°À=Dõ¶ >H¥9<¨1 <ãCñ?ìo;ƒõ¶ =ı¬è<Ìëh <¥9X?Oﬂ;<õ•„ >=p§<¨1 <e`B?¨Ìë<ÃÃÕ =„S¯<¥9X <e`B?•„T=è\) >.{;o <tºA33<›/ º‘˝Ù<T˝Ù <e`BA|Ó>nò º¨1=8QÏ =æwAﬂ;<tº =ix’<#◊
- <T˝Ù@Àæw=æv… =üæw<ìtº <49X@ı&È=LÃÕ =Æ{<›/ <e`B@Œ-<ãCñ@   =¥9X;o@   ;Éo@Ú5?=49X =ºj<o ;Dõ¶@„◊
-=H¥9 =H¥9<ƒõ¶ <ãCñ@Õ€#<ı¬è >çP<Dõ¶ ;Â`B@Ná+='Ôû =Ôù≤<ÃÃÕ <Éo@IGÆ<Dõ¶ =≤-<o <tº@°Oﬂ=ix’ >J<õ•„ <tº@¢∏R=<j =ÃÃÕ<#◊
- <tº@;d='Ôû 	>J<õ•„ 	<49X@∏  =49X >çP<Éo <o@∏r∞=ôôö >Oﬂ<u¬è <Dõ¶@´◊
-=‘˝Ù =Ôù≤<Dõ¶ <o@üﬂ;=æv… 	=ù≤-<T˝Ù 	<o@ ¨=LÃÕ =∂E¢<Éo ;ƒõ¶@ÖÛ∂=Éo =Yá<ı¬è <¥9X@ï„T=ı¬è =•„T<Â`B <£◊
-AÂ`=Éo =•„=Cñ <£◊
-Aõ¶<e`B=]/<ãCñ<ãCñ  ≥@     Gaia DR2 581100382135253760 {∏ ˚ K©tD˚ @`â¶i––?™AON∫i@·OÖzœ?£kÆ>hgÎ@@xº∫¿é?∞≤)%Ø@ëÔÄ   ¿bån	øù?∫ôï_:@NgU1èí?±nNx∂{Iø€¨‘Ä   ø›{É‡   ø·˘D    ?”Ê˚    ?ŸÊ    ?Ÿœ÷@   øÍA¿   ?·È$`   ø”ÓjÄ   ø›^Ä    @ÈÊ    @}P(Ä                    T@\D`   ?˘∏Õ√L?Ä¸«èÎﬂ›øÇeÆ‡     ?±ﬂx       "F*AuÙß∑ÌÎ›@∆¥gπ@üÀ0¿   @! `    !Af‰îÎÂ£3@◊º,{N$@~›U¿   @ú„Ä    Am\|-O¢c@’*œÅƒ»8@Ü1ö    @,öÄ   ?Û
-4‡     ?ÎÇH    ?◊±í    ?ﬂR˛    @$tÅº˚ ?¡ BÌ-ÂÁ EªÄ @†  >Ä  NOT_AVAILABLE@kˇ(i(PI@;´3|!G@`∏TÑ˙I¿+ÜSÒeÔ Ü°@∂CU`   @∂U`   @∂eÄ    ?æÉ‰    ?öüæÄ   ? Ω<@   ?ßçO‡   ?äüæÄ   ?∫¨     Ø?Óg‡   ?Ì¬…    ?ÓÜB¿   ?ÍÚÉÄ   ?Í‡ã¿   ?Î{@   http://geadata.esac.esa.int/data-server/datalink/links?ID=581100382135253760  {∏ ˚   ©!?~kûÿö`¨  HIP43297 ¯      HIP43297 I@ê(ˆ=ßÔû?Ä   <tº;Dõ¶<#◊
-?Ìp§? Aâ@6v…;Dõ¶ >CïÅ;Dõ¶ ;Â`B@≤-=çOﬂ >-V<Dõ¶ ;Â`B@2¿É=Å% >49X<Éo <Dõ¶@{=+ >LÃÕ;ƒõ¶ ;ƒõ¶?™üæ=¿É >tº:Éo ;Éo?‡bN>bN >(ı√=,1 <ãCñ?7ŒŸ<T˝Ù >á+<T˝Ù <o?√˜œ=H¥9 >49X<ƒõ¶ <e`B?ñ$›<ÃÃÕ >z·<ãCñ <Dõ¶??|Ó<Éo =˜ŒŸ<e`B ;Â`B?Æ∏R;Dõ¶ >   ;Dõ¶ ;Éo?¢M”=e`B >hs<49X <Dõ¶A∏R=tº Ωe`B<Éo <Dõ¶AK«=˜ŒŸ Ω+<T˝Ù <Dõ¶AdZ<tº <›/<e`B <49X@…“Ú=©˚Á <ãCñ<Éo <#◊
-@Ùj=}Û∂ =}Û∂=+ <ãCñ@ÕGÆ<£◊
-@   =u¬è;Éo@   ;£◊
-@Â`=LÃÕ =PÂ`<49X ;Dõ¶@„tº=ù≤- =tº=•„ <¥9X@Ã(ˆ=tº =¿É<#◊
- ;ƒõ¶@J–Â<Â`B =mëh<£◊
- <Dõ¶@Fff<Éo =,1<u¬è ;Â`B@†9X=]/ =æv…<T˝Ù ;ƒõ¶@° ¡=<j =ëhs<e`B ;£◊
-@|Ìë=T˝Ù 	=∫^5<u¬è 	;Â`B@∂ff=Dõ¶ =»¥9<49X ;ƒõ¶@∂Èy=•„T =∫^5<Éo <tº@™5?=◊
-= =Ö∏<Dõ¶ ;ƒõ¶@û¿É=¥9X 	=0 ≈<49X 	;£◊
-@»‘˛=@É =Dõ¶<49X ;Éo@Ñ‘˛=ëhs <ãCñ<e`B <49X@îj>	7L =Cñ=0 ≈ <ı¬èAAâ=çP ªo<49X ;Â`BA=q=T˝Ù;Â`B<ºj<e`B ≥@     Gaia DR2 5427207918907843072KQPŸ ∞b cõD˚ @a/Õ
-¯d?õ <∆ºã‹¿Eæﬂ◊è¢!?°≈GÃü@:$—‡Wë¨?°ÀÇ|‘–@áÇP†   @HYiÇ¸‡7?´∏î†°íÅ@fa|·gÄ?Ø4-˝yø»˜Ü    ø∑ëU@   ø⁄>>‡   ?œ8    ?Ã’a†   ?‘IôÄ   ø‚*    ?” rÄ   ?∫—¥    øø ††    Â Â ‰ @Ÿ—Ä   @t7|@                    T@`8`‡   ?˘ª∂ÓKŒ?õnÁ?ì†`     ?ß´ª`       F ¯AyM≠^Ø@¥W¯æÑ˜@≥Ê    @Ñ†    AjêSÈx8@’úM¬c@É™“    @˜ä`    Ap¥@0Z»„@‚‹gÕ\CÍ@|W3    @ù    ?Úˆz‡     ?Í”˚    ?◊6¨    ?ﬁqJ    @PCè7DG?¡∆€ÿéû E≥∞ @Ä      NOT_AVAILABLE@pù¢
-≈@Œµyû#i@d…1ÁYí¿Lùﬁ‰· Ü°@∂à¿    @∂@     @∂ƒ     ?◊K∆†   ?¡e+‡   ?ﬂ    ?«+    ?µ+”¿   ?œˆ†    Ø?Û÷G‡   ?Ûoå¿   ?ÙX‘Ä   ?¯âıÄ   ?¯}&Ä   ?¯ñƒÄ   http://geadata.esac.esa.int/data-server/datalink/links?ID=5427207918907843072 KQPŸ ∞b   Æ©?j0b∫⁄±¡  HIP44713 ¯      HIP44713 @àı√=Å%?ãÖ <#◊
-;Éo<#◊
-@¯1'>ìtº@';d;Dõ¶ Ω@É;o ;Éo@bN=çOﬂ Ωæw<49X <o@%Û∂=aGÆ ºƒõ¶<tº <o@◊
-<Â`B =#◊
-;o ;ƒõ¶?ù/=Ôù≤ =•„<¥9X <¥9X?“è\>ì =ix’<Ìëh <T˝Ù?)˚Á<T˝Ù =æv…<T˝Ù <o?∑+<Â`B =õ•„<¥9X <T˝Ù?åj<ƒõ¶ =ãCñ<Dõ¶ <tº?3tº<tº =óçP<ÃÃÕ <T˝Ù?©á;Dõ¶ =•„T;o ;£◊
-?ô7L=Å% =ëhs;Éo ;ƒõ¶A¨<ı¬è =Ö∏;£◊
- ;£◊
-A  ≈>ì =u¬è<¨1 <e`BAQÏ<Dõ¶ =∞ ≈;Â`B ;ƒõ¶@ $›=Æ{ <Â`B<e`B <o@ıhs=ëhs =æv…<Éo <tº@œ
-=<ƒõ¶@   =ÎÖ<tº@   <#◊
-@ÒÅ=<j =è\)<tº ;Dõ¶@Â∏=ù≤- =∂E¢<Éo <#◊
-@À|Ó<ı¬è =ïÅ<o ;Éo@J~˙=tº =Yá<‘˝Ù <u¬è@I&È<õ•„ =¨1<ãCñ <tº@ü∆®=LÃÕ =üæw<Dõ¶ ;£◊
-@¢$›=,1 =ßÔû<tº ;£◊
-@{o=49X 	=}Û∂<o 	;Éo@µ`B=Dõ¶ =á+<o ;Éo@∂=q=ãCñ =è\)<49X ;Â`B@©x’=»¥9 =,1<#◊
- ;£◊
-@ûÒ™=æv… 	=H¥9<#◊
- 	;Éo@»¥9=0 ≈ =8QÏ<tº ;Dõ¶@ÜŸ=∞ ≈ =•„T;o ;Dõ¶@ï ¡=Álã =üæw<õ•„ <e`BAGÆ=49X =y€#<Éo <#◊
-A=o=e`B;Â`B;£◊
-  ≥@     Gaia DR2 592001288305681280 76	 £Ä6kx:D˚ @a)haQà≤?©*¸lÉz@%§X’+çù?™9ŒFBˇo@.IárÑVõ?´E>Z])@q≈Ä   @f¨»ƒy{9?∑ŒèCDt¿dà˛¸Ã
-??≥∞µ+5ø‡K    ø’ë·¿   ø‡qr    ?‘{Ä   ?Ÿç     ?”$ﬂÄ   øÍ‹≤`   ?’“°‡   ø—ƒÄ   ø·í_‡   lle @$aU@   @Ö√¶†                    T@l–‡   ?˘µPÊƒ¶?}Ñ†F>øø^D     ) 	?±Ëõ‡      .TlA[5ì√´áQ@òÉ`Íû@≤d`   @!F@    +ALÁÇÆóõ5@ß)=kıáˆ@ì˜Æ‡   @!œw     (AQÏ…≈z@ÆxzO{@íä`   @ )Ú    ?Û	Ú¿     ?ÍXP    ?÷f    ?ﬁJÑ    ¿B∆K‚'ı?—kf{' Ì E≥∞ @ê      NOT_AVAILABLE@k`F±ê@A∏Ê,ﬁz?@aΩsn+=¿Hˇwg&z Ü°@∂É     @∂T¿    @∂ñ@    ?ÃI∫`   ?¢àŒÄ   ?”≤˛¿   ?∫	‡   ?íº    ?√àe†    Ø?ÒÀƒ‡   ?Ò≠|`   ?Ú»@   ?Û´ù‡   ?Ûì£    ?Û√ò†   http://geadata.esac.esa.int/data-server/datalink/links?ID=592001288305681280  76	 £Ä  Øá?w·åB◊$  HIP44935 ¯      HIP44935 ã@ã◊
-=•„?Ö∏ <Dõ¶;Éo<#◊
-@–õ¶>∞£◊@*∞!:Éo ;Â`B;o ;£◊
-@
-J=Ö∏ ºT˝Ù<#◊
- <o@'\)=Éo ªo<ìtº <e`B@	GÆ<Ìëh :Éo;ƒõ¶ ;Â`B?òìu=Ôù≤ ;o<¥9X <¥9X?ÃÌë=Â`B <T˝Ù<Â`B <T˝Ù?;dZ<u¬è >$›/<u¬è <tº?≤∞!=#◊
- =#◊
-<tº <o?álã;£◊
- <Ìëh=\) <ÃÃÕ?:¨<49X =ÃÃÕ<›/ <e`B?®1';£◊
- =ïÅ;Dõ¶ ;£◊
-?î˝Ù<Ìëh =•„=•„ =•„A5?<Â`B =çP<õ•„ <e`BA!Ôû>ÉïÅ >2->7K« =‘˝ÙA°À<49X =0 ≈<Dõ¶ <tº@Àtº=ïÅ =çOﬂ<e`B <o@Ùìu=q©¸ =â7L;o ;Dõ¶@ŒE¢<T˝Ù@   =∫^5;o@   ;Dõ¶@Òá=@É =e`B<#◊
- ;Dõ¶@„æw=}Û∂ =8QÏ<ãCñ <#◊
-@ è\<˝Û∂ =8QÏ<#◊
- ;£◊
-@J-<Ìëh =H¥9<¥9X <T˝Ù@I ¡=49X =¬è\=æw <ìtº@ü†=PÂ` =mëh<Dõ¶ ;£◊
-@°Å=<j =Å%<T˝Ù ;ƒõ¶@zè\=PÂ` 	=]/<T˝Ù 	;ƒõ¶@¥ìu=@É ='Ôû<o ;£◊
-@µOﬂ=á+ =#◊
-<49X ;Â`B@©â7=›/ =49X;Â`B ;Éo@ü+=∏QÏ 	=e`B<#◊
- 	;£◊
-@»Ìë=49X =T˝Ù<tº ;Éo@Ü∏R=∫^5 =õ•„;Â`B ;ƒõ¶@ï∏=˘€# =ix’<Ìëh <¨1Aff=•„ ;Â`B<tº ;ƒõ¶A9X=\);ƒõ¶<e`B<tº  ≥@     Gaia DR2 607044664662446720 lßË  RÄ~ÙWD˚ @a/'π∞ù=?´'îÈU…,@,ÈÍªÿh?Ølÿùüo´@4¢*à‰ï?™ïﬁ÷÷ì¨@x’˜¿   ¿fÍiœ¥bƒ?π}W‚íæ@8°
-π.#≤?πâmÖKdøÂØ:Ä   øÇMû    ø·’î@   ?·"9Ä   ø«∆†   ?ﬂ‡†   øÎK∂‡   ?∆”Ê    ?√∆˝    øÂÉü¿    › › ÿ @¿   @vÌÈ                     T@a8ª`   ?˘ªŸùùüC?Ñ!fÍ]Hø≈qq†     
-?∂Cò@      F ÚAcOØô˝K)@´‚˚©∆@¶”Ò    @ Yé@    ATÉ•˘4»0@´·HÛæ≤ƒ@óã∂Ä   @!ø†    AYç¬t”¬@∂r]—.√@í7:†   @…©    ?Ûõ     ?Í~≤    ?÷f,    ?ﬁó8    ¿'É∏<ÿ˝Ë?–›ÓuëBò E≥∞ @ê      NOT_AVAILABLE@jﬂ™'ØΩ®@Béj/ô∑(@`ÒÈBé°Ûø¸¥	}ÏÌ Ü¢@∂Q     @µÈÃ¿   @∂sU`   ?∞—∑    ?ëhr¿   ?≈Êö‡   ?û5?Ä   ?}Êö‡   ?µÅ     Ø?Ô∏Œ†   ?ÔX†   ?s+‡   ?Ó.`   ?ÓÄ    ?ÓH∞†   http://geadata.esac.esa.int/data-server/datalink/links?ID=607044664662446720  lßË  RÄ  Ø≈?c<‚Å“·  HIP44997 ¯      HIP44997 `@ç∏ºDõ¶?u¬è <49X;Dõ¶<#◊
-@“∞!>⁄üæ@*–Â;o <tº;Dõ¶ ;£◊
-@
-–Â=ãCñ ∫Éo<e`B <tº@'Ôû=y€# ;Â`B<u¬è <Dõ¶@  <˝Û∂ ºõ•„<49X <tº?óÔû=¨1 ªo<49X <Dõ¶? ^5=˜ŒŸ ªÂ`B=+ <e`B?!â7<Dõ¶ =u¬è<Dõ¶ <o?≠≤-=@É ;o<ãCñ <49X?á
-==LÃÕ <‘˝Ù<u¬è <Dõ¶?.V;£◊
- =]/<ìtº <#◊
-?óŒŸ;Dõ¶ Ω]/;o ;£◊
-?ç/=T˝Ù ººj<u¬è <ÉoA¨<Dõ¶ Ωu¬è<›/ <õ•„AãD>
-=q Ωæw<Â`B <ìtºAtº<Éo =o<¥9X <Éo@»ì=#◊
- Ωtº=@É <›/@Ò©¸=aGÆ ºƒõ¶<49X ;ƒõ¶@ –Â<¥9X@   ºãCñ;ƒõ¶@   ;ƒõ¶@Ó~˙=8QÏ ºÃÃÕ;Â`B ;o@·hs=8QÏ º›/<ƒõ¶ <e`B@…V=o ªDõ¶;ƒõ¶ ;Dõ¶@G+=Dõ¶ :Éo<e`B <tº@AÎÖ<e`B ºÌëh<#◊
- ;ƒõ¶@úÂ`=@É º49X<49X ;Éo@û–Â=Dõ¶ º¥9X<u¬è ;ƒõ¶@u≤-=PÂ` 	º¥9X<49X 	;£◊
-@≤˘€=<j ºtº;Â`B ;Éo@≥Ö=è\) ºu¬è;Â`B ;£◊
-@ß∆®=–Â` º49X<tº ;Éo@úI∫=•„T 	Ω\)<ìtº 	;Â`B@∆¿É=8QÏ ºÉo<e`B ;Éo@Éo=° ¡ ΩçP<T˝Ù <tº@ë`B=ºj Ωu¬è;Dõ¶ ;ÉoAlã<›/ ΩaGÆ<49X ;Â`BACñ<ÃÃÕΩYá<e`B<tº  ≥@     Gaia DR2 2473157553334460544"Rk±  ÄÓYóD˚ @/zÄ{Ìgª?°(≈Ly¿#∏Í·¿•P?û≠[Ì∆‡@2∆SÄù3Ñ?•˛D™˛1™@{Q+†   @Yduß?≥—ï⁄à+@0µ˜kk„?≠À gÃâ?„ßÑ    ?÷sÇ‡   ø∑;Õ    øŒ◊”    ?÷ö`   ø∞–    ø·‰Å@   øÄ1c    ø√åΩ†   ?ÿ_√    uun @’)    @Ç)zÄ           <⁄πÁ–¶K T@e:`¿   ?˘¬	|ı∞N?vª•˘8C£?°ìí`    + ?™’°‡      8TøA`ëMu-∞l@¶∞ªk›Á@ß]x    @ ÆΩ‡    3AQ≥®˘d_¶@≥ÏºPOá@ån
-`   @!^∑†    2AU∂¥˛—¯ç@µ†é(ÖV@êªÄ   @~¥Ä   ?ÛW@     ?Èı÷    ?’ˇ8    ?›Ït    ¿	E+.î•,?«bÎ˝$Û E≥∞ @ê      NOT_AVAILABLE@`çYH≈ñŸ¿R!NÊn∑€@%'Ç °,¿.åP°F∆ù Ü°@∂ä∆`   @∂†   @∂’™†   ?ôôô†   ?Äˇó    ?¿É`   ?ê©    ?oÚ‰Ä   ?≤¯7¿    Ø?Ôño‡   ?Ó»ê‡   ?l^@   ?Ô'u¿   ?Ô2    ?ÔAπÄ   http://geadata.esac.esa.int/data-server/datalink/links?ID=2473157553334460544 "Rk±  Ä  -?pı≤Â[Úu  HIP4909  ¯      HIP4909  Â@ê  =Dõ¶?é{ <Éo;ƒõ¶<#◊
-?"–Â>∆$›@5∏:Éo >.{;Dõ¶ <o@∂F=q©¸ >Oﬂ<e`B <49X@/lã='Ôû =˝Û∂<T˝Ù <T˝Ù@hs<›/ >Åâ7;Dõ¶ ;Â`B?≤nò=ƒõ¶ >QÎÖ:Éo <tº?„o=›/ >>v…=•„ <ãCñ??|Ó<ÃÃÕ >5?}<ÃÃÕ <u¬è?»ìu=<j >`Aâ<T˝Ù <Dõ¶?êƒú<£◊
- =–Â`=@É =Cñ?9€#<˝Û∂ = ¿É<£◊
- <T˝Ù?≠“Ú<ãCñ =Ò©¸<u¬è <49X?ù≤-=Èx’ =Ÿá=<j =@ÉA“Ú<ìtº ΩÁlã<ãCñ <ÉoAŒŸ<‘˝Ù æ6E¢<ìtº <ÌëhA/<ãCñ <u¬è<ƒõ¶ <£◊
-@»b=–Â` Ω•„<Ìëh <ãCñ@ÚE¢=@É ª£◊
-=Cñ <ìtº@ -<ı¬è@   ΩçP<e`B@   <u¬è@Ô\)=Dõ¶ ;o<#◊
- ;Éo@‡ƒú=ãCñ Ω@É<T˝Ù <Dõ¶@Ào<›/ =u¬è<T˝Ù ;ƒõ¶@J¨=}Û∂ =Dõ¶<Ìëh <ãCñ@Bè\<Éo ºõ•„<tº <tº@û^5=mëh =\)<ºj <o@ü∆®=H¥9 <o<tº <tº@xbN='Ôû 	<£◊
-<ƒõ¶ 	<49X@µ∏=<j =mëh<ãCñ ;Â`B@µx’=è\) =8QÏ<ìtº <T˝Ù@®1=›/ ªDõ¶<Éo <o@ú£◊=€"— 	ºƒõ¶<ãCñ 	<o@∆∞!=LÃÕ ºõ•„<ºj ;Â`B@Å€#=<j Ωõ•„=H¥9 =\)@í5?>∏ Ω\)=49X <˝Û∂AÆ=ôôö Ω•„=8QÏ <‘˝ÙAÅ<49Xºe`B<o<#◊
-  ≥@     Gaia DR2 38357436932906497285;Lë ∏ÄÌD˚ @cå]‹Â?®ã©°Å≠Œ@˜Î"Æio?¨Xïdá§™@;—ó„Œ?´™ÖF=ñ@Äm1‡   ¿i^*Ò<î?µ£{∏˛ﬁ¿"CµˇÓ??∑ÒÅ¬ª®ø‡b√    øﬂßÃ¿   ø…•â‡   ?⁄Û‡   ?“CR    ?”å    ø‡?¬    ?∆äª    ø’Ky    ø“¿    j j f @ƒ®`   @lÜK†           <Ÿh˛À≈I T@Y¡‡   ?˘±4‰ëi?ÜŸo’÷Y ø≈WÖ      ?±Gu†      T ÑAt$%3„ˇâ@∑5”ç¥¸ò@´ƒ«‡   @Å±`    Ae_ôœ±Ÿ≤@ÿl⁄˙;“a@| v    @È>Ä    AjE[EÙß∂@‡¢çà
->ó@yD§¿   @®@    ?ÚÏï      ?ÍÙ    ?÷x“    ?›ó    ¿1lıµyó?“óuVm⁄ E≥∞ @ê      NOT_AVAILABLE@mÕΩSòPB@Féˆã€@c.ÁH'åA¿ Ÿ0Ã>ﬁ Ü°@∂¶     @∂ãÄ    @∂÷     ?π˚Á`   ?ÄbM‡   ?—ÑM    ?™^5@   ?t¿   ?¿∞ÚÄ    Ø?sñ    ?.µÄ   ?öYÄ   ?Ò8¸‡   ?Ò-é‡   ?ÒDj‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=3835743693290649728 5;Lë ∏Ä  ¬\?yœ<‹ﬂ©0  HIP49756 ¯      HIP49756 ù@çÎÖ<ºj?É◊
- <tº;Dõ¶<#◊
-@è†>ªdZ@-p§:Éo =H¥9:Éo ;£◊
-@Ìë=ix’ =o;Â`B ;ƒõ¶@*üæ=aGÆ =H¥9<49X <tº@
-è\<£◊
- <£◊
-<Dõ¶ <#◊
-?ö¿É=Ò©¸ <£◊
-<ºj <ºj?–É=◊
-= ='Ôû=o <e`B?€#<Ìëh <ı¬è<Ìëh <u¬è?¥ºj<Â`B =e`B<o ;ƒõ¶?â∫^=\) =@É:Éo ;Éo?7K«<#◊
- =∂E¢<Â`B <u¬è?§Z;o =49X;Éo ;£◊
-?îz·=0 ≈ =Cñ<ƒõ¶ <ÃÃÕA-=H¥9 =\)<‘˝Ù <ìtºAù≤>$› ºÌëh;o ;£◊
-AS¯     <ºj<o ;ƒõ¶@ ^5=á+ =Cñ<õ•„ <49X@ÛÖ=aGÆ =Cñ<T˝Ù ;Â`B@Ãr∞<õ•„@   =\);Éo@   ;Éo@1'=H¥9 <Ìëh<49X ;Dõ¶@„o=Éo <ƒõ¶<Dõ¶ ;Â`B@ ¨<ı¬è <˝Û∂<o ;Éo@I&È='Ôû =o;Â`B ;£◊
-@Fóç<õ•„ =8QÏ<T˝Ù ;Â`B@ûV=<j =Cñ<#◊
- ;Éo@†£◊=49X =\)<o ;£◊
-@yhs=8QÏ 	=tº;Â`B 	;Éo@¥ ≈=49X <›/<49X ;Éo@¥ı√=óçP <Ìëh;Â`B ;£◊
-@©%=›/ <Ìëh<#◊
- ;£◊
-@ûá+=≤- 	=tº<#◊
- 	;Éo@» ≈=8QÏ <›/<o ;Dõ¶@Ö&È=©˚Á <›/;Â`B ;£◊
-@ìÖ=„S¯ ;Â`B<¨1 <u¬èAnò<Ìëh <tº<tº ;ƒõ¶AV=•„<e`B<49X;Â`B  ≥@     Gaia DR2 2475153682334693120"YÉ) 7 $ë|D˚ @0Ù)s{?£»BtœB¿ wúî™t=?°F€(U€‚@3rî[»ØZ?™∆ãs|B@w=ˇ`   @hbP≤ˇ?ΩF'hÎü2@4}@Y¯?±ïZõﬂï)?Â™â‡   ?ÆPë‡   ?Õê`   ø¬ÖO¿   ?À@í¿   øïú—¿   ø€    ø“⁄•Ä   ø÷#W    ?·…`   hh` @À‰‡   @Å‚¯                     T@c$@   ?˘Õ∏N‰_?z"‘“Sì?∞8“‡    ) ?≤µö       7F•AaÅâ„BÆ∞@†Sƒ∑®O—@±'∏‡   @ ê@    4ARè*@Y,"@¨—èlòı^@îõ™Ä   @!Dl@    3AWµô„∆@∏ÈæØcóC@ç≤a†   @8    ?Û˚@     ?ÍD    ?÷â‡    ?ﬁt®    @Aaäë¥Ç?≈˛Ü\ôõ E≥∞ @ê      NOT_AVAILABLE@`È-{—9¿Q≠ã)ªÓ»@(√ 4îp¿,Åâœ Ü°@∂b     @∂ID`   @∂â™†   ?®ìt¿   ?Ç:)¿   ?…è≈    ?ínóÄ   ?uµs‡   ?∂E°¿    Ø?Ô÷‡   ?Ôfa@   ?o‡   ?Ó¬‰¿   ?Ó¶    ?Óﬂ∏`   http://geadata.esac.esa.int/data-server/datalink/links?ID=2475153682334693120 "YÉ) 7   µ?RE/‰Z]G  HIP5301  ¯      HIP5301  [@å£◊ΩóçP?z·H <49X;Dõ¶<#◊
-@ÊJ>ﬁ∏R@$I∫:Éo Ωæv…;o ;Éo@ÃÕ=Å% Ω¬è\<Dõ¶ <o@"üæ=PÂ` Ωõ•„;Éo ;ƒõ¶@z·<Ìëh Ωôôö<T˝Ù <#◊
-?ólã=mëh ªƒõ¶=tº =çP?ƒõ¶=∆ß ΩT˝Ù=+ <e`B?*=q<Ìëh =¿É<Ìëh <u¬è?®QÏ<ãCñ Ω'Ôû<ƒõ¶ <u¬è?v»¥=\) ΩÖ∏<˝Û∂ <¥9X?%°À<ÃÃÕ <£◊
-<õ•„ <49X?èù≤<T˝Ù ΩÒ©¸<T˝Ù <o?îz·=ﬂ;d =+='Ôû =,1AI∫<e`B Ω¨1<ìtº <T˝ÙAZ=ŒŸ ΩLÃÕ=tº <¥9XA
-=q<‘˝Ù Ω8QÏ<õ•„ <e`B@∆–Â=ßÔû Ωù≤-<¥9X <T˝Ù@ºj=aGÆ ΩYá<#◊
- ;£◊
-@…hs<Â`B@   Ωy€#<T˝Ù@   <T˝Ù@Ï‘˛=]/ Ωù≤-<e`B ;Éo@·/=]/ ΩCñ<õ•„ <49X@«+<˝Û∂ Ωy€#;Â`B ;Éo@BM”=aGÆ Ωôôö=çP <¨1@?+<¨1 Ωëhs<Éo <o@õ†=@É Ωâ7L<Éo ;£◊
-@ùá='Ôû Ωôôö<ãCñ ;Â`B@q©¸=•„ 	ΩÆ{<49X 	;£◊
-@∞Â`=H¥9 ΩóçP<ìtº ;ƒõ¶@±“Ú=ù≤- ΩçOﬂ<o ;ƒõ¶@•/=∆ß Ωºj<Dõ¶ ;£◊
-@öè\=∏QÏ 	Ω∂E¢<e`B 	;£◊
-@ƒìu=49X Ω¨1<#◊
- ;Dõ¶@Å∫^=° ¡ Ω£◊
-;£◊
- ;Éo@êZ=◊
-= Ωæv…<49X <oA~˙<ºj ΩÂ`B<e`B <oA^5=çPΩ›/;Éo;Éo  ≥@     Gaia DR2 5340263487226110720JmY„ T≠º∏D˚ @d¡”1pv=?üµ„H/¿L·ıhï7?ùCòÉ^@1Z*Çkô?§ıiéi@{∏o@   @2U≥†ox·?≠6Å&¶[≈¿C√ŸËT><?™?
-uÙÚøògœ`   ø’¨©¿   øŸN¬    ø≤SŸ‡   ? Ï<†   øà^Ò@   ø¬P=¿   ?—Å Ä   ?ôE@   ?ü§¶@    ˘ ˘ ˆ @$ô¿   @vì@¿                    F@h!º    ?˘≥8l{]?⁄ª`_»‡øº_†      ?§∫‡      #TA\éGô@¢t£J›_@®¡õ¿   @!lÄ     ANáO“,Ö≥@∞ ‡ÖE@ép‡@   @!±‡    !ARæµ®^◊@∫UÓ¶9Y»@Ü∆    @ &`   ?ÛÊ      ?È˛»    ?’ÙÃ    ?ﬁƒ    @?7m⁄Æë=?‘G¢sÖSç E≥∞ @ê      NOT_AVAILABLE@r∫eR#@lŸ'πÊÑ@i\mŒZ_¿KÁ‚§¸∫∏ Ü°@∂}ì@   @∂¶`   @∑Ä    ?ínóÄ   ?ye+‡   ?ºq¿   ?ëŒ    ?oÚ‰Ä   ?Ø.H‡    Ø?Ô‚ıÄ   ?ÓyZ†   ?ÖÍ†   ?Ôu†   ?ÔZ,Ä   ?Ôè⁄¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=5340263487226110720 Ä       Ä   ¯      Ä Ä HIP54102 ?(ÿ≠Óﬁ‰MHIP54102 ’@êQÏ<49X?áÆ <#◊
-;£◊
-<#◊
-?6á+>«Æ@0Â`:Éo =‘˝Ù;o ;Â`B@‘˛=]/ =æv…<£◊
- <Dõ¶@.5?=Dõ¶ =◊
-=<e`B <Dõ¶@Ám<ÃÃÕ >)˚Á<tº <o?¶Èy=ëhs =ÎÖ<ƒõ¶ <ÃÃÕ?ﬁŸ=‘˝Ù >¨<ÃÃÕ <Dõ¶?F$›<e`B >Oﬂ;<e`B <tº?ƒì=æw >49X<T˝Ù <tº?ëGÆ<e`B =Ÿá=çP <›/?=Û∂<#◊
- =ÎÖ<¨1 <Dõ¶?´;Dõ¶ =ƒõ¶;o ;ƒõ¶?ôôö=Å% =óçP;£◊
- ;Â`BAãD<ı¬è Ωâ7L;Éo <#◊
-Ahs=–Â` Ω·GÆ<Â`B <‘˝ÙA
-ƒú<ãCñ º49X<¨1 <ìtº@∆·H=ù≤- ΩóçP<ºj <e`B@Òëh=T˝Ù º›/<¥9X <Dõ¶@…x’<Dõ¶@   Ωq©¸;Éo@   ;ƒõ¶@Ó∏R=Dõ¶ ºìtº<#◊
- ;Dõ¶@·â7>    ºƒõ¶=çOﬂ ='Ôû@ {=+ <Ìëh<49X ;ƒõ¶@G|Ó=PÂ` ;ƒõ¶<›/ <Éo@Ahs<ìtº ΩçP<Dõ¶ <o@ù©¸=PÂ` <T˝Ù<ìtº ;Â`B@üS¯=•„ ªƒõ¶<#◊
- ;Â`B@w;d=•„ 	;o<ìtº 	<tº@≥˜œ=æw <¥9X<u¬è ;ƒõ¶@¥ìu=° ¡ <ìtº<49X <tº@ßdZ=„S¯ ººj<u¬è ;Â`B@úb=ƒõ¶ 	Ω,1<#◊
- 	;ƒõ¶@≈Û∂=49X Ω'Ôû<u¬è ;£◊
-@Å©¸<ºj Ω•„T=}Û∂ =49X@êÌë=›/ Ωôôö<£◊
- <u¬èAçP='Ôû Ω@É<49X <oA∫^=•„ºƒõ¶<ÃÃÕ<u¬è ≥@     Gaia DR2 5387328735240580224J√¢Ò DÏÄb÷ÊD˚ @d“¶Gç?îÄ∏#gñ°¿F/’k“Z?ñê »˙ı@>ı"r˙"?†l0%¯Tæ@é)1@   @UÓx‚¿?ß—‡y~ùõ¿Uπ/ÿÆh?ß)»ã<¶?”
-¡`   ø«ª    ø€;v@   ?ÆÆ¿   ?ºIU    ?µ§¨†   ø¡\G†   ?ƒ`O¿   øâÓ6‡   ?œ'ÖÄ   §§§  @%≤ì    @â\L`                    T@a¯‡   ?˘†⁄d™˛D?u€{Õ	F˛ø∞?™     0 ?¢!3       @T˙A{sÜCÖK@ØFŒB>à@ªµ—‡   @8j     3AleïBùF@ƒ‚^17‡@ï¡m†   @≠Z@    2Aq˜8˝·Ëﬂ@“¿a/˜#@èÀΩ`   @L†   ?Û Q¿     ?Î
-    ?◊O    ?ﬁ≈(    @Kngnx?¿´Y"°q£  E≥∞ @ê      NOT_AVAILABLE@qΩêê6ê'@-#
-E[Ù@g»µWˇÙA¿FÖ&#˚Òã Ü°@∂X¿    @∂C¨¿   @∂xÄ    ?√=¿   ?®b@   ?”ÁlÄ   ?¥Z†   ?ì‡‡   ?≈`AÄ    Ø?Òß    ?ÒuI    ?Ò»É@   ?ÚÀ‡   ?Ú√.Ä   ?Ú“›@   http://geadata.esac.esa.int/data-server/datalink/links?ID=5387328735240580224 J√¢Ò DÏÄ  ‘?sG/9ôs  HIP54287 ¯      HIP54287 R@ä·H=€"—?}p§ <Dõ¶;Éo<#◊
-@œ†>©x’@01';o =æv…;o ;ƒõ¶@ŒŸ=ôôö =ù≤-<T˝Ù <o@+Ám=Å% =çOﬂ<Éo <T˝Ù@/<‘˝Ù =}Û∂<#◊
- <o?û∏R>o =PÂ`=+ =+?”o>hs =y€#=,1 <ìtº?0Â`<õ•„ =ı¬è<õ•„ <49X?∂=Cñ =á+<e`B <#◊
-?çp§=\) =õ•„<e`B <49X?:^5<¨1 =ŒŸ;o ;£◊
-?¨¨;Éo =ﬂ;d;Dõ¶ ;ƒõ¶?ôX=H¥9 =ìtº<ìtº <õ•„A¥9<ı¬è =â7L;Â`B ;Â`BA!°À>üæ >∏R=0 ≈ <›/Aj<o =ºj<#◊
- <tº@Õá=çOﬂ =Û∂F<T˝Ù <o@˜"—=â7L >á+<Dõ¶ ;Â`B@–›/<ƒõ¶@   >1&È<tº@   <tº@Û+=49X =˘€#;Â`B ;o@ÂOﬂ=ëhs =¬è\<ı¬è <ìtº@Ã˝Ù=\) =˜ŒŸ<Dõ¶ ;£◊
-@Nóç<ı¬è =Ò©¸<ìtº <49X@M¬è<õ•„ >æw<õ•„ <#◊
-@°Å=T˝Ù >1'<T˝Ù ;£◊
-@£•„=,1 >∏<T˝Ù ;ƒõ¶@\)=T˝Ù 	>ì<Dõ¶ 	;ƒõ¶@∂·H=]/ =Álã<u¬è ;ƒõ¶@∑ïÅ=ëhs =Â`B<T˝Ù <o@´∂F=“Ò™ =Â`B<tº ;£◊
-@°x’=©˚Á 	>J<e`B 	;ƒõ¶@Àtº=8QÏ >∏<Éo ;£◊
-@à˝Ù=„S¯ >á+<ı¬è <¨1@ñ~˙=ŒŸ =ÃÃÕ;Â`B ;ƒõ¶ACñ<˝Û∂ =u¬è<tº ;ƒõ¶A7L=@É=çOﬂ<Ìëh<ãCñ  ≥@     Gaia DR2 37842715682652599044ÑnÒ ´ÄLpD˚ @dÒæ˘∆?®—ga;Z¿èÉ…e·?† ß¬–«@>“≠‚+ΩA?´øı“∂•h@Å≈õ@   ¿m–c•ÃÍ¯?µ4M.;X.¿eÆ[Ø!;o?≠õ49® ¸ø¬πå    ø·Õù`   ø¡3Ó¿   ?◊&ø`   ?Qª÷†   ?Ãï}@   øÃCﬂ†   ?∏+‡   ø÷&è@   øöry`    Å Å Å  @≥*Ä   @qÜ`                    T@hrÃÄ   ?˘⁄˛¶ê?Å›íçt??ë]Ä     	?©ñt‡      F ƒAÉ»È…täÊ@√ànú…fè@∞4—Ä   @íÁ`    Au*J—59@Â?cÓúµ·@‡9†   @Ò~     AyfÉ*AÙîA_;†=•Ω@gdı@   @À†   ?Ú‘.¿     ?È3S    ?’Èj    ?‹}<    ¿/ÕpîÍ?¡*	$jÓ 	E≥∞ @ê      NOT_AVAILABLE@p~√ÇçI@G’Çp”*@eo§£~¡€¿'m|∑Õ°© Ü°@∂˘     @∂∑Ä    @∑>     ?– ƒ†   ?öüæÄ   ?ÿb@   ?¡o `   ?züæÄ   ?»eî†    Ø?Ù.◊‡   ?Û∑≥¿   ?Ù£„    ?˚p    ?˚_^¿   ?˚ÄœÄ   http://geadata.esac.esa.int/data-server/datalink/links?ID=3784271568265259904 Ä       Ä   ¯      Ä Ä HIP54582 ?T‚ﬂ™Ω¯+HIP54582 ˚@àı√Ωƒõ¶?ôôö <e`B;Éo<#◊
-@›≤->ú(ˆ@“Ú;o æFß;o ;£◊
-?˙^5=LÃÕ æ["—<u¬è <#◊
-@ÃÕ=T˝Ù æ+<£◊
- <u¬è@ôö<ãCñ Ωı¬è<Dõ¶ <tº?ã"—=}Û∂ Ω“Ò™=o =+?¬J=¥9X Ωìtº=Dõ¶ <£◊
-?·H<u¬è =Cñ<u¬è <#◊
-?©X<›/ Ω+<T˝Ù <#◊
-?|j<£◊
- Ω,1<Éo <T˝Ù?;d<£◊
- ª£◊
-<ºj <T˝Ù?óŒŸ;Éo Ω]/;Dõ¶ ;ƒõ¶?é5?=„S¯ ºu¬è=0 ≈ =0 ≈Anò<Ìëh Ωôôö<o <oA$›>ì æ<j<˝Û∂ <ÃÃÕA
-¨;o ΩT˝Ù<tº <tº@≈7L=è\) æ%<‘˝Ù <u¬è@˝Ù=H¥9 Ω8QÏ<Dõ¶ ;Â`B@…/<‘˝Ù@   ΩãCñ<49X@   <Dõ¶@Ï˝Ù=Dõ¶ Ωëhs<#◊
- ;Dõ¶@ﬂ+=•„T Ω∆ß=æw <ºj@∆˘€<ÃÃÕ ΩãCñ<Dõ¶ ;£◊
-@B∞!=+ ΩãCñ<ãCñ <#◊
-@@1'<£◊
- Ωe`B<ìtº <#◊
-@öÒ™=LÃÕ Ωìtº<T˝Ù ;ƒõ¶@ù©¸=H¥9 Ωmëh<u¬è ;Â`B@qá=æw 	Ω¿É<u¬è 	;Â`B@Ø∂F=•„ Ω„S¯<Dõ¶ ;£◊
-@±%=ù≤- Ω¿É<ìtº <#◊
-@£o=›/ æ! ¡<o ;£◊
-@öV=ºj 	Ωƒõ¶<o 	;£◊
-@√tº=,1 ΩÛ∂F<T˝Ù ;Éo@Å7L=H¥9 Ω¬è\=•„ <›/@éÒ™=ƒõ¶ æI∫<ãCñ <Dõ¶A=q=#◊
- æo<#◊
- ;Â`BAnò<›/Ω◊
-=;Â`B;ƒõ¶ ≥@     Gaia DR2 36817950186765011203] ˙ÄDÈÏ;D˚ @g◊·5- y?¶`˛ƒVÎ¿3NıÛ≠Â?ü=:¯]@6&ÆﬁØß+?®MúáòR@}+7    ¿kk∞ÈÊ˚_?ªÂ:˙DÙÈ¿fu“Ü¯ä-?≠`Qu2*ø–™Œ@   ø»$<    ø ”≤    ?íÒÿ†   ?∆"]†   ø§ÿ˘@   øÊçü    ?™†·`   øê·`   ø—<ü¿   ??8 @QÂ    @zß%                     T@T∞û@   ?˘ÜuKL‡?Äì"Tƒ6?≤íÙ`    $ ?±V0       -TqAnˇÏ?5üÊ@©"[´Œé@≥ªﬁ¿   @§È†    (A`Yƒ3õ1@∏å¯ôqè¥@ïN˙@   @ 	ü‡    &Ad£w≥aÒ@ÿp∏ ˙R@{¥‡   @¥áÄ   ?Û      ?Íı¬    ?÷Âb    ?ﬂ"    @Aª|Õ˜¸D?√@üÆ/å E≥∞ @Ä  >Ä  NOT_AVAILABLE@r≠Ÿ«Öi@M`†'&Å+@gÓ◊Æ£Ç?‡÷ÄøöÇ Ü°@∂+@    @µ‚     @∂e™†   ?≈/†   ?≥Ø∑‡   ?⁄_ÿ†   ?¥x    ?¢£`   ?√µÄ    Ø?Ú˛ò    ?Úú    ?Û~ñ‡   ?ı=¿   ?ı    ?ı#aÄ   http://geadata.esac.esa.int/data-server/datalink/links?ID=3681795018676501120 Ä       Ä   ¯      Ä Ä HIP62039 ?TÎ$xvJHIP62039 n@ä·H=‘˝Ù?Çè\ <#◊
-;Dõ¶<#◊
-@«Ám>¨ãD@-∏:Éo =8QÏ:Éo ;£◊
-@¬è=è\) =8QÏ<Dõ¶ <o@*nò=ãCñ =<j<¨1 <Éo@V<‘˝Ù =u¬è;Â`B ;Â`B?ù“Ú=˜ŒŸ =49X<‘˝Ù <‘˝Ù?‘z·>Cñ =ìtº=çP <Éo?333=çP >ì=çP <õ•„?∑Æ=49X =£◊
-<u¬è <#◊
-?è†=Yá =∂E¢<ÃÃÕ <ìtº?C◊
-<ìtº >Oﬂ<o ;ƒõ¶?≠Û∂;o =Û∂F;Éo ;£◊
-?ùp§=mëh =‘˝Ù<tº <#◊
-A"—<ÃÃÕ =¿É;ƒõ¶ ;ƒõ¶A!â7=˜ŒŸ >ìu=,1 <‘˝ÙAV<e`B >+<o ;Â`B@Õ&È=Éo =˘€#<ìtº <#◊
-@˜=â7L >nò<T˝Ù ;Â`B@–Aâ<ı¬è@   >¨<u¬è@   <u¬è@Û=Dõ¶ =Ìëh<#◊
- ;Dõ¶@Êv…=ix’ >$›<tº ;ƒõ¶@ÃãD=o =€"—<49X ;£◊
-@N=o =›/<¥9X <T˝Ù@MÅ<ãCñ >•„<e`B <o@°`B=LÃÕ >o<Dõ¶ ;Éo@£ŒŸ=<j >	7L<T˝Ù ;ƒõ¶@~óç=PÂ` 	=Ìëh<#◊
- 	;£◊
-@∂ß=LÃÕ =Ÿá<#◊
- ;Éo@∑æw=ôôö =Ìëh<e`B <o@´tº=ŒŸ =◊
-=<tº ;£◊
-@°∏=¥9X 	=Ìëh<#◊
- 	;Éo@À"—=@É =ı¬è<e`B ;Éo@âá=∆ß >üæ<T˝Ù <#◊
-@ò1'=˘€# >•„<Ìëh <£◊
-Aëh=•„ =° ¡<#◊
- ;ƒõ¶A\)=#◊
-=ù≤-<e`B<o ≥@     Gaia DR2 2562742595373569280#ê∞–  *RÜßD˚ @4îŸ«ë†?Ωôó˛°S@xØ…?≥™ù K@3ŸIQ¸·á?¡Ù1≥@a∞u‡   @Dkf:_Œk?Ãπß(À‘Œ¿d€©Ó?¬6y6»R≤ø¡G'`   ?ÿRÄ   ø∆˙@   ?±>k    ø‡eN‡   øÀOè@   ø◊F°    ?”: ¿   ?⁄m®    ?Ÿuû†    Ç Ç u @+ùÚ@   @}a∫‡   ?Õ°±>ﬁ†@"N˚cﬁaÛ T@*‘ê†   ?˙Åç¬´2.?õ¡¶2ıx°øºË…@     	?ø_Æ`      T yA^ßU≠ï¿@•œI[ém@¶»ß    @ ‰Å     APs§aeN@º—Œ∞˚¯2@Å»˜    @!ñM`    ASŸÎy†w:@ƒ¢"L-xﬂ@~…}Ä   @‚h@   ?Û!@     ?ÍQî    ?÷9å    ?ﬁiú    @oEäÚÉD?Ï¿]˙≤√Y E≥∞ @ê      NOT_AVAILABLE@a9÷iÌ ¿M;´˚∆|˘@4TÍ:M|©¿Vpîq Ü°@∂ç@    @∂7     @∂ÀÄ    ?ôôô†   ?ÄbM‡   ?¥ØO    ?àìt¿   ?c©*@   ?ßök`    Ø?Ïp¸`   ?Î÷yÄ   ?ÌOÇÄ   ?ÈL‰    ?È¶‡   ?ÈÇ!    http://geadata.esac.esa.int/data-server/datalink/links?ID=2562742595373569280 Ä       Ä   ¯      Ä Ä HIP6407  ?FΩµÄ'HIP6407  è@ê(ˆΩmëh?z·H <T˝Ù;ƒõ¶<#◊
-?ÛïÅ?,I∫@+;o <Dõ¶;o <o@Cñ=]/ ;ƒõ¶<T˝Ù <tº@*Ò™=<j =]/<e`B <Dõ¶@ëh<£◊
- =ãCñ<49X <#◊
-?¢∞!<Â`B =ßÔû=â7L =â7L?◊
-==Û∂F =æv…=çP <Éo?:·H=#◊
- >"–Â=#◊
- <¨1?∏¥9=<j =≤-<Éo <49X?ÑZ=Éo ;ƒõ¶=49X =o?1ÎÖ='Ôû =ãCñ<¨1 <Dõ¶?†bN;Dõ¶ <Dõ¶;£◊
- ;Â`B?ólã>V =ix’=ìtº =ìtºAè\=Æ{ Ωâ7L=çOﬂ =H¥9A5?=Yá ΩŒŸ=mëh =49XA
-bN<£◊
- Ωtº<Â`B <¨1@≈∫^=∏QÏ Ω·GÆ<¨1 <T˝Ù@ ≈=<j Ωìtº<ãCñ <#◊
-@»Z<Dõ¶@   Ω¿É;Dõ¶@   ;£◊
-@Ïƒú=aGÆ Ω° ¡<¨1 ;ƒõ¶@‚E¢=∫^5     =0 ≈ <‘˝Ù@«Ám=\) Ω•„<49X ;Â`B@DÃÕ=ix’ Ωtº<ìtº <Dõ¶@>v…<ƒõ¶ ΩßÔû<£◊
- <49X@õæw=e`B Ω@É<ºj <tº@ùâ7=Dõ¶ Ω}Û∂<Éo <o@s∂F=çP 	Ω]/<u¬è 	<tº@±ëh=,1 ΩT˝Ù<ãCñ <o@≤è\=£◊
- Ω<j<›/ <u¬è@•%=Ÿá Ω∆ß<ìtº <tº@ö¿É=ºj 	Ω©˚Á<¥9X 	<tº@ƒb=LÃÕ ΩÃÃÕ<£◊
- ;ƒõ¶@Äz·=,1 ΩÒ©¸=,1 <ı¬è@è˜œ>J Ω‘˝Ù=æw <Â`BAÂ`<¥9X Ω≤-<tº <oAì    Ω–Â`;o;Â`B ≥@     Gaia DR2 37290178104344161283¿!Ò ^ b¶ïBD˚ @h¶–ù=.?¶ ¬{ï+@—6¸ﬂØÂ?¢—ù$=Ÿ—@BıòﬁÑ?™vœ;nK'@ÜÏ/†   @UW]ØrÇ?¥˙(:ßÈ¿ÖB.:Úı?≤"æü"|ø“vú@   ø·¿   ø¬p@   ?µí‡   ?≤∆À@   ?º˚Ä   ø„X†   øÉ§)¿   øãﬁ@   ø◊áp¿    ñ ñ ñ  @%®`   @rº¶‡                    T@j2Ä   ?˘≤ÎÍ⁄h?Ö'àﬂÇ}≠øºÌ      
-?¨8ä       F ⁄AÑ\#µ)o@√T˛#w@∞Ÿ †   @s     AucÍH‰¡Ò@€ñ‡vO≤F@àœU¿   @Âª     Az∞cb¡Ô	@Ô∞¨√˛`Û@zÛ1‡   @î    ?Ú‰I†     ?Íç`    ?◊*    ?›Ô–    @9˘Ω	\?√ }<á1Ω E≥∞ @Ä      NOT_AVAILABLE@s¶¨	kŒÕ@PÎˆpSr@h:«‘…}@' _çã±· Ü°@∂^     @∂6     @∂πU`   ?ºL†   ?°©˚‡   ?œlã@   ?∞Ä   ?ëN;¿   ?√àe†    Ø?Ò£H    ?Òú¿   ?Ò„Ä   ?Ú‘≤@   ?ÚÀ¨    ?Ú›∏Ä   http://geadata.esac.esa.int/data-server/datalink/links?ID=3729017810434416128 Ä       Ä   ¯      Ä Ä HIP64150 ?h
-ßõ@!
-HIP64150 s@ã◊
-=H¥9?Çè\ <o;Dõ¶<#◊
-@Œnò>†Aâ@DZ;o >–Â`;Dõ¶ ;ƒõ¶@†=PÂ` >° ¡<õ•„ <49X@9€#=@É >íÒ™     ;£◊
-@nò<Éo >tº<T˝Ù <#◊
-?™¨=€"— >V<Dõ¶ <Dõ¶?€•„>1' >o=tº <u¬è?=p§<T˝Ù >-V<T˝Ù ;Â`B?ΩV=\) =˘€#<Dõ¶ <o?è†<Â`B =∂E¢<49X <o?7çP<ãCñ =∏QÏ<#◊
- ;ƒõ¶?©á;o =•„T;o ;Dõ¶?úÃÕ=õ•„ = ¿É<o <tºA»¥<‘˝Ù =ìtº;£◊
- ;£◊
-A#ïÅ> ƒú >p£◊=ix’ =#◊
-A{<ìtº =ëhs<ÃÃÕ <ìtº@Àù≤=}Û∂ =óçP<£◊
- <Dõ¶@ıôö=}Û∂ = ¿É<Éo <o@Õ˚Á<ºj@   =ßÔû<o@   <o@ÒOﬂ=H¥9 =Å%<#◊
- ;Dõ¶@‰(ˆ=ìtº =q©¸<Éo <tº@ Ÿ=o =]/;Éo ;Dõ¶@J~˙=•„ =Yá<¨1 <Dõ¶@HAâ<o =ëhs<o ;£◊
-@ü+=]/ =u¬è<49X ;Éo@°Å=0 ≈ =Å%<tº ;Éo@zè\=LÃÕ 	=]/;ƒõ¶ 	;Dõ¶@¥ÃÕ=Dõ¶ =Dõ¶;Â`B ;Dõ¶@∂{=ù≤- =Éo<tº ;ƒõ¶@©ôö=–Â` =<j;£◊
- ;Dõ¶@üdZ=æv… 	=Å%<o 	;Dõ¶@»ı√=0 ≈ =Yá<tº ;Dõ¶@á˜œ=¥9X =Ìëh<T˝Ù <tº@ñ^5=Álã =ƒõ¶<õ•„ <e`BA†=\) =PÂ`;ƒõ¶ ;ÉoAK«=Cñ=óçP<¨1<Dõ¶ ≥@     Gaia DR2 6066626157280463104T0¸YÀâ Ë£˛D˚ @h⁄≠ﬂ˚ÚR?®&“Ì±TÚ¿K´Ãgï¯9?ß€Å[£#@-µ›ètxÑ?µ»` %H„@e“∑`   ¿l‘àëXs?µ`s™óÉ¿`¸FøÏÇ?µØJ‹ ?‰SÒ    ø·e8†   ø ƒ•‡   ø m    øﬂu    ø¿g‡   ø}{	    ?∫ä‰‡   ?À¯¿   ?‚†    ˜ ˜ È @ !j    @{„¿           <‡úâác] F@bıäÄ   ?˙ –·K%e?ä§Q©(3?|˙‡     	?Æ≥Ä      "T	Ac6•påÀ"@Æ¡\π*ª{@£˝¥†   @ \`‡    AT∫œ@∞†+@≥œM}‘ÔÅ@êæ7    @!†    AXÓûƒ*A¿@πR®mÛ1°@èÅï†   @Â
-`   ?Û.‡     ?ÈF∑    ?’Q¯    ?›;v    @QjüevÑ?⁄ˆ%>9ÆÓ EªÄ @ê      NOT_AVAILABLE@s%ß¿Ø™¡@{¢”YÅû@k‘ö¯ò{¿E|°ßÊH§ Ü°@∂≈U`   @∂    @∑      ?“M”    ?∆!ñ`   ?€ZÖÄ   ?¬-`   ?µ˝ä‡   ?»Œp@    Ø?ıØ‡   ?Ùú    ?ıã‹¿   ?¸¡è¿   ?¸çë`   ?¸ıé    http://geadata.esac.esa.int/data-server/datalink/links?ID=6066626157280463104 T0¸YÀâ   ¸°?{I\±é€â  HIP64673 ¯      HIP64673 @âGÆºãCñ?ôôö <e`B;Éo<#◊
-@øŒŸ>ºj@$›/;o Ω¨1;Dõ¶ ;£◊
-@◊
-=Yá Ω·GÆ<e`B <tº@!x’=LÃÕ Ω¿É<ƒõ¶ <ìtº@$›<ı¬è ΩDõ¶<tº <o?ç≤-=¬è\ ΩßÔû     ;ƒõ¶?«lã=∂E¢ ºı¬è=8QÏ <õ•„?+Cñ<õ•„ =»¥9<õ•„ <49X?¨(ˆ<£◊
- º#◊
-<e`B <#◊
-?ÄÂ`<Dõ¶ º¨1<ƒõ¶ <ìtº?8b<¥9X =ºj<ìtº <49X?òQÏ=æw ΩPÂ`=\) <õ•„?íJ=¬è\ <u¬è<›/ <Â`BA~˙=#◊
- =aGÆ<ìtº <e`BAE¢>	7L Ωe`B<ÃÃÕ <õ•„AÅ<Éo =Cñ<tº <tº@ =ßÔû <ƒõ¶<e`B <o@ÚŸ=u¬è <T˝Ù;Â`B ;£◊
-@À◊
-<49X@   <Éo;Éo@   ;£◊
-@Ô|Ó=LÃÕ ;Â`B<u¬è ;Éo@‚M”=ìtº :Éo<£◊
- <T˝Ù@»¨<ƒõ¶ ºe`B<e`B ;ƒõ¶@Fv…=\) º#◊
-<¥9X <T˝Ù@E∏<Éo <¥9X<Éo <tº@úÃÕ=PÂ` ºe`B<ìtº ;ƒõ¶@ü\)=49X ª£◊
-<T˝Ù ;Â`B@v=#◊
- 	ºãCñ<T˝Ù 	;Â`B@≤M”=,1 ºı¬è<49X ;£◊
-@≥|Ó=õ•„ ºãCñ<¨1 <Dõ¶@ß
-==„S¯ ΩCñ<Dõ¶ ;ƒõ¶@ù©¸=ÃÃÕ 	<tº<Dõ¶ 	;ƒõ¶@∆–Â=49X ºe`B<Dõ¶ ;Éo@Ñºj=â7L <u¬è<¨1 <u¬è@í·H=Æ{ ºT˝Ù<tº ;Â`BAbN=LÃÕ ;ƒõ¶<¥9X <T˝ÙAè\=Cñ<Â`B<u¬è<tº  ≥@     Gaia DR2 6182594053814895872UÃ¸â E YD˚ @hﬁMyh9?¢æΩ Äüì¿=Åò”≥˘[?û6Í1qsê@)€∆Ú‹“z?§pºÌ˚È@t=∫@   ¿[}{	l„§?≤ûyOi¿TäEpIt?±5/mpFeø±>M@   øŸ$—@   øŒu`   ø∞=Û`   øµl@   ?£r@   ø”P@   ø¨(†   ?Ã∆á`   øŒD[Ä    ä ä á @Ω~@   @jœ⁄‡           <÷r∑óÜq T@kﬁÓ`   ?˘tWFÛÍí?Ñ@<•ˆ∏?µ√=Ä     
-?©oﬁ†      F àAP§#l{À@ëÉ`/X=+@Æh    @"-ò‡    AAπÚL,&u@ØR’∞’Ø@ÇÒ@   @"ﬂC‡    AE‡¡CFç!@∑¢ƒ]V√÷@}ûΩ    @!<{`   ?Û
-¿     ?Í,à    ?÷5`    ?ﬁ#∞    @5.µMƒ$?…∆ 1ùwO E≥∞ @ê      NOT_AVAILABLE@sTÜù@@à∑ÀÙ@jßI¿3ÿB8∞Ú Ü°@∂ﬂ¨¿   @∂äÃ‡   @∑Y†   ?Ω‡    ?ôôô†   ?Ààe†   ?Æ˘€    ?äüæÄ   ?ª¨q     Ø?Ô~l`   ?Ô|Ä   ?6©Ä   ?jè    ?Wã‡   ?}í    http://geadata.esac.esa.int/data-server/datalink/links?ID=6182594053814895872 UÃ¸â E   ¸…?qŒW∏Øçì  HIP64713 ¯      HIP64713 ú@çÎÖΩ0 ≈?Ä   <T˝Ù;Dõ¶<#◊
-@® ≈?“Ú@(É:Éo º›/;o ;£◊
-@ìu=mëh Ωtº<Dõ¶ <o@&{=Yá º¥9X<tº <tº@  <ƒõ¶ º£◊
-;ƒõ¶ ;Â`B?ó
-==õ•„ ºtº<õ•„ <£◊
-? =q=Ÿá ºo<›/ <T˝Ù?%°À<u¬è =õ•„<u¬è <#◊
-?∞Aâ=Dõ¶ <¥9X<ãCñ <49X?Åâ7;Dõ¶ ºãCñ=+ <ƒõ¶?2Ò™<ìtº =ìtº<ºj <T˝Ù?õ"—<ãCñ ºÌëh<e`B <tº?êAâ=Ò©¸     =LÃÕ =LÃÕA£◊<‘˝Ù Ω}Û∂<Éo <Dõ¶AÔû=Ìëh Ωõ•„<ºj <u¬èA
-ß<õ•„ ºìtº<Dõ¶ <tº@«S¯=è\) Ωu¬è<¨1 <Dõ¶@Ò?}=aGÆ ΩçP<tº ;£◊
-@…x’<ºj@   Ωq©¸<o@   <tº@ÌÎÖ=@É Ω,1<#◊
- ;Dõ¶@·%=Æ{ Ω#◊
-<Â`B <Éo@»QÏ<ı¬è ºÃÃÕ<o ;£◊
-@DÃÕ=8QÏ Ω\)<¥9X <T˝Ù@@ìu;ƒõ¶ ΩLÃÕ;Â`B ;ƒõ¶@ú1'=T˝Ù ΩCñ<e`B ;£◊
-@û$›=Dõ¶ Ω,1<Éo ;Â`B@t(ˆ=8QÏ 	Ω@É<#◊
- 	;ƒõ¶@±“Ú=<j Ω8QÏ<o ;Éo@≤–Â=ïÅ Ω•„<#◊
- ;ƒõ¶@¶¨=“Ò™ Ω}Û∂<o ;£◊
-@õ◊
-=»¥9 	ΩH¥9<Dõ¶ 	;£◊
-@≈p§=#◊
- Ωmëh<tº ;Éo@Çff=è\) Ωq©¸<u¬è <49X@ëá=¨1 Ωè\)<Dõ¶ <tºA33<ı¬è ΩãCñ;o ;Dõ¶A∏<ÌëhΩ}Û∂<õ•„<Dõ¶  ≥@     Gaia DR2 36387456724110539522kÈ ˇÄ“1.D˚ @iBÜÑÉó#?∏!p¶öøÍÒ$€ÿß\?Æô∑’Ì#@6>#€BK?πÔX8bPπ@kqø‡   @kÚP+
-¢.?≈=\ƒ}à¿yKÏß;Ò?π≠å17«˙ø∫x„†   ø‡C¿¿   øë@“¿   ø¿ø†   ?ù»ˆÄ   øæ	wÄ   ?”6§Ä   øïòê@   ?¿#nÄ   ø«ôìÄ    ª ª ∑ @?“B†   @öù€‡   ?—Á,L'óK@9»e2÷˜∞ T@$u``   ?˘6+ﬁ¬é?ïómûÍ)?™ï2Ä     
-?∂ö,†      F πAvS"ï#˜@∏Ë„;Ù;@≠¡–    @A‡    Ag≈hµáŒ@‘!%NØÜø@Ç≠©`   @‘¿    Am1KÑõó0@Ûíˇ∏OvÅ@g‹ØÄ   @3†   ?Ú·√@     ?Ífë    ?◊	.    ?›√Ù    ¿~A3úC.?Ò}k–π≥ E≥∞ @ê      NOT_AVAILABLE@t 5˘î@NTÌﬁ∞„@i[‘1áQ@E=`^ò§ Ü°@∂o@    @∂-@    @∂´U`   ?÷ŸÄ   ?ÕŸ`   ?·B√¿   ?∆êˇ†   ?ºæ‡   ?œ_o‡    Ø?ˆl@   ?ı®Õ    ?ˆ°“    ?˝ˆa    ?˝Ã]`   ?˛ d‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=3638745672411053952 Ä       Ä   ¯      Ä Ä HIP65708 ?`U?Â31HIP65708 r@á
-=ΩÅ%?è\) <Dõ¶;£◊
-<#◊
-A„T>ãCñ@ ƒú;o æçP;Dõ¶ ;Â`B@©¸=Éo ætº<T˝Ù <tº@ ìu=Éo Ω›/<ãCñ <T˝Ù@ïÅ<¥9X Ω∂E¢;ƒõ¶ <o?ï„T=ºj ºõ•„;Dõ¶ ;ƒõ¶?»QÏ=˝Û∂ º¥9X=•„ <Éo?1&È<u¬è =˜ŒŸ<u¬è <tº?≤∞!<ı¬è =#◊
-;Â`B ;Â`B?àı√<ƒõ¶ =,1<Dõ¶ <#◊
-?7ŒŸ<e`B =∫^5<e`B <tº?ßŒŸ;Dõ¶ =ëhs;o ;ƒõ¶?òìu=üæw =á+<#◊
- <Dõ¶A<ı¬è <ƒõ¶<¨1 <u¬èA £◊>+ =ºj<u¬è <T˝ÙA∞!<T˝Ù =ﬂ;d;ƒõ¶ ;Â`B@«çP=•„T Ω]/;Â`B ;£◊
-@Ù1=Å% =LÃÕ;ƒõ¶ ;£◊
-@Õx’<õ•„@   =â7L;Éo@   ;ƒõ¶@ÔCñ=@É     <49X ;Éo@‚ß=u¬è <49X<49X <o@»ƒú<Ìëh º49X;Â`B ;£◊
-@G\)=æw ;£◊
-<Dõ¶ <tº@Ep§<¨1 <›/<£◊
- <#◊
-@û¨=T˝Ù <›/<T˝Ù ;Â`B@†£◊=49X =\)<49X ;ƒõ¶@u“Ú=8QÏ 	º£◊
-<Dõ¶ 	;Â`B@±&È=<j Ωá+<u¬è ;Â`B@≤^5=Éo ΩPÂ`<Dõ¶ <o@£◊
-=·GÆ æ1'<#◊
- ;ƒõ¶@úbN=ƒõ¶ 	º˝Û∂<#◊
- 	;ƒõ¶@≈%=8QÏ Ωè\)<49X ;£◊
-@Ñ  =ù≤- ºo<T˝Ù <#◊
-@ì∂F=∆ß <T˝Ù;Éo ;ÉoA∂F=çP Ωtº;Â`B ;ƒõ¶Aæw<ƒõ¶ºƒõ¶<ÃÃÕ<u¬è ≥@     Gaia DR2 6170740906151056896U¢‡)  BnED˚ @jHvÀ¢Ö?®“Y:j¿@`Ù∑¸TÂ?¨Ω∑g¨m@$q%ƒ¯ı?±¯9µÇÖ@a”…    ¿^µ©@°4?Ω1ÕDªÇ¿^ì◊ªyÚ?¡Ó&n	™øë£Ë‡   ø≈Å©    ø†π¡    ?¿{Z†   ø‚¸∆†   ?ÿÀ,`   ø·Ù¿   ø—y2`   ?‚ŒÄ   øÿè∆‡    j j j  @ˇ@   @mq¿                    T@oeFÄ   ?˘∞«B É?ç<)¥4 ?πp!‡     ?∑Ë@      F kAMwe"À…@ü–nB5@ù£t@   @"qJ¿    A?[êêK5B@ßë±%e¬¨@ÖIå¿   @##     ACÇ¥rπÓ@∑pÏäø≤@z£j@   @!|%    ?Ûà`     ?Íuû    ?÷Fà    ?ﬁ§¥    ?Ò1‘.˝¿?Ú ›Ö,ka EªÄ @`      NOT_AVAILABLE@s˜m…8í⁄@;ﬁíÎg¿π@kw˛Õ∏P¿3#E7›q Ü°@µÀ     @µnÊ`   @∂`     ?÷z‡   ?ƒcÒ@   ?›“Ò†   ?ƒ˜f    ?µ+”¿   ?ÕÊö‡    Ø?ıI¿   ?Ù18@   ?ˆ{`   ?¯∂¸    ?¯~g@   ?¯Ôê¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=6170740906151056896 U¢‡)   t?â«&!©≥  HIP68468 ¯      HIP68468 ’@äè\=ëhs?åÃÕ <T˝Ù;Éo<#◊
-@Æv…>Æóç@+:Éo <Dõ¶:Éo ;ƒõ¶@ì=y€# <õ•„;Â`B <o@)x’=49X <˝Û∂<o <o@◊
-<›/ ='Ôû:Éo ;£◊
-?òr∞=˚Ám ;o<Â`B <Ìëh?”33=ÎÖ =}Û∂=@É <£◊
-?3˜œ<ºj >+<ºj <T˝Ù?πá<ƒõ¶ =∫^5<tº <o?åÃÕ=T˝Ù =ëhs<õ•„ <u¬è?BM”<u¬è >+<˝Û∂ <Éo?≠Oﬂ;Dõ¶ =Èx’;o ;ƒõ¶?új= ¿É =ƒõ¶<˝Û∂ =oA˜œ=+ <¥9X<ÃÃÕ <ìtºA>Oﬂ º#◊
-<Ìëh <£◊
-AV;o =≤-<tº <tº@Ãj=ëhs = ¿É<u¬è <tº@ˆ$›=e`B =Ìëh<e`B <o@œ"—<ãCñ@   =Û∂F;o@   ;Dõ¶@Ú5?=8QÏ =ºj<o ;o@„˜œ=q©¸ =Yá=o <õ•„@Àæw<Ìëh =ßÔû<o ;£◊
-@M°À<‘˝Ù =“Ò™<¨1 <T˝Ù@LZ<õ•„ >
-=q<ìtº <tº@†9X=LÃÕ =æv…<T˝Ù ;ƒõ¶@¢˘€=@É =›/<tº ;ƒõ¶@|ãD=•„ 	=Æ{<õ•„ 	<o@µ`B=Dõ¶ =á+<tº ;£◊
-@∂∏R=ëhs =¨1<Dõ¶ <o@™{=“Ò™ =}Û∂<49X ;ƒõ¶@†É=∏QÏ 	=»¥9<Dõ¶ 	;ƒõ¶@…ÎÖ=,1 =©˚Á<49X ;Éo@áﬂ;=¨1 =Â`B<o ;Â`B@ñ^5=∫^5 =¬è\;£◊
- ;£◊
-A›/=Dõ¶ =tº<ìtº <49XAÂ`=8QÏ=H¥9<›/<Éo  ≥@     Gaia DR2 6097773633744079104Tü§– 	 >Á≤ÅD˚ @jπÚ7IP?´ï°ŸÍ|¿Ef˙•ÿg?§äaÁ'@(π'Vb~=?∞r¥m#â·@hΩ`   ¿qF∏bàj?µ~*∆⁄hv@Ao¯dqåf?µÒy~Cy?…£¥    ø„Q$@   ø…QP†   ?ïèö    ø‹È¿   ?πÊËÄ   øß Y    øπò›†   ?ƒ~{Ä   ø‘Êé†    r r q @E’Ä   @o¿Ì                     T@lSó`   ?˘«îú◊Z2?ä3sJCœ®?ÆÂØ¿     	?¨®@      F ~ALºRœà	≠@ñ-—dv:n@§∫·`   @"@Ä    A>dŒ§d@¶6í˜c—@ÜåÄ   @#4⁄     ACˇ≤ÅI@´Äèsú<y@Ü2ø    @!àö‡   ?Ûñ      ?Í√Ù    ?÷≥4    ?ﬁ‘¥    ¿ï…¨XÁ?ÿßßU˚qΩ E≥∞ @ê      NOT_AVAILABLE@sÓO;å*◊@1tg˙”0w@lSÖf±Çh¿;t,≥{xn Ü°@∂[     @∂*@    @∂á™†   ?¨j    ?á$t`   ? ·G†   ?°hr¿   ?x*ô@   ?∫·G†    Ø?›`   ?Ô¨©‡   ?\Ï‡   ?ÔB    ?Ô@   ?Ôx    http://geadata.esac.esa.int/data-server/datalink/links?ID=6097773633744079104 Tü§– 	  ?a|û§KJ  HIP69645 ¯      HIP69645 w@çÎÖº‘˝Ù?Ä   <#◊
-;Éo<#◊
-@©x’?ÃÕ@(Aâ:Éo Ωo:Éo ;£◊
-@	7L=e`B º‘˝Ù<49X ;Â`B@%`B=}Û∂ Ω+<Éo <Dõ¶@»¥<Ìëh Ω•„<#◊
- <#◊
-?õ•„=á+ <›/<Ìëh <Ìëh?»¥9=ÎÖ ºõ•„<Â`B <Dõ¶?A%=PÂ` >;dZ=PÂ` <‘˝Ù?≠≤-=o :Éo<o ;Â`B?Çè\<ÃÃÕ ºo<Dõ¶ <#◊
-?;d<e`B ª£◊
-<£◊
- <49X?ö=q<ãCñ Ω\)<u¬è <tº?ëGÆ=}Û∂ <o;£◊
- ;Â`BA˝Ù=LÃÕ Ω#◊
-=aGÆ =æwAlã=Álã <ãCñ<ãCñ <49XAX<tº <ÃÃÕ;o ;Dõ¶@…V=üæw ªƒõ¶<#◊
- ;ƒõ¶@Ú=q=Éo ªƒõ¶<Ìëh <u¬è@ óç<ìtº@   ºƒõ¶;Dõ¶@   ;Dõ¶@Ó∏R=H¥9 ºãCñ<49X ;Éo@‚M”=è\) :Éo<ãCñ <#◊
-@»I∫=o º‘˝Ù<o ;£◊
-@FE¢=Dõ¶ ºT˝Ù;Éo ;Éo@Bnò<ãCñ º£◊
-<T˝Ù ;Â`B@úìu=49X º¨1<49X ;£◊
-@û∏R=49X ºÃÃÕ;Â`B ;£◊
-@v{=Dõ¶ 	ºÉo<#◊
- 	;£◊
-@≤á+=@É ººj<49X ;£◊
-@≥lã=° ¡ ºìtº<Dõ¶ ;Â`B@ßtº=“Ò™ º£◊
-<o ;£◊
-@úÌë=æv… 	ºe`B<Dõ¶ 	;£◊
-@∆üæ=49X º£◊
-<#◊
- ;Éo@Éﬂ;=ù≤- ºDõ¶<o ;Â`B@ì†=‘˝Ù ªÂ`B<u¬è <49XA˚Á<˝Û∂ ºõ•„;Éo ;ÉoAÔû<ƒõ¶º49X<ƒõ¶<e`B  ≥@     Gaia DR2 1237374997031931392,
- 	Œ ;ı ∑D˚ @k°åÌ∆sn?®aíOòLΩ@2v¡ ë:?ßºØ£É@7œp˚·8ﬁ?ØÂrÒf@w„äÄ   ¿M´Içﬂü?≤Õ&i[¿d¢≤TÈ|^?µ∂—4ù´ø¥Öç‡   ø‰@|@   ?æ≠á†   ø…‘A†   ø®ˆé@   ø¿e2¿   ø∆‰Õ@   øŒZµ@   ?≈;?`   ø¡*Ä    { { {  @∏¶†   @gN‚@                    T@Y Â`   ?˘Ë¿|sÜì?éúº⁄ôÜøøá<`     	?™ae‡      F yAtÄ”ÖK]@∑—g¢Í@´ãÍ`   @m‚¿    Ae‹´+^“@’Ÿ.f@£}@Äç¿   @–     Aj¢⁄}ªÀç@·{I’_«@y €Ä   @òÊÄ   ?ÚÏQ¿     ?Èπº    ?÷#¥    ?›Oƒ    @†∆LPË?√ÉdIÑ 	E≥∞ @ê      NOT_AVAILABLE@4l‹ƒﬂW…@OWß^Ù€@j}O´†⁄ @@HÃƒ£;< Ü°@∂∏     @∂ò     @∑     ?√¨q    ?û∏Q‡   ?’}ø@   ?µm]    ?é†   ?∆_ÿ†    Ø?ÛC_    ?Ú±v    ?ÛzÄ   ?˜Ë:‡   ?˜”D‡   ?˜˝0‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=1237374997031931392 Ä       Ä   ¯      Ä Ä HIP72043 ?HPq
-ÿ¯ HIP72043 ’@ä·Hº‘˝Ù?è\) <49X;Dõ¶<#◊
-@»b>¢M”@"^5;o Ω˚Ám;o ;£◊
-@–Â=e`B æ%<u¬è <tº@ ¥9=PÂ` ΩŸá<49X <tº@¬è=tº Ω]/<49X <tº?ç/=Ò©¸ Ω∞ ≈<ºj <ºj?∆ff=ÃÃÕ Ω•„='Ôû <ãCñ?^5<Ìëh =o<Ìëh <u¬è?®ìu=#◊
- Ω•„<e`B <#◊
-?Ä ≈<¨1 º›/<ãCñ <T˝Ù?'lã<Dõ¶ <›/<Dõ¶ <o?ûV;Éo ªDõ¶:Éo ;£◊
-?è;d=£◊
- ªÂ`B<Dõ¶ <T˝ÙA€#<ÃÃÕ <u¬è;Â`B ;ƒõ¶Ao>∏ ª£◊
-=•„ <ºjAS¯<Dõ¶ <ƒõ¶<õ•„ <e`B@»Â`=©˚Á ºDõ¶;Éo ;Dõ¶@Û|Ó=mëh =+<‘˝Ù <T˝Ù@ÃZ<e`B@   <˝Û∂:Éo@   ;Éo@Ô|Ó=Yá ;Â`B<Dõ¶ ;Éo@·„T=ëhs ºDõ¶<¨1 <T˝Ù@»Ìë<Â`B ªÂ`B;Â`B ;Éo@Iá=49X <˝Û∂;Â`B ;£◊
-@Eëh<ãCñ <Ìëh<Éo <tº@ù`B=PÂ` ;Éo<49X ;£◊
-@ü◊
-=H¥9 <49X<49X ;ƒõ¶@vÈy=@É 	ªDõ¶<#◊
- 	;£◊
-@≤-=49X ΩCñ<#◊
- ;£◊
-@≥\)=ãCñ º¨1;Â`B ;ƒõ¶@¶^5=‘˝Ù ΩaGÆ;£◊
- ;Éo@ùÅ=∂E¢ 	;Éo;ƒõ¶ 	;Éo@∆v…=49X ºÃÃÕ<o ;Dõ¶@Ñj=ù≤- ;£◊
-<tº ;ƒõ¶@íÒ™= ¿É ºDõ¶;Â`B ;ƒõ¶Aﬂ;='Ôû º‘˝Ù<49X ;Â`BAÛ∂<‘˝Ùº49X<T˝Ù<o ≥@     Gaia DR2 5901924435035073152QÁŸv™ÄGKmúD˚ @l+ï¸:[?µ∞œËCE¿Hn§ÎÆ?¥ÁÄk`Ô@E
-Ω¶ÇÙ?º°°ŒM}b@wÑ?`   ¿./äËBò?Õg˝N!¿uFπ=‡?…⁄\Àvõø≥ü‡   ø∏ª¯    øª˝2    øÃKÿ@   ø›¡Ï    ø◊µv‡   ?‘v    ?œPq†   øœ@‡   ø÷ó‡    ¡ ¡ ≥ @=<^    @ó3~`   ?÷é§ô”#@?ï>OM/g F@Zπ‡   ?¯Çã›@ÒÀ?û¥∆ä`øµ∆‹`     ?¡(,¿      F µAè&§Û58X@‘©∏æy@®ø    @ö:     A–O>¸)ã@ˆ÷Z≠@w∏¿   @,d†    AÖ,4B«ò)@Ìü@(%ŸÜ@ÜﬂP`   @íŸ    ?Ûä`     ?ÏÃ]    ?Ÿ"®    ?‡;	    @@ÚÙl(â?œæﬁ‚ à E≥∞ @ê      NOT_AVAILABLE@t6bûã}·@!–&E/ß÷@m†˘ÅG'¿>~Ûur„ Ü°@µ⁄@    @µÆ     @µÈ     ?‡É`   ?—rG@   ?Â©˚‡   ?–r∞    ?ƒ?Â¿   ?’ˆ˝     Ø?Ù≤Ñ    ?ÙñØ`   ?ıW†   ?˜ü¸    ?˜åÕ    ?˜≥+@   http://geadata.esac.esa.int/data-server/datalink/links?ID=5901924435035073152 Ä       Ä   ¯      Ä Ä HIP73241 ?WD‹‚¿˘HIP73241 @Ü·H=ºj?Ä   <e`B;£◊
-<#◊
-AM”>ä=q@,1;Éo <Â`B;£◊
- ;Â`B@"—=©˚Á ;Éo<£◊
- <Dõ¶@(  =ïÅ <o<‘˝Ù <£◊
-@∏=•„ =y€#<#◊
- <#◊
-?û∏R=˚Ám =LÃÕ<Â`B <Â`B?‘˝Ù>Å =õ•„=Cñ <u¬è?P ≈<ãCñ >wŒŸ<ãCñ <#◊
-?∏‘˛=tº =∂E¢<e`B <#◊
-?ëGÆ<˝Û∂ =€"—<Éo <T˝Ù?Q©¸<ƒõ¶ >Dõ¶<e`B <tº?Æ∏R;Dõ¶ >   ;o ;Â`B?üæw=Ö∏ =˘€#;Dõ¶ ;Â`BAÁm=tº >nò<ãCñ <e`BA#ëh>/† >çOﬂ=LÃÕ =oACñ;o >tº;ƒõ¶ <tº@Ãb=ïÅ =¥9X<tº ;ƒõ¶@˘V=â7L >S˜œ<¥9X <Dõ¶@—€#<T˝Ù@   >Oﬂ;;Dõ¶@   ;£◊
-@Û"—=H¥9 =˜ŒŸ<Dõ¶ ;Éo@Á∆®=©˚Á >/†<Ìëh <ìtº@Õ©¸=tº >hs<Dõ¶ ;ƒõ¶@OÔû<ÃÃÕ >Oﬂ<˝Û∂ <ìtº@LÃÕ<e`B >hs<u¬è <tº@¢ff=aGÆ >$›/<Éo ;Â`B@£˜œ='Ôû >\)<£◊
- <tº@Ä  =LÃÕ 	>V<¨1 	<tº@∂Ò™=aGÆ =ÎÖ<¥9X <o@∑S¯=ãCñ =‘˝Ù<o ;Â`B@™^5=ŒŸ =ëhs;£◊
- ;£◊
-@†›/=ºj 	=ﬂ;d<o 	;£◊
-@ M”=@É =¬è\<Éo ;£◊
-@â&È=Ò©¸ >¨=tº <‘˝Ù@ô∏>ì >9X=tº <ÃÃÕA©¸=+ =∞ ≈<#◊
- ;Â`BA≤-=o= ¿É;£◊
-;Éo ≥@     Gaia DR2 11602609895361708809 ÛÄG@úsD˚ @lIƒs&N?¶|VÅΩAñ@'…˙ê?°ó_=≥‹Ì@2P”oΩŒ1?©Ë≥LÆàº@vü"Ä   ¿”OÄ”T`?µ¥D‰i	ƒ¿n—˝>Õ˝?∂Ë0í«?y“'@   ø›<    ø≈?+Ä   ?±sW@   øº”î    ø√@   ?¿ßS    ?ªƒ¿   ø÷	K    ø“•⁄‡    é é ã @¡[¿   @p_8Ä                    T@R§ö@   ?˙=OjIìö?Ü,ta∫?î˛Ä     	?ÆÙ∫†      F ôAf@˜}7´à@≥Ü¶[ Ÿ@¢≤¿   @ 
-∑Ä    AWôìñ∂u,@√£”Y3,±@É9ﬁ`   @ æ⁄¿    A]!!≈¸h@⁄`ÕelØ@qﬁˇ`   @8‡   ?ÚÙ•      ?Í-=    ?÷Ñh    ?›÷    @µCaã‹? s_◊}¶ 
-E≥∞ @ê      NOT_AVAILABLE@5|2Í@J ¸◊ÛËÒ@kºZJ8è@6∫´B5‡ Ü°@∂Ø     @∂ñ     @∂⁄     ?»ÎÓ    ?xìt¿   ?Ÿ»@   ?≥∂E†   ?g¡Ω†   ?«lã@    Ø?ÚÇÅ‡   ?Ú=Ä   ?Ú´íÄ   ?ıÔ˘¿   ?ı⁄ó    ?ˆ\`   http://geadata.esac.esa.int/data-server/datalink/links?ID=1160260989536170880 9 ÛÄ  W?m:F˘0h¡  HIP73815 ¯      HIP73815 û@äff<ºj?àı√ <o;Dõ¶<#◊
-@ÂX>ä¿É@%?};o Ωüæw;Dõ¶ ;Éo@¬è=ëhs Ω£◊
-<Dõ¶ <o@#◊
-=LÃÕ Ωix’;Éo ;£◊
-@ŒŸ<ı¬è º¥9X<o <o?ínò>á+ Ω8QÏ=T˝Ù =T˝Ù?Ãj=˚Ám <tº=tº <u¬è?&ß<u¬è =£◊
-<u¬è <o?∞ƒú<‘˝Ù <ÃÃÕ;ƒõ¶ ;£◊
-?á
-==•„ <‘˝Ù<ìtº <T˝Ù?4˝Ù<tº =£◊
-<Éo <tº?°©¸;Dõ¶ <ºj;o ;Éo?îZ=óçP =+;ƒõ¶ ;Â`BA(ˆ<ƒõ¶ =Cñ;£◊
- ;ÉoA ff=˘€# =üæw;Â`B ;Â`BAÛ∂<49X =Å%;Éo ;£◊
-@…p§=mëh ;ƒõ¶<ƒõ¶ <e`B@Ù(ˆ=y€# =]/<T˝Ù ;Â`B@Ãı√<Éo@   =PÂ`    @   ;Dõ¶@9X=PÂ` <Ìëh<tº ;Dõ¶@„æw=á+ =<j<ãCñ <#◊
-@…„T<ı¬è <ƒõ¶;Â`B ;Éo@Hƒú=<j <›/<e`B <tº@FŸ<Éo =Dõ¶<Éo <o@û-=H¥9 <Ìëh<tº ;Éo@†‘˛=8QÏ ='Ôû<o ;Éo@xìu=8QÏ 	<¥9X<tº 	;£◊
-@≥Ôû=8QÏ <¨1;Â`B ;Éo@¥ı√=ìtº <ı¬è;£◊
- ;Éo@®Z=Ÿá <o<o ;Éo@û{=ƒõ¶ 	<¥9X;ƒõ¶ 	;Dõ¶@«◊
-='Ôû <ìtº;ƒõ¶ ;Dõ¶@Ö≤-=∫^5 =8QÏ<o ;Â`B@î›/=“Ò™ =Dõ¶<#◊
- <oAÂ`='Ôû =•„<49X ;Â`BA¥9=+=çP<ãCñ<#◊
-  ≥@     Gaia DR2 6210926819198797440V1•	 JÜÄTÈ*›D˚ @lÅeoˆáﬂ?®ñ√Û*i3¿>„ÆÇ‚§?®%4)§â!@8|›€?±>>âÁ@vÈ`†   @Xå£ö;Åß?¿/Ç†•¿ZE5÷Ø”?¬–∏QG"yøß ∏‡   ø«˝•`   ø…e∞†   ø¢>ó‡   ø·Kﬁ¿   øﬁZ`   ?‚»^†   ?ÿ¬     ø‚©¯†   ø„Ï†    } } }  @/S@   @la=Ä                    T@T◊ö‡   ?˙CŸÅ÷Œ?åùÆ|ôÙøµbn      ?∫	ƒ@      F ©Ap_e¥|ü[@±¢»ßRΩ˚@≠µ8Ä   @h†    Aa~¡›ß„@…;'˙uûƒ@Ü0N    @«⁄Ä    AeX´2øäπ@ﬁl'ëÕÛÓ@vt`   @è	¿   ?Ú˙é@     ?È∆Ü    ?’˝é    ?›è~    @{åÃà.4?≈	˘˚∏ 	E≥∞ @ê      NOT_AVAILABLE@tˆ§ª«∞Ã@6ˆ„`ª;3@m@#ëM¿)ï˙tÕÖ Ü°@∂ßÄ    @∂n     @∂Î     ?æ∏Q‡   ?ëhr¿   ?»1&‡   ?Æ∏Q‡   ?Ä-‡    ?∏¡T¿    Ø?◊Õ‡   ?u)    ?Ò.ó¿   ?Ú¿   ?Ú‘Ä   ?Ú"_    http://geadata.esac.esa.int/data-server/datalink/links?ID=6210926819198797440 V1•	 JÜÄ "ï?vR˜»åk˛  HIP74389 ¯      HIP74389 ’@é{=©˚Á?Üff <49X;Dõ¶<#◊
-@j~˙>Ó{@3o     >Oﬂ:Éo ;£◊
-@è\=q©¸ =ı¬è<Dõ¶ <o@/Ôû=H¥9 >+<Dõ¶ <#◊
-@ ¡<Â`B >	7L:Éo ;£◊
-?§õ¶=∂E¢ =∆ß;ƒõ¶ <o?‹Ìë=Èx’ >Oﬂ=\) <u¬è?>˘€<#◊
- >333<#◊
- ;Â`B?¿Aâ<ÃÃÕ >á+<#◊
- <o?íÒ™<ãCñ =Û∂F<¨1 <Éo?F$›<ãCñ >á+<Éo <tº?Øæw;Dõ¶ >1';o ;£◊
-?ùp§=Æ{ =“Ò™<ãCñ <ìtºAtº<›/ º49X;Éo ;ÉoAì>hs Ωá+<ƒõ¶ <u¬èAù≤<ƒõ¶ ='Ôû<ìtº <T˝Ù@ üæ=á+ =,1<ƒõ¶ <e`B@Ù›/=u¬è =õ•„<e`B ;Â`B@Õ%<‘˝Ù@   =Yá<#◊
-@   <#◊
-@Òp§=T˝Ù =ãCñ<e`B ;Éo@„˜œ=õ•„ =T˝Ù<ãCñ <#◊
-@Ãì<›/ =æv…<tº ;Éo@K˜œ=Cñ =ù≤-<e`B <o@Gﬂ;<e`B =Éo<Éo <o@†  =H¥9 =∞ ≈<T˝Ù ;Éo@°€#=8QÏ =ïÅ;Â`B ;£◊
-@{◊
-=<j 	=óçP<ãCñ 	;Â`B@∂¨=8QÏ =∂E¢<o ;Éo@∂üæ=óçP =ßÔû<¨1 <49X@™$›=–Â` =Éo;£◊
- ;Dõ¶@üS¯=¬è\ 	=u¬è<49X 	;£◊
-@…`B=,1 =á+<#◊
- ;Dõ¶@Ö°À=õ•„ =,1<49X <o@îZ=∆ß =o<o ;ƒõ¶Ar∞='Ôû <#◊
-<T˝Ù <oAbN=Dõ¶<ãCñ<¥9X<T˝Ù  ≥@     Gaia DR2 1212385193677160832”AÈ ÄOıEçD˚ @lÖµ‡@0£?ôù?Xùnã@3Iå¥>}_?òEGy[≤@>Ê≥ÌAÏ‰?†¨ïMj¨ç@ç¶›`   ¿ÇüXA/ ä?™æk%Ïèè@rYS∆O˜?≠·©úd›è?∆®∑`   ø‘dæ`   øò„¿   ø ¯;    ø∂{0`   ø—ãGÄ   ? Sµ`   ø∂MA†   øº/ﬁÄ   øßUõÄ    È È Ê @"eN    @~Å                     T@kd•¿   ?˘H{*Õi?{{µ√ùa’?ü∂X@     ?§≈˛¿      F AÜ≤/eyU@»íP„Ò˘U@≠é∑`   @˙H     Aw¢¿πH‰ê@‚íE®ØÍ¡@Ñ\¯†   @vøÄ    A~>:∏Cp≠@Ì”zπNl@Ä†2    @	@   ?Ú˝œ‡     ?Îmr    ?◊«v    ?ﬂn    ¿CÉ∞Ì∂\?«ÓW˚WtB E≥∞ @Ä      NOT_AVAILABLE@:Úl#∞'@L\∞¬I’(@kgäÉ`ûı@A”P∆¥Á- Ü°@∂0¿    @∂     @∂˘™†   ?‹ÃÃ¿   ?∫^5@   ?ÈÛ∂@   ? ·G†   ?™¨    ?ÿ÷°`    Ø?˜@L    ?ı∞ï†   ?˜ê3¿   ?ˇ≥∂†   ?ˇ¶4Ä   ?ˇ¡8¿   http://geadata.esac.esa.int/data-server/datalink/links?ID=1212385193677160832 ”AÈ Ä "¿?lu_≥ŒáÂ  HIP74432 ¯      HIP74432 /@Öp§=Dõ¶?ãÖ <T˝Ù;£◊
-<#◊
-A¨>ãCñ@(1':Éo Ω+;o ;Â`B@r∞=çOﬂ Ω•„<Éo <#◊
-@(É=á+ <Éo<õ•„ <u¬è@
-üæ=o <¥9X<¨1 <Éo?§˝Ù=–Â` =ÃÃÕ;Â`B <#◊
-?”33>çP =}Û∂=ix’ <ƒõ¶?A ¡<ìtº >>v…<ìtº <49X?ªCñ<¥9X =€"—<¥9X <e`B?ñá+<¥9X >á+<ºj <ãCñ?Mëh<¥9X >49X<u¬è <#◊
-?¥õ¶;£◊
- >/†;o ;ƒõ¶?®r∞=Yá >Aâ7<e`B <u¬èA¨=ãCñ >∏R=8QÏ =+A$Ÿ>bN >†ƒú=ix’ =0 ≈A ¡<e`B >6E¢<#◊
- <49X@ÀdZ=Ö∏ =â7L<ãCñ <#◊
-@¯É=Éo >Bè\<¥9X <Dõ¶@“ff<Ìëh@   >bM”<T˝Ù@   <e`B@Û;d=49X =˚Ám<o ;o@Êè\=ãCñ >	7L=#◊
- <ƒõ¶@Ãr∞<ı¬è =‘˝Ù<tº ;£◊
-@N˘€<u¬è =˚Ám=\) <¨1@PbN<Â`B >I∫^<ÃÃÕ <T˝Ù@¢V=e`B >"–Â<õ•„ ;Â`B@§Â`=49X >,1<ÃÃÕ <#◊
-@lã=]/ 	>∏<Éo 	<o@¥›/=LÃÕ =LÃÕ<u¬è ;ƒõ¶@µÅ=ëhs =@É<T˝Ù <tº@®9X=◊
-= ;Dõ¶<#◊
- ;ƒõ¶@†ı√=æv… 	=Â`B<49X 	;£◊
-@…ôö=PÂ` =ïÅ<£◊
- ;ƒõ¶@àÃÕ=Â`B >hs=Cñ <ƒõ¶@ò¥9>Oﬂ >-V=49X <˝Û∂Atº=#◊
- =ìtº<49X ;Â`BAù≤=\)=¿É<tº;Â`B ≥@     Gaia DR2 2585856120791459584#‚Œq g !v°jD˚ @8kΩo‹CÃ?¢ŸóÈÇW@(($˜Q>ü?ûò∫¸cµ@C¢…€É+%?§º*ß`y±@éM¡    @^	ü)À2N?≤™‚@:}§cÑM?∞¡r-ï5§?¿ù≠‡   ?ŸZ`   ø≈\T¿   ?çv{    ø≈÷£‡   øΩ≈s`   ø‘UwÄ   ?¿,0@   ?œ6YÄ   ?’b≈@    † † û @ „ ‡   @vO`                    T@hÎã†   ?˘€{†Ã6O?Ç63aëØ˝?ó
-›@     
-?™`      F ùAÑí}>z@ ˙ÔíÊ˘@®e·    @gò†    AuΩ{µ€¶≈@Ëè≠‚DNü@|S`   @”±`    AzÂ¡˘nëVA∫¢¶ø∆@c}u†   @ãhÄ   ?ÚÍR      ?ÍBG    ?÷¡å    ?›√    ¿5"÷Œ}?√`!8ã EªÄ @ê  >Ä  NOT_AVAILABLE@aåçˆÌ˛¿Hú8]@;c«"CE?¸ìËÎ7Ã∏ Ü°@∂≠     @∂s     @∂Ω™†   ?µo`   ?é∏Q‡   ?Ààe†   ?®b@   ?Ä-‡    ?Ω\˙†    Ø?ú¨†   ?Ñ\    ?ÚÚ    ?Ò•/`   ?Òû?`   ?Ò¨`   http://geadata.esac.esa.int/data-server/datalink/links?ID=2585856120791459584 #‚Œq g   °?z˘!„áºñ  HIP7585  ¯      HIP7585  æ@é=q=©˚Á?ÅGÆ <o;Dõ¶<#◊
-@SÁm>…∫^@41:Éo >¨;Dõ¶ ;£◊
-@(ˆ=u¬è >z·;ƒõ¶ ;ƒõ¶@0r∞=<j >\);Â`B ;ƒõ¶@è\<‘˝Ù >Å<o ;Â`B?ß
-==óçP =Ìëh<¨1 <¥9X?‹¨=Ôù≤ >Cñ=\) <u¬è?6E¢<T˝Ù >bN<T˝Ù <o?ø;d=,1 >Oﬂ<e`B <tº?êAâ<u¬è =»¥9<Ìëh <¨1?@Aâ<Dõ¶ =˝Û∂<Ìëh <u¬è?Æ˘€;Dõ¶ >J;Dõ¶ ;Éo?û{=∏QÏ =ﬂ;d<¥9X <ºjAÔû<ı¬è <õ•„;£◊
- ;ÉoA◊
-=„S¯     <Éo <Dõ¶A¬è<e`B =LÃÕ<e`B <49X@À=° ¡ =]/;Â`B ;£◊
-@Ù›/=]/ =õ•„<#◊
- ;ƒõ¶@ÕOﬂ<ı¬è@   =y€#<e`B@   <u¬è@Ò∫^=8QÏ =ù≤-<o ;o@‰(ˆ=óçP =mëh<e`B <o@Ãì<Ìëh =æv…;Â`B ;Éo@KïÅ=Cñ =è\)<õ•„ <49X@Hı√<e`B =ßÔû<Dõ¶ ;ƒõ¶@† ≈=T˝Ù =∏QÏ<49X ;Éo@¢=q=49X =∞ ≈<tº ;Éo@|1=8QÏ 	=ù≤-<49X 	;£◊
-@∂E¢=8QÏ =¿É;Â`B ;Éo@∂Èy=ìtº =∏QÏ<o ;£◊
-@™∞!=“Ò™ =£◊
-;ƒõ¶ ;Éo@ü=∏QÏ 	=LÃÕ<Dõ¶ 	;£◊
-@…x’='Ôû =çOﬂ;Â`B ;Dõ¶@Ü-=¨1 =q©¸;£◊
- ;£◊
-@ïp§=◊
-= =â7L<Dõ¶ <tºAÃÕ=tº =o;Â`B ;£◊
-AÈy=q©¸=LÃÕ=Cñ<£◊
-  ≥@     Gaia DR2 1166216253750406144/;Å l üD˚ @m%—–•‡:?£oöÄÂ @%k59õ?•O“$L@@•¬H⁄1Î?≠Ù◊≈íÉ@Å»˙    ¿¡êÊ?∂¿˘”°@cÕ—J¥s^?øOÈa˜0?ÆãJ@   øÕπ·‡   ?∆≠%¿   ø√ﬂ[Ä   ø·ö•†   ø⁄ï'Ä   ?‰…?Ä   ?–
-    ø›Úø`   ø‹,H@    ∫ ∫ ∏ @!€‘    @yX|Ä                    T@_MÑ    ?˘oÖìé'?yçP∞?¥Yc      ?¥u∑`      F ∑A{êà• @∫BaÍS@∞zî†   @: @    Alà”BﬁÔö@⁄z.˛8N"@Å>>¿   @ß˘¿    Aq≥˚º∑@Ì”∂wG9´@r˛'@   @\w`   ?ÚÈÈ†     ?Í\    ?÷ﬂò    ?›ÿé    ¿A’æ	‹@v?ƒ–)F4DÎ 
-E≥∞ @ê      NOT_AVAILABLE@1…=º\Ê@Hk„=Ú"ø@lt∏ñùòŸ@=(Åïf Ü°@∂eÄ    @∂V     @∂°Ä    ?µ¬è`   ?ïÈ·¿   ?«Ú‰Ä   ?ß
-=Ä   ?äüæÄ   ?∑†˘     Ø?RS    ?Ô¯t†   ?i    ?5∑`   ?,`   ??i`   http://geadata.esac.esa.int/data-server/datalink/links?ID=1166216253750406144 /;Å l  )R?xGPáx¬  HIP76114 ¯      HIP76114 l@ç∏ºƒõ¶?xQÏ <#◊
-;Dõ¶<#◊
-@“nò>óçP@'æw     Ωæw:Éo ;£◊
-@ù≤=Éo ΩPÂ`<o ;Â`B@$ÃÕ=e`B Ω,1<Dõ¶ <tº@Èy=Cñ ΩçP<e`B <49X?ëhs=£◊
- ΩYá<u¬è <Éo?∆ff=Ìëh Ω•„=+ <e`B?¬è<ºj <e`B<ºj <Dõ¶?©x’=,1 Ωo<ãCñ <49X?{•„<¥9X Ω<j=tº <‘˝Ù?$õ¶<£◊
- <Éo=çP <õ•„?új;Éo ºìtº;£◊
- ;£◊
-?ãdZ='Ôû ΩçP<›/ <›/AïÅ=q©¸ ªDõ¶=tº <‘˝ÙAÂ`>+ ºT˝Ù<˝Û∂ <ºjA†<ìtº <#◊
-<Dõ¶ <#◊
-@»¥9=Ö∏ ºãCñ<ãCñ <#◊
-@ÒÎÖ=u¬è ºÉo;£◊
- ;Dõ¶@À†<‘˝Ù@   ºo<49X@   <49X@Ó∞!=8QÏ ºìtº<o ;o@·ÎÖ=ïÅ º49X<¨1 <T˝Ù@»ãD<ı¬è ºìtº;ƒõ¶ ;Dõ¶@DÌë<˝Û∂ ΩCñ<¥9X <T˝Ù@C◊
-=\) ;o<˝Û∂ <e`B@úºj=@É ºãCñ<49X ;Éo@û·H=H¥9 ºõ•„<T˝Ù ;ƒõ¶@u¬è=<j 	º¨1<49X 	;£◊
-@≤v…=@É ºÃÃÕ<tº ;Éo@≥;d=ëhs ºÃÃÕ;Â`B ;£◊
-@ßïÅ=◊
-= ºãCñ;£◊
- ;Éo@úr∞=∫^5 	ºÌëh<tº 	;Éo@∆ß='Ôû º£◊
-<tº ;Dõ¶@Ñ ≈=∆ß ªÉo<e`B <#◊
-@íè\=◊
-= ººj<Dõ¶ <tºAÖ<£◊
- ΩDõ¶<#◊
- ;ƒõ¶AdZ=•„Ω8QÏ<T˝Ù<o  ≥@     Gaia DR2 4423865487962417024=d∫9 'Ä4‰ïØD˚ @mÄ<ìYqÀ?™õ…Qåj@⁄·
-ò?§IBŒÉfˆ@PÌ*R&_?∞·ñ©>ùØ@ê
-˘    ¿Ed¨Ïòn¯?æ?ãˇcH¿aosMÑ?∫ãÍ¥Ô‰.øÆË∫¿   ø PÀÄ   ?ña    ?É}†   ?î*<`   øïˆ>    ?—Wp†   øπ;$Ä   ?¨™¿   ø»[£@    Ô Ô Œ !@6Í4`   @ë%\‡   ?Ã`_ •ı7@5•-^∑µç T@2ç    ?˘◊H^ÉfT?ãÖZ—πÉìøkPq@     ?±Ÿz       "F ÛAòWÌÕÓ◊@Ù@¶n4’ﬁ@í˛ﬂ    @∑|@    AàÙ6(öõ@¯§1Sq@Ä4    @7≈¿    AèùZhm4ìAAºî¿å4@ré‡¿   @’`   ?Ú“J‡     ?Î;    ?ÿò    ?ﬁ%ﬁ    @3=tO◊?√w=Ïª_ 
-E≥∞ @ê      NOT_AVAILABLE@#e7Xë ò@D˚“¸L1”@m!à∏ÏZÄ@5≥	Ø⁄t Ü°@∂BU`   @∂™†   @∂≠U`   ?πÖ`   ?ëhr¿   ? =p†   ?•‹∆@   ?Ä-‡    ?∏ı¬Ä    Ø?ÓØ`   ?Ìê(†   ?Ô6ı¿   ?ÎÚΩ¿   ?ÎË †   ?Î˝z‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=4423865487962417024 Ä       Ä   ¯      Ä Ä HIP77052 ?D¿¯èW)HIP77052 7@éff=PÂ`?u¬è <Dõ¶;Dõ¶<#◊
-@ÑZ>ˇ|Ó@3◊
-;o >ôö;o ;£◊
-@33=Ö∏ >∏<49X <o@0ìu=á+ >hs<£◊
- <u¬è@J<›/ >Oﬂ;ƒõ¶ ;ƒõ¶?•¬è=Éo =Ÿá<˝Û∂ =o?ﬁV>ì >ìu=H¥9 <¨1?9ôö<e`B >≤-<e`B <tº?¬è\='Ôû >(ı√<T˝Ù <tº?ëÎÖ<¨1 =„S¯<õ•„ <u¬è?<(ˆ<T˝Ù =›/<49X ;Â`B?Æ{;o =Û∂F;Dõ¶ ;ƒõ¶?ü†=üæw =Ôù≤<#◊
- <Dõ¶AQÏ<ı¬è ΩßÔû:Éo ;Dõ¶AÂ`>.{ ºÉo=PÂ` <ı¬èAGÆ<£◊
- <£◊
-<Dõ¶ <#◊
-@…á=y€# ª£◊
-<‘˝Ù <u¬è@Ùì=q©¸ =T˝Ù<T˝Ù ;Â`B@Ãìu<e`B@   =•„:Éo@   ;Dõ¶@õ¶=<j =,1<49X ;Dõ¶@‚=çOﬂ ºo=0 ≈ <ÃÃÕ@À∆®=+ =ßÔû;Â`B ;Éo@Ihs<›/ =tº<ºj <T˝Ù@F{<o =çP<o ;ƒõ¶@üÔû=]/ =©˚Á<e`B ;£◊
-@°GÆ=0 ≈ =e`B<Dõ¶ ;ƒõ¶@{S¯=]/ 	=á+<e`B 	;ƒõ¶@µëh=@É =ìtº<Dõ¶ ;£◊
-@µÎÖ=£◊
- =q©¸<ãCñ <tº@©hs=◊
-= ='Ôû<49X ;£◊
-@ù€#=¨1 	<e`B<ãCñ 	;ƒõ¶@»  =49X <¥9X<#◊
- ;Dõ¶@ÑZ=ù≤- ;Dõ¶<#◊
- ;Â`B@íÒ™=ı¬è º49X=+ <ƒõ¶A33<Ìëh ΩçOﬂ;£◊
- ;Dõ¶A›/=49XΩ° ¡<õ•„<49X ≥@     Gaia DR2 4347960427864280576<W˘ NN  i“‡D˚ @m“ü™,Ÿ„?Æπv@Åmh¿!)4˙F ?°ÖE@»g∑@0p˘‰yµ?¥‘å "C©@i@z¿   ¿Z~‡T/çﬁ?¿7ó·œYt¿7∫w≈Œ!?∏:Ì
-ˆ|ø”È˘@   øﬂıü    ?vn†   ø™æK`   ?ƒ+’¿   ø◊™P†   ?„–ú    øßI@   ø !N¿   ø‡9Î¿    ƒ ƒ Ω @OàÄ   @w@                    T@jÓ5Ä   ?˘a·îÁ∞ø?ÅÈiËo?µÂw†     	?≥¢è       !TA[;‹#Ñu!@ó˘RUÅ‹@≤În    @!≈‡    ALì~}”{≤@´‡1b≈z}@êfÍ    @!’–@    AR3EÒØ[@∑47õ=@â]‡   @ !~    ?Û/Ä     ?ÎE"    ?◊AL    ?ﬂH¯    ¿Q∞»~æ∑x?»˝¿úá*Ì E≥∞ @ê      NOT_AVAILABLE?‰3Ó!Vù}@@éÏfµ˝¬@m»òjk\±@&Ó$ï¸ Ü°@∂<@    @∂†   @∂f     ?»b@   ?±hr¿   ?Œ∏Q‡   ?∏b@   ?ÇnóÄ   ?¡ì‡    Ø?⁄\`   ?õ√@   ?Ò«    ? ^@   ?Ø˜‡   ?‰ƒ†   http://geadata.esac.esa.int/data-server/datalink/links?ID=4347960427864280576 <W˘ NN  0;?c8ƒÙ˜  HIP77883 ¯      HIP77883 C@å  <ãCñ?}p§ <49X;Dõ¶<#◊
-@Ò%>∂E¢@&v…;o Ωq©¸;o ;£◊
-@Èy=çOﬂ Ω}Û∂<Éo <#◊
-@$›/=PÂ` Ω'Ôû<o <o@Æ<ƒõ¶ ºƒõ¶;£◊
- ;ƒõ¶?ó
-==Â`B ºtº<ãCñ <ìtº?Ã(ˆ>tº ;Â`B=49X <õ•„?6»¥<ƒõ¶ >nò<ƒõ¶ <T˝Ù?∞Â`=Cñ <›/<e`B <tº?áK«<T˝Ù <Â`B<ºj <ãCñ?,ãD<¨1 =@É<›/ <e`B?ú¨;ƒõ¶ ºÉo;Dõ¶ ;£◊
-?ú¨=„S¯ =∆ß=0 ≈ =0 ≈A(ˆ=aGÆ =+=+ <ºjA ¨><j =¬è\=çOﬂ ='ÔûA9X<tº =£◊
-;o ;£◊
-@…ÎÖ=∫^5 <¨1<‘˝Ù <u¬è@ÛïÅ=ëhs =tº<Éo <tº@Ãìu<ƒõ¶@   =•„<tº@   <tº@Ô˜œ=8QÏ <¥9X<#◊
- ;Dõ¶@„S¯=ù≤- =o<Ìëh <ãCñ@…Û∂=Cñ <ÃÃÕ<#◊
- ;£◊
-@Gﬂ;<‘˝Ù <T˝Ù=o <ìtº@Fff<¥9X ='Ôû<ãCñ <tº@ûóç=@É =,1<Dõ¶ ;Éo@†¥9=8QÏ =çP<e`B ;ƒõ¶@xı√=<j 	<Ìëh<tº 	;Éo@¥  =<j <ºj<ìtº ;ƒõ¶@¥Â`=á+ <Â`B<¨1 <Dõ¶@®I∫=€"— ;£◊
-<49X ;£◊
-@û{=¨1 	<¨1<ìtº 	;Â`B@«ù≤=•„ <49X<49X ;Dõ¶@Ö“Ú=≤- =H¥9;o ;Dõ¶@îÉ=„S¯ =•„<ãCñ <T˝ÙAff=o ;ƒõ¶<Dõ¶ ;Â`BA"—=Æ{Ωy€#=mëh=+  ≥@     Gaia DR2 6035927380304634240S√Î˘°Ä é—D˚ @nqî;xOx?∞ÕË`BmŒ¿?™-„¬€‹?†—8Ì"·C@FÉ5£Y5Â?ÆM!•◊Â?@á∆L@   ¿LÆÙå[J·?√›‘›È•P¿oø∏*ï?Ω&B>ÄÕø„s£@   ø¢ò)Ä   ø„ÏF    ?’‚™    ?ƒ@   ?ÿÁî    ø‚an@   ø ©€    ø¢$ÂÄ   ø‡K˛    SSN @72ê`   @ï$Ω    ?æ†DÓx@B‡˙àdå T@I1Ä†   ?˘áj/õîÊ?Åå_à;ï}øºÇÛ@    & ?∫d~Ä      +FTAâ0§Ë}k@¿ÆoYy&¯@∏);Ä   @Ü^†    #Azº˜>>Å@ÿ!Ùi˘aX@ë∫:‡   @Ì°     %AÄÅ£'\@„E˘øﬂA@ãiHÄ   @ß§¿   ?Ú˘‡`     ?Í/„    ?÷t(    ?›Îû    ¿5‡Ø≤'§?¡ª?fËË E≥∞ @ê      NOT_AVAILABLE@uö}bÂiâ@+’©°Qi)@nÍ â [∫¿$êÂLÈ  Ü°@∂ßÄ    @∂~U`   @∑<o    ?Ω‡    ?ôôô†   ?Ààe†   ?Æ∏Q‡   ?äüæÄ   ?ªjÁ‡    Ø?†   ?Óãu‡   ?L"†   ?qî†   ?j?†   ?xÈ†   http://geadata.esac.esa.int/data-server/datalink/links?ID=6035927380304634240 Ä       Ä   ¯      Ä Ä HIP79578 ?RÔiÉùnıHIP79578 ≤@é·H=Dõ¶?Çè\ <#◊
-;Dõ¶<#◊
-@$9X?lã@0‘˛;o =–Â`;Dõ¶ ;£◊
-@Ôû=ix’ =° ¡<Dõ¶ <o@,ºj=T˝Ù =ßÔû;£◊
- ;ƒõ¶@Æ=tº =ŒŸ<49X <tº?†bN=¥9X =Éo;Â`B <tº?÷á+>o =¥9X='Ôû <ãCñ?2∞!<¨1 >J<¨1 <49X?∏ı√=Cñ =∏QÏ;ƒõ¶ ;ƒõ¶?ãÖ<ìtº =}Û∂<ìtº <e`B?=/<£◊
- =Â`B<Â`B <e`B?¶Èy;Dõ¶ =Éo;£◊
- ;£◊
-?ú(ˆ=â7L =¿É:Éo ;£◊
-A  =49X <ºj<£◊
- <u¬èAŒŸ=›/ ªo<›/ <õ•„Aæw;£◊
- =H¥9<T˝Ù <tº@…˚Á=° ¡ <ºj;ƒõ¶ ;Éo@Û•„=mëh =•„<Dõ¶ ;Â`B@ÃbN<ƒõ¶@   =o<o@   <tº@¨=H¥9 =49X<49X ;Dõ¶@„Æ=ãCñ =49X<49X ;Â`B@À†<ı¬è =}Û∂;ƒõ¶ ;Éo@Ix’=•„ =çP<¥9X <T˝Ù@F<ãCñ =tº<Dõ¶ ;Â`B@ûÒ™=LÃÕ =Yá<o ;Éo@†ÃÕ=8QÏ =#◊
-;ƒõ¶ ;£◊
-@z~˙=@É 	=T˝Ù<o 	;Éo@µOﬂ=49X =Éo<tº ;Éo@∂=ù≤- =}Û∂;Â`B ;£◊
-@©x’=‘˝Ù =0 ≈<o ;Éo@ûv…=¥9X 	=+<tº 	;Éo@»j=,1 =tº;Â`B ;Dõ¶@Ñı√=ëhs <¥9X<T˝Ù <#◊
-@î ≈=ŒŸ <ÃÃÕ<T˝Ù <#◊
-A¥9=o <‘˝Ù<tº ;ƒõ¶A-;o<›/:Éo;Dõ¶ ≥@     Gaia DR2 5933127990979387648RV¥y@· "„P%D˚ @nÄ‘zôÉ?®=)î‚¿JhD5ì{Z?°πENáT@1Ö‡mÎÉ:?Ø á3√Ω@r¿   ¿\íÔÕΩ_+?¥ÏÏ†ò	a¿ N~4}L?ØT$|ì¯™øºÂÅ`   øŸ5|Ä   ø€`¥‡   øÕ$@   ?ƒ‹z¿   ø»v\    ø‘“j    ?µ≈ö@   ? •¿   ø“ÇM`   $$ @!>‡   @}nP@                    F@^4S    ?˘œ¡£i?Ö∆\TGd≠øoÍW`    " ?™†      %T'AbÌ˘Ñúÿ‡@®˙i›+Nœ@®@D@   @ dß     $AT@’ŒA$@≠ÌÀÀy'@ïßÿÄ   @!›¿    !AX–zó	Ç◊@æÏOÃ‡X2@â≠¥¿   @ÍM¿   ?Û‚¿     ?ÈÎn    ?’Ê‘    ?›    @,∑hû0–?¡Ì≤Lí"F EªÄ @ê  >Ä  NOT_AVAILABLE@t∞vï>	§ø˜–»cP©@oÄ}%Ÿg4¿>¸!À’ Ü°@∂Õf`   @∂^@    @∑S@   ?√◊
-@   ?∞|Ñ¿   ?À©*@   ?¥›/    ?£ú¿   ?ªÁlÄ    Ø?Ò§¥‡   ?ÒFa`   ?ÚU¿Ä   ?ÙZ8‡   ?ÙBá@   ?ÙqÍÄ   http://geadata.esac.esa.int/data-server/datalink/links?ID=5933127990979387648 RV¥y@·  7c?d>"πh›  HIP79715 ¯      HIP79715 ∏@å(ˆΩçP?ãÖ <49X;Éo<#◊
-@¬∏R>∂»¥@#˜œ;o Ω»¥9;Dõ¶ ;£◊
-@I∫=ix’ Ω“Ò™;Â`B ;Â`B@"∞!=Dõ¶ Ωôôö;Éo ;ƒõ¶@j<¥9X Ωôôö<o ;Â`B?ëhs=‘˝Ù ΩYá<tº <#◊
-?∆ß=ŒŸ Ωtº=,1 <ìtº?/\)<Ìëh =Èx’<Ìëh <u¬è?™¨<ı¬è º›/<u¬è <#◊
-?~∏R=çP ΩCñ;ƒõ¶ ;Â`B? Aâ=o ∫Éo<T˝Ù <o?õCñ;Dõ¶ ºÂ`B     ;£◊
-?å(ˆ=ëhs Ωo;Dõ¶ ;ƒõ¶A¬è<˝Û∂ <o;£◊
- ;£◊
-A ¨>I∫ =Yá<›/ <£◊
-A
-ı√<Éo :Éo<tº <o@…%=y€# ªÂ`B<ı¬è <ìtº@Ú-=]/ ºo;Â`B ;£◊
-@ÀK«<ÃÃÕ@   ªo<#◊
-@   <#◊
-@Óüæ=PÂ` º£◊
-<Dõ¶ ;Éo@‚J=üæw ºo<ƒõ¶ <e`B@»b<ı¬è Ω+<#◊
- ;£◊
-@E„T=49X ºõ•„;Â`B ;£◊
-@C•„<e`B ∫Éo<tº ;ƒõ¶@úr∞=LÃÕ ºÃÃÕ<49X ;£◊
-@ü=0 ≈ ºu¬è<e`B ;ƒõ¶@u∏=æw 	º˝Û∂<#◊
- 	;ƒõ¶@± ¡=,1 Ω<j<#◊
- ;£◊
-@≥+=ù≤- º›/<Dõ¶ ;Â`B@¶¿É=›/ Ω0 ≈<tº ;£◊
-@ù%=∏QÏ 	ºDõ¶<Dõ¶ 	;£◊
-@∆V=#◊
- ºÌëh<#◊
- ;Éo@Ñb=ù≤- ªƒõ¶<o ;Â`B@ív…=∞ ≈ º‘˝Ù<tº ;Â`BA¨<Ìëh ºDõ¶<tº ;ƒõ¶A33<oΩCñ;ƒõ¶;Â`B  ≥@     Gaia DR2 4345775217221821312<OKâ 3„ÄcÂ*D˚ @n} pSÈG?∏ó o=¿ æ>π≠ïB?±L”∞'‹@Q±»_0?º¶¥ µJ«@É¬~Ä   @m¿WPÓ?«2=ØG1!¿~ı„Ωê˛Æ?¬“∫≠éˇı?≤≥ö    øŸ˘Ó†   ø°p~‡   ø’Û*`   ø—ñõ‡   øƒÂ0¿   ø∑y>†   øŒIé¿   ?–Ï‡   ø≥kUÄ    ” ” ¿ @D–‡   @•u    ?◊Mò9†<@L§!µps∏ T@(Ä   ?˘o\√†?öÚpy¥?¨Õk`     ?∏î»¿       F A°∏≈›[˘A• ◊é¢@Çˇ2‡   @5⁄     Aë¥D!eEIAs ı™¬’@}Ã    @≤Ω     AïßUN-ñwAÀKøv@sxk`   @w<¿   ?ÚÉï`     ?È‹    ?◊Œ2    ?€È‘    @'ÃÃ‹f&?¡<Ñ8ãÉ	 
-E≥∞ @ê      NOT_AVAILABLE@∆†8˚ÍU@='®ø©g2@npDïì@)f~ï^Ê— Ü°@∂⁄U`   @∂c™†   @∑s@    ?∂»¥@   ?é∏Q‡   ?…X`   ?´"–‡   ?Ä-‡    ?π˚Á`    Ø?|`   ?ÔOØ@   ?Ò,•¿   ?ÒÏ”‡   ?Ò·_Ä   ?Ò¯H@   http://geadata.esac.esa.int/data-server/datalink/links?ID=4345775217221821312 <OKâ 3„Ä 78?o-∫á  HIP79672 ¯      HIP79672 ∞@é{='Ôû?Çè\ <tº;Dõ¶<#◊
-@ÅGÆ>–bN@/ù≤;o =¨1;o ;£◊
-@Aâ=u¬è =¨1;Â`B ;Â`B@-ëh=PÂ` =¬è\;£◊
- ;ƒõ¶@V<ÃÃÕ =£◊
-;Â`B ;ƒõ¶?¢J=≤- =ù≤-<o <tº?ÿ1'=Û∂F =ŒŸ<ƒõ¶ <49X?333<£◊
- >ì<£◊
- <49X?ΩOﬂ=æw =˝Û∂<T˝Ù <tº?ëhs<e`B =›/<¥9X <Éo?Hr∞<o >æw<‘˝Ù <e`B?Ø†;o >o;Éo ;Éo?§õ¶=ëhs >"–Â;Dõ¶ ;£◊
-Ahs=+ ºT˝Ù;£◊
- ;£◊
-Aìu>$› Ωtº=\) <¨1Aâ7;Â`B =çP;Â`B ;ƒõ¶@…ÎÖ=è\) <¨1<Éo <tº@ÛÁm=mëh =<j<ãCñ <tº@ÃZ<ãCñ@   <˝Û∂;o@   ;o@õ¶=@É ='Ôû;Â`B ;o@‚»¥=Ö∏ <Éo;Éo ;Dõ¶@ Ÿ<˝Û∂ =]/<o ;Éo@HAâ=\) <ìtº<ãCñ <#◊
-@FE¢<T˝Ù =æw<T˝Ù ;Â`B@û∏R=LÃÕ =<j<#◊
- ;Éo@°%=,1 =Dõ¶;Â`B ;£◊
-@yX=@É 	=\)<o 	;Éo@¥¨=0 ≈ =49X;£◊
- ;Dõ¶@µ°À=õ•„ =LÃÕ<e`B <o@©7L=◊
-= =\);ƒõ¶ ;Éo@û{=∏QÏ 	<¨1;Â`B 	;Éo@»I∫=,1 =o<o ;Dõ¶@Ö/=ìtº <Ìëh<u¬è <Dõ¶@î1=ŒŸ <¥9X<o ;ƒõ¶A='Ôû ºìtº<49X ;Â`BA¨=tº    <õ•„<49X  ≥@     Gaia DR2 5943191236735787520RztÒŸ‚ jóﬁD˚ @oN¶ªrŸº?ß07EÂ¿FØ@Äÿh?¢~Óä: @A˛4o∏ ?™Yr{+iA@Ö⁄     @Nù"?¥ˇˆ?∂ ÅçM/+¿WjDˇEà?≠⁄ 2Ô;u?¡ÈÇ@   ?§Ù'    øﬁÏÜ¿   ø…S    øü©¢¿   øÀi1‡   øÊ,    ø…@W`   ?œNpÄ   ø§€P     ‰ ‰ ‚ @fï‡   @u)                     F@d‚J‡   ?˘√™Ómö?Éà£^OÖ?¬ﬂB      
-?¨I@      F ËAÄTÛîÁ@Ωæˆâ"E@±ê«¿   @hcÄ    Aq.®\˜<@”Ò2ò∏·@å»ˆÄ   @ŸG¿    Auçu◊gR@„Z™Ó„ÿ@Å—A`   @Å∂Ä   ?Ú˙b†     ?Íºä    ?◊D    ?ﬁj–    @PonáŸ˜t?¿q8qF E≥∞ @ê      NOT_AVAILABLE@u5¬wpV?„SNOÜ˘0@oÊÚﬂÜÒÒ¿6Ì}q±0 Ü°@∂ïÄ    @∂c     @∂œ     ?√)^†   ?ôôô†   ?ÕîØ@   ?≤I¿   ?äüæÄ   ?æÏø¿    Ø?Ke@   ?ÔÛI†   ?ï;‡   ?¥7@   ?´—‡   ?ºú†   http://geadata.esac.esa.int/data-server/datalink/links?ID=5943191236735787520 Ä       Ä   ¯      Ä Ä HIP81746 ?@<¸CQ´NHIP81746 S@ã◊
-Ω∫^5?}p§ <#◊
-;Dõ¶<#◊
-AGÆ>ßlã@á+:Éo æ;dZ;Dõ¶ ;Éo?¸Ìë=á+ æFß<tº ;Â`B@¬è=y€# æ•„<Éo <Dõ¶@ £◊<¥9X æ	7L<Dõ¶ <tº?áÔû=¥9X æo;Â`B <tº?ø;d=ÎÖ Ω¿É<˝Û∂ <T˝Ù?óç=çP ºe`B=çP <õ•„?£∂F=0 ≈ Ωù≤-<Éo <#◊
-?{dZ<ƒõ¶ Ω@É<ìtº <e`B?ŒŸ<T˝Ù ΩCñ=\) <ìtº?îz·;o Ω£◊
-;£◊
- ;£◊
-?ä^5=<j Ω8QÏ<¨1 <¨1Aüæ=0 ≈ ΩÅ%<£◊
- <u¬èAçP>,1 <ÃÃÕ=ãCñ =#◊
-A
-ãD<¨1 ºÃÃÕ<ãCñ <T˝Ù@∆{=è\) ΩÃÃÕ<Éo <#◊
-@ÒOﬂ=T˝Ù Ω\)<#◊
- ;ƒõ¶@ ¿É<¨1@   ºìtº;ƒõ¶@   ;ƒõ¶@Ì©¸=0 ≈ ΩLÃÕ<#◊
- ;Dõ¶@‡z·=Æ{ Ωe`B=çP <¥9X@«|Ó<ı¬è ΩPÂ`;Â`B ;Éo@Bè\='Ôû Ωè\)<Dõ¶ ;Â`B@@¥9<u¬è Ω@É<T˝Ù ;Â`B@ú1'=@É Ω+<49X ;Éo@ù˚Á=49X Ω@É<T˝Ù ;ƒõ¶@s33=49X 	Ωy€#<#◊
- 	;£◊
-@∞Aâ=49X Ω¿É;Â`B ;Dõ¶@∞˝Ù=ìtº Ω¬è\<T˝Ù <o@£Ám=ŒŸ æ$›;ƒõ¶ ;Éo@õS¯=∏QÏ 	ΩÉo<#◊
- 	;Éo@ƒr∞=#◊
- Ω¥9X<#◊
- ;Dõ¶@ÅÎÖ=≤- ΩóçP;ƒõ¶ ;Éo@êAâ=–Â` Ωƒõ¶<u¬è <49XAì<¥9X æI∫<#◊
- ;ƒõ¶A°À;ƒõ¶æ$›;Dõ¶;Éo ≥@     Gaia DR2 41407928177800672009w! EÄK„⁄?D˚ @oÈnOÎy?ﬁÂDsa3“¿+#’9O´?›æ9àU@4Uµe?‚2u›Ïv@A‡©    ¿4Ï·è€G?Î’‘¡åú¿sëP©Ñç?Ëô∞]‚)~?™ú¯¿   ø…B¿   øÃ⁄˝@   ø°ó    ?f
-é    ø°[G¿   ø◊Å?†   ø”Oi¿   øqoÕ`   ?®∞–     ´ ´ ´  @jÚèÄ   @¸pb    @”·F%©º@¢Òã^6,x F?ΩêÄ   @ pu∑„?√ú,˘+Òˆ?£ºÛ¿     
-?‹ú¿      F πA}ûb≠q5J@¿πr7x6@¨UˆÄ   @‘Ò     Ao≠,‚LƒC@›ÓÏ£ŸÔz@ÄÓá‡   @3÷     As$¥Â	ê≤@Ï /èï‡@u«≈`   @Ä†   ?ÚÂ•      ?Èr¨    ?’ÓP    ?‹˜    @StwÓÎ¶@Ô)^"J— 	E≥∞ @ê      NOT_AVAILABLE@é
-òÜ@1T¸Ãõb@oŸ4ùg9@"E(µm° Ü°@∑     @∂Ë     @∑@     ¯      ¯      ¯      ¯      ¯      ¯       Ø?˙E‡   ?˘‘Ç†   ?˙úw    @ì*@   @◊`   @OM    http://geadata.esac.esa.int/data-server/datalink/links?ID=4140792817780067200 Ä       Ä   ¯      Ä Ä HIP83276 ?VxßG¨IHIP83276 ˛@áÆΩæv…?ùp§ <u¬è;£◊
-<#◊
-@ÏQÏ>õ•„@•„:Éo æix’:Éo ;ƒõ¶?˜Æ=Yá æp£◊<e`B <#◊
-@Ám=æw æ9X<ìtº <u¬è@ bN<Ìëh æOﬂ;£◊
- ;Â`B?à‘˛=è\) Ωı¬è<ÃÃÕ <ÃÃÕ?¡%=∞ ≈ Ω£◊
-=H¥9 <¨1?Ÿ=LÃÕ ºT˝Ù=LÃÕ <‘˝Ù?§Z<ƒõ¶ Ωëhs<Â`B <ãCñ?t9X<#◊
- ΩóçP<›/ <£◊
-?ŒŸ<Éo ΩCñ=+ <ìtº?óÆ;o ΩaGÆ;o ;ƒõ¶?å¨=Éo º›/;Éo <oAÂ`<õ•„ Ω<j<49X <#◊
-Aù≤=mëh æOﬂ=Å% =<jA
-õ¶<tº º¨1<o <#◊
-@ƒÌë=æv… æ
-=q<Dõ¶ <o@ì=aGÆ ΩïÅ<#◊
- ;ƒõ¶@…á;Â`B@   Ωè\)<tº@   <#◊
-@ÏÃÕ=<j Ωù≤-<e`B ;Éo@·GÆ=ÃÃÕ º˝Û∂=e`B =+@∆Ÿ<›/ Ωëhs<Éo ;Â`B@A7L=e`B Ωºj<Éo <#◊
-@?lã<Â`B Ωâ7L<ÃÃÕ <T˝Ù@ö~˙=PÂ` Ω∞ ≈<49X ;ƒõ¶@ùp§=Yá ΩÉo<ìtº <o@p ≈=çP 	Ωﬂ;d<‘˝Ù 	<49X@Ø•„='Ôû ΩÁlã<ãCñ ;Â`B@±7L=óçP Ω≤-<Éo <#◊
-@£
-==·GÆ æ"–Â<T˝Ù ;Â`B@ô¬è=–Â` 	ΩÈx’<ìtº 	<o@√Cñ=<j æ   <õ•„ ;ƒõ¶@Ä¥9=Dõ¶ ΩÂ`B=æw <Â`B@éÒ™=¨1 æCñ<T˝Ù <#◊
-A–Â=,1 Ωæv…<u¬è <#◊
-A£◊<oΩãCñ;£◊
-<o ≥@     Gaia DR2 4367026303085396352<öÀI 1AÄ5ŒD˚ @pKl+É&n?¶˛á÷ÌH¿ÁÌÒ•?§◊;*Xå:@Imˆeâ≈?´◊É Œ±q@ç:7‡   @HZâ?}œ?µ„ŒÍpòÆ¿[JeÔ?≤Iñò≠eP?zU‹@   ø”Ú™†   ø¡Gˇ‡   ø≥j`@   ø—F†   ø•Ù    ø‡Ï!`   ø±ÊkÄ   ?ƒ®‘`   øñ˝µÄ    u u q @Ç‹†   @l
-j@           <ÿ"Àˇ.∏ T@sÿò    ?˘ø¬ãdÛ?ÖÇ~ßÀø≈åÚ      	?©Òœ†      F ÄAêC=•Äå)@‡¶=#$≠@üA∫    @j:     AÄÙê¬¥6ö@Ò¬l9Â«Î@~ç    @Âl¿    AÖè≠-ÿØ@˙3#÷π,Œ@zU¶`   @~°    ?ÚÚ~Ä     ?Î6^    ?◊≥,    ?ﬁπê    ¿A˝¶m?9^?∆2ˇ.Øï] 	E≥∞ @Ä  >Ä  NOT_AVAILABLE@47-¬p¯v@2n◊OqXö@pA,‹a	@4ª1gÃ¨ Ü°@∂Q     @∂™†   @∂Ñ     ?∆Ov`   ?∞∑Ä@   ?ŒŸÄ   ?µo`   ?°hr¿   ?¿†ê     Ø?≥µ†   ?haÄ   ?Ò
-÷`   ?ªó@   ?µ‡   ?¬†   http://geadata.esac.esa.int/data-server/datalink/links?ID=4367026303085396352 <öÀI 1AÄ L2?`ÓŒ´—£r  HIP85042 ¯      HIP85042 5@ã33<ı¬è?xQÏ <#◊
-;Dõ¶<#◊
-@¯ìu>Ö∏@*–Â:Éo <tº;o ;£◊
-@
-~˙=£◊
- ªƒõ¶<ìtº <49X@'|Ó=â7L     <¨1 <Éo@	á=tº ªo<tº <o?òr∞=·GÆ ;o<u¬è <Éo?Œ5?>+ <ºj='Ôû <ãCñ?-“Ú<õ•„ =›/<õ•„ <#◊
-?¥Z=Cñ =]/<T˝Ù <tº?âX<›/ =49X<#◊
- <o?1ÎÖ<tº =ãCñ<˝Û∂ <Éo?ßlã;o =â7L;Dõ¶ ;£◊
-?õ=8QÏ =¨1<¥9X <ºjAÖ=•„ ªƒõ¶<#◊
- <oA ºj=•„T =e`B=•„ <Â`BA◊
-<ı¬è =aGÆ<ºj <Éo@…â7=q©¸ <tº<ºj <T˝Ù@ÙbN=Éo =y€#<tº ;£◊
-@Œ{<ƒõ¶@   =∞ ≈<tº@   <tº@Aâ=<j <ı¬è;Â`B ;o@‚ff=çOﬂ ;Dõ¶=tº <¨1@ ∞!=+ =H¥9;ƒõ¶ ;Éo@I%<ÃÃÕ <ı¬è<‘˝Ù <u¬è@Ihs=ix’ =∂E¢=Yá <ƒõ¶@ü;d=PÂ` =y€#<Dõ¶ ;Éo@°á=8QÏ =H¥9<Dõ¶ ;£◊
-@z¨=PÂ` 	=@É<tº 	;£◊
-@¥Aâ=LÃÕ <˝Û∂<#◊
- ;Éo@¥ƒú=ïÅ <ƒõ¶;Â`B ;£◊
-@®j=–Â` <tº<tº ;Éo@ûnò=Æ{ 	=o<õ•„ 	;Â`B@»ìu=,1 ='Ôû<49X ;Éo@Ö©¸=¿É =0 ≈<#◊
- <o@ì˜œ=Â`B <¨1<ìtº <T˝ÙA ¡<›/ Ωo;ƒõ¶ ;ÉoAtº=49XΩ'Ôû<Éo<#◊
-  ≥@     Gaia DR2 5139449851708989824GR˛i aÄAÓ£ÆD˚ @;m“3_àk?†∑Ó[dÀÏ¿2Ôû†©ßb?úµ,œgn@0Æ4}g§Y?ß`∏≤)~™@v’#@   @@ñP£ê?∫÷S»íÍ@(∞≠W;n2?∞hceBd?”.    ø≤∫}    ?‹Ω    ?•)Q¿   øæI@   ?¿!Î@   ?Àò«¿   ø’ç˜`   ø∂A¿   ?≠{`      Ô @o˙    @uJ˝                     T@jE@   ?˘Ê8 ßz?x√πÜ?óû]¿     ?∞Îƒ`      F ÒAWÏTjÿ‹@ñ«ª>mJ2@∞;’‡   @!v˙     AHö{)§	]@™‹îGb—@çOQ@   @")     ANØ˛ºz†@∑π∫ö|ñY@Ñ±Ï†   @ Äa@   ?Û#:‡     ?ÍäL    ?÷AÄ    ?ﬁ”    ¿"nzYùæ?÷˛¢S/zß E≥∞ @ê      NOT_AVAILABLE@g18·l®¿Rìß;πï-@1ﬁπéDã]¿<I{¬∑ì Ü°@∂∆Ä   @µôfÄ   @∂X     ?∏$Ä   ?ñ†   ?∆}V`   ?§!    ?É©*@   ?≥9¿‡    Ø?Ô>Á†   ?Ó]X‡   ??=†   ?Î…⁄¿   ?ÎÆc†   ?ÎÂQ‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=5139449851708989824 GR˛i aÄ  !;?fÔM7Òœ  HIP8507  ¯      HIP8507  U@é∏RΩ ¿É?u¬è <49X;Dõ¶<#◊
-@òÂ`>˙^5@'†:Éo ΩLÃÕ;o ;Éo@†=Ö∏ Ωq©¸;Â`B ;ƒõ¶@%„T=]/ ºÃÃÕ<Dõ¶ <#◊
-@çP<o º‘˝Ù<£◊
- <u¬è?õ"—=ãCñ <ºj<›/ <›/?Œ˘€=–Â` <Ìëh='Ôû <ãCñ?$ì=+ =è\)=+ <ãCñ?≥o=#◊
- =49X<õ•„ <Dõ¶?Çnò<›/ ºtº<49X <tº?•„<ƒõ¶ ºõ•„=49X <¥9X?ôX;o Ω,1;Dõ¶ ;£◊
-?ë&È=@É <o<£◊
- <¨1Aı√<ı¬è æ+<ìtº <T˝ÙA>% æH¥9=æw <ƒõ¶A	©¸;Éo Ω•„T<Dõ¶ <tº@ƒìu=è\) æÅ<ºj <T˝Ù@Ôæw=H¥9 Ω¨1<T˝Ù ;Â`B@»ìu<e`B@   Ω≤-:Éo@   ;Dõ¶@Ïì=H¥9 ΩÃÃÕ<Dõ¶ ;Dõ¶@ﬁ=q=\) æJ=Dõ¶ <Â`B@«
-=<˝Û∂ ΩÖ∏;£◊
- ;Dõ¶@@ìu<Ìëh Ω–Â`<ÃÃÕ <u¬è@=ëh<ãCñ Ω∆ß<Dõ¶ ;Â`B@õtº=LÃÕ Ωe`B<49X ;Éo@ù∏=PÂ` Ωôôö<õ•„ ;Â`B@q∫^=H¥9 	Ω¨1<e`B 	;ƒõ¶@∞I∫=,1 Ωæv…<Dõ¶ ;Éo@±V=£◊
- Ωºj<49X ;Â`B@£dZ=·GÆ æçP<e`B ;ƒõ¶@ô≤-=≤- 	ΩÌëh<Dõ¶ 	;£◊
-@√;d=0 ≈ æ%<49X ;Dõ¶@K«=aGÆ ætº<ı¬è <¥9X@éüæ=¬è\ æÅ<#◊
- <oA33<ƒõ¶ æFß<o ;£◊
-A£◊<‘˝Ùæ_;d;Â`B;Éo ≥@     Gaia DR2 4495931087822218880>d¡Å GfÄ0¢qD˚ @pœAG∫ä?¶ÉŒ1¬´Œ@'õÖ√!ˇ§?™sç0y°@1)”°i?´È”€fÛ@s≠‡   @/ŸZAeïû?∫wGVñäò¿H‹ê:!?∏ôÊaÊHœ?’Ç«`   ?“˛zÄ   ø€§ì`   ø‡ut    ?∆Ó†   ø·Mó    ø‚¡¿   øﬁ2Û`   ø’èv¿   ?ﬂC     © © £ @%Ì@   @z∞¢¿           ?·k	å¡ﬂÜ T@^)∂    ?˙ª˘Òı ?áıü‘ñªÇ?®¶¿     ?¥º       F ¶Aaòˆ§8ñp@®∆n7j’@¶∫±†   @ ç7`    AR¢%©z¨≥@≈Ô+/€èÏ@{/1Ä   @!B4¿    AW?X^‹Ÿ@◊¶¿|Ãq’@ot†   @2“¿   ?Û
-      ?Íå∂    ?÷ü¨    ?ﬁy¿    @(E˘Ωﬂ ¬?¬%êÓÜ  E≥∞ @ê      NOT_AVAILABLE@B∂ä>∑ø@1°Îí˜≥@pÀßºÍyº@AûÇY-»◊ Ü°@∂e     @∂OU`   @∂úÄ    ?ÀØ∑‡   ?™^5@   ?◊e˝Ä   ?∑K∆†   ?úæ‡   ?≈Å     Ø?Ú‡   ?Ò∑Ÿ‡   ?Ú3?Ä   ?Ûÿû    ?Û¬◊‡   ?ÛÓd    http://geadata.esac.esa.int/data-server/datalink/links?ID=4495931087822218880 Ä       Ä   ¯      Ä Ä HIP87769 ?&ÂåßíHIP87769 ƒ@åÃÕ=ìtº?É◊
- <#◊
-;Éo<#◊
-@ìçP? É@17L;o =ﬂ;d;o ;£◊
-@bN=aGÆ =∞ ≈<Éo <#◊
-@,Ìë=ix’ =Æ{<49X <tº@¬è<˝Û∂ =è\);Éo ;Â`B?•¬è=PÂ` =Ÿá=0 ≈ =49X?—©¸>Cñ =LÃÕ<¨1 <#◊
-?<Ìë<ìtº >+<ìtº <#◊
-?≥◊
-='Ôû =H¥9<49X <o?è|Ó<o =æv…<Â`B <£◊
-?=≤-<ºj =Èx’=8QÏ <ºj?©x’<tº =¨1;ƒõ¶ ;£◊
-?öüæ=y€# =•„T;ƒõ¶ <oA£◊=+ =Éo<£◊
- <e`BAﬂ;>ì =49X=\) <¨1A  <Éo =á+<£◊
- <u¬è@ÃI∫=çOﬂ =¬è\<Éo <#◊
-@ıá=ix’ =©˚Á<u¬è <o@Õ/<ìtº@   =ix’;o@   ;Éo@Òôö=PÂ` =ìtº<Dõ¶ ;Dõ¶@Â`B=è\) =ƒõ¶<Éo <#◊
-@Ãb=Cñ =ºj<tº ;Éo@LãD=Yá =Æ{<Â`B <Éo@Hƒú<Éo =° ¡<u¬è <o@üæw=ix’ =üæw<u¬è ;£◊
-@°“Ú=0 ≈ =ìtº<tº ;£◊
-@|ºj=@É 	=¥9X<ãCñ 	;Â`B@µÛ∂=49X =¨1<Dõ¶ ;£◊
-@∂ß=ïÅ =©˚Á;Â`B ;£◊
-@™∞!= ¿É =£◊
-<#◊
- ;£◊
-@üù≤=∂E¢ 	=è\)<Dõ¶ 	;£◊
-@…“Ú=,1 =£◊
-<#◊
- ;Éo@Üff=¥9X =â7L;Éo ;Éo@ïÛ∂= ¿É =©˚Á;ƒõ¶ ;ƒõ¶A∏=æw =T˝Ù<tº ;ƒõ¶A&È=æw=Ö∏<ƒõ¶<e`B ≥@     Gaia DR2 6634011506225360640\æQ jØ &•s	D˚ @q&Ù´õ?ô+©‘
-¿N⁄ÕÍÑá?öπfM@+<g°0mƒ?°äæïyV@x◊Ñ†   @V ˇ◊†mó?ß=À,¸!—¿b$øH±?ß' .íJ_ø√¿   ø™ †   øÀ©@   ?’wlÄ   øƒ)%    ?ÿß`   øÿi˝¿   øÿwG    ?Æ6Ç¿   øœ÷÷‡    @ È‹@   @	^`                    T@fâä    ?˘÷˙Ë!{≥?Ä6π©Yùâ?¨B‘†     ?¢‚Ï`      "TAV,®záU@óöﬁ)!·@Æ ‡   @!é@    !AG◊øáôØ@¶S¿÷*O_@ë    @":{@    !ALÙpbç√@¨N9”ŒW@êâ"‡   @ †∞    ?Û @     ?Èú¥    ?’ç     ?›¨h    @.p´£Ü≤ú?—|ƒph EªÄ @ê      NOT_AVAILABLE@tÕL5DÕ¿3‹—¥ P@q
-‘‘JkW¿C'Ÿ∂Ï±  Ü°@∂À     @∂å     @∂ıå¿   ?≥ä    ?ëhr¿   ? =p†   ?§÷°`   ?Ç:)¿   ?∏eî†    Ø?Òcß‡   ?Ò#o`   ?Ò≈]    ?ÛºËÄ   ?Û©]¿   ?Û–s@   http://geadata.esac.esa.int/data-server/datalink/links?ID=6634011506225360640 \æQ jØ  ^2?q XæäE4  HIP89650 ¯      HIP89650 €@çGÆºu¬è?åÃÕ <49X;Dõ¶<#◊
-@í~˙>˚dZ@&V:Éo Ωy€#;Dõ¶ ;Éo@˘€=H¥9 Ωy€#<õ•„ <49X@%∏=Yá ΩçP<ãCñ <T˝Ù@ß<¨1 Ω#◊
-<o ;Â`B?ûóç=0 ≈ =H¥9=PÂ` =T˝Ù?À•„=›/ ;Dõ¶<ı¬è <T˝Ù?.Ÿ<£◊
- =Â`B<£◊
- <49X?Æ˘€=o <Dõ¶<e`B <#◊
-?Ü$›<ı¬è <õ•„;£◊
- ;ƒõ¶?9á<ƒõ¶ =ƒõ¶<Dõ¶ <o?ùV;Éo ºe`B;o ;£◊
-?íè\>1' <õ•„=á+ =á+A{<˝Û∂ <Ìëh;£◊
- ;£◊
-A»¥=aGÆ =#◊
-<ìtº <e`BAtº<49X =o<õ•„ <e`B@… ¡=á+ <ãCñ<Éo <tº@Û†=aGÆ <¨1<¨1 <49X@ óç<ìtº@   ºƒõ¶;Dõ¶@   ;Dõ¶@ÔK«=LÃÕ     <e`B ;Éo@‚Ÿ=∏QÏ <ìtº=,1 <ƒõ¶@»£◊<˝Û∂ ºu¬è<o ;Éo@Gæw=Yá <#◊
-<T˝Ù <o@Dz·<tº <Dõ¶;£◊
- ;£◊
-@úÂ`=T˝Ù ºDõ¶<#◊
- ;Éo@üK«=,1 ªÂ`B<o ;£◊
-@vÈy=49X 	ªDõ¶<49X 	;£◊
-@≤á+=8QÏ ººj<T˝Ù ;£◊
-@≥∆®=óçP ªÂ`B<o ;ƒõ¶@ß|Ó=Ÿá º£◊
-<49X ;£◊
-@ù€#=¿É 	<u¬è<o 	;Éo@«
-=='Ôû ªÂ`B<Dõ¶ ;Éo@Ñ¨=•„T <T˝Ù;Éo ;Éo@ìlã=“Ò™ ;Éo<tº ;Â`BAnò<ı¬è <tº;ƒõ¶ ;ÉoAr∞=•„<£◊
-<ÃÃÕ<u¬è  ≥@     Gaia DR2 5149607655522233728Gw· ÌÄ95Ì-D˚ @>øı èå?£¬X¶ƒ¿+ß8‚Mö?û´‚íEX@8tí¿8}"?•˜´§ ¬Ÿ@Åœ„`   @H£rÚ2i?≤àÌìÊ/r¿4üÉ[ÈG?±/˙U’øslî    ?›LæÄ   ø´É@   ?ç<à@   øƒb&‡   øâûR¿   ø∆àØ`   ømK;@   ?£ÈfÄ   ?√q%Ä    ∫ ∫ π @—c    @qX∫@                    T@Vwr    ?˘§$Ôâ¬?Ñ{=†6ø‚?Å
-Ë      
-?®:∆       F æAj◊ﬂ≤î)@≤á≥ã—K @ß-ó‡   @D¯     A\Ü`∆%í@ƒ√ÛÚ…7@ÜŒv†   @ UÖ     Aaò“§-å@∆ÊRé´—/@àïÎ`   @e˚†   ?Ú¸’@     ?Í(s    ?÷a    ?›Ô»    @3[Ÿ_ﬂ–ü?√¢Æ A| E≥∞ @ê  >Ä  NOT_AVAILABLE@f?;±£Ä¿Q?;$a”@6¬éL¿8áZˇôV Ü°@∂≠     @∂ê@    @∂¡Ä    ?≥ä    ?ëhr¿   ?…‘ï    ?§9X    ?!-Ä   ?∑ª/‡    Ø?Óy4`   ?ÓBeÄ   ?Ó«@   ?Ì∞h‡   ?Ìù#Ä   ?Ì√Æ@   http://geadata.esac.esa.int/data-server/datalink/links?ID=5149607655522233728 Gw· ÌÄ  $Ö?k	=(ñ≤+  HIP9349  ¯      HIP9349  ∫@êz·ªƒõ¶?ãÖ <49X;£◊
-<#◊
-?6á+>∆ß@/;d:Éo =üæw;o ;Â`B@á+=aGÆ =ix’<49X <o@+∆®=H¥9 =â7L<Dõ¶ <#◊
-@ôö=Cñ >$›;Â`B ;Â`B?†£◊=}Û∂ =á+=+ =+?ÿìu=„S¯ =‘˝Ù=o <e`B?5?}<£◊
- >I∫<£◊
- <49X?∫·H=0 ≈ =‘˝Ù<Éo <#◊
-?ä~˙<T˝Ù =]/=@É =Cñ?,I∫;£◊
- =<j<¨1 <Dõ¶?¢è\;Éo <ı¬è;Dõ¶ ;£◊
-?î›/=∆ß =çP<Ìëh <ı¬èAÃÕ<˝Û∂ ΩT˝Ù;Éo ;Â`BA˜œ=¬è\ Ωôôö=£◊
- =H¥9A
-Â`<tº ªDõ¶<49X <49X@«∂F=∏QÏ ΩDõ¶<õ•„ <Dõ¶@Ò&È=H¥9 Ω#◊
-<Â`B <u¬è@…Å<T˝Ù@   Ωmëh;o@   ;£◊
-@ÓV=<j ºÌëh<#◊
- ;Dõ¶@·â7=LÃÕ ººj<¨1 <T˝Ù@…©¸<˝Û∂ <ãCñ<tº ;ƒõ¶@F∏R=]/ ª£◊
-<Ìëh <ìtº@@£◊<49X ΩH¥9;Â`B ;ƒõ¶@ùGÆ=PÂ`     <ìtº ;Â`B@û∏R=8QÏ ºƒõ¶<#◊
- ;ƒõ¶@v˘€=49X 	ªDõ¶<e`B 	<o@≥çP='Ôû <#◊
-<ãCñ ;Â`B@≥˜œ=õ•„ ∫Éo<T˝Ù <tº@ßÖ=Â`B ºõ•„<ìtº <o@ú  =–Â` 	Ω49X<e`B 	;Â`B@≈ôö=LÃÕ ΩYá<ìtº ;ƒõ¶@Åëh='Ôû Ω¨1=@É =+@ëGÆ=€"— ΩÉo<Éo <Dõ¶A©¸=+ Ωæw;Â`B ;Â`BAx’=æwΩ'Ôû<ºj<u¬è  ≥@     Gaia DR2 4208110932591708672:f6ô ë
- MiØ¡D˚ @rKÅ;k ?´πX˚üÚ^¿dá>†+?§ÏBﬂh»ú@=ı§ú4Kõ?ß—œ`‚@Ñ”Ä   ¿a¨¥¶ˇ?ªì4ˇ©¿a®∫-Á‘Ê?≥w§π?”1›    ?–ß∑Ä   øÊ»‡   ø“Ût@   ø¬˚‡   øÕÍ∞    ø·´¸¿   ø÷1π`   ø®À˙†   ?“@º@    ò ò ó @\‡‡   @p
-`                    T@_?ù‡   ?˘<˘§Gö2?Ö∫dà√¡v?æì†     
-?≤ˇ˛`      F ∞AyÛã	A¶,@∑ÏYî&ºä@±[=@   @gÊ‡    AkxÜ@òú@‡u∞≤≤‰O@z¥`   @“6@    ApÌn_ë]¨@È˛Ïx”Ú9@t÷Q    @éF`   ?ÚÁ£`     ?Í    ?÷§ˆ    ?›ö    @MtêE?ƒI\9≠≈© E≥∞ @ê      NOT_AVAILABLE@?èÍß˝Ym¿'qA’À7E@rVØªA∑è@.1RÊΩ°Ö Ü°@∂«@    @∂í     @∑™†   ?∏1&‡   ?äüæÄ   ?—0æ    ?ßçO‡   ?Ä-‡    ?æ_`    Ø?Ò ^    ?≤ë‡   ?Òqç`   ?Û∏Ä   ?Û    ?Û#h‡   http://geadata.esac.esa.int/data-server/datalink/links?ID=4208110932591708672 :f6ô ë
-  v⁄?WÅÒ˚y\H  HIP95962 ¯      HIP95962 ≠@å(ˆ<Ìëh?Ö∏ <tº;Dõ¶<#◊
-@¿¥9>±&È@+:Éo <49X:Éo ;Éo@o=Ö∏ ;Dõ¶;Â`B ;ƒõ¶@';d=Yá ªÉo;Â`B ;Â`B@	hs<ı¬è ;Dõ¶;Dõ¶ ;£◊
-?òìu=„S¯ ;Dõ¶<Éo <Éo?ÀÖ=˘€# ;o<u¬è ;Â`B?+Ö;Â`B = ¿É;Â`B ;£◊
-?Æ{=o ;Éo<ãCñ <49X?Ö∏=Cñ <Dõ¶;Â`B ;ƒõ¶?#o<tº <#◊
-<ºj <Dõ¶?¢–Â;Dõ¶ <˝Û∂     ;Éo?íJ=H¥9 <u¬è<õ•„ <õ•„Aá+<ƒõ¶ =e`B;ƒõ¶ ;£◊
-A°À>nò <ı¬è=æw <ºjAp§<tº <˝Û∂;Éo ;Éo@À+=y€# =u¬è<ºj <T˝Ù@Ûﬂ;=}Û∂ =8QÏ<o ;£◊
-@ÃÌë<£◊
-@   =LÃÕ;£◊
-@   ;£◊
-@É=T˝Ù =æw<Dõ¶ ;Dõ¶@„Ôû=óçP =T˝Ù<e`B <o@ V<˝Û∂ =•„<49X ;£◊
-@I7L='Ôû =+<¥9X <T˝Ù@F∏R<T˝Ù =@É<Éo <o@û^5=@É =\)<49X ;Éo@†z·=æw <˝Û∂<#◊
- ;£◊
-@yGÆ=,1 	=Cñ;Â`B 	;Éo@¥b=49X <ÃÃÕ;Â`B ;Éo@¥‘˛=â7L <ÃÃÕ;£◊
- ;Éo@©p§=◊
-= ='Ôû;Â`B ;Éo@ûüæ=¿É 	=æw<Dõ¶ 	;£◊
-@»¨=,1 =49X;Â`B ;Dõ¶@Ü{=∂E¢ =ix’;£◊
- ;£◊
-@îr∞=∞ ≈ =tº<Dõ¶ <tºAŸ<Ìëh =Cñ;Éo ;Dõ¶Ar∞;£◊
-=49X;o;Éo  ≥@     Gaia DR2 6641996571978861440\-± )ãÄbs©D˚ @rTï˘R?¢‡hy¿KD0q\Î∏?¢r(i5€v@1oóˆD?¨˜‘√E´‚@sB;†   @[æÑ¨0?≤Â∆H@S¿T®xŸ≥v?™†=—l•â?±5    ?íÓ.@   ø∆⁄õ`   øôl‡   øﬁÆ8¿   ?—?<‡   øÆô˙Ä   ø‰BAÄ   ?ö{F@   ø≤54¿    ® ® § @¶
-†   @q6O†                    T@fËb‡   ?˘‚˜Ÿ®ük?án˘Qƒ?¬∞ò      ?®§¿      F ∫A\99ˆ©Â@õã!í˘√á@∞e!@   @!Ó     AN!‹Ÿ*±á@∞∞µ3ô°`@å‚÷Ä   @!∏V@    ARÅ7ì%HI@¿§•I/ÚÅ@Å '¿   @ ?‡   ?Û@     ?Íf    ?÷    ?›ıƒ    ¿/ô¨Á∏›?Ã%ä≠sd EªÄ @ê  æÄ  NOT_AVAILABLE@up¸OÃxc¿;≥(ﬂ∞@q‹“•fX¿@.>ˇ⁄x Ü°@∂mU`   @∂Ü`   @∂„     ?ûÏø¿   ?Ç:)¿   ?¬Q¿   ?äüæÄ   ?oÚ‰Ä   ?µS&     Ø?ÔøJÄ   ?Ó| †   ?jΩ‡   ?Ó’    ?Ó≤Ê    ?Ó˜L    http://geadata.esac.esa.int/data-server/datalink/links?ID=6641996571978861440 \-± )ãÄ w†?n≥‚«`˛|  HIP96160 ¯      HIP96160 ¶@è\)Ωtº?Çè\ <Dõ¶;Dõ¶<#◊
-@#∆®>ÏãD@+S¯:Éo <ãCñ:Éo ;£◊
-@Ö=]/ <#◊
-<49X <tº@)hs=aGÆ <ı¬è<e`B <49X@tº<›/ =\):Éo ;£◊
-?°GÆ=õ•„ =ëhs<õ•„ <£◊
-?“∞!=“Ò™ =q©¸=•„ <Éo?8QÏ<ı¬è >ìu<ı¬è <Éo?µÅ<ı¬è =}Û∂<#◊
- <o?Ñ›/<›/ <#◊
-=,1 <ı¬è?0£◊<ı¬è =Å%<u¬è <tº?†£◊;£◊
- <u¬è;o ;ƒõ¶?î˝Ù=Æ{ =•„<ìtº <õ•„AãD<Â`B ΩãCñ;Éo ;ÉoA9X=◊
-= ΩÃÃÕ<e`B <49XA
-ºj;o ºT˝Ù<o ;Â`B@«•„=ïÅ ΩPÂ`<ºj <e`B@ÒGÆ=@É Ωtº<õ•„ <#◊
-@…x’<e`B@   Ωq©¸;o@   ;Éo@Ó$›=PÂ` Ω\)<e`B ;Éo@·≤-=£◊
- ºõ•„<¥9X <T˝Ù@»ºj<˝Û∂ ºDõ¶<#◊
- ;£◊
-@EÅ=8QÏ ºÃÃÕ<u¬è <tº@@Â`<ÃÃÕ Ω49X<õ•„ <tº@ú¥9=T˝Ù ºãCñ<49X ;£◊
-@ûnò=0 ≈ ΩCñ<e`B ;ƒõ¶@uÅ=T˝Ù 	º‘˝Ù<u¬è 	;Â`B@≤nò=,1 º‘˝Ù<ãCñ ;ƒõ¶@≥+=ù≤- º‘˝Ù<49X ;Â`B@¶^5=‘˝Ù ΩaGÆ;ƒõ¶ ;Éo@õ˜œ=∂E¢ 	Ω8QÏ<T˝Ù 	;ƒõ¶@≈∏=49X Ωâ7L<Dõ¶ ;Éo@Åëh=â7L ΩÆ{<ìtº <T˝Ù@ë?}=“Ò™ ΩÉo<#◊
- <oA33=o ΩçOﬂ;Dõ¶ ;ÉoAß<#◊
-Ωâ7L;Â`B<o                                                                                                                                                                                                                                                                                                                                                                    
+version https://git-lfs.github.com/spec/v1
+oid sha256:68d7abb3bc8a3193607f19619a32a971cf724ba32782aec8fa6a74963fe9a613
+size 213120

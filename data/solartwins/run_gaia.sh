@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=gaia_query
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=8044322869@vtext.com
+#SBATCH --mail-user=number@vtext.com
 #SBATCH --ntasks=1
 #SBATCH --mem=8gb 
 #SBATCH --time=2-00:00:00

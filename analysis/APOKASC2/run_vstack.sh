@@ -1,7 +1,7 @@
 #!/bin/bash
 #SBATCH --job-name=actions
 #SBATCH --mail-type=END,FAIL
-#SBATCH --mail-user=8044322869@vtext.com
+#SBATCH --mail-user=number@vtext.com
 ###SBATCH -p cca
 #SBATCH --mem=0
 #SBATCH --ntasks=1
