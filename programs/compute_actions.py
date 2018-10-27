@@ -143,7 +143,7 @@ if(not noerr):
             mcdata.append(np.random.multivariate_normal(meanvals[j], cov[j]))
         mcdata = list(map(list, zip(*mcdata)))
         mctable = Table(mcdata, names=('ra','dec','parallax','pmra','pmdec','radial_velocity'))
-        plx_err = np.where(mcgaiadata.parallax < 0)[0]
+        plx_err = np.where(mctable['parallax'] < 0)[0]
         for k in plx_err:
             mctable['parallax'][k] = 0.1
         return GaiaData(mctable), plx_err
