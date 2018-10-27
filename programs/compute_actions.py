@@ -121,13 +121,13 @@ def actions(star):
 def actionloop(star):
     try:
         thisact, thisangle, thisfreqs, zmax = actions(star)
-        mask=True
+        mask=False
     except:
         thisact = np.full(3, 0)
         thisangle = np.full(3, 0)
         thisfreqs = np.full(3, 0)
         zmax = 0
-        mask=False
+        mask=True
         pass
     return thisact, thisangle, thisfreqs, zmax, mask
 
@@ -170,6 +170,12 @@ if(not noerr):
         this_zmax_err = np.nanstd([mcdata[k][j][3] for k in range(len(mcdata))], ddof=1)
         zmax_err.append(this_zmax_err)
         
+
+# i dont know why this is necessary
+actions = np.array([actions[i].tolist() for i in range(len(actions))])
+angles = np.array([actions[i].tolist() for i in range(len(actions))])
+freqs = np.array([actions[i].tolist() for i in range(len(actions))])
+actions = np.array([actions[i].tolist() for i in range(len(actions))])
 
 #output
 if(noerr):
