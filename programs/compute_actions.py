@@ -170,16 +170,20 @@ if(not noerr):
 
 #output
 if(noerr):
-    action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], names=('source_id','Jr','Lz','Jz','zmax','uvel','vvel','wvel'))
+    action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'))
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'))
     action_table['Jr_err'].unit = u.kpc*u.km/u.s
     action_table['Lz_err'].unit = u.kpc*u.km/u.s
     action_table['Jz_err'].unit = u.kpc*u.km/u.s
 
-action_table['Jr'].unit = u.kpc*u.km/u.s
-action_table['Lz'].unit = u.kpc*u.km/u.s
-action_table['Jz'].unit = u.kpc*u.km/u.s
+action_table['cyl_pos'].unit = u.kpc
+action_table['cyl_vel'].unit = u.km/u.s
+action_table['actions'].unit = u.kpc*u.km/u.s
+action_table['angles'].unit = u.rad
+action_table['freqs'].unit = 1/u.Myr
+action_table['zmax'].unit = u.kpc
+
 
 output_table = table.join(sttable, action_table)
 
