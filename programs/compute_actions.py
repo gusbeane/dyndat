@@ -96,7 +96,7 @@ vvel = -(distgalcenter*cylndvel.d_phi).to(u.km / u.s, equivalencies=u.dimensionl
 #zvel = cylndvel.d_z.to(u.km/u.s)
 wvel = cylndvel.d_z.to(u.km/u.s).value
 
-cyl_pos - np.transose([distgalcenter, phi, z])
+cyl_pos = np.transose([distgalcenter, phi, z])
 cyl_vel = np.transpose([uvel, vvel, wvel])
 
 """
