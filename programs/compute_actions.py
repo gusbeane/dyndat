@@ -208,11 +208,21 @@ else:
     action_table['Lz_err'].unit = u.kpc*u.km/u.s
     action_table['Jz_err'].unit = u.kpc*u.km/u.s
 
-action_table['cyl_pos'].unit = u.kpc
-action_table['cyl_vel'].unit = u.km/u.s
-action_table['actions'].unit = u.kpc*u.km/u.s
-action_table['angles'].unit = u.rad
-action_table['freqs'].unit = 1/u.Myr
+action_table['cyl_pos.r'].unit = u.kpc
+action_table['cyl_pos.phi'].unit = u.rad
+action_table['cyl_pos.z'].unit = u.kpc
+action_table['cyl_vel.r'].unit = u.km/u.s
+action_table['cyl_vel.phi'].unit = u.km/u.s
+action_table['cyl_vel.z'].unit = u.km/u.s
+action_table['action.Jr'].unit = u.kpc*u.km/u.s
+action_table['action.Lz'].unit = u.kpc*u.km/u.s
+action_table['action.Jz'].unit = u.kpc*u.km/u.s
+action_table['angle.r'].unit = u.rad
+action_table['angle.phi'].unit = u.rad
+action_table['angle.z'].unit = u.rad
+action_table['freq.r'].unit = 1/u.Myr
+action_table['freq.phi'].unit = 1/u.Myr
+action_table['freq.z'].unit = 1/u.Myr
 action_table['zmax'].unit = u.kpc
 
 
