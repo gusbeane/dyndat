@@ -121,13 +121,13 @@ def actions(star):
 def actionloop(star):
     try:
         thisact, thisangle, thisfreqs, zmax = actions(star)
-        mask=[True, True, True]
+        mask=True
     except:
         thisact = np.full(3, np.nan)
         thisangle = np.full(3, np.nan)
         thisfreqs = np.full(3, np.nan)
         zmax = np.nan
-        mask=[False, False, False]
+        mask=False
         pass
     return thisact, thisangle, thisfreqs, zmax, mask
 
