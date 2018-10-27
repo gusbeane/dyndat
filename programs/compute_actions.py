@@ -160,10 +160,12 @@ if(not noerr):
         mcdyn = gd.PhaseSpacePosition(mcsc.transform_to(gc_frame).cartesian)
         result = Parallel(n_jobs=nproc) (delayed(actionloop)(mcdyn[k]) for k in range(nentries))
         actions, angles, freqs, zmax, mask = np.transpose(result)
-        [actions[k][i] = np.nan for k in plx_err for i in range(3)]
-        [angles[k][i] = np.nan for k in plx_err for i in range(3)]
-        [freqs[k][i] = np.nan for k in plx_err for i in range(3)]
-        [zmax[k] = np.nan for k in plx_err for i in range(3)]
+        for k in plx_err:
+            for i in range(3):
+                actions[k][i] = np.nan
+                angles[k][i] = np.nan
+                freqs[k][i] = np.nan
+            zmax[k] = np.nan
         
         mcactions.append(actions)
         mcangles.append(angles)
