@@ -86,6 +86,9 @@ compute u, v, w
 """
 
 distgalcenter = np.sqrt(scdyn.pos.x*scdyn.pos.x + scdyn.pos.y*scdyn.pos.y)
+phi = np.arctan2(scdyn.pos.y, scdyn.pos.x)
+z = scdyn.pos.z
+
 cylndvel = scdyn.vel.represent_as(coord.CylindricalDifferential, base=scdyn.pos)
 #rvel = cylndvel.d_rho.to(u.km / u.s)
 uvel = -cylndvel.d_rho.to(u.km / u.s).value
@@ -93,6 +96,7 @@ vvel = -(distgalcenter*cylndvel.d_phi).to(u.km / u.s, equivalencies=u.dimensionl
 #zvel = cylndvel.d_z.to(u.km/u.s)
 wvel = cylndvel.d_z.to(u.km/u.s).value
 
+cyl_pos - np.transose([distgalcenter, phi, z])
 cyl_vel = np.transpose([uvel, vvel, wvel])
 
 """
