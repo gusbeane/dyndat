@@ -155,7 +155,8 @@ if(not noerr):
         mcgaiadata = genmcgaiadata(i)
 
         plx_err = np.where(mcgaiadata.parallax < 0)[0]
-        [mcgaiadata.parallax[k] = 0.1 for k in plx_err]
+        for k in plx_err:
+            mcgaiadata.parallax[k] = 0.1 
         mcsc = mcgaiadata.skycoord
         mcdyn = gd.PhaseSpacePosition(mcsc.transform_to(gc_frame).cartesian)
         result = Parallel(n_jobs=nproc) (delayed(actionloop)(mcdyn[k]) for k in range(nentries))
