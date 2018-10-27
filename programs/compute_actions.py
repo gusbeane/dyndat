@@ -123,10 +123,10 @@ def actionloop(star):
         thisact, thisangle, thisfreqs, zmax = actions(star)
         mask=True
     except:
-        thisact = np.full(3, np.nan)
-        thisangle = np.full(3, np.nan)
-        thisfreqs = np.full(3, np.nan)
-        zmax = np.nan
+        thisact = np.full(3, 0)
+        thisangle = np.full(3, 0)
+        thisfreqs = np.full(3, 0)
+        zmax = 0
         mask=False
         pass
     return thisact, thisangle, thisfreqs, zmax, mask
@@ -193,7 +193,7 @@ if(noerr):
     # action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
     #                      names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
     #                      mask=mask)
-    action_table = Table([r_c, phi_c, z_c, vr_c, vphi_c, vz_c, Jr_c, Lz_c, Jz_c,
+    action_table = Table([sid, r_c, phi_c, z_c, vr_c, vphi_c, vz_c, Jr_c, Lz_c, Jz_c,
                           angle_r_c, angle_phi_c, angle_z_c, freqs_c, freqs_c, freqs_c, zmax_c])
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
