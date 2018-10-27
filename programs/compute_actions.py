@@ -73,7 +73,8 @@ print(sttable['source_id'][0])
 
 # for the montecarlo loop later
 cov = gaiadata.get_cov()
-meanvals = [gaiadata.ra.value, gaiadata.dec.value, gaiadata.parallax.value, gaiadata.pmra.value, gaiadata.pmdec.value, gaiadata.radial_velocity.value]
+meanvals = [gaiadata.ra.value, gaiadata.dec.value, gaiadata.parallax.value, 
+            gaiadata.pmra.value, gaiadata.pmdec.value, gaiadata.radial_velocity.value]
 meanvals = list(map(list, zip(*meanvals))) # transpose
 
 nentries = len(sttable)
@@ -120,17 +121,19 @@ def actions(star):
 def actionloop(star):
     try:
         thisact, thisangle, thisfreqs, zmax = actions(star)
+        mask=True
     except:
         thisact = np.full(3, np.nan)
         thisangle = np.full(3, np.nan)
         thisfreqs = np.full(3, np.nan)
         zmax = np.nan
+        mask=False
         pass
-    return thisact, thisangle, thisfreqs, zmax
+    return thisact, thisangle, thisfreqs, zmax, mask
 
 print('computing the actions given best values of vel, pos...')
 result = Parallel(n_jobs=nproc) (delayed(actionloop)(scdyn[i]) for i in tqdm(range(nentries)))
-actions, angles, freqs, zmax = np.transpose(result)
+actions, angles, freqs, zmax, mask = np.transpose(result)
 
 if(not noerr):
     def genmcgaiadata(i):
@@ -174,7 +177,9 @@ if(noerr):
                          names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
                          dtype=['i8', 'f8', 'f8', 'f8', 'f8', 'f8', 'f8'])
 else:
-    action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'))
+    action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
+                         names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'),
+                         mask=mask)
     action_table['Jr_err'].unit = u.kpc*u.km/u.s
     action_table['Lz_err'].unit = u.kpc*u.km/u.s
     action_table['Jz_err'].unit = u.kpc*u.km/u.s
