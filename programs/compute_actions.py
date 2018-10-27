@@ -9,7 +9,7 @@ import warnings
 import sys
 
 from astropy import table
-from astropy.table import Table
+from astropy.table import Table, Column, MaskedColumn
 from astropy.io import fits
 import astropy.coordinates as coord
 import astropy.units as u
@@ -173,9 +173,17 @@ if(not noerr):
 
 #output
 if(noerr):
-    action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
-                         names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
-                         mask=mask)
+    sid = Column(sttable['source_id'], name='source_id', dtype='i8')
+    cyl_pos_c = MaskedColumn(cyl_pos, name='cyl_pos', mask=mask, dtype='f8')
+    cyl_vel_c = MaskedColumn(cyl_vel, name='cyl_vel', mask=mask, dtype='f8')
+    actions_c = MaskedColumn(actions, name='actions', mask=mask, dtype='f8')
+    angles_c = MaskedColumn(angles, name='angles', mask=mask, dtype='f8')
+    freqs_c = MaskedColumn(freqs, name='freqs', mask=mask, dtype='f8')
+    zmax_c = MaskedColumn(zmax, name='zmax', mask=mask, dtype='f8')
+    # action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
+    #                      names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
+    #                      mask=mask)
+    action_table = Table([sid, cyl_pos_c, cyl_vel_c, actions_c, angles_c, freqs_c, zmax_c])
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
                          names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'),
