@@ -270,9 +270,11 @@ else:
     freq_zvar_c = MaskedColumn(freq_zvar, name='freq.z.var', mask=mask, dtype='f8')
     freq_zrcovar_c = MaskedColumn(freq_zrcovar, name='freq.zr.covar', mask=mask, dtype='f8')
 
-    action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
-                         names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'),
-                         mask=mask)
+    action_table = Table([sid, r_c, phi_c, z_c, vr_c, vphi_c, vz_c, Jr_c, Lz_c, Jz_c,
+                          angle_r_c, angle_phi_c, angle_z_c, freqs_r_c, freqs_phi_c, freqs_z_c, zmax_c,
+                          Jrvar_c, JrLzcov_c, Lzvar_c, LzJzcov_c, Jzvar_c, JzJrcov_c,
+                          angle_rvar_c, angle_rzcov_c, angle_phivar_c, angle_phizcov_c, angle_zvar_c, angle_zrcovar_c,
+                          freq_rvar_c, freq_rzcov_c, freq_phivar_c, freq_phizcov_c, freq_zvar_c, freq_zrcovar_c])
     action_table['action.Jr.var'].unit = (u.kpc * u.km/u.s)**2
     action_table['action.JrLz.cov'].unit = (u.kpc * u.km/u.s)**2
     action_table['action.Lz.var'].unit = (u.kpc * u.km/u.s)**2
