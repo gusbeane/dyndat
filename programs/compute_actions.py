@@ -170,7 +170,9 @@ if(not noerr):
 
 #output
 if(noerr):
-    action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'))
+    action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
+                         names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
+                         dtype=('int64', 'float64', 'float64', 'float64', 'float64', 'float64', 'float64'))
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'))
     action_table['Jr_err'].unit = u.kpc*u.km/u.s
