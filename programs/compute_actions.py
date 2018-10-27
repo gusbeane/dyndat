@@ -108,7 +108,7 @@ def actions(star):
         orbit = mw.integrate_orbit(star, dt=dt, t1=0*u.Gyr, t2=5*u.Gyr, Integrator=gi.DOPRI853Integrator)
         res = gd.actionangle.find_actions(orbit, N_max=8)
         act = res['actions'].to(u.kpc * u.km / u.s).value
-        angles = res['actions'].to(u.rad).value
+        angles = res['angles'].to(u.rad).value
         freqs = res['freqs'].to(1/u.Myr).value
         zmax = orbit.zmax(approximate=True).to(u.kpc).value
         return act, angles, freqs, zmax
