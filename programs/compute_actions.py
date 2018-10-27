@@ -122,7 +122,7 @@ def actionloop(star):
         thisfreqs = np.full(3, np.nan)
         zmax = np.nan
         pass
-    return thisact, thisangle, thisfreqs
+    return thisact, thisangle, thisfreqs, zmax
 
 print('computing the actions given best values of vel, pos...')
 result = Parallel(n_jobs=nproc) (delayed(actionloop)(scdyn[i]) for i in tqdm(range(nentries)))
