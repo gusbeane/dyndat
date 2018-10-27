@@ -173,9 +173,8 @@ if(not noerr):
 
 # i dont know why this is necessary
 actions = np.array([actions[i].tolist() for i in range(len(actions))])
-angles = np.array([actions[i].tolist() for i in range(len(actions))])
-freqs = np.array([actions[i].tolist() for i in range(len(actions))])
-actions = np.array([actions[i].tolist() for i in range(len(actions))])
+angles = np.array([angles[i].tolist() for i in range(len(actions))])
+freqs = np.array([freqs[i].tolist() for i in range(len(actions))])
 
 #output
 if(noerr):
@@ -192,15 +191,15 @@ if(noerr):
     angle_r_c = MaskedColumn(angles[:,0], name='angle.r', mask=mask, dtype='f8')
     angle_phi_c = MaskedColumn(angles[:,1], name='angle.phi', mask=mask, dtype='f8')
     angle_z_c = MaskedColumn(angles[:,2], name='angle.z', mask=mask, dtype='f8')
-    freqs_c = MaskedColumn(freqs[:,0], name='freq.r', mask=mask, dtype='f8')
-    freqs_c = MaskedColumn(freqs[:,1], name='freq.phi', mask=mask, dtype='f8')
-    freqs_c = MaskedColumn(freqs[:,2], name='freq.z', mask=mask, dtype='f8')
+    freqs_r_c = MaskedColumn(freqs[:,0], name='freq.r', mask=mask, dtype='f8')
+    freqs_phi_c = MaskedColumn(freqs[:,1], name='freq.phi', mask=mask, dtype='f8')
+    freqs_z_c = MaskedColumn(freqs[:,2], name='freq.z', mask=mask, dtype='f8')
     zmax_c = MaskedColumn(zmax, name='zmax', mask=mask, dtype='f8')
     # action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
     #                      names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
     #                      mask=mask)
     action_table = Table([sid, r_c, phi_c, z_c, vr_c, vphi_c, vz_c, Jr_c, Lz_c, Jz_c,
-                          angle_r_c, angle_phi_c, angle_z_c, freqs_c, freqs_c, freqs_c, zmax_c])
+                          angle_r_c, angle_phi_c, angle_z_c, freqs_r_c, freqs_phi_c, freqs_z_c, zmax_c])
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
                          names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'),
