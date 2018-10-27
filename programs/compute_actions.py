@@ -143,7 +143,10 @@ if(not noerr):
             mcdata.append(np.random.multivariate_normal(meanvals[j], cov[j]))
         mcdata = list(map(list, zip(*mcdata)))
         mctable = Table(mcdata, names=('ra','dec','parallax','pmra','pmdec','radial_velocity'))
-        return GaiaData(mctable)
+        plx_err = np.where(mcgaiadata.parallax < 0)[0]
+        for k in plx_err:
+            mctable['parallax'][k] = 0.1
+        return GaiaData(mctable), plx_err
     
     print('now starting mc loop, this takes a while...')
     np.random.seed(1605)
@@ -152,11 +155,7 @@ if(not noerr):
     mcfreqs = []
     mczmax = []
     for i in tqdm(range(nloop)):
-        mcgaiadata = genmcgaiadata(i)
-
-        plx_err = np.where(mcgaiadata.parallax < 0)[0]
-        for k in plx_err:
-            mcgaiadata.parallax[k] = 0.1 * u.marcsec
+        mcgaiadata, plx_err = genmcgaiadata(i)
         mcsc = mcgaiadata.skycoord
         mcdyn = gd.PhaseSpacePosition(mcsc.transform_to(gc_frame).cartesian)
         result = Parallel(n_jobs=nproc) (delayed(actionloop)(mcdyn[k]) for k in range(nentries))
