@@ -204,7 +204,7 @@ if(not noerr):
     angle_phivar = np.array([phiz[i][0][0] for i in range(nentries)])
     angle_phizcov = np.array([phiz[i][0][1] for i in range(nentries)])
     angle_zvar = np.array([zr[i][0][0] for i in range(nentries)])
-    angle_zrcovar= np.array([zrp[i][0][1] for i in range(nentries)])
+    angle_zrcovar= np.array([zr[i][0][1] for i in range(nentries)])
     mask_angle = angle_rvar == np.nan
 
     # freqs
@@ -217,7 +217,7 @@ if(not noerr):
     freq_phivar = np.array([phiz[i][0][0] for i in range(nentries)])
     freq_phizcov = np.array([phiz[i][0][1] for i in range(nentries)])
     freq_zvar = np.array([zr[i][0][0] for i in range(nentries)])
-    freq_zrcovar= np.array([zrp[i][0][1] for i in range(nentries)])
+    freq_zrcovar= np.array([zr[i][0][1] for i in range(nentries)])
     mask_freq = freq_rvar == np.nan
 
 # i dont know why this is necessary
