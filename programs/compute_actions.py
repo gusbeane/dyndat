@@ -302,4 +302,3 @@ with warnings.catch_warnings(record=True):
         output_table.write("{0}-{2}.{1}".format(*fileout.rsplit('.', 1) + [node]), format='fits', overwrite=True)
     else:
         output_table.write(fileout, format='fits', overwrite=True)
- = MaskedColumn(
