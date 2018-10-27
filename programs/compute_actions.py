@@ -85,13 +85,15 @@ scdyn = gd.PhaseSpacePosition(sc.transform_to(gc_frame).cartesian)
 compute u, v, w
 """
 
-distgalcenter = np.sqrt(scdyn.pos.x*scdyn.pos.x + scdyn.pos.y*scdyn.pos.y + scdyn.pos.z*scdyn.pos.z)
+distgalcenter = np.sqrt(scdyn.pos.x*scdyn.pos.x + scdyn.pos.y*scdyn.pos.y)
 cylndvel = scdyn.vel.represent_as(coord.CylindricalDifferential, base=scdyn.pos)
 #rvel = cylndvel.d_rho.to(u.km / u.s)
 uvel = -cylndvel.d_rho.to(u.km / u.s).value
 vvel = -(distgalcenter*cylndvel.d_phi).to(u.km / u.s, equivalencies=u.dimensionless_angles()).value
 #zvel = cylndvel.d_z.to(u.km/u.s)
 wvel = cylndvel.d_z.to(u.km/u.s).value
+
+cyl_vel = np.transpose(uvel, vvel, wvel)
 
 """
 # now compute actions for different timesteps
@@ -105,23 +107,26 @@ def actions(star):
         warnings.simplefilter("ignore")
         orbit = mw.integrate_orbit(star, dt=dt, t1=0*u.Gyr, t2=5*u.Gyr, Integrator=gi.DOPRI853Integrator)
         res = gd.actionangle.find_actions(orbit, N_max=8)
-        ans = res['actions'].to(u.kpc * u.km / u.s).value
-        return np.append(ans,orbit.zmax(approximate=True).to(u.pc).value)
+        act = res['actions'].to(u.kpc * u.km / u.s).value
+        angles = res['actions'].to(u.rad).value
+        freqs = res['freqs'].to(1/u.Myr).value
+        zmax = orbit.zmax(approximate=True).to(u.kpc).value
+        return act, angles, freqs, zmax
 
 def actionloop(star):
     try:
-        thisJr, thisLz, thisJz, zmax = actions(star)
+        thisact, thisangle, thisfreqs, zmax = actions(star)
     except:
-        thisJr = np.nan
-        thisLz = np.nan
-        thisJz = np.nan
+        thisact = np.full(3, np.nan)
+        thisangle = np.full(3, np.nan)
+        thisfreqs = np.full(3, np.nan)
         zmax = np.nan
         pass
-    return thisJr, thisLz, thisJz, zmax
+    return thisact, thisangle, thisfreqs
 
 print('computing the actions given best values of vel, pos...')
 result = Parallel(n_jobs=nproc) (delayed(actionloop)(scdyn[i]) for i in tqdm(range(nentries)))
-Jr, Lz, Jz, zmax = np.transpose(result)
+actions, angles, freqs, zmax = np.transpose(result)
 
 if(not noerr):
     def genmcgaiadata(i):
@@ -161,7 +166,7 @@ if(not noerr):
 
 #output
 if(noerr):
-    action_table = Table([sttable['source_id'],Jr,Lz,Jz,zmax,uvel,vvel,wvel], names=('source_id','Jr','Lz','Jz','zmax','uvel','vvel','wvel'))
+    action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], names=('source_id','Jr','Lz','Jz','zmax','uvel','vvel','wvel'))
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'))
     action_table['Jr_err'].unit = u.kpc*u.km/u.s
