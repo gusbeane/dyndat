@@ -172,6 +172,12 @@ if(not noerr):
         mcfreqs.append(freqs)
         mczmax.append(zmax)
 
+    mcactions = np.array([np.array(mcactions[i].tolist()) for i in range(len(mcactions))])
+    mcangles = np.array([np.array(mcangles[i].tolist()) for i in range(len(mcangles))])
+    mcfreqs = np.array([np.array(mcfreqs[i].tolist()) for i in range(len(mcfreqs))])
+    mczmax = np.array([np.array(mczmax[i].tolist()) for i in range(len(mczmax))])
+
+
     # compute covariances
 
     # actions
