@@ -153,10 +153,18 @@ if(not noerr):
     mczmax = []
     for i in tqdm(range(nloop)):
         mcgaiadata = genmcgaiadata(i)
+
+        plx_err = np.where(mcgaiadata.parallax < 0)[0]
+        [mcgaiadata.parallax[k] = 0.1 for k in plx_err]
         mcsc = mcgaiadata.skycoord
         mcdyn = gd.PhaseSpacePosition(mcsc.transform_to(gc_frame).cartesian)
         result = Parallel(n_jobs=nproc) (delayed(actionloop)(mcdyn[k]) for k in range(nentries))
         actions, angles, freqs, zmax, mask = np.transpose(result)
+        [actions[k][i] = np.nan for k in plx_err for i in range(3)]
+        [angles[k][i] = np.nan for k in plx_err for i in range(3)]
+        [freqs[k][i] = np.nan for k in plx_err for i in range(3)]
+        [zmax[k] = np.nan for k in plx_err for i in range(3)]
+        
         mcactions.append(actions)
         mcangles.append(angles)
         mcfreqs.append(freqs)
