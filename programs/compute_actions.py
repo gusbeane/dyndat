@@ -175,7 +175,7 @@ if(not noerr):
 if(noerr):
     action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
                          names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
-                         dtype=['i8', 'f8', 'f8', 'f8', 'f8', 'f8', 'f8'])
+                         mask=mask)
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
                          names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'),
