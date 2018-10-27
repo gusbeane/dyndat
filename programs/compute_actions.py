@@ -174,16 +174,27 @@ if(not noerr):
 #output
 if(noerr):
     sid = Column(sttable['source_id'], name='source_id', dtype='i8')
-    cyl_pos_c = MaskedColumn(cyl_pos, name='cyl_pos', mask=mask, dtype='f8')
-    cyl_vel_c = MaskedColumn(cyl_vel, name='cyl_vel', mask=mask, dtype='f8')
-    actions_c = MaskedColumn(actions, name='actions', mask=mask, dtype='f8')
-    angles_c = MaskedColumn(angles, name='angles', mask=mask, dtype='f8')
-    freqs_c = MaskedColumn(freqs, name='freqs', mask=mask, dtype='f8')
+    r_c = MaskedColumn(cyl_pos[:,0], name='cyl_pos.r', mask=mask, dtype='f8')
+    phi_c = MaskedColumn(cyl_pos[:,1], name='cyl_pos.phi', mask=mask, dtype='f8')
+    z_c = MaskedColumn(cyl_pos[:,2], name='cyl_pos.z', mask=mask, dtype='f8')
+    vr_c = MaskedColumn(cyl_vel[:,0], name='cyl_vel.r', mask=mask, dtype='f8')
+    vphi_c = MaskedColumn(cyl_vel[:,1], name='cyl_vel.phi', mask=mask, dtype='f8')
+    vz_c = MaskedColumn(cyl_vel[:,2], name='cyl_vel.z', mask=mask, dtype='f8')
+    Jr_c = MaskedColumn(actions[:,0], name='action.Jr', mask=mask, dtype='f8')
+    Lz_c = MaskedColumn(actions[:,1], name='action.Lz', mask=mask, dtype='f8')
+    Jz_c = MaskedColumn(actions[:,2], name='action.Jz', mask=mask, dtype='f8')
+    angle_r_c = MaskedColumn(angles[:,0], name='angle.r', mask=mask, dtype='f8')
+    angle_phi_c = MaskedColumn(angles[:,1], name='angle.phi', mask=mask, dtype='f8')
+    angle_z_c = MaskedColumn(angles[:,2], name='angle.z', mask=mask, dtype='f8')
+    freqs_c = MaskedColumn(freqs[:,0], name='freq.r', mask=mask, dtype='f8')
+    freqs_c = MaskedColumn(freqs[:,1], name='freq.phi', mask=mask, dtype='f8')
+    freqs_c = MaskedColumn(freqs[:,2], name='freq.z', mask=mask, dtype='f8')
     zmax_c = MaskedColumn(zmax, name='zmax', mask=mask, dtype='f8')
     # action_table = Table([sttable['source_id'], cyl_pos, cyl_vel, actions, angles, freqs, zmax], 
     #                      names=('source_id','cyl_pos', 'cyl_vel', 'actions', 'angles', 'freqs', 'zmax'),
     #                      mask=mask)
-    action_table = Table([sid, cyl_pos_c, cyl_vel_c, actions_c, angles_c, freqs_c, zmax_c])
+    action_table = Table([r_c, phi_c, z_c, vr_c, vphi_c, vz_c, Jr_c, Lz_c, Jz_c,
+                          angle_r_c, angle_phi_c, angle_z_c, freqs_c, freqs_c, freqs_c, zmax_c])
 else:
     action_table = Table([sttable['source_id'],Jr,Jr_err,Lz,Lz_err,Jz,Jz_err,zmax,zmax_err,uvel,vvel,wvel], 
                          names=('source_id','Jr','Jr_err','Lz','Lz_err','Jz','Jz_err','zmax','zmax_err','uvel','vvel','wvel'),
